@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Mac上homebrew安装与卸载</title>
+    <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
+    <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
+<span id="more"></span>
+
+<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h1><blockquote>
+<p><strong>环境说明</strong></p>
+<p>M1芯片 MacOS14(Sonoma)</p>
+</blockquote>
+<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
+<h2 id="1-1-安装Command-Line-Tools-CLT-for-Xcode"><a href="#1-1-安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="1.1 安装Command Line Tools (CLT) for Xcode"></a>1.1 安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="1-2-修改配置"><a href="#1-2-修改配置" class="headerlink" title="1.2 修改配置"></a>1.2 修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3-克隆安装"><a href="#1-3-克隆安装" class="headerlink" title="1.3 克隆安装"></a>1.3 克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+
+<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
+<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
+<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
+
+<p><strong>2 运行<code>install.sh</code>文件</strong></p>
+<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
+
+<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
+
+<blockquote>
+<p>下载会比较慢，请耐心等待</p>
+</blockquote>
+<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
+
+<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
+
+<h1 id="2-卸载"><a href="#2-卸载" class="headerlink" title="2 卸载"></a>2 卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
+<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
+</ul>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>包管理器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建-插入本地图片</title>
+    <url>/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
+<span id="more"></span>
+
+<h1 id="1-安装与配置"><a href="#1-安装与配置" class="headerlink" title="1 安装与配置"></a>1 安装与配置</h1><p><strong>1.1 安装插件</strong></p>
+<p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
+<p><strong>1.2 打开hexo配置</strong></p>
+<p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
+<p><strong>1.3 typora配置</strong></p>
+<p>打开 typora 设置，配置成如图所示</p>
+<img src="/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/image-20240303115738031.png" class="" title="image-20240303115738031">
+
+
+<h1 id="2-测试"><a href="#2-测试" class="headerlink" title="2 测试"></a>2 测试</h1><ul>
+<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
+<li>用typora编写博客，并粘贴图片</li>
+<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
+<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
+<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
+<li>打开 <code>http://&lt;子域名&gt;.github.io</code>或者<code>http://&lt;子域名&gt;.gitee.io</code>检查图片是否正常显示</li>
+</ul>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
+<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
+</ul>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客搭建2：安装Next主题</title>
+    <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2%EF%BC%9A%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>适用于hexo 5.0以上版本</p>
+</blockquote>
+<h2 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h2><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
+<p><strong>git方式</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
+<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2. 站点配置(Hexo配置)"></a>2. 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3. 测试浏览"></a>3. 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+</ul>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-03：精简主题安装的操作</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考拉周刊第2期</title>
+    <url>/2024/03/09/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+<span id="more"></span>
+
+<h1 id="1-产品汪"><a href="#1-产品汪" class="headerlink" title="1 产品汪"></a>1 产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="2-职场"><a href="#2-职场" class="headerlink" title="2 职场"></a>2 职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="3-其他"><a href="#3-其他" class="headerlink" title="3 其他"></a>3 其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<hr>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-09： 创建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>考拉周刊第1期</title>
+    <url>/2024/03/02/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC1%E6%9C%9F/</url>
+    <content><![CDATA[<p>换位思考与共情是超能力，Arc 浏览器的 WebOS 理念我深表赞同，古腾堡原理应用于信息排版，期待苹果的AI体验，坚持冥想很重要</p>
+<span id="more"></span>
+
+<h1 id="1-产品汪"><a href="#1-产品汪" class="headerlink" title="1 产品汪"></a>1 产品汪</h1><p><a href="https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board">https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board</a></p>
+<p><a href="https://m.okjike.com/originalPosts/65de9e766d9f190631c4a336">https://m.okjike.com/originalPosts/65de9e766d9f190631c4a336</a></p>
+<p><a href="https://bytedance.larkoffice.com/minutes/obcn1711lrh7h5rfj2k4gu5f">https://bytedance.larkoffice.com/minutes/obcn1711lrh7h5rfj2k4gu5f</a></p>
+<p>#浏览器 #产品理念 #产品趋势</p>
+<p>不管是 iPad 的 Lok Board 浏览器，还是 chrome 插件 Sidespace，都是向 Arc 浏览器”致敬“，哦，还有一个飞书7.0，WebOS的概念我深表赞同，未来的操作系统是“云端”的，本地主机一个“浏览器”搞定。</p>
+<p><a href="https://www.woshipm.com/share/5998653.html">https://www.woshipm.com/share/5998653.html</a></p>
+<p>#竞品分析</p>
+<p>作者将竞品收集渠道氛围：官方网站、社交媒体账号、招聘账号，科技类媒体，应用商店用户评价。</p>
+<p>我认为是分为间接和直接，间接就是在互联网上找公开信息分析，直接就是扮演用户去体验，扮演求职者去刺探“军情”。</p>
+<p><a href="https://www.woshipm.com/share/6000705.html">https://www.woshipm.com/share/6000705.html</a></p>
+<p>#产品经理素质</p>
+<p>作者认为好的产品经理的素质：愿意写需求文档、愿意写迭代产品、愿意跟相关方沟通、愿意亲自去使用产品、愿意帮用户解决问题、愿意接触新事物、愿意思考总结</p>
+<p>你在用别人产品的时候，会去积极的反馈问题和意见吗？如果会，那你就可以成为优秀的产品经理。我认为这种“热情”造就优秀产品经理。</p>
+<p><a href="https://www.woshipm.com/share/6000046.html">https://www.woshipm.com/share/6000046.html</a></p>
+<p>#需求分析</p>
+<p>作者将需求分为<strong>方案级</strong>和<strong>问题级</strong>。方案级就是客户&#x2F;用户直接告诉你怎么改，或者说要加XX功能，遇到这种需求要谨慎，要分析清楚用户的场景和问题；问题级就是客户&#x2F;用户告诉你他遇到了啥问题，这比较好，但建议多问几句为什么，找本质需求。<u>拒绝”傻白甜“产品经理，不再被客户&#x2F;用户”骗“到</u></p>
+<p>将需求分为2个层级，挺不错的理解，需求方面建议看张小龙的《微信背后的产品观》。</p>
+<p><a href="https://m.okjike.com/originalPosts/65d6ac926d9f1906312b17c3">https://m.okjike.com/originalPosts/65d6ac926d9f1906312b17c3</a></p>
+<p><a href="https://m.okjike.com/originalPosts/6455c8b3205bd8b62ef2b6d3?s=eyJ1IjoiNTllNTZkZWMzNTMzNWYwMDE1OGE3YTU3IiwiZCI6MX0=">https://m.okjike.com/originalPosts/6455c8b3205bd8b62ef2b6d3?s=eyJ1IjoiNTllNTZkZWMzNTMzNWYwMDE1OGE3YTU3IiwiZCI6MX0%3D</a></p>
+<p>#产品经理素质</p>
+<p>【推荐】YC 孵化器的创始人 Paul Graham 可以轻易的模拟没有背景的人的体验，忘记自己，化身为用户，<u>换位思考与共情是超能力</u>。</p>
+<p>作者将产品经理的换位思考分为5个层次，L0 生理层面、L1 协作、L2 需求理解、L3 场景与用户画像、L4 小白思维（Paul Graham层次）、L5 人类共性（乔布斯、比尔盖茨层次）。</p>
+<p>三大支柱：演化论、热力学熵增、信息论</p>
+<p><a href="https://web.okjike.com/originalPost/65c9ca77362466632463a96e">https://web.okjike.com/originalPost/65c9ca77362466632463a96e</a></p>
+<p><a href="https://www.woshipm.com/operate/6001196.html">https://www.woshipm.com/operate/6001196.html</a></p>
+<p>#产品观察</p>
+<p>今年微信2大改版，摇一摇变听一听，搜一搜扶持问一问，改得这么自然，推得这么无感，表示佩服</p>
+<p><a href="http://www.ruanyifeng.com/blog/2024/02/weekly-issue-290.html">http://www.ruanyifeng.com/blog/2024/02/weekly-issue-290.html</a></p>
+<p>#交互设计</p>
+<p>作者认为苹果 Vision Pro 最大问题是窗口堆叠很难用。</p>
+<p>我：眼睛聚焦堆叠窗口时，爆炸开让用户选择？类似于Mac电脑上的Command + ⬆️</p>
+<h1 id="2-设计狮"><a href="#2-设计狮" class="headerlink" title="2 设计狮"></a>2 设计狮</h1><p><a href="https://www.woshipm.com/share/6001523.html">https://www.woshipm.com/share/6001523.html</a></p>
+<p>【推荐】介绍了古腾堡原理、F型阅读模式、Z型布局，可用于指导信息排版</p>
+<p><a href="https://www.zcool.com.cn/article/ZMTYwNzkyMA==.html">https://www.zcool.com.cn/article/ZMTYwNzkyMA==.html</a></p>
+<p>介绍了蜡笔效果、复古弥撒、微酸映射三种艺术效果海报的制作技巧，可借鉴于UI视觉设计</p>
+<h1 id="3-AI"><a href="#3-AI" class="headerlink" title="3 AI"></a>3 AI</h1><p><a href="https://www.woshipm.com/share/6001417.html">https://www.woshipm.com/share/6001417.html</a></p>
+<p>【重大新闻】苹果放弃造车，转向AI，期待苹果的AI体验</p>
+<p><a href="https://mp.weixin.qq.com/s/zrIMM3HFDLWhIsRDcB7utA">https://mp.weixin.qq.com/s/zrIMM3HFDLWhIsRDcB7utA</a></p>
+<p>老AI四小龙：云从、商汤、旷视、依图</p>
+<p>新AI独角兽：智谱 AI、MiniMax、百川智能、零一万物、月之暗面</p>
+<p><a href="https://mp.weixin.qq.com/s/jKTgbc2CiOLpgjiBqqE_iw">https://mp.weixin.qq.com/s/jKTgbc2CiOLpgjiBqqE_iw</a></p>
+<p>谷歌AI种族歧视引起轩然大波，谷歌AI滑铁卢，我想是因为文化初心丢了的缘故</p>
+<h1 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h1><p><a href="https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323">https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323</a></p>
+<p>#高薪 #裁员 #中年危机</p>
+<p>高薪有时候代表你比较会做汇报，比较懂办公室政治，公司经营困难时，首先砍掉你。</p>
+<p>高薪不代表市场价值，同样的，市场价值不代表高薪。薪水服从市场规律，有价格高于价值的“虚高”，也有低于价值的“性价比”</p>
+<p><a href="https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e">https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e</a></p>
+<p>#卖课 #割韭菜 #自媒体</p>
+<p>移动互联网培育了自媒体，自媒体培育了短视频，短视频培育了直播，直播培育了话术，话术被用于卖课和电信诈骗</p>
+<h1 id="5-成长"><a href="#5-成长" class="headerlink" title="5 成长"></a>5 成长</h1><ul>
+<li>在新公司重新有了做产品经理的感觉，主动沟通获得正反馈</li>
+<li>我的用户视角是有了，但是客户业务视角有些欠缺，领导视角直接是无。。。</li>
+<li>利用inoreader RSS阅读器，大量阅读资讯，通过评论促进思考，考拉周刊就是我思考的产物</li>
+<li>我觉醒了新天赋“自言自语”，这有利于我的心理健康</li>
+<li>要坚持冥想，很有用</li>
+</ul>
+<hr>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-07： 增加&lt;其他&gt;板块，给每一条资讯增加关键词标签</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+      <tags>
+        <tag>观察研究</tag>
+        <tag>资讯</tag>
+      </tags>
+  </entry>
+</search>
