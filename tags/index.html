@@ -152,7 +152,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -202,7 +202,7 @@
     目前共计 6 个标签
   </div>
   <div class="tag-cloud-tags">
-    <a href="/tags/Mac/" style="font-size: 12px;" class="tag-cloud-0">Mac</a> <a href="/tags/hexo/" style="font-size: 12px;" class="tag-cloud-0">hexo</a> <a href="/tags/next/" style="font-size: 12px;" class="tag-cloud-0">next</a> <a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" style="font-size: 12px;" class="tag-cloud-0">包管理器</a> <a href="/tags/%E8%A7%82%E5%AF%9F%E7%A0%94%E7%A9%B6/" style="font-size: 12px;" class="tag-cloud-0">观察研究</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 12px;" class="tag-cloud-0">资讯</a>
+    <a href="/tags/Mac/" style="font-size: 12px;" class="tag-cloud-0">Mac</a> <a href="/tags/hexo/" style="font-size: 30px;" class="tag-cloud-10">hexo</a> <a href="/tags/next/" style="font-size: 30px;" class="tag-cloud-10">next</a> <a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" style="font-size: 12px;" class="tag-cloud-0">包管理器</a> <a href="/tags/%E8%A7%82%E5%AF%9F%E7%A0%94%E7%A9%B6/" style="font-size: 12px;" class="tag-cloud-0">观察研究</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 12px;" class="tag-cloud-0">资讯</a>
   </div>
 </div>
 
@@ -216,6 +216,7 @@
     
 
 
+    <div class="comments" id="valine-comments"></div>
 </div>
   </main>
 
@@ -284,6 +285,18 @@
 
 
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
+      el: '#valine-comments',
+      path: "/tags/",
+      serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
+    }));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
