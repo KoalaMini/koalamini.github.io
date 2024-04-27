@@ -6,17 +6,17 @@
     <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
 <span id="more"></span>
 
-<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h1><blockquote>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
 <p><strong>环境说明</strong></p>
 <p>M1芯片 MacOS14(Sonoma)</p>
 </blockquote>
 <p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
-<h2 id="1-1-安装Command-Line-Tools-CLT-for-Xcode"><a href="#1-1-安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="1.1 安装Command Line Tools (CLT) for Xcode"></a>1.1 安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
-<h2 id="1-2-修改配置"><a href="#1-2-修改配置" class="headerlink" title="1.2 修改配置"></a>1.2 修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
 
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
 
-<h2 id="1-3-克隆安装"><a href="#1-3-克隆安装" class="headerlink" title="1.3 克隆安装"></a>1.3 克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
 
 <p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
 <p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
@@ -45,13 +45,15 @@
 
 <img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
 
-<h1 id="2-卸载"><a href="#2-卸载" class="headerlink" title="2 卸载"></a>2 卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
 <hr>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<p>参考资料</p>
+<ul>
 <li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
 <li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
 </ul>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<p>更新日志</p>
+<ul>
 <li>2024-03-03： 新建</li>
 </ul>
 ]]></content>
@@ -220,7 +222,7 @@
     <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
 <span id="more"></span>
 
-<h1 id="1-产品汪"><a href="#1-产品汪" class="headerlink" title="1 产品汪"></a>1 产品汪</h1><table>
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
 <thead>
 <tr>
 <th><strong>链接</strong></th>
@@ -246,7 +248,7 @@
 </tr>
 </tbody></table>
 <p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="2-职场"><a href="#2-职场" class="headerlink" title="2 职场"></a>2 职场</h1><table>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
 <thead>
 <tr>
 <th>链接</th>
@@ -259,7 +261,7 @@
 </tr>
 </tbody></table>
 <p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="3-其他"><a href="#3-其他" class="headerlink" title="3 其他"></a>3 其他</h1><table>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
 <thead>
 <tr>
 <th>链接</th>
@@ -279,7 +281,8 @@
 <p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
 <p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
 <hr>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<p>更新日志</p>
+<ul>
 <li>2024-03-09： 创建</li>
 </ul>
 ]]></content>
@@ -342,7 +345,7 @@
 <p><a href="https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e">https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e</a></p>
 <p>#卖课 #割韭菜 #自媒体</p>
 <p>移动互联网培育了自媒体，自媒体培育了短视频，短视频培育了直播，直播培育了话术，话术被用于卖课和电信诈骗</p>
-<h1 id="5-成长"><a href="#5-成长" class="headerlink" title="5 成长"></a>5 成长</h1><ul>
+<h1 id="成长"><a href="#成长" class="headerlink" title="成长"></a>成长</h1><ul>
 <li>在新公司重新有了做产品经理的感觉，主动沟通获得正反馈</li>
 <li>我的用户视角是有了，但是客户业务视角有些欠缺，领导视角直接是无。。。</li>
 <li>利用inoreader RSS阅读器，大量阅读资讯，通过评论促进思考，考拉周刊就是我思考的产物</li>
@@ -350,7 +353,8 @@
 <li>要坚持冥想，很有用</li>
 </ul>
 <hr>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<p>更新日志</p>
+<ul>
 <li>2024-03-07： 增加&lt;其他&gt;板块，给每一条资讯增加关键词标签</li>
 </ul>
 ]]></content>
