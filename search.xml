@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>优化博客功能</title>
+    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。支持暗黑模式、增加站点访问量浏览量统计、增加文章浏览量统计和评论、增加百度统计、添加本地搜索功能</p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th><strong>功能</strong></th>
+<th><strong>参考</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>站点访问量浏览量统计</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China</a></td>
+</tr>
+<tr>
+<td>文章浏览量统计、文章评论</td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
+</tr>
+<tr>
+<td>百度统计</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
+</tr>
+<tr>
+<td>本地搜索</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>初稿：2023-04-27</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mac上homebrew安装与卸载</title>
     <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
     <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
@@ -61,6 +105,43 @@
       <tags>
         <tag>Mac</tag>
         <tag>包管理器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Next主题</title>
+    <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>适用于hexo 5.0以上版本</p>
+</blockquote>
+<h2 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h2><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
+<p><strong>git方式</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
+<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2. 站点配置(Hexo配置)"></a>2. 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3. 测试浏览"></a>3. 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<hr>
+<p>参考资料</p>
+<ul>
+<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+</ul>
+<p>更新日志</p>
+<ul>
+<li>2024-03-03：精简主题安装的操作</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -175,87 +256,6 @@
       <tags>
         <tag>观察研究</tag>
         <tag>资讯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装Next主题</title>
-    <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
-<span id="more"></span>
-
-<blockquote>
-<p>适用于hexo 5.0以上版本</p>
-</blockquote>
-<h2 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1. 安装主题"></a>1. 安装主题</h2><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
-<p><strong>git方式</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
-<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2. 站点配置(Hexo配置)"></a>2. 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3. 测试浏览"></a>3. 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
-<hr>
-<p>参考资料</p>
-<ul>
-<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
-<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
-</ul>
-<p>更新日志</p>
-<ul>
-<li>2024-03-03：精简主题安装的操作</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>优化博客功能</title>
-    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。支持暗黑模式、增加站点访问量浏览量统计、增加文章浏览量统计和评论、增加百度统计、添加本地搜索功能</p>
-<span id="more"></span>
-
-<table>
-<thead>
-<tr>
-<th><strong>功能</strong></th>
-<th><strong>参考</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>站点访问量浏览量统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China</a></td>
-</tr>
-<tr>
-<td>文章浏览量统计、文章评论</td>
-<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
-</tr>
-<tr>
-<td>百度统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
-</tr>
-<tr>
-<td>本地搜索</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>初稿：2023-04-27</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
       </tags>
   </entry>
   <entry>
