@@ -17,6 +17,71 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>Mac上homebrew安装与卸载</title>
+    <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
+    <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
+<span id="more"></span>
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
+<p><strong>环境说明</strong></p>
+<p>M1芯片 MacOS14(Sonoma)</p>
+</blockquote>
+<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
+<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+
+<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
+<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
+<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
+
+<p><strong>2 运行<code>install.sh</code>文件</strong></p>
+<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
+
+<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
+
+<blockquote>
+<p>下载会比较慢，请耐心等待</p>
+</blockquote>
+<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
+
+<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
+
+<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<hr>
+<p>参考资料</p>
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
+<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
+</ul>
+<p>更新日志</p>
+<ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>包管理器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>优化博客功能</title>
     <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。</p>
@@ -75,42 +140,6 @@
       </tags>
   </entry>
   <entry>
-    <title>插入本地图片</title>
-    <url>/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
-<span id="more"></span>
-
-<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
-<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
-
-<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
-<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
-<img src="/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/image-20240303115738031.png" class="" title="image-20240303115738031">
-
-
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
-<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
-<li>用typora编写博客，并粘贴图片</li>
-<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
-<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
-<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
-<li>打开 <code>http://&lt;子域名&gt;.github.io</code>或者<code>http://&lt;子域名&gt;.gitee.io</code>检查图片是否正常显示</li>
-</ul>
-<hr>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
-<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
-<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
-</ul>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
-<li>2024-03-03： 新建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-  </entry>
-  <entry>
     <title>安装Next主题</title>
     <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
@@ -146,6 +175,42 @@
         <tag>hexo</tag>
         <tag>next</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>插入本地图片</title>
+    <url>/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
+<span id="more"></span>
+
+<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
+<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
+<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
+<img src="/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/image-20240303115738031.png" class="" title="image-20240303115738031">
+
+
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
+<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
+<li>用typora编写博客，并粘贴图片</li>
+<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
+<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
+<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
+<li>打开 <code>http://&lt;子域名&gt;.github.io</code>或者<code>http://&lt;子域名&gt;.gitee.io</code>检查图片是否正常显示</li>
+</ul>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
+<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
+</ul>
+<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
   </entry>
   <entry>
     <title>自定义域名</title>
@@ -248,6 +313,80 @@
       </tags>
   </entry>
   <entry>
+    <title>考拉周刊第2期</title>
+    <url>/2024/03/09/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<hr>
+<p>更新日志</p>
+<ul>
+<li>2024-03-09： 创建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+  </entry>
+  <entry>
     <title>考拉周刊第3期</title>
     <url>/2024/03/12/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC3%E6%9C%9F/</url>
     <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
@@ -333,145 +472,6 @@
 <td>人人都是产品经理</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mac上homebrew安装与卸载</title>
-    <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
-    <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
-<span id="more"></span>
-
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
-<p><strong>环境说明</strong></p>
-<p>M1芯片 MacOS14(Sonoma)</p>
-</blockquote>
-<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
-<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
-<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
-
-<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
-<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
-<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
-
-<p><strong>2 运行<code>install.sh</code>文件</strong></p>
-<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
-
-<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
-
-<blockquote>
-<p>下载会比较慢，请耐心等待</p>
-</blockquote>
-<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
-
-<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
-
-<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
-<hr>
-<p>参考资料</p>
-<ul>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
-<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
-</ul>
-<p>更新日志</p>
-<ul>
-<li>2024-03-03： 新建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>开发环境配置</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-        <tag>包管理器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考拉周刊第2期</title>
-    <url>/2024/03/09/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/</url>
-    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
-<td>#数据分析</td>
-</tr>
-</tbody></table>
-<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
-<table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
-<td>#竞品分析</td>
-</tr>
-</tbody></table>
-<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
-<td>#沟通协作</td>
-</tr>
-</tbody></table>
-<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
-<td>#陌生人社交</td>
-</tr>
-<tr>
-<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
-<td>#人力资源</td>
-</tr>
-</tbody></table>
-<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
-<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
-<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
-<hr>
-<p>更新日志</p>
-<ul>
-<li>2024-03-09： 创建</li>
-</ul>
 ]]></content>
       <categories>
         <category>考拉周刊</category>
