@@ -17,64 +17,6 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>优化博客功能</title>
-    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。</p>
-<p>支持暗黑模式、增加站点访问量浏览量统计、增加文章浏览量统计和评论、增加百度统计、添加本地搜索功能、百度SEO收录、sitemap生成</p>
-<span id="more"></span>
-
-<table>
-<thead>
-<tr>
-<th><strong>功能</strong></th>
-<th><strong>参考</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>站点访问量浏览量统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China</a></td>
-</tr>
-<tr>
-<td>文章浏览量统计、文章评论</td>
-<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
-</tr>
-<tr>
-<td>百度统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
-</tr>
-<tr>
-<td>本地搜索</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
-</tr>
-<tr>
-<td>百度SEO收录</td>
-<td><a href="https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools</a></td>
-</tr>
-<tr>
-<td>sitemap生成</td>
-<td><a href="https://github.com/hexojs/hexo-generator-sitemap">https://github.com/hexojs/hexo-generator-sitemap</a></td>
-</tr>
-<tr>
-<td>博客加密</td>
-<td><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">https://github.com/D0n9X1n/hexo-blog-encrypt</a></td>
-</tr>
-</tbody></table>
-<p>百度无法收录<code>&lt;子域名&gt;.github.io</code>，需要自己买一个域名解析，要过1～2天才审核通过</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>初稿：2023-04-27</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac上homebrew安装与卸载</title>
     <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
     <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
@@ -140,27 +82,61 @@
       </tags>
   </entry>
   <entry>
-    <title>自定义域名</title>
-    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
+    <title>优化博客功能</title>
+    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。</p>
+<p>支持暗黑模式、增加站点访问量浏览量统计、增加文章浏览量统计和评论、增加百度统计、添加本地搜索功能、百度SEO收录、sitemap生成</p>
 <span id="more"></span>
 
-<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
-<img src="/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/image-20240427135756010.png" class="" title="image-20240427135756010">
-
-<h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
-<p>最后，<code>hexo g</code>后部署到github</p>
+<table>
+<thead>
+<tr>
+<th><strong>功能</strong></th>
+<th><strong>参考</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>站点访问量浏览量统计</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China</a></td>
+</tr>
+<tr>
+<td>文章浏览量统计、文章评论</td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
+</tr>
+<tr>
+<td>百度统计</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
+</tr>
+<tr>
+<td>本地搜索</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
+</tr>
+<tr>
+<td>百度SEO收录</td>
+<td><a href="https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools</a></td>
+</tr>
+<tr>
+<td>sitemap生成</td>
+<td><a href="https://github.com/hexojs/hexo-generator-sitemap">https://github.com/hexojs/hexo-generator-sitemap</a></td>
+</tr>
+<tr>
+<td>博客加密</td>
+<td><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">https://github.com/D0n9X1n/hexo-blog-encrypt</a></td>
+</tr>
+</tbody></table>
+<p>百度无法收录<code>&lt;子域名&gt;.github.io</code>，需要自己买一个域名解析，要过1～2天才审核通过</p>
 <hr>
 <p><strong>更新日志</strong></p>
 <ul>
-<li>2024-04-27：初稿</li>
+<li>初稿：2023-04-27</li>
 </ul>
 ]]></content>
       <categories>
         <category>博客</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -237,78 +213,28 @@
       </categories>
   </entry>
   <entry>
-    <title>考拉周刊第2期</title>
-    <url>/2024/03/09/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/</url>
-    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+    <title>自定义域名</title>
+    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
 <span id="more"></span>
 
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
-<td>#数据分析</td>
-</tr>
-</tbody></table>
-<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
-<table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
-<td>#竞品分析</td>
-</tr>
-</tbody></table>
-<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
-<td>#沟通协作</td>
-</tr>
-</tbody></table>
-<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
-<td>#陌生人社交</td>
-</tr>
-<tr>
-<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
-<td>#人力资源</td>
-</tr>
-</tbody></table>
-<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
-<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
-<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
+<img src="/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/image-20240427135756010.png" class="" title="image-20240427135756010">
+
+<h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
+<p>最后，<code>hexo g</code>后部署到github</p>
 <hr>
-<p>更新日志</p>
+<p><strong>更新日志</strong></p>
 <ul>
-<li>2024-03-09： 创建</li>
+<li>2024-04-27：初稿</li>
 </ul>
 ]]></content>
       <categories>
-        <category>考拉周刊</category>
+        <category>博客</category>
       </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>考拉周刊第1期</title>
@@ -385,6 +311,80 @@
         <tag>观察研究</tag>
         <tag>资讯</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>考拉周刊第2期</title>
+    <url>/2024/03/09/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<hr>
+<p>更新日志</p>
+<ul>
+<li>2024-03-09： 创建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
   </entry>
   <entry>
     <title>考拉周刊第3期</title>
