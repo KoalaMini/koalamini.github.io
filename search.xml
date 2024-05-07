@@ -17,6 +17,107 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
+    <title>Mac上homebrew安装与卸载</title>
+    <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
+    <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
+<span id="more"></span>
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
+<p><strong>环境说明</strong></p>
+<p>M1芯片 MacOS14(Sonoma)</p>
+</blockquote>
+<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
+<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+
+<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
+<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
+<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
+
+<p><strong>2 运行<code>install.sh</code>文件</strong></p>
+<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
+
+<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
+
+<blockquote>
+<p>下载会比较慢，请耐心等待</p>
+</blockquote>
+<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
+
+<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
+
+<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
+
+<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<hr>
+<p>参考资料</p>
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
+<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
+</ul>
+<p>更新日志</p>
+<ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+        <tag>包管理器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SEO配置</title>
+    <url>/2024/05/07/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-SEO%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th><strong>功能</strong></th>
+<th><strong>参考</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>谷歌SEO收录验证</td>
+<td><a href="https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools</a></td>
+</tr>
+<tr>
+<td>必应SEO收录验证</td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
+</tr>
+<tr>
+<td>百度统计</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
+</tr>
+</tbody></table>
+<hr>
+<p>参考资料</p>
+<p>更新日志</p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>优化博客功能</title>
     <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。</p>
@@ -47,7 +148,7 @@
 <td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
 </tr>
 <tr>
-<td>百度SEO收录</td>
+<td>百度SEO收录验证</td>
 <td><a href="https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools</a></td>
 </tr>
 <tr>
@@ -148,95 +249,6 @@
       </categories>
   </entry>
   <entry>
-    <title>自定义域名</title>
-    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
-    <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
-<span id="more"></span>
-
-<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
-<img src="/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/image-20240427135756010.png" class="" title="image-20240427135756010">
-
-<h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
-<p>最后，<code>hexo g</code>后部署到github</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-04-27：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac上homebrew安装与卸载</title>
-    <url>/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/</url>
-    <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
-<span id="more"></span>
-
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
-<p><strong>环境说明</strong></p>
-<p>M1芯片 MacOS14(Sonoma)</p>
-</blockquote>
-<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
-<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
-<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
-
-<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
-<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
-<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
-
-<p><strong>2 运行<code>install.sh</code>文件</strong></p>
-<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
-
-<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
-
-<blockquote>
-<p>下载会比较慢，请耐心等待</p>
-</blockquote>
-<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
-
-<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
-
-<img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
-
-<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
-<hr>
-<p>参考资料</p>
-<ul>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
-<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
-</ul>
-<p>更新日志</p>
-<ul>
-<li>2024-03-03： 新建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>开发环境配置</category>
-      </categories>
-      <tags>
-        <tag>Mac</tag>
-        <tag>包管理器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考拉周刊第1期</title>
     <url>/2024/03/02/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC1%E6%9C%9F/</url>
     <content><![CDATA[<p>换位思考与共情是超能力，Arc 浏览器的 WebOS 理念我深表赞同，古腾堡原理应用于信息排版，期待苹果的AI体验，坚持冥想很重要</p>
@@ -310,6 +322,30 @@
       <tags>
         <tag>观察研究</tag>
         <tag>资讯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自定义域名</title>
+    <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
+<span id="more"></span>
+
+<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
+<img src="/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/image-20240427135756010.png" class="" title="image-20240427135756010">
+
+<h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
+<p>最后，<code>hexo g</code>后部署到github</p>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-04-27：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
