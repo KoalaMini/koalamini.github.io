@@ -2,7 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-cherry-pick.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/tag.html</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/reference.html</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/operations.html</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/branch.html</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/basic.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -12,6 +48,15 @@
   
   <url>
     <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/index.html</loc>
+    
+    <lastmod>2024-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-cherry-pick.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -65,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/basic.html</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-add.html</loc>
     
     <lastmod>2024-06-16</lastmod>
@@ -84,33 +120,6 @@
   
   <url>
     <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/internal.html</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/reference.html</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/tag.html</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/operations.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -137,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-write-tree.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-update-ref.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -146,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-update-ref.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-write-tree.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -173,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-rm.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-show.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -182,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-show.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-rm.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -245,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-pull.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-rebase.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -254,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-rebase.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-pull.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -281,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-diff.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-hash-object.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -290,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-hash-object.html</loc>
+    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-diff.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
@@ -336,15 +345,6 @@
   
   <url>
     <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-checkout.html</loc>
-    
-    <lastmod>2024-06-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/branch.html</loc>
     
     <lastmod>2024-06-16</lastmod>
     
