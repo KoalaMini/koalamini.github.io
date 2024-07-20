@@ -22,17 +22,17 @@
     <content><![CDATA[<p>用清华镜像安装与卸载homebrew</p>
 <span id="more"></span>
 
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
+<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h1><blockquote>
 <p><strong>环境说明</strong></p>
 <p>M1芯片 MacOS14(Sonoma)</p>
 </blockquote>
 <p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
-<h2 id="安装Command-Line-Tools-CLT-for-Xcode"><a href="#安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装Command Line Tools (CLT) for Xcode"></a>安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
-<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+<h2 id="1-1-安装Command-Line-Tools-CLT-for-Xcode"><a href="#1-1-安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="1.1 安装Command Line Tools (CLT) for Xcode"></a>1.1 安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="1-2-修改配置"><a href="#1-2-修改配置" class="headerlink" title="1.2 修改配置"></a>1.2 修改配置</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
 
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
 
-<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+<h2 id="1-3-克隆安装"><a href="#1-3-克隆安装" class="headerlink" title="1.3 克隆安装"></a>1.3 克隆安装</h2><img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
 
 <p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
 <p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
@@ -61,16 +61,16 @@
 
 <img src="/2024/03/03/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
 
-<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<h1 id="2-卸载"><a href="#2-卸载" class="headerlink" title="2 卸载"></a>2 卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
 <hr>
-<p>参考资料</p>
+<p><strong>参考资料</strong></p>
 <ul>
 <li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
 <li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
 </ul>
-<p>更新日志</p>
+<p><strong>更新日志</strong></p>
 <ul>
-<li>2024-03-03： 新建</li>
+<li>初稿：2024-03-03</li>
 </ul>
 ]]></content>
       <categories>
@@ -82,13 +82,48 @@
       </tags>
   </entry>
   <entry>
-    <title>优化博客功能</title>
+    <title>博客功能清单</title>
     <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>整理了一下博客，支持源码上传到gitee，方便多台设备写博客。</p>
-<p>支持暗黑模式、增加站点访问量浏览量统计、增加文章浏览量统计和评论、增加百度统计、添加本地搜索功能、百度SEO收录、sitemap生成</p>
+    <content><![CDATA[<p>基本上全是参考官方博客的，我这里只是做了一些整理</p>
 <span id="more"></span>
 
-<table>
+<h1 id="1-排版"><a href="#1-排版" class="headerlink" title="1 排版"></a>1 排版</h1><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文本高亮</td>
+<td><a href="https://theme-next.js.org/docs/tag-plugins/label">label</a></td>
+</tr>
+<tr>
+<td>高亮文本块</td>
+<td><a href="https://theme-next.js.org/docs/tag-plugins/note">note</a></td>
+</tr>
+<tr>
+<td>标签页</td>
+<td><a href="https://theme-next.js.org/docs/tag-plugins/tabs">tabs</a></td>
+</tr>
+</tbody></table>
+<h1 id="2-图片"><a href="#2-图片" class="headerlink" title="2 图片"></a>2 图片</h1><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>本地相对路径图片</td>
+<td><a href="https://github.com/cocowool/hexo-image-link">hexo-image-link</a></td>
+</tr>
+<tr>
+<td>图片点击预览放大</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/external-libraries#Fancybox">Fancybox</a><br /><a href="https://theme-next.js.org/docs/third-party-services/external-libraries#Medium-Zoom">Medium-Zoom</a></td>
+</tr>
+</tbody></table>
+<h1 id="3-统计"><a href="#3-统计" class="headerlink" title="3 统计"></a>3 统计</h1><table>
 <thead>
 <tr>
 <th><strong>功能</strong></th>
@@ -101,34 +136,61 @@
 </tr>
 <tr>
 <td>文章浏览量统计、文章评论</td>
-<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">valine</a></td>
 </tr>
 <tr>
 <td>百度统计</td>
 <td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
 </tr>
+</tbody></table>
+<h1 id="4-搜索和SEO"><a href="#4-搜索和SEO" class="headerlink" title="4 搜索和SEO"></a>4 搜索和SEO</h1><table>
+<thead>
 <tr>
+<th>功能</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody><tr>
 <td>本地搜索</td>
 <td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
 </tr>
 <tr>
-<td>百度SEO收录验证</td>
-<td><a href="https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo#Bing-Webmaster-Tools</a></td>
-</tr>
-<tr>
 <td>sitemap生成</td>
-<td><a href="https://github.com/hexojs/hexo-generator-sitemap">https://github.com/hexojs/hexo-generator-sitemap</a></td>
+<td><a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator</a></td>
 </tr>
 <tr>
-<td>博客加密</td>
-<td><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">https://github.com/D0n9X1n/hexo-blog-encrypt</a></td>
+<td>谷歌SEO收录验证</td>
+<td><a href="https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools</a></td>
+</tr>
+<tr>
+<td>必应SEO收录验证</td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
 </tr>
 </tbody></table>
-<p>百度无法收录<code>&lt;子域名&gt;.github.io</code>，需要自己买一个域名解析，要过1～2天才审核通过</p>
+<blockquote>
+<p>本博客托管在github上，由于github禁止百度爬虫，所以百度无法收录</p>
+</blockquote>
+<h1 id="3-其他"><a href="#3-其他" class="headerlink" title="3 其他"></a>3 其他</h1><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>博客加密</td>
+<td><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">hexo-blog-encrypt</a></td>
+</tr>
+<tr>
+<td>导航卡片</td>
+<td><a href="https://theme-next.js.org/docs/tag-plugins/link-grid">link-grid</a></td>
+</tr>
+</tbody></table>
 <hr>
 <p><strong>更新日志</strong></p>
 <ul>
-<li>初稿：2023-04-27</li>
+<li>修订：2024-07-20，增加了一些功能</li>
+<li>初稿：2024-04-27</li>
 </ul>
 ]]></content>
       <categories>
@@ -148,22 +210,22 @@
 <blockquote>
 <p>适用于hexo 5.0以上版本</p>
 </blockquote>
-<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
+<h1 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1 安装主题"></a>1 安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
 <p><strong>git方式</strong></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 
 <p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
-<h1 id="站点配置-Hexo配置"><a href="#站点配置-Hexo配置" class="headerlink" title="站点配置(Hexo配置)"></a>站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2 站点配置(Hexo配置)"></a>2 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="测试浏览"><a href="#测试浏览" class="headerlink" title="测试浏览"></a>测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3 测试浏览"></a>3 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
 <hr>
-<p>参考资料</p>
+<p><strong>参考资料</strong></p>
 <ul>
 <li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
 <li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
 </ul>
-<p>更新日志</p>
+<p><strong>更新日志</strong></p>
 <ul>
 <li>2024-03-03：精简主题安装的操作</li>
 </ul>
@@ -177,57 +239,21 @@
       </tags>
   </entry>
   <entry>
-    <title>SEO配置</title>
-    <url>/2024/05/07/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-SEO%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<table>
-<thead>
-<tr>
-<th><strong>功能</strong></th>
-<th><strong>参考</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>谷歌SEO收录验证</td>
-<td><a href="https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools</a></td>
-</tr>
-<tr>
-<td>必应SEO收录验证</td>
-<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
-</tr>
-<tr>
-<td>百度统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
-</tr>
-</tbody></table>
-<hr>
-<p>参考资料</p>
-<p>更新日志</p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>插入本地图片</title>
     <url>/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
 <span id="more"></span>
 
-<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
-<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
+<h1 id="1-安装与配置"><a href="#1-安装与配置" class="headerlink" title="1 安装与配置"></a>1 安装与配置</h1><h2 id="1-1-安装插件"><a href="#1-1-安装插件" class="headerlink" title="1.1 安装插件"></a>1.1 安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
+<h2 id="1-2-打开hexo配置"><a href="#1-2-打开hexo配置" class="headerlink" title="1.2 打开hexo配置"></a>1.2 打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
 
 <p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
-<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
+<h2 id="1-3-typora配置"><a href="#1-3-typora配置" class="headerlink" title="1.3 typora配置"></a>1.3 typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
 <img src="/2024/03/03/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/image-20240303115738031.png" class="" title="image-20240303115738031">
 
 
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
+<h1 id="2-测试"><a href="#2-测试" class="headerlink" title="2 测试"></a>2 测试</h1><ul>
 <li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
 <li>用typora编写博客，并粘贴图片</li>
 <li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
@@ -236,11 +262,13 @@
 <li>打开 <code>http://&lt;子域名&gt;.github.io</code>或者<code>http://&lt;子域名&gt;.gitee.io</code>检查图片是否正常显示</li>
 </ul>
 <hr>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<p><strong>参考资料</strong></p>
+<ul>
 <li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
 <li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
 </ul>
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><ul>
+<p><strong>更新日志</strong></p>
+<ul>
 <li>2024-03-03： 新建</li>
 </ul>
 ]]></content>
@@ -254,15 +282,15 @@
     <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
 <span id="more"></span>
 
-<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
+<h1 id="1-域名解析"><a href="#1-域名解析" class="headerlink" title="1 域名解析"></a>1 域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
 <img src="/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/image-20240427135756010.png" class="" title="image-20240427135756010">
 
-<h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
+<h1 id="2-博客配置"><a href="#2-博客配置" class="headerlink" title="2 博客配置"></a>2 博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
 <p>最后，<code>hexo g</code>后部署到github</p>
 <hr>
 <p><strong>更新日志</strong></p>
 <ul>
-<li>2024-04-27：初稿</li>
+<li>初稿：2024-04-27</li>
 </ul>
 ]]></content>
       <categories>
@@ -337,7 +365,7 @@
 <p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
 <p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
 <hr>
-<p>更新日志</p>
+<p><strong>更新日志</strong></p>
 <ul>
 <li>2024-03-09： 创建</li>
 </ul>
@@ -443,7 +471,7 @@
     <content><![CDATA[<p>换位思考与共情是超能力，Arc 浏览器的 WebOS 理念我深表赞同，古腾堡原理应用于信息排版，期待苹果的AI体验，坚持冥想很重要</p>
 <span id="more"></span>
 
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board">https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board</a></p>
+<h1 id="1-产品汪"><a href="#1-产品汪" class="headerlink" title="1 产品汪"></a>1 产品汪</h1><p><a href="https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board">https://www.innoreader.com/article/3a9c6e74e6b30293-ipad-lok-board</a></p>
 <p><a href="https://m.okjike.com/originalPosts/65de9e766d9f190631c4a336">https://m.okjike.com/originalPosts/65de9e766d9f190631c4a336</a></p>
 <p><a href="https://bytedance.larkoffice.com/minutes/obcn1711lrh7h5rfj2k4gu5f">https://bytedance.larkoffice.com/minutes/obcn1711lrh7h5rfj2k4gu5f</a></p>
 <p>#浏览器 #产品理念 #产品趋势</p>
@@ -474,25 +502,25 @@
 <p>#交互设计</p>
 <p>作者认为苹果 Vision Pro 最大问题是窗口堆叠很难用。</p>
 <p>我：眼睛聚焦堆叠窗口时，爆炸开让用户选择？类似于Mac电脑上的Command + ⬆️</p>
-<h1 id="设计狮"><a href="#设计狮" class="headerlink" title="设计狮"></a>设计狮</h1><p><a href="https://www.woshipm.com/share/6001523.html">https://www.woshipm.com/share/6001523.html</a></p>
+<h1 id="2-设计狮"><a href="#2-设计狮" class="headerlink" title="2 设计狮"></a>2 设计狮</h1><p><a href="https://www.woshipm.com/share/6001523.html">https://www.woshipm.com/share/6001523.html</a></p>
 <p>【推荐】介绍了古腾堡原理、F型阅读模式、Z型布局，可用于指导信息排版</p>
 <p><a href="https://www.zcool.com.cn/article/ZMTYwNzkyMA==.html">https://www.zcool.com.cn/article/ZMTYwNzkyMA==.html</a></p>
 <p>介绍了蜡笔效果、复古弥撒、微酸映射三种艺术效果海报的制作技巧，可借鉴于UI视觉设计</p>
-<h1 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h1><p><a href="https://www.woshipm.com/share/6001417.html">https://www.woshipm.com/share/6001417.html</a></p>
+<h1 id="3-AI"><a href="#3-AI" class="headerlink" title="3 AI"></a>3 AI</h1><p><a href="https://www.woshipm.com/share/6001417.html">https://www.woshipm.com/share/6001417.html</a></p>
 <p>【重大新闻】苹果放弃造车，转向AI，期待苹果的AI体验</p>
 <p><a href="https://mp.weixin.qq.com/s/zrIMM3HFDLWhIsRDcB7utA">https://mp.weixin.qq.com/s/zrIMM3HFDLWhIsRDcB7utA</a></p>
 <p>老AI四小龙：云从、商汤、旷视、依图</p>
 <p>新AI独角兽：智谱 AI、MiniMax、百川智能、零一万物、月之暗面</p>
 <p><a href="https://mp.weixin.qq.com/s/jKTgbc2CiOLpgjiBqqE_iw">https://mp.weixin.qq.com/s/jKTgbc2CiOLpgjiBqqE_iw</a></p>
 <p>谷歌AI种族歧视引起轩然大波，谷歌AI滑铁卢，我想是因为文化初心丢了的缘故</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p><a href="https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323">https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323</a></p>
+<h1 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h1><p><a href="https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323">https://m.okjike.com/originalPosts/65d6ce9f12ed2fda6838e323</a></p>
 <p>#高薪 #裁员 #中年危机</p>
 <p>高薪有时候代表你比较会做汇报，比较懂办公室政治，公司经营困难时，首先砍掉你。</p>
 <p>高薪不代表市场价值，同样的，市场价值不代表高薪。薪水服从市场规律，有价格高于价值的“虚高”，也有低于价值的“性价比”</p>
 <p><a href="https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e">https://m.okjike.com/originalPosts/65e00289f6eb225f3b81de7e</a></p>
 <p>#卖课 #割韭菜 #自媒体</p>
 <p>移动互联网培育了自媒体，自媒体培育了短视频，短视频培育了直播，直播培育了话术，话术被用于卖课和电信诈骗</p>
-<h1 id="成长"><a href="#成长" class="headerlink" title="成长"></a>成长</h1><ul>
+<h1 id="5-成长"><a href="#5-成长" class="headerlink" title="5 成长"></a>5 成长</h1><ul>
 <li>在新公司重新有了做产品经理的感觉，主动沟通获得正反馈</li>
 <li>我的用户视角是有了，但是客户业务视角有些欠缺，领导视角直接是无。。。</li>
 <li>利用inoreader RSS阅读器，大量阅读资讯，通过评论促进思考，考拉周刊就是我思考的产物</li>
@@ -500,7 +528,7 @@
 <li>要坚持冥想，很有用</li>
 </ul>
 <hr>
-<p>更新日志</p>
+<p><strong>更新日志</strong></p>
 <ul>
 <li>2024-03-07： 增加&lt;其他&gt;板块，给每一条资讯增加关键词标签</li>
 </ul>
