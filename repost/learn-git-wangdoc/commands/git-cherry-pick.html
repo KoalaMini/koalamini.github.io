@@ -20,19 +20,20 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="git cherry-pick对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。  一、基本用法git cherry-pick命令的作用，就是将指定的提交（commit）应用于其他分支。 1$ gi">
+    <meta name="description" content="对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。  一、基本用法git cherry-pick命令的作用，就是将指定的提交（commit）应用于其他分支。 1$ git cherry-pick &amp;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="贝可考拉珍宝居">
+<meta property="og:title" content="git cherry-pick">
 <meta property="og:url" content="https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-cherry-pick.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
-<meta property="og:description" content="git cherry-pick对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。  一、基本用法git cherry-pick命令的作用，就是将指定的提交（commit）应用于其他分支。 1$ gi">
+<meta property="og:description" content="对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。  一、基本用法git cherry-pick命令的作用，就是将指定的提交（commit）应用于其他分支。 1$ git cherry-pick &amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.wangbase.com/blogimg/asset/202004/bg2020042723.jpg">
-<meta property="article:published_time" content="2024-06-16T04:01:53.520Z">
-<meta property="article:modified_time" content="2024-06-16T04:01:53.520Z">
+<meta property="article:published_time" content="2024-06-16T02:24:48.000Z">
+<meta property="article:modified_time" content="2024-07-20T11:50:20.629Z">
 <meta property="article:author" content="贝可考拉">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.wangbase.com/blogimg/asset/202004/bg2020042723.jpg">
@@ -42,10 +43,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-cherry-pick.html","path":"repost/learn-git-wangdoc/commands/git-cherry-pick.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-cherry-pick.html","path":"repost/learn-git-wangdoc/commands/git-cherry-pick.html","title":"git cherry-pick"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | 贝可考拉珍宝居
+<title>git cherry-pick | 贝可考拉珍宝居
 </title>
   
 
@@ -154,7 +155,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git-cherry-pick"><span class="nav-text">git cherry-pick</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-text">一、基本用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%BD%AC%E7%A7%BB%E5%A4%9A%E4%B8%AA%E6%8F%90%E4%BA%A4"><span class="nav-text">二、转移多个提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="nav-text">三、配置项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E4%BB%A3%E7%A0%81%E5%86%B2%E7%AA%81"><span class="nav-text">四、代码冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">五、转移到另一个代码库</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-text">一、基本用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%BD%AC%E7%A7%BB%E5%A4%9A%E4%B8%AA%E6%8F%90%E4%BA%A4"><span class="nav-text">二、转移多个提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E9%85%8D%E7%BD%AE%E9%A1%B9"><span class="nav-text">三、配置项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E4%BB%A3%E7%A0%81%E5%86%B2%E7%AA%81"><span class="nav-text">四、代码冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">五、转移到另一个代码库</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -202,7 +203,7 @@
     
     <div class="post-block" lang="zh-CN"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">
+<h1 class="post-title" itemprop="name headline">git cherry-pick
 </h1>
 
 <div class="post-meta-container">
@@ -220,7 +221,7 @@
       
       
       <div class="post-body">
-          <h1 id="git-cherry-pick"><a href="#git-cherry-pick" class="headerlink" title="git cherry-pick"></a>git cherry-pick</h1><p>对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。</p>
+          <p>对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。</p>
 <p>这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（<code>git merge</code>）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。</p>
 <p><img src="https://www.wangbase.com/blogimg/asset/202004/bg2020042723.jpg"></p>
 <h2 id="一、基本用法"><a href="#一、基本用法" class="headerlink" title="一、基本用法"></a>一、基本用法</h2><p><code>git cherry-pick</code>命令的作用，就是将指定的提交（commit）应用于其他分支。</p>
@@ -309,7 +310,6 @@
     
 
 
-    <div class="comments" id="valine-comments"></div>
 </div>
   </main>
 
@@ -367,6 +367,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -375,6 +376,7 @@
 
 
 
+  <script src="/js/third-party/fancybox.js"></script>
 
 
 

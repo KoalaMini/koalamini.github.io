@@ -20,18 +20,19 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="git diffgit diff命令用于查看文件之间的差异。 123456789101112131415161718192021222324252627282930313233# 查看工作区与暂存区的差异$ git diff# 查看某个文件的工作区与暂存区的差异$ git diff file.txt# 查看暂存区与当前 commit 的差异$ git diff --cached# 查看两个comm">
+    <meta name="description" content="git diff命令用于查看文件之间的差异。 123456789101112131415161718192021222324252627282930313233# 查看工作区与暂存区的差异$ git diff# 查看某个文件的工作区与暂存区的差异$ git diff file.txt# 查看暂存区与当前 commit 的差异$ git diff --cached# 查看两个commit的差异$ g">
 <meta property="og:type" content="website">
-<meta property="og:title" content="贝可考拉珍宝居">
+<meta property="og:title" content="git diff">
 <meta property="og:url" content="https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-diff.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
-<meta property="og:description" content="git diffgit diff命令用于查看文件之间的差异。 123456789101112131415161718192021222324252627282930313233# 查看工作区与暂存区的差异$ git diff# 查看某个文件的工作区与暂存区的差异$ git diff file.txt# 查看暂存区与当前 commit 的差异$ git diff --cached# 查看两个comm">
+<meta property="og:description" content="git diff命令用于查看文件之间的差异。 123456789101112131415161718192021222324252627282930313233# 查看工作区与暂存区的差异$ git diff# 查看某个文件的工作区与暂存区的差异$ git diff file.txt# 查看暂存区与当前 commit 的差异$ git diff --cached# 查看两个commit的差异$ g">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-16T02:22:59.157Z">
-<meta property="article:modified_time" content="2024-06-16T02:22:59.157Z">
+<meta property="article:published_time" content="2024-06-16T02:24:48.000Z">
+<meta property="article:modified_time" content="2024-07-20T11:49:42.568Z">
 <meta property="article:author" content="贝可考拉">
 <meta name="twitter:card" content="summary">
 
@@ -40,10 +41,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-diff.html","path":"repost/learn-git-wangdoc/commands/git-diff.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/repost/learn-git-wangdoc/commands/git-diff.html","path":"repost/learn-git-wangdoc/commands/git-diff.html","title":"git diff"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | 贝可考拉珍宝居
+<title>git diff | 贝可考拉珍宝居
 </title>
   
 
@@ -139,7 +140,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -152,7 +153,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git-diff"><span class="nav-text">git diff</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -200,7 +200,7 @@
     
     <div class="post-block" lang="zh-CN"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">
+<h1 class="post-title" itemprop="name headline">git diff
 </h1>
 
 <div class="post-meta-container">
@@ -218,7 +218,7 @@
       
       
       <div class="post-body">
-          <h1 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h1><p><code>git diff</code>命令用于查看文件之间的差异。</p>
+          <p><code>git diff</code>命令用于查看文件之间的差异。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看工作区与暂存区的差异</span></span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看某个文件的工作区与暂存区的差异</span></span><br><span class="line">$ git diff file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与当前 commit 的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看两个commit的差异</span></span><br><span class="line">$ git diff &lt;commitBefore&gt; &lt;commitAfter&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与仓库区的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与上一次commit之间的差异</span></span><br><span class="line"><span class="comment"># 即如果执行 git commit -a，将提交的文件</span></span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与某个 commit 的差异</span></span><br><span class="line">$ git diff &lt;commit&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示两次提交之间的差异</span></span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与当前分支上一次提交的差异，但是局限于test文件</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支上一次提交与上上一次提交之间的差异</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成patch</span></span><br><span class="line">$ git format-patch master --stdout &gt; mypatch.patch</span><br></pre></td></tr></table></figure>
 
 <p>比较两个分支</p>
@@ -241,7 +241,6 @@
     
 
 
-    <div class="comments" id="valine-comments"></div>
 </div>
   </main>
 
@@ -299,6 +298,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
@@ -307,6 +307,7 @@
 
 
 
+  <script src="/js/third-party/fancybox.js"></script>
 
 
 
