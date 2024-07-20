@@ -132,7 +132,7 @@
 </thead>
 <tbody><tr>
 <td>站点访问量浏览量统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China</a></td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Busuanzi-Counting-China">卜算子</a></td>
 </tr>
 <tr>
 <td>文章浏览量统计、文章评论</td>
@@ -140,10 +140,10 @@
 </tr>
 <tr>
 <td>百度统计</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China</a></td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/statistics-and-analytics#Baidu-Analytics-China">Baidu-Analytics-China</a></td>
 </tr>
 </tbody></table>
-<h1 id="4-搜索和SEO"><a href="#4-搜索和SEO" class="headerlink" title="4 搜索和SEO"></a>4 搜索和SEO</h1><table>
+<h1 id="4-搜索"><a href="#4-搜索" class="headerlink" title="4 搜索"></a>4 搜索</h1><table>
 <thead>
 <tr>
 <th>功能</th>
@@ -152,7 +152,7 @@
 </thead>
 <tbody><tr>
 <td>本地搜索</td>
-<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">https://theme-next.js.org/docs/third-party-services/search-services#Local-Search</a></td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/search-services#Local-Search">Local-Search</a></td>
 </tr>
 <tr>
 <td>sitemap生成</td>
@@ -160,17 +160,29 @@
 </tr>
 <tr>
 <td>谷歌SEO收录验证</td>
-<td><a href="https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools">https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools</a></td>
-</tr>
-<tr>
-<td>必应SEO收录验证</td>
-<td><a href="https://github.com/next-theme/hexo-next-valine">https://github.com/next-theme/hexo-next-valine</a></td>
+<td><a href="https://theme-next.js.org/docs/theme-settings/seo.html?highlight=seo#Google-Webmaster-Tools">Google-Webmaster-Tools</a></td>
 </tr>
 </tbody></table>
 <blockquote>
 <p>本博客托管在github上，由于github禁止百度爬虫，所以百度无法收录</p>
 </blockquote>
-<h1 id="3-其他"><a href="#3-其他" class="headerlink" title="3 其他"></a>3 其他</h1><table>
+<h1 id="5-互动"><a href="#5-互动" class="headerlink" title="5 互动"></a>5 互动</h1><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>评论</td>
+<td><a href="https://github.com/next-theme/hexo-next-valine">valine</a></td>
+</tr>
+<tr>
+<td>即时聊天</td>
+<td><a href="https://theme-next.js.org/docs/third-party-services/chat-services#Chatra">Chatra</a></td>
+</tr>
+</tbody></table>
+<h1 id="6-其他"><a href="#6-其他" class="headerlink" title="6 其他"></a>6 其他</h1><table>
 <thead>
 <tr>
 <th>功能</th>
