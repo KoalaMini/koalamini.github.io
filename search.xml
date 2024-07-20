@@ -82,6 +82,43 @@
       </tags>
   </entry>
   <entry>
+    <title>安装Next主题</title>
+    <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>适用于hexo 5.0以上版本</p>
+</blockquote>
+<h1 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1 安装主题"></a>1 安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
+<p><strong>git方式</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
+<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2 站点配置(Hexo配置)"></a>2 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3 测试浏览"></a>3 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-03-03：精简主题安装的操作</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客功能清单</title>
     <url>/2024/04/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BC%98%E5%8C%96%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>基本上全是参考官方博客的，我这里只是做了一些整理</p>
@@ -203,43 +240,6 @@
 <ul>
 <li>修订：2024-07-20，增加了一些功能</li>
 <li>初稿：2024-04-27</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装Next主题</title>
-    <url>/2022/04/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%AE%89%E8%A3%85Next%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
-<span id="more"></span>
-
-<blockquote>
-<p>适用于hexo 5.0以上版本</p>
-</blockquote>
-<h1 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1 安装主题"></a>1 安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
-<p><strong>git方式</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
-<h1 id="2-站点配置-Hexo配置"><a href="#2-站点配置-Hexo配置" class="headerlink" title="2 站点配置(Hexo配置)"></a>2 站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="3-测试浏览"><a href="#3-测试浏览" class="headerlink" title="3 测试浏览"></a>3 测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
-<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-03-03：精简主题安装的操作</li>
 </ul>
 ]]></content>
       <categories>
