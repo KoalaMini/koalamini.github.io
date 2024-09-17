@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="gCFeShh2-69RXcVsQJ6aHKJ7JvRC032yseGZKP5ouYg">
+  <meta name="msvalidate.01" content="A45B08D8766BD145293C1BF79DEEB39E">
+  <meta name="baidu-site-verification" content="codeva-DEHdrU95CT">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="用清华镜像安装与卸载homebrew">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac上homebrew安装与卸载">
+<meta property="og:url" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/index.html">
+<meta property="og:site_name" content="贝可考拉珍宝居">
+<meta property="og:description" content="用清华镜像安装与卸载homebrew">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png">
+<meta property="og:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png">
+<meta property="article:published_time" content="2024-03-03T04:32:08.000Z">
+<meta property="article:modified_time" content="2024-07-20T12:41:07.961Z">
+<meta property="article:author" content="贝可考拉">
+<meta property="article:tag" content="Mac">
+<meta property="article:tag" content="包管理器">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png">
+
+
+<link rel="canonical" href="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/","path":"2024/Mac上的homebrew安装与卸载/","title":"Mac上homebrew安装与卸载"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Mac上homebrew安装与卸载 | 贝可考拉珍宝居</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJBHS6YC3C"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-JJBHS6YC3C","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?e165dc597d76128c4f98294e2fc0fa3d"></script>
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "m8bj84uzgl");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">贝可考拉珍宝居</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-转载"><a href="/repost/" rel="section"><i class="fa fa-right-to-bracket fa-fw"></i>转载</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85"><span class="nav-text">1 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E5%AE%89%E8%A3%85Command-Line-Tools-CLT-for-Xcode"><span class="nav-text">1.1 安装Command Line Tools (CLT) for Xcode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE"><span class="nav-text">1.2 修改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E5%85%8B%E9%9A%86%E5%AE%89%E8%A3%85"><span class="nav-text">1.3 克隆安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%8D%B8%E8%BD%BD"><span class="nav-text">2 卸载</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">贝可考拉</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.koalamini.world/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="贝可考拉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="贝可考拉珍宝居">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Mac上homebrew安装与卸载 | 贝可考拉珍宝居">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Mac上homebrew安装与卸载
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-03-03 12:32:08" itemprop="dateCreated datePublished" datetime="2024-03-03T12:32:08+08:00">2024-03-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-07-20 20:41:07" itemprop="dateModified" datetime="2024-07-20T20:41:07+08:00">2024-07-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" itemprop="url" rel="index"><span itemprop="name">开发环境配置</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/" class="post-meta-item leancloud_visitors" data-flag-title="Mac上homebrew安装与卸载" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>用清华镜像安装与卸载homebrew</p>
+<span id="more"></span>
+
+<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h1><blockquote>
+<p><strong>环境说明</strong></p>
+<p>M1芯片 MacOS14(Sonoma)</p>
+</blockquote>
+<p>因为国内环境的缘故，用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
+<h2 id="1-1-安装Command-Line-Tools-CLT-for-Xcode"><a href="#1-1-安装Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="1.1 安装Command Line Tools (CLT) for Xcode"></a>1.1 安装Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="1-2-修改配置"><a href="#1-2-修改配置" class="headerlink" title="1.2 修改配置"></a>1.2 修改配置</h2><img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154946828.png" class="" title="image-20240303154946828">
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3-克隆安装"><a href="#1-3-克隆安装" class="headerlink" title="1.3 克隆安装"></a>1.3 克隆安装</h2><img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303151617963.png" class="" title="image-20240303151617963">
+
+<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
+<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
+<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152405525.png" class="" title="image-20240303152405525">
+
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152457610.png" class="" title="image-20240303152457610">
+
+<p><strong>2 运行<code>install.sh</code>文件</strong></p>
+<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303152615974.png" class="" title="image-20240303152615974">
+
+<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303153341438.png" class="" title="image-20240303153341438">
+
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303154630149.png" class="" title="image-20240303154630149">
+
+<blockquote>
+<p>下载会比较慢，请耐心等待</p>
+</blockquote>
+<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162408007.png" class="" title="image-20240303162408007">
+
+<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看homebrew安装在隐藏目录<code>/opt</code>里面（M芯片才是这个路径）</p>
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162720071.png" class="" title="image-20240303162720071">
+
+<img src="/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/image-20240303162858321.png" class="" title="image-20240303162858321">
+
+<h1 id="2-卸载"><a href="#2-卸载" class="headerlink" title="2 卸载"></a>2 卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>初稿：2024-03-03</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Mac/" rel="tag"># Mac</a>
+              <a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" rel="tag"># 包管理器</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA4-%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" rel="prev" title="博客搭建4-插入本地图片">
+                  <i class="fa fa-angle-left"></i> 博客搭建4-插入本地图片
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/%E8%80%83%E6%8B%89%E5%91%A8%E5%88%8A%E7%AC%AC2%E6%9C%9F/" rel="next" title="考拉周刊第2期">
+                  考拉周刊第2期 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="valine-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">贝可考拉</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
+      el: '#valine-comments',
+      path: "/2024/Mac%E4%B8%8A%E7%9A%84homebrew%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%B8%E8%BD%BD/",
+      serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
+    }));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
