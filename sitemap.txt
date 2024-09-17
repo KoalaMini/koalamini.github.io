@@ -1,9 +1,7 @@
+https://blog.koalamini.world/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5-%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/
 https://blog.koalamini.world/repost/learn-git-wangdoc/index.html
 https://blog.koalamini.world/repost/default/%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html
 https://blog.koalamini.world/repost/default/index.html
-https://blog.koalamini.world/demo/vuex%E4%B8%8A%E6%89%8B.html
-https://blog.koalamini.world/demo/animate.css%E5%8A%A8%E7%94%BB%E5%BA%93.html
-https://blog.koalamini.world/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5-%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/
 https://blog.koalamini.world/2021/vuex%E4%B8%8A%E6%89%8B/
 https://blog.koalamini.world/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2-%E6%90%9C%E7%B4%A2/
 https://blog.koalamini.world/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA6-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/

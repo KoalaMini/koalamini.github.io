@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.koalamini.world/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5-%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.koalamini.world/repost/learn-git-wangdoc/index.html</loc>
     
     <lastmod>2024-09-17</lastmod>
@@ -21,33 +30,6 @@
   
   <url>
     <loc>https://blog.koalamini.world/repost/default/index.html</loc>
-    
-    <lastmod>2024-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/demo/vuex%E4%B8%8A%E6%89%8B.html</loc>
-    
-    <lastmod>2024-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/demo/animate.css%E5%8A%A8%E7%94%BB%E5%BA%93.html</loc>
-    
-    <lastmod>2024-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.koalamini.world/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5-%E5%8A%9F%E8%83%BD%E6%B8%85%E5%8D%95/</loc>
     
     <lastmod>2024-09-17</lastmod>
     
