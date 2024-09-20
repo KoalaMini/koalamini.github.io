@@ -84,13 +84,8 @@
   <entry>
     <title>node包管理器</title>
     <url>/2024/node%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
-    <content><![CDATA[<p>摘要</p>
+    <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
 <span id="more"></span>
-
-<p>正文</p>
-<hr>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h2><h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a><strong>更新日志</strong></h2><p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
-<!-- more -->
 
 <p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
 <h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源安装 npm registry manager </span></span><br><span class="line">npm install nrm --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
