@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>vuex上手</title>
+		<script src="../library/vue.min.js"></script>
+		<script src="../library/vuex.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			{{ message }}
+		</div>
+
+		<script type="text/javascript">
+			const modulesA = {
+				// 命名空间
+				namespaced: true,
+				// 状态
+				state: () => ({
+					todos: [{
+							id: 1,
+							text: '已完成的任务',
+							done: true
+						},
+						{
+							id: 2,
+							text: '未完成的任务',
+							done: false
+						}
+					]
+				}),
+				// 获取状态属性
+				getters: {
+					// 获取完成的任务
+					doneTodos: state => {
+						return state.todos.filter(todo => todo.done);
+					},
+					// 获取完成任务的数量
+					doneTodosCount: (state, getters) => {
+						return getters.doneTodos.length
+					},
+					// 根据ID获取任务
+					getTodoById: (state) => (id) => {
+						return state.todos.find(todo => todo.id === id)
+					}
+				},
+				// 改变状态（同步）
+				mutations: {},
+				// 改变状态（异步）
+				actions: {}
+			}
+
+			const modulesB = {
+				namespaced: true,
+				state: {
+					count: 0
+				},
+				// 改变状态（同步）
+				mutations: {
+					// 计数+1
+					increment(state) {
+						state.count++
+					},
+					// 计数+n，提交载荷
+					incrementPayload(state, n) {
+						state.count += n
+					}
+				},
+				// 改变状态（异步）
+				actions: {
+					incrementAsync(context) {
+						setTimeout(() => {
+							context.commit('incrementPayload', 10)
+							console.log('5秒后，b/count', context.state.count)
+						}, 5*1000)
+					}
+				}
+			}
+
+			// vuex存储
+			const store = new Vuex.Store({
+				modules: {
+					a: modulesA,
+					b: modulesB
+				}
+			})
+			
+			// 获取状态
+			console.log('a/doneTodos', store.getters['a/doneTodos'])
+			store.commit('b/increment')
+			console.log('b/count', store.state.b.count)
+
+			new Vue({
+				el: '#app',
+				store: store,
+				data: {
+					message: '请按【f12】查看控制台'
+				},
+				methods: {
+					// 计数异步增加
+					incrementAsync(){
+						// vuex派发
+						this.$store.dispatch('b/incrementAsync')
+					}
+				},
+				// 挂载后
+				mounted() {
+					this.incrementAsync()
+				}
+			})
+		</script>
+	</body>
+</html>
