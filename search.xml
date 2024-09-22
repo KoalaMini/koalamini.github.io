@@ -7,7 +7,7 @@
 <span id="more"></span>
 
 
-<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h1><ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
 <li>下载安装<a href="https://nodejs.org/en/">NodeJs</a></li>
 <li>在要存储位置打开cmd</li>
 <li>命令行输入<code>npm install -g hexo-cli</code> 安装hexo脚手架</li>
@@ -16,7 +16,7 @@
 <li>命令行输入 <code>hexo server</code> 本地打开博客网站，浏览器打开<code>http://localhost:4000</code>，缩写为<code>hexo s</code><img src="/2021/2021070801/Snipaste_2021-07-07_23-12-29.jpg" class="">
 <img src="/2021/2021070801/Snipaste_2021-07-07_23-14-36.jpg" class=""></li>
 </ul>
-<h1 id="2-Github托管部署"><a href="#2-Github托管部署" class="headerlink" title="2 Github托管部署"></a>2 Github托管部署</h1><ul>
+<h1 id="Github托管部署"><a href="#Github托管部署" class="headerlink" title="Github托管部署"></a>Github托管部署</h1><ul>
 <li>命令行输入 <code>npm install hexo-deployer-git</code> 安装git部署工具</li>
 <li>打开<a href="https://github.com/">github</a>，新建仓库，注意仓库名称要以<code>.github.io</code>结尾<img src="/2021/2021070801/Snipaste_2021-07-07_23-35-48.jpg" class=""></li>
 <li>在<em>github</em> 个人设置中生成<em>token</em><img src="/2021/2021070801/Snipaste_2021-07-07_23-55-53.jpg" class="">
@@ -25,7 +25,7 @@
 <li>命令行输入 <code>hexo deploy</code> 部署到github仓库，缩写为<code>hexo d</code></li>
 <li>浏览器打开博客网址，例如：<a href="https://koalamini.github.io/">https://koalamini.github.io/</a></li>
 </ul>
-<h1 id="3-多设备写博客"><a href="#3-多设备写博客" class="headerlink" title="3 多设备写博客"></a>3 多设备写博客</h1><ul>
+<h1 id="多设备写博客"><a href="#多设备写博客" class="headerlink" title="多设备写博客"></a>多设备写博客</h1><ul>
 <li>备份<strong>主题配置文档</strong> <em>_config.yml</em>到站点根目录下的【themes】文件夹，更名为<code>_config.yml</code></li>
 <li>在<a href="https://gitee.com/">Gitee</a>或者<a href="https://github.com/">Github</a>新建<strong>私有仓库</strong></li>
 <li>使用Git工具同步，这样就可以多端同步写博客了</li>
@@ -59,12 +59,12 @@
     <content><![CDATA[<p>搜索相关的功能配置</p>
 <span id="more"></span>
 
-<h1 id="1-本地搜索"><a href="#1-本地搜索" class="headerlink" title="1 本地搜索"></a>1 本地搜索</h1><ul>
+<h1 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h1><ul>
 <li>命令行输入<code>npm install hexo-generator-searchdb</code>，安装<strong>搜索</strong>工具</li>
 <li>在<strong>站点配置文档</strong> <em>_config.yml</em>，新增内容<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></li>
 <li>在<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>local_search</em>，将子属性<em>enable</em>的值改为<code>true</code><img src="/2021/2021072001/image-20210711173129363.png" class="" title="image-20210711173129363"></li>
 </ul>
-<h1 id="2-网站地图"><a href="#2-网站地图" class="headerlink" title="2 网站地图"></a>2 网站地图</h1><p>网站地图是方便搜索引擎爬虫了解网站结构，提高网站曝光度。</p>
+<h1 id="网站地图"><a href="#网站地图" class="headerlink" title="网站地图"></a>网站地图</h1><p>网站地图是方便搜索引擎爬虫了解网站结构，提高网站曝光度。</p>
 <ul>
 <li><p>在<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<code>url</code>，后面的值设置为你的网站url，例如<code>https://koalamini.github.io</code></p>
 </li>
@@ -120,8 +120,7 @@
     <content><![CDATA[<p>了解vuex的特性，写了个demo，<a href="/demo/vuex%E4%B8%8A%E6%89%8B.html">本文示例</a></p>
 <span id="more"></span>
 
-
-<h1 id="1-核心概念"><a href="#1-核心概念" class="headerlink" title="1 核心概念"></a>1 核心概念</h1><ul>
+<h1 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h1><ul>
 <li>modules 模块<ul>
 <li>state 状态</li>
 <li>getters 获取状态属性</li>
@@ -130,7 +129,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="2-示例代码"><a href="#2-示例代码" class="headerlink" title="2 示例代码"></a>2 示例代码</h1><h2 id="2-1-CDN方式引入vue、vuex"><a href="#2-1-CDN方式引入vue、vuex" class="headerlink" title="2.1 CDN方式引入vue、vuex"></a>2.1 CDN方式引入vue、vuex</h2><ul>
+<h1 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h1><h2 id="CDN方式引入vue、vuex"><a href="#CDN方式引入vue、vuex" class="headerlink" title="CDN方式引入vue、vuex"></a>CDN方式引入vue、vuex</h2><ul>
 <li><p>外国cdn</p>
 <ul>
 <li><p><code>https://unpkg.com/vue</code></p>
@@ -822,9 +821,22 @@
     <content><![CDATA[<p>Mac上用Homebrew包管理器，很爽很快捷，Windows上也想用，找了下，微软自带的winget和开源的scoop可以搭配使用</p>
 <span id="more"></span>
 
-<h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装scoop</span></span><br><span class="line">iwr-usebget.scoop.sh | iex</span><br><span class="line"><span class="comment"># 查询scoop版本</span></span><br><span class="line">scoop --version</span><br><span class="line"><span class="comment"># 用scoop搜索软件</span></span><br><span class="line">scoop search nodejs</span><br><span class="line"><span class="comment"># 用scoop安装软件</span></span><br><span class="line">scoop install nodejs</span><br></pre></td></tr></table></figure>
+<h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><p>用Powershell输入<code>iwr -useb get.scoop.sh | iew</code>安装scoop</p>
+<ul>
+<li><p><code>iwr</code>是<code>Invoke-WebRequest</code>的缩写，从web获取内容，类似于<code>curl</code>和<code>wget</code></p>
+</li>
+<li><p><code>iwr -useb get.scoop.sh</code> 会从 <code>get.scoop.sh</code> 下载 Scoop 的安装脚本</p>
+</li>
+<li><p>下载的内容通过管道操作符 <code>|</code> 传递给 <code>iex</code>， <code>iex</code>是<code>Invoke-Expression</code>的缩写</p>
+</li>
+<li><p><code>iex</code> 会执行下载的脚本，从而完成 Scoop 的安装</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装scoop</span></span><br><span class="line">iwr -useb get.scoop.sh | iex</span><br><span class="line"><span class="comment"># 查询scoop版本</span></span><br><span class="line">scoop --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 搜索</span></span><br><span class="line">scoop search nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line">scoop install &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 卸载</span></span><br><span class="line">scoop uninstall &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 更新</span></span><br><span class="line">scoop update &lt;软件包名称&gt;</span><br></pre></td></tr></table></figure>
 
 <img src="/2024/2024091901/PixPin_2024-09-19_23-14-38.png" class="">
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询已安装的软件</span></span><br><span class="line">winget list</span><br><span class="line"><span class="comment"># 搜索软件</span></span><br><span class="line">winget search &lt;name&gt;</span><br><span class="line"><span class="comment"># 查询某软件包信息</span></span><br><span class="line">winget show &lt;软件包名称&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装软件</span></span><br><span class="line">winget install &lt;name&gt;</span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">winget uninstall &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级某个软件</span></span><br><span class="line">winget upgrade &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级所有软件</span></span><br><span class="line">winget upgrade --all</span><br></pre></td></tr></table></figure>
 
 <h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><img src="/2024/2024091901/PixPin_2024-09-19_23-11-47.png" class="">
 
@@ -854,12 +866,12 @@
 <span id="more"></span>
 
 <p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
-<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
 <h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>node版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
 
 <img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
+
+<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 
 <hr>
 <p><strong>更新记录</strong></p>
@@ -1955,6 +1967,12 @@
     <url>/repost/learn-git-wangdoc/commands/git-write-tree.html</url>
     <content><![CDATA[<p><code>git write-tree</code>命令用于根据当前缓存区域，生成一个树对象。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>20240922001</title>
+    <url>/nagging/20240922001.html</url>
+    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
   </entry>
 </search>
