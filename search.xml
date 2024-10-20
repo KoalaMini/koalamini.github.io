@@ -187,7 +187,36 @@
 <li><code>branch</code> 分支</li>
 <li><code>tag</code> 标签</li>
 </ul>
-<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">	participant 工作区 workspace</span><br><span class="line">	participant 暂存区 stage</span><br><span class="line">	participant 贮藏区 stash</span><br><span class="line">	participant 本地仓 repository</span><br><span class="line">	participant 远程仓 remote</span><br><span class="line">	</span><br><span class="line">	par 创建仓库</span><br><span class="line">		note over 本地仓 repository: git init</span><br><span class="line">		远程仓 remote -&gt;&gt; 本地仓 repository: git clone</span><br><span class="line">		本地仓 repository -&gt;&gt; 工作区 workspace: git switch</span><br><span class="line">    and 提交修改</span><br><span class="line">    	工作区 workspace -&gt;&gt; 暂存区 stage: git add</span><br><span class="line">    	暂存区 stage -&gt;&gt; 本地仓 repository: git commit</span><br><span class="line">    	本地仓 repository -&gt;&gt; 远程仓 remote: git push</span><br><span class="line">    and 拉取更新</span><br><span class="line">    	远程仓 remote -&gt;&gt; 本地仓 repository: git fetch</span><br><span class="line">    	本地仓 repository -&gt;&gt; 工作区 workspace: git merge/rebase</span><br><span class="line">    	远程仓 remote -&gt;&gt; 工作区 workspace: git pull</span><br><span class="line">    and 撤销修改</span><br><span class="line">    	暂存区 stage -&gt;&gt; 工作区 workspace: git restore/reset</span><br><span class="line">    	暂存区 stage -&gt;&gt; 贮藏区 stash: git stash</span><br><span class="line">    	本地仓 repository -&gt;&gt; 暂存区 stage: git reset/revert</span><br><span class="line">    	本地仓 repository -&gt;&gt; 本地仓 repository: git rebase</span><br><span class="line">	end</span><br></pre></td></tr></table></figure>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
+<code class="mermaid">
+sequenceDiagram
+participant 工作区 workspace
+participant 暂存区 stage
+participant 贮藏区 stash
+participant 本地仓 repository
+participant 远程仓 remote
+
+par 创建仓库
+  note over 本地仓 repository: git init
+  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
+  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
+and 提交修改
+  工作区 workspace -&gt;&gt; 暂存区 stage: git add
+  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
+  本地仓 repository -&gt;&gt; 远程仓 remote: git push
+and 拉取更新
+  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
+  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
+  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
+and 撤销修改
+  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
+  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
+  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
+  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
+end
+</code>
+</pre>
+
 
 <hr>
 <p><strong>更新日志</strong></p>
