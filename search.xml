@@ -874,6 +874,92 @@
       </tags>
   </entry>
   <entry>
+    <title>git概念</title>
+    <url>/2021/2021122701/</url>
+    <content><![CDATA[<p>git重要的术语概念</p>
+<span id="more"></span>
+
+<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
+<li><code>remote</code> 远程仓</li>
+<li><code>repository</code> 本地仓</li>
+<li><code>stash</code> 贮藏区</li>
+<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
+<li><code>workspace</code> 工作区</li>
+<li><code>branch</code> 分支</li>
+<li><code>tag</code> 标签</li>
+</ul>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">	participant 工作区 workspace</span><br><span class="line">	participant 暂存区 stage</span><br><span class="line">	participant 贮藏区 stash</span><br><span class="line">	participant 本地仓 repository</span><br><span class="line">	participant 远程仓 remote</span><br><span class="line">	</span><br><span class="line">	par 创建仓库</span><br><span class="line">		note over 本地仓 repository: git init</span><br><span class="line">		远程仓 remote -&gt;&gt; 本地仓 repository: git clone</span><br><span class="line">		本地仓 repository -&gt;&gt; 工作区 workspace: git switch</span><br><span class="line">    and 提交修改</span><br><span class="line">    	工作区 workspace -&gt;&gt; 暂存区 stage: git add</span><br><span class="line">    	暂存区 stage -&gt;&gt; 本地仓 repository: git commit</span><br><span class="line">    	本地仓 repository -&gt;&gt; 远程仓 remote: git push</span><br><span class="line">    and 拉取更新</span><br><span class="line">    	远程仓 remote -&gt;&gt; 本地仓 repository: git fetch</span><br><span class="line">    	本地仓 repository -&gt;&gt; 工作区 workspace: git merge/rebase</span><br><span class="line">    	远程仓 remote -&gt;&gt; 工作区 workspace: git pull</span><br><span class="line">    and 撤销修改</span><br><span class="line">    	暂存区 stage -&gt;&gt; 工作区 workspace: git restore/reset</span><br><span class="line">    	暂存区 stage -&gt;&gt; 贮藏区 stash: git stash</span><br><span class="line">    	本地仓 repository -&gt;&gt; 暂存区 stage: git reset/revert</span><br><span class="line">    	本地仓 repository -&gt;&gt; 本地仓 repository: git rebase</span><br><span class="line">	end</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241021：时序图增加英文</p>
+</li>
+<li><p>20211227：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>偏离分支的处理</title>
+    <url>/2024/2024102001/</url>
+    <content><![CDATA[<p>偏离分支处理需要变基rebase</p>
+<span id="more"></span>
+
+<h1 id="偏离分支的产生原因"><a href="#偏离分支的产生原因" class="headerlink" title="偏离分支的产生原因"></a>偏离分支的产生原因</h1><ul>
+<li>2024-10-10：你和你同事都从远程master分支拉取代码</li>
+<li>2024-10-11：你同事往远程master分支提交了2个commit</li>
+<li>2024-10-11：你在本地提交了2个commit</li>
+<li>2024-10-12：你需要往远程master推送commit，发现提示偏离分支</li>
+</ul>
+
+
+<h1 id="偏离分支的处理"><a href="#偏离分支的处理" class="headerlink" title="偏离分支的处理"></a>偏离分支的处理</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase &amp;&amp; git push</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20241020：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>远程仓库和远程分支更名</title>
+    <url>/2024/2024102002/</url>
+    <content><![CDATA[<p>远程仓库和远程分支更名，本地git操作记录</p>
+<span id="more"></span>
+
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将远程仓库名称从<code>ombretor</code>更改为<code>aimee</code>，将远程分支从<code>main</code>改为<code>master</code></p>
+
+
+<h1 id="本地git操作"><a href="#本地git操作" class="headerlink" title="本地git操作"></a>本地git操作</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看所有远程仓库（详细模式）</span><br><span class="line">git remote --verbose</span><br><span class="line"># 更新远程仓库url</span><br><span class="line">git remote set-url origin https://gitee.com/koalamini/aimee.git</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"># 修改远程仓库名称,origin改为gitee</span><br><span class="line">git remote rename origin gitee</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"></span><br><span class="line"># 本地仓库，将main更名为master</span><br><span class="line">git branch  #检查当前分支名称</span><br><span class="line">git branch --move master</span><br><span class="line"># 推送到远程仓库(远程仓库新建master分支)</span><br><span class="line">git push gitee master</span><br><span class="line"># 远程仓库将master设为默认分支</span><br><span class="line">git push set-head gitee master</span><br><span class="line"># 设置跟踪关系</span><br><span class="line">git remote -u gitee master</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20241020：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>碎碎念</title>
     <url>/nagging/index.html</url>
     <content><![CDATA[]]></content>
@@ -1187,7 +1273,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Git指南</title>
+    <title>Git教程</title>
     <url>/repost/learn-git-wangdoc/index.html</url>
     <content><![CDATA[<div class="note info no-icon"><p><strong>转载于：</strong> <a href="https://github.com/wangdoc/git-tutorial">阮一峰的WangDoc</a></p>
 </div>
@@ -1216,12 +1302,12 @@
 <td><a href="./commands/git-add.html">git-add</a><br /><a href="./commands/git-rm.html">git-rm</a></td>
 </tr>
 <tr>
-<td>代码提交</td>
+<td>提交</td>
 <td><a href="./commands/git-commit.html">git-commit</a><br /><a href="./commands/git-commit-tree.html">git-commit-tree</a></td>
 </tr>
 <tr>
 <td>分支</td>
-<td><a href="./commands/git-branch.html">git-branch</a><br /><a href="./commands/git-checkout.html">git-checkout</a><br /><a href="./commands/git-cherry-pick.html">git-cherry-pick</a><br /><a href="./commands/git-merge.html">git-merge</a></td>
+<td><a href="./commands/git-branch.html">git-branch</a><br /><a href="./commands/git-checkout.html">git-checkout</a><br /><a href="./commands/git-merge.html">git-merge</a><br /><a href="./commands/git-rebase.html">git-rebase</a><br /><a href="./commands/git-cherry-pick.html">git-cherry-pick</a></td>
 </tr>
 <tr>
 <td>标签</td>
@@ -1237,13 +1323,21 @@
 </tr>
 <tr>
 <td>撤销</td>
-<td><a href="./commands/git-reset.html">git-reset</a><br /><a href="./commands/git-revert.html">git-revert</a></td>
+<td><a href="./commands/git-reset.html">git-reset</a><br /><a href="./commands/git-revert.html">git-revert</a><br /><a href="./commands/git-restore.html">git-restore</a></td>
 </tr>
 <tr>
 <td>其他</td>
-<td><a href="./commands/git-cat-file.html">git-cat-file</a><br /><a href="./commands/git-hash-object.html">git-hash-object</a><br /><a href="./commands/git-ls-files.html">git-ls-files</a><br /><a href="./commands/git-rebase.html">git-rebase</a><br /><a href="./commands/git-restore.html">git-restore</a><br /><a href="./commands/git-rev-parse.html">git-rev-parse</a><br /><a href="./commands/git-stash.html">git-stash</a><br /><a href="./commands/git-update-index.html">git-update-index</a><br /><a href="./commands/git-update-ref.html">git-update-ref</a><br /><a href="./commands/git-write-tree.html">git-write-tree</a></td>
+<td><a href="./commands/git-stash.html">git-stash</a><br /><a href="./commands/git-cat-file.html">git-cat-file</a><br /><a href="./commands/git-hash-object.html">git-hash-object</a><br /><a href="./commands/git-ls-files.html">git-ls-files</a><br /><a href="./commands/git-rev-parse.html">git-rev-parse</a><br /><a href="./commands/git-update-index.html">git-update-index</a><br /><a href="./commands/git-update-ref.html">git-update-ref</a><br /><a href="./commands/git-write-tree.html">git-write-tree</a></td>
 </tr>
 </tbody></table>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li><p>20241020：整理一些分类</p>
+</li>
+<li><p>20240616：初稿</p>
+</li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -1952,6 +2046,12 @@
     <url>/repost/learn-git-wangdoc/commands/git-write-tree.html</url>
     <content><![CDATA[<p><code>git write-tree</code>命令用于根据当前缓存区域，生成一个树对象。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>20240922001</title>
+    <url>/nagging/20240922001.html</url>
+    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
   </entry>
 </search>
