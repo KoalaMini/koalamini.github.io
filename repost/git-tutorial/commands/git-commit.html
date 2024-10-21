@@ -24,25 +24,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="碎碎念">
-<meta property="og:url" content="https://blog.koalamini.world/nagging/index.html">
+    <meta name="description" content="git commit命令用于将暂存区中的变化提交到仓库区。 -m参数用于指定 commit 信息，是必需的。如果省略-m参数，git commit会自动打开文本编辑器，要求输入。 1$ git commit -m &quot;message&quot;  git commit命令可以跳过暂存区，直接将文件从工作区提交到仓库区。 1$ git commit &lt;filename&gt;  -m">
+<meta property="og:type" content="website">
+<meta property="og:title" content="git commit">
+<meta property="og:url" content="https://blog.koalamini.world/repost/git-tutorial/commands/git-commit.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
+<meta property="og:description" content="git commit命令用于将暂存区中的变化提交到仓库区。 -m参数用于指定 commit 信息，是必需的。如果省略-m参数，git commit会自动打开文本编辑器，要求输入。 1$ git commit -m &quot;message&quot;  git commit命令可以跳过暂存区，直接将文件从工作区提交到仓库区。 1$ git commit &lt;filename&gt;  -m">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-09-21T09:45:50.439Z">
+<meta property="article:published_time" content="2024-06-16T02:24:48.000Z">
+<meta property="article:modified_time" content="2024-10-21T04:07:23.073Z">
 <meta property="article:author" content="贝可考拉">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.koalamini.world/nagging/">
+<link rel="canonical" href="https://blog.koalamini.world/repost/git-tutorial/commands/git-commit">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/nagging/index.html","path":"nagging/index.html","title":"碎碎念"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/repost/git-tutorial/commands/git-commit.html","path":"repost/git-tutorial/commands/git-commit.html","title":"git commit"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>贝可考拉珍宝居</title>
+<title>git commit | 贝可考拉珍宝居
+</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJBHS6YC3C"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-JJBHS6YC3C","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -140,7 +143,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -153,6 +156,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">命令行参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a"><span class="nav-number">1.1.</span> <span class="nav-text">-a</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%93allow-empty"><span class="nav-number">1.2.</span> <span class="nav-text">–allow-empty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%93amend"><span class="nav-number">1.3.</span> <span class="nav-text">–amend</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%93fixup"><span class="nav-number">1.4.</span> <span class="nav-text">–fixup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#m"><span class="nav-number">1.5.</span> <span class="nav-text">-m</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%80%93squash"><span class="nav-number">1.6.</span> <span class="nav-text">–squash</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -192,145 +196,76 @@
 
     </div>
 
-    <div class="main-inner nagging posts-expand">
+    <div class="main-inner page posts-expand">
 
-      
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240922001 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-        <h1 class="post-title">20240922001
-        </h1>
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>哭😭，被产品运营各种指标搞得晕头转向</p>
+    <div class="post-block" lang="zh-CN"><header class="post-header">
 
-      
-    </div>
+<h1 class="post-title" itemprop="name headline">git commit
+</h1>
 
-    
-    
-    
-
-  </article>
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/repost/">转载</a></li>
+            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
+            <li><a href="/repost/git-tutorial/commands/">COMMANDS</a></li>
+            <li>GIT-COMMIT</li>
+  </ul>
 </div>
 
-
-
-      
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240921001 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-        <h1 class="post-title">20240921001
-        </h1>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
+</header>
 
       
-    </div>
-
-    
-    
-    
-
-  </article>
-</div>
-
-
-
       
+      
+      <div class="post-body">
+          <p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
+<p><code>-m</code>参数用于指定 commit 信息，是必需的。如果省略<code>-m</code>参数，<code>git commit</code>会自动打开文本编辑器，要求输入。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
 
+<p><code>git commit</code>命令可以跳过暂存区，直接将文件从工作区提交到仓库区。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit &lt;filename&gt;  -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
 
-<div class="post-block">
-  
-  
+<p>上面命令会将工作区中指定文件的变化，先添加到暂存区，然后再将暂存区提交到仓库区。</p>
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="a"><a href="#a" class="headerlink" title="-a"></a>-a</h3><p><code>-a</code>参数用于先将所有工作区的变动文件，提交到暂存区，再运行<code>git commit</code>。用了<code>-a</code>参数，就不用执行<code>git add .</code>命令了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -am <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
+<p>如果没有指定提交说明，运行下面的命令会直接打开默认的文本编辑器，让用户撰写提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
+<h3 id="–allow-empty"><a href="#–allow-empty" class="headerlink" title="–allow-empty"></a>–allow-empty</h3><p><code>--allow-empty</code>参数用于没有提交信息的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --allow-empty</span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
+<h3 id="–amend"><a href="#–amend" class="headerlink" title="–amend"></a>–amend</h3><p><code>--amend</code>参数用于撤销上一次 commit，然后生成一个新的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend - m <span class="string">&quot;new commit message&quot;</span></span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240921002 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
+<h3 id="–fixup"><a href="#–fixup" class="headerlink" title="–fixup"></a>–fixup</h3><p><code>--fixup</code>参数的含义是，当前添加的 commit 是以前某一个 commit 的修正。以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --fixup &lt;commit&gt;</span><br></pre></td></tr></table></figure>
 
-        <h1 class="post-title">20240921002
-        </h1>
+<p>执行上面的命令，提交说明将自动生成，即在目标 commit 的提交说明的最前面，添加“fixup! ”这个词。</p>
+<h3 id="m"><a href="#m" class="headerlink" title="-m"></a>-m</h3><p><code>-m</code>参数用于添加提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
+<h3 id="–squash"><a href="#–squash" class="headerlink" title="–squash"></a>–squash</h3><p><code>--squash</code>参数的作用与<code>--fixup</code>类似，表示当前添加的 commit 应该与以前某一个 commit 合并成一个，以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --squash &lt;commit&gt;</span><br></pre></td></tr></table></figure>
 
+      </div>
+      
+      
       
     </div>
+  <ul class="breadcrumb">
+            <li><a href="/repost/">转载</a></li>
+            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
+            <li><a href="/repost/git-tutorial/commands/">COMMANDS</a></li>
+            <li>GIT-COMMIT</li>
+  </ul>
 
     
     
-    
-
-  </article>
-</div>
-
-
 
 
 </div>
@@ -419,7 +354,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
       el: '#valine-comments',
-      path: "/nagging/",
+      path: "/repost/git-tutorial/commands/git-commit.html",
       serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
     }));
   }, window.Valine);

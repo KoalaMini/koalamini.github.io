@@ -24,25 +24,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="碎碎念">
-<meta property="og:url" content="https://blog.koalamini.world/nagging/index.html">
+    <meta name="description" content="12# 列出没有被.gitignore忽视的文件$ git ls-files --other --ignored --exclude-standard">
+<meta property="og:type" content="website">
+<meta property="og:title" content="git ls-files">
+<meta property="og:url" content="https://blog.koalamini.world/repost/git-tutorial/commands/git-ls-files.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
+<meta property="og:description" content="12# 列出没有被.gitignore忽视的文件$ git ls-files --other --ignored --exclude-standard">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-09-21T09:45:50.439Z">
+<meta property="article:published_time" content="2024-06-16T02:24:48.000Z">
+<meta property="article:modified_time" content="2024-10-21T04:07:23.074Z">
 <meta property="article:author" content="贝可考拉">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.koalamini.world/nagging/">
+<link rel="canonical" href="https://blog.koalamini.world/repost/git-tutorial/commands/git-ls-files">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/nagging/index.html","path":"nagging/index.html","title":"碎碎念"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/repost/git-tutorial/commands/git-ls-files.html","path":"repost/git-tutorial/commands/git-ls-files.html","title":"git ls-files"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>贝可考拉珍宝居</title>
+<title>git ls-files | 贝可考拉珍宝居
+</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJBHS6YC3C"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-JJBHS6YC3C","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -192,145 +195,49 @@
 
     </div>
 
-    <div class="main-inner nagging posts-expand">
+    <div class="main-inner page posts-expand">
 
-      
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240922001 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-        <h1 class="post-title">20240922001
-        </h1>
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>哭😭，被产品运营各种指标搞得晕头转向</p>
+    <div class="post-block" lang="zh-CN"><header class="post-header">
 
-      
-    </div>
+<h1 class="post-title" itemprop="name headline">git ls-files
+</h1>
 
-    
-    
-    
-
-  </article>
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/repost/">转载</a></li>
+            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
+            <li><a href="/repost/git-tutorial/commands/">COMMANDS</a></li>
+            <li>GIT-LS-FILES</li>
+  </ul>
 </div>
 
-
+</header>
 
       
+      
+      
+      <div class="post-body">
+          <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 列出没有被.gitignore忽视的文件</span></span><br><span class="line">$ git ls-files --other --ignored --exclude-standard</span><br></pre></td></tr></table></figure>
 
 
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240921001 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-        <h1 class="post-title">20240921001
-        </h1>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
-
+      </div>
+      
+      
       
     </div>
+  <ul class="breadcrumb">
+            <li><a href="/repost/">转载</a></li>
+            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
+            <li><a href="/repost/git-tutorial/commands/">COMMANDS</a></li>
+            <li>GIT-LS-FILES</li>
+  </ul>
 
     
     
-    
-
-  </article>
-</div>
-
-
-
-      
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="贝可考拉">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="20240921002 | 贝可考拉珍宝居">
-      <meta itemprop="description" content="">
-    </span>
-
-        <h1 class="post-title">20240921002
-        </h1>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-  </article>
-</div>
-
-
 
 
 </div>
@@ -419,7 +326,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
       el: '#valine-comments',
-      path: "/nagging/",
+      path: "/repost/git-tutorial/commands/git-ls-files.html",
       serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
     }));
   }, window.Valine);
