@@ -27,22 +27,24 @@
     <meta name="description" content="git重要的术语概念">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git概念">
-<meta property="og:url" content="https://blog.koalamini.world/2021/2021122701/index.html">
+<meta property="og:url" content="https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
 <meta property="og:description" content="git重要的术语概念">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/bg2015120901.png">
 <meta property="article:published_time" content="2021-12-27T02:09:55.000Z">
-<meta property="article:modified_time" content="2024-10-21T01:40:47.142Z">
+<meta property="article:modified_time" content="2024-12-17T12:48:27.004Z">
 <meta property="article:author" content="贝可考拉">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/bg2015120901.png">
 
 
-<link rel="canonical" href="https://blog.koalamini.world/2021/2021122701/">
+<link rel="canonical" href="https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/2021/2021122701/","path":"2021/2021122701/","title":"git概念"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/","path":"2021/git概念/","title":"git概念"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>git概念 | 贝可考拉珍宝居</title>
@@ -207,7 +209,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.koalamini.world/2021/2021122701/">
+    <link itemprop="mainEntityOfPage" href="https://blog.koalamini.world/2021/git%E6%A6%82%E5%BF%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -243,7 +245,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-10-21 09:40:47" itemprop="dateModified" datetime="2024-10-21T09:40:47+08:00">2024-10-21</time>
+      <time title="修改时间：2024-12-17 20:48:27" itemprop="dateModified" datetime="2024-12-17T20:48:27+08:00">2024-12-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -256,7 +258,7 @@
     </span>
 
   
-    <span id="/2021/2021122701/" class="post-meta-item leancloud_visitors" data-flag-title="git概念" title="阅读次数">
+    <span id="/2021/git%E6%A6%82%E5%BF%B5/" class="post-meta-item leancloud_visitors" data-flag-title="git概念" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -275,49 +277,84 @@
     <div class="post-body" itemprop="articleBody"><p>git重要的术语概念</p>
 <span id="more"></span>
 
-<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
-<li><code>remote</code> 远程仓</li>
-<li><code>repository</code> 本地仓</li>
-<li><code>stash</code> 贮藏区</li>
-<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
-<li><code>workspace</code> 工作区</li>
-<li><code>branch</code> 分支</li>
-<li><code>tag</code> 标签</li>
-</ul>
+<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><img src="/2021/git%E6%A6%82%E5%BF%B5/bg2015120901.png" class="" title="bg2015120901">
+
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>remote</td>
+<td>远程仓库</td>
+</tr>
+<tr>
+<td>repository</td>
+<td>本地仓库</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>分支</td>
+</tr>
+<tr>
+<td>index&#x2F;stage&#x2F;cache</td>
+<td>索引区&#x2F;暂存区&#x2F;缓存区</td>
+</tr>
+<tr>
+<td>workspace</td>
+<td>工作区</td>
+</tr>
+<tr>
+<td>stash</td>
+<td>贮藏区</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签</td>
+</tr>
+</tbody></table>
 <h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
 <code class="mermaid">
 sequenceDiagram
-participant 工作区 workspace
-participant 暂存区 stage
-participant 贮藏区 stash
-participant 本地仓 repository
-participant 远程仓 remote
+participant workspace
+participant stage
+participant stash
+participant repository
+participant remote
 
 par 创建仓库
-  note over 本地仓 repository: git init
-  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
-  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
+  note over repository: git init
+  remote -&gt;&gt; repository: git clone
+  repository -&gt;&gt;  workspace: git switch
 and 提交修改
-  工作区 workspace -&gt;&gt; 暂存区 stage: git add
-  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
-  本地仓 repository -&gt;&gt; 远程仓 remote: git push
+   workspace -&gt;&gt; stage: git add
+  stage -&gt;&gt; repository: git commit
+  repository -&gt;&gt; remote: git push
 and 拉取更新
-  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
-  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
-  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
+  remote -&gt;&gt; repository: git fetch
+  repository -&gt;&gt;  workspace: git merge&#x2F;rebase
+  remote -&gt;&gt;  workspace: git pull
 and 撤销修改
-  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
-  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
-  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
-  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
+  stage -&gt;&gt;  workspace: git restore&#x2F;reset
+  stage -&gt;&gt; stash: git stash
+  repository -&gt;&gt; stage: git reset&#x2F;revert
+  repository -&gt;&gt; repository: git rebase
 end
 </code>
 </pre>
 
 
 <hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">常用 Git 命令清单 | 阮一峰网络日志</a></li>
+</ul>
 <p><strong>更新日志</strong></p>
 <ul>
+<li><p>20241217：增加阮一峰那经典的流程图，优化展现形式</p>
+</li>
 <li><p>20241021：时序图增加英文</p>
 </li>
 <li><p>20211227：初稿</p>
@@ -425,6 +462,8 @@ end
 <script src="/js/third-party/search/local-search.js"></script>
 
 
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js","integrity":"sha256-stuqcu2FrjYCXDOytWFA5SoUE/r3nkp6gTglzNSlavU="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
 
 
   <script src="/js/third-party/fancybox.js"></script>
@@ -443,7 +482,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
       el: '#valine-comments',
-      path: "/2021/2021122701/",
+      path: "/2021/git%E6%A6%82%E5%BF%B5/",
       serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
     }));
   }, window.Valine);
