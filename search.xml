@@ -173,69 +173,6 @@
       </tags>
   </entry>
   <entry>
-    <title>git概念</title>
-    <url>/2021/2021122701/</url>
-    <content><![CDATA[<p>git重要的术语概念</p>
-<span id="more"></span>
-
-<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
-<li><code>remote</code> 远程仓</li>
-<li><code>repository</code> 本地仓</li>
-<li><code>stash</code> 贮藏区</li>
-<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
-<li><code>workspace</code> 工作区</li>
-<li><code>branch</code> 分支</li>
-<li><code>tag</code> 标签</li>
-</ul>
-<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
-<code class="mermaid">
-
-sequenceDiagram
-participant 工作区 workspace
-participant 暂存区 stage
-participant 贮藏区 stash
-participant 本地仓 repository
-participant 远程仓 remote
-
-par 创建仓库
-  note over 本地仓 repository: git init
-  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
-  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
-and 提交修改
-  工作区 workspace -&gt;&gt; 暂存区 stage: git add
-  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
-  本地仓 repository -&gt;&gt; 远程仓 remote: git push
-and 拉取更新
-  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
-  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
-  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
-and 撤销修改
-  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
-  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
-  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
-  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
-end
-</code>
-</pre>
-
-
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>20241021：时序图增加英文</p>
-</li>
-<li><p>20211227：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考拉周刊第1期</title>
     <url>/2024/2024030201/</url>
     <content><![CDATA[<p>换位思考与共情是超能力，Arc 浏览器的 WebOS 理念我深表赞同，古腾堡原理应用于信息排版，期待苹果的AI体验，坚持冥想很重要</p>
@@ -311,6 +248,47 @@ end
       </tags>
   </entry>
   <entry>
+    <title>博客搭建4-插入本地图片</title>
+    <url>/2024/2024030301/</url>
+    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
+<span id="more"></span>
+
+<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
+<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
+<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
+<img src="/2024/2024030301/image-20240303115738031.png" class="" title="image-20240303115738031">
+
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
+<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
+<li>用typora编写博客，并粘贴图片</li>
+<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
+<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
+<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
+<li>打开 <code>http://&lt;子域名&gt;.github.io</code>检查图片是否正常显示</li>
+</ul>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
+<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建3-安装Next主题</title>
     <url>/2022/2022041001/</url>
     <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
@@ -358,6 +336,69 @@ end
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git概念</title>
+    <url>/2021/2021122701/</url>
+    <content><![CDATA[<p>git重要的术语概念</p>
+<span id="more"></span>
+
+<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
+<li><code>remote</code> 远程仓</li>
+<li><code>repository</code> 本地仓</li>
+<li><code>stash</code> 贮藏区</li>
+<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
+<li><code>workspace</code> 工作区</li>
+<li><code>branch</code> 分支</li>
+<li><code>tag</code> 标签</li>
+</ul>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
+<code class="mermaid">
+
+sequenceDiagram
+participant 工作区 workspace
+participant 暂存区 stage
+participant 贮藏区 stash
+participant 本地仓 repository
+participant 远程仓 remote
+
+par 创建仓库
+  note over 本地仓 repository: git init
+  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
+  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
+and 提交修改
+  工作区 workspace -&gt;&gt; 暂存区 stage: git add
+  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
+  本地仓 repository -&gt;&gt; 远程仓 remote: git push
+and 拉取更新
+  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
+  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
+  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
+and 撤销修改
+  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
+  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
+  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
+  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
+end
+</code>
+</pre>
+
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241021：时序图增加英文</p>
+</li>
+<li><p>20211227：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -425,180 +466,6 @@ end
         <tag>Mac</tag>
         <tag>包管理器</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>博客搭建4-插入本地图片</title>
-    <url>/2024/2024030301/</url>
-    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
-<span id="more"></span>
-
-<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
-<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
-
-<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
-<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
-<img src="/2024/2024030301/image-20240303115738031.png" class="" title="image-20240303115738031">
-
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
-<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
-<li>用typora编写博客，并粘贴图片</li>
-<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
-<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
-<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
-<li>打开 <code>http://&lt;子域名&gt;.github.io</code>检查图片是否正常显示</li>
-</ul>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
-<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-03-03： 新建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考拉周刊第2期</title>
-    <url>/2024/2024030901/</url>
-    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
-<td>#数据分析</td>
-</tr>
-</tbody></table>
-<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
-<table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
-<td>#竞品分析</td>
-</tr>
-</tbody></table>
-<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
-<td>#沟通协作</td>
-</tr>
-</tbody></table>
-<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
-<td>#陌生人社交</td>
-</tr>
-<tr>
-<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
-<td>#人力资源</td>
-</tr>
-</tbody></table>
-<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
-<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
-<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-03-09： 创建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-      <tags>
-        <tag>观察记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考拉周刊第3期</title>
-    <url>/2024/2024031201/</url>
-    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
-<p><code>需求文档</code></p>
-<p>对比了飞书、语雀、云效的PRD模板：</p>
-<ul>
-<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
-<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
-<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
-</ul>
-<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
-<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
-<p><code>需求分析</code></p>
-<p>博主讨论了需求边界，他分为3种：</p>
-<ul>
-<li><p>开放型： 需求无从下手</p>
-</li>
-<li><p>封闭型： 需求不得不做，老板说</p>
-</li>
-<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
-</li>
-</ul>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
-<p><code>职业发展</code> <code>产品职业观</code></p>
-<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
-<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
-<p><code>职业发展</code></p>
-<p>短期价值： 领导的信任、表扬、提成加薪</p>
-<p>长期价值： 经验积累和综合素质提升</p>
-<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
-<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
-<thead>
-<tr>
-<th>昵称</th>
-<th>平台</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
-<td>人人都是产品经理</td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240312：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
   </entry>
   <entry>
     <title>博客搭建5-功能清单</title>
@@ -774,6 +641,62 @@ end
       </tags>
   </entry>
   <entry>
+    <title>考拉周刊第3期</title>
+    <url>/2024/2024031201/</url>
+    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
+<p><code>需求文档</code></p>
+<p>对比了飞书、语雀、云效的PRD模板：</p>
+<ul>
+<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
+<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
+<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
+</ul>
+<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
+<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
+<p><code>需求分析</code></p>
+<p>博主讨论了需求边界，他分为3种：</p>
+<ul>
+<li><p>开放型： 需求无从下手</p>
+</li>
+<li><p>封闭型： 需求不得不做，老板说</p>
+</li>
+<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
+</li>
+</ul>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
+<p><code>职业发展</code> <code>产品职业观</code></p>
+<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
+<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
+<p><code>职业发展</code></p>
+<p>短期价值： 领导的信任、表扬、提成加薪</p>
+<p>长期价值： 经验积累和综合素质提升</p>
+<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
+<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
+<td>人人都是产品经理</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240312：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+  </entry>
+  <entry>
     <title>frp内网穿透</title>
     <url>/2024/2024072701/</url>
     <content><![CDATA[<p>之前<code>ddns-go + ipv6</code>方案失效了，买了台阿里云服务器做内网穿透，上个周末折腾了1天没成功，昨晚+今天上午搞成功了，😆开心～</p>
@@ -897,6 +820,43 @@ end
       </categories>
       <tags>
         <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node包管理器</title>
+    <url>/2024/2024092001/</url>
+    <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
+<span id="more"></span>
+
+<p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
+<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>node版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
+
+<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+
+<h1 id="ncu"><a href="#ncu" class="headerlink" title="ncu"></a>ncu</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
+
+<h1 id="npm-check"><a href="#npm-check" class="headerlink" title="npm-check"></a>npm-check</h1><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
+</li>
+<li><p>20240920：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>node</tag>
       </tags>
   </entry>
   <entry>
@@ -1054,41 +1014,86 @@ end
       </tags>
   </entry>
   <entry>
-    <title>node包管理器</title>
-    <url>/2024/2024092001/</url>
-    <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
+    <title>考拉周刊第2期</title>
+    <url>/2024/2024030901/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
 <span id="more"></span>
 
-<p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
-<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>node版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
-
-<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<h1 id="ncu"><a href="#ncu" class="headerlink" title="ncu"></a>ncu</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
-
-<h1 id="npm-check"><a href="#npm-check" class="headerlink" title="npm-check"></a>npm-check</h1><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
-
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
 <hr>
-<p><strong>更新记录</strong></p>
+<p><strong>更新日志</strong></p>
 <ul>
-<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
-</li>
-<li><p>20240920：初稿</p>
-</li>
+<li>2024-03-09： 创建</li>
 </ul>
 ]]></content>
       <categories>
-        <category>程序猿</category>
-        <category>开发环境配置</category>
+        <category>考拉周刊</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>node</tag>
+        <tag>观察记录</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>2024年生日快乐</title>
@@ -1113,11 +1118,6 @@ end
 <!-- flag of hidden posts -->]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>关于这里</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
@@ -1130,16 +1130,26 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>20240921001</title>
     <url>/nagging/20240921001.html</url>
     <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
 ]]></content>
   </entry>
   <entry>
-    <title>20240921002</title>
-    <url>/nagging/20240921002.html</url>
-    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
+    <title>20240922001</title>
+    <url>/nagging/20240922001.html</url>
+    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>碎碎念</title>
+    <url>/nagging/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>转载</title>
@@ -1153,234 +1163,6 @@ end
 <p>Git教程</p><p>转载于阮一峰WangDoc的git-tutuorial</p>
 <a href="./git-tutorial/index.html"></a>
 </div></div>
-]]></content>
-  </entry>
-  <entry>
-    <title>20240922001</title>
-    <url>/nagging/20240922001.html</url>
-    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>碎碎念</title>
-    <url>/nagging/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>转载</title>
-    <url>/repost/default/index.html</url>
-    <content><![CDATA[<ul>
-<li><a href="./%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html">前后端接口规范 - RESTful 版</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>前后端接口规范 - RESTful 版</title>
-    <url>/repost/default/%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html</url>
-    <content><![CDATA[<div class="note info no-icon"><p><strong>转载于：</strong> <a href="https://github.com/olivewind/restful-api-specification">restful-api-specification</a></p>
-</div>
-
-<p>本规范的三个目标：<strong>简洁</strong>、<strong>统一</strong>、<strong>开放</strong>。</p>
-<p>关于如何设计良好风格的 RESTful API，Github 有一份<a href="https://docs.github.com/en/rest/reference/actions">满分答案</a>，熟读三遍，其义自现。本规范将在其基础之上使用尽可能简单的表述方式从以下几个常见部分作出详细约定：</p>
-<ul>
-<li><a href="#1-%E5%9F%BA%E7%A1%80%E7%BA%A6%E5%AE%9A">基础约定</a></li>
-<li><a href="#2-%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%8E%A5%E5%8F%A3">创建类接口</a></li>
-<li><a href="#3-%E6%9F%A5%E8%AF%A2%E7%B1%BB%E6%8E%A5%E5%8F%A3">查询类接口</a></li>
-<li><a href="#4-%E6%96%87%E4%BB%B6%E7%B1%BB%E6%8E%A5%E5%8F%A3">文件类接口</a></li>
-<li><a href="#5-%E6%95%8F%E6%84%9F%E7%B1%BB%E6%8E%A5%E5%8F%A3">敏感类接口</a></li>
-<li><a href="#6-%E5%9B%BE%E8%A1%A8%E7%B1%BB%E6%8E%A5%E5%8F%A3">图表类接口</a></li>
-</ul>
-<blockquote>
-<p>注意本规范是笔者在所在公司内部制定的规范整理而来的接口规范模板，仅供你在制定规范时候参考，在落地时应根据团队实际情况作出调整，欢迎对本规范进行补充</p>
-</blockquote>
-<h1 id="1-基础约定"><a href="#1-基础约定" class="headerlink" title="1 基础约定"></a>1 基础约定</h1><h2 id="1-1-接口路径以-api-或-version-api-开头"><a href="#1-1-接口路径以-api-或-version-api-开头" class="headerlink" title="1.1 接口路径以 /api 或 /[version]/api 开头"></a>1.1 接口路径以 <code>/api</code> 或 <code>/[version]/api</code> 开头</h2><p>正确：<code>/api/task</code> 或 <code>/v2/api/tasks</code></p>
-<p>错误：<code>/biz/tasks</code> 或 <code>/biz/api/tasks</code></p>
-<p>注意：一个产品无论后端有多少个服务组成也应该只有一个 API 入口</p>
-<h2 id="1-2-接口路径以-api-aa-bb-cc-dd-方式命名"><a href="#1-2-接口路径以-api-aa-bb-cc-dd-方式命名" class="headerlink" title="1.2 接口路径以 api/aa-bb/cc-dd 方式命名"></a>1.2 接口路径以 <code>api/aa-bb/cc-dd</code> 方式命名</h2><p>正确：<code>/api/task-groups</code></p>
-<p>错误：<code>/api/taskGroups</code></p>
-<h2 id="1-3-接口路径使用资源名词而非动词，动作应由-HTTP-Method-体现，资源组可以进行逻辑嵌套"><a href="#1-3-接口路径使用资源名词而非动词，动作应由-HTTP-Method-体现，资源组可以进行逻辑嵌套" class="headerlink" title="1.3 接口路径使用资源名词而非动词，动作应由 HTTP Method 体现，资源组可以进行逻辑嵌套"></a>1.3 接口路径使用资源名词而非动词，动作应由 HTTP Method 体现，资源组可以进行逻辑嵌套</h2><p>正确：POST <code>/api/tasks</code> 或 <code>/api/task-groups/1/tasks</code> 表示在 id 为 1 的任务组下创建任务</p>
-<p>错误：POST <code>/api/create-task</code></p>
-<h2 id="1-4-接口路径中的资源使用复数而非单数"><a href="#1-4-接口路径中的资源使用复数而非单数" class="headerlink" title="1.4 接口路径中的资源使用复数而非单数"></a>1.4 接口路径中的资源使用复数而非单数</h2><p>正确：<code>/api/tasks</code></p>
-<p>错误：<code>/api/task</code></p>
-<h2 id="1-5-接口设计面向开放接口，而非单纯前端业务"><a href="#1-5-接口设计面向开放接口，而非单纯前端业务" class="headerlink" title="1.5 接口设计面向开放接口，而非单纯前端业务"></a>1.5 接口设计面向开放接口，而非单纯前端业务</h2><p>要求我们在给接口路径命名时要面向通用业务而非单纯前端业务，以获取筛选表单中的任务字段下拉选项为例</p>
-<p>正确：<code>/api/tasks</code></p>
-<p>错误：<code>/api/task-select-options</code></p>
-<p>虽然这个接口暂时只用在表单的下拉选择中，但是需要考虑的是在未来可能会被用在任意场景，因此应以更通用方式提供接口交由客户端自由组合</p>
-<h2 id="1-6-规范使用-HTTP-方法"><a href="#1-6-规范使用-HTTP-方法" class="headerlink" title="1.6 规范使用 HTTP 方法"></a>1.6 规范使用 HTTP 方法</h2><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>场景</th>
-<th>例如</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>GET</td>
-<td>获取数据</td>
-<td>获取单个：GET <code>/api/tasks/1</code>、获取列表：GET <code>/api/tasks</code></td>
-</tr>
-<tr>
-<td>POST</td>
-<td>创建数据</td>
-<td>创建单个：POST <code>/api/tasks</code></td>
-</tr>
-<tr>
-<td>PATCH</td>
-<td>差量修改数据</td>
-<td>修改单个：PATCH <code>/api/tasks/1</code></td>
-</tr>
-<tr>
-<td>PUT</td>
-<td>全量修改数据</td>
-<td>修改单个：PUT <code>/api/tasks/1</code></td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td>删除数据</td>
-<td>删除单个：DELETE <code>/api/tasks/1</code></td>
-</tr>
-</tbody></table>
-<p>其它更多请求方法请查阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods">MDN Web Docs</a></p>
-<h2 id="1-7-规范使用-HTTP-状态码"><a href="#1-7-规范使用-HTTP-状态码" class="headerlink" title="1.7 规范使用 HTTP 状态码"></a>1.7 规范使用 HTTP 状态码</h2><table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>200</td>
-<td>创建成功，通常用在同步操作时</td>
-</tr>
-<tr>
-<td>202</td>
-<td>创建成功，通常用在异步操作时，表示请求已接受，但是还没有处理完成</td>
-</tr>
-<tr>
-<td>400</td>
-<td>参数错误，通常用在表单参数错误</td>
-</tr>
-<tr>
-<td>401</td>
-<td>授权错误，通常用在 Token 缺失或失效，注意 401 会触发前端跳转到登录页</td>
-</tr>
-<tr>
-<td>403</td>
-<td>操作被拒绝，通常发生在权限不足时，注意此时务必带上详细错误信息</td>
-</tr>
-<tr>
-<td>404</td>
-<td>没有找到对象，通常发生在使用错误的 id 查询详情</td>
-</tr>
-<tr>
-<td>500</td>
-<td>服务器错误</td>
-</tr>
-</tbody></table>
-<p>其它更多响应状态码请查阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">MDN Web Docs</a></p>
-<h2 id="1-8-基础外层数据结构"><a href="#1-8-基础外层数据结构" class="headerlink" title="1.8 基础外层数据结构"></a>1.8 基础外层数据结构</h2><ul>
-<li><p>不分页数据</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分页数据</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">items</span>: [&#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;任务 2&#x27;</span></span><br><span class="line">    &#125;],</span><br><span class="line">    <span class="attr">total</span>: <span class="number">2</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>注意：其中 <code>code</code> 表示业务编码，<code>status</code> 表示 HTTP 响应状态码，如此设计的原因是部分场景下前后端之间存在不可控的网关或代理（比如某些网关有一些流量控制策略会导致直接返回 403 响应状态码，此时客户端无法分辨 403 是网关的还是业务方），类似这类情况下为了能够让客户端正确分辨业务方的真实处理结果则需要在响应体加上 <code>status</code>，而 <code>code</code> 表示的业务编码是为了帮助工程师更容易定位问题，它并不是必须的，这取决你们团队风格。</p>
-<blockquote>
-<p>尽管在响应体中体现了响应状态码，但这并不代表所有 HTTP 就可以全部返回 200 了，无论如何请在条件允许范围内尽可能使用标准的 HTTP 响应状态码</p>
-</blockquote>
-<h2 id="1-9-请求和响应字段采用-aa-bb-cc-方式命名"><a href="#1-9-请求和响应字段采用-aa-bb-cc-方式命名" class="headerlink" title="1.9 请求和响应字段采用 aa_bb_cc 方式命名"></a>1.9 请求和响应字段采用 <code>aa_bb_cc</code> 方式命名</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">role_ids</span>: [<span class="number">11</span>,<span class="number">12</span>,<span class="number">35</span>],</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">roleIds</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>],</span><br><span class="line">  <span class="title class_">RoleIds</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>],</span><br><span class="line">  <span class="attr">ROLE_IDS</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-10-时间字段以-ISO-8601-格式返回-：YYYY-MM-DDTHH-MM-SSZ"><a href="#1-10-时间字段以-ISO-8601-格式返回-：YYYY-MM-DDTHH-MM-SSZ" class="headerlink" title="1.10 时间字段以 ISO 8601 格式返回 ：YYYY-MM-DDTHH:MM:SSZ"></a>1.10 时间字段以 ISO 8601 格式返回 ：<code>YYYY-MM-DDTHH:MM:SSZ</code></h2><h2 id="1-11-常见业务字段约定"><a href="#1-11-常见业务字段约定" class="headerlink" title="1.11 常见业务字段约定"></a>1.11 常见业务字段约定</h2><p>名称：name</p>
-<p>状态：status</p>
-<p>创建时间：created_at</p>
-<p>更新时间：updated_at</p>
-<h2 id="1-12-空数组使用-，而不是-null"><a href="#1-12-空数组使用-，而不是-null" class="headerlink" title="1.12 空数组使用 []，而不是 null"></a>1.12 空数组使用 []，而不是 null</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">role_ids</span>: [],</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">role_ids</span>: <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-13-前后端传输过程以标准-JSON-格式，避免反复正反序列化"><a href="#1-13-前后端传输过程以标准-JSON-格式，避免反复正反序列化" class="headerlink" title="1.13 前后端传输过程以标准 JSON 格式，避免反复正反序列化"></a>1.13 前后端传输过程以标准 JSON 格式，避免反复正反序列化</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">roles</span>: [&#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;角色 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;角色 2&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">roles</span>: <span class="string">&#x27;[&#123;&quot;id&quot;:1,&quot;name&quot;:&quot;角色 1&quot;&#125;,&#123;&quot;id&quot;:2,&quot;name&quot;:&quot;角色 2&quot;&#125;]&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-创建类接口"><a href="#2-创建类接口" class="headerlink" title="2 创建类接口"></a>2 创建类接口</h1><h2 id="2-1-创建完成后直接返回-id"><a href="#2-1-创建完成后直接返回-id" class="headerlink" title="2.1 创建完成后直接返回 id"></a>2.1 创建完成后直接返回 id</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;创建成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">     <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-2-关联关系只以-id-为标识，其它字段不应依赖客户端"><a href="#2-2-关联关系只以-id-为标识，其它字段不应依赖客户端" class="headerlink" title="2.2 关联关系只以 id 为标识，其它字段不应依赖客户端"></a>2.2 关联关系只以 id 为标识，其它字段不应依赖客户端</h2><p>以创建用户为例：POST <code>/api/users</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;xxxx&#x27;</span>,</span><br><span class="line">  <span class="attr">role_ids</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;xxxx&#x27;</span>,</span><br><span class="line">  <span class="attr">role_ids</span>: [&#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色1&#x27;</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色2&#x27;</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色3&#x27;</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-3-参数错误以数组形式返回，并附带用户友好的提示"><a href="#2-3-参数错误以数组形式返回，并附带用户友好的提示" class="headerlink" title="2.3 参数错误以数组形式返回，并附带用户友好的提示"></a>2.3 参数错误以数组形式返回，并附带用户友好的提示</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">40000</span></span><br><span class="line">  <span class="attr">status</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;参数错误&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">errors</span>: [&#123;</span><br><span class="line">       <span class="attr">field</span>: <span class="string">&#x27;name&#x27;</span>,</span><br><span class="line">       <span class="attr">message</span>: <span class="string">&#x27;缺失&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-4-删除接口应酌情提供批量删除"><a href="#2-4-删除接口应酌情提供批量删除" class="headerlink" title="2.4 删除接口应酌情提供批量删除"></a>2.4 删除接口应酌情提供批量删除</h2><p>例如 DELETE <code>/api/tasks/1</code> 表示删除 id 为 1 的任务</p>
-<p>例如 DELETE <code>/api/tasks?ids=1,2,3</code> 表示批量删除 id 为 1 或 2 或 3 的任务</p>
-<p>注意：如果列表数据量较大或容易沉淀无用数据的应提供批量删除功能，比如任务、文件、日志等</p>
-<h1 id="3-查询类接口"><a href="#3-查询类接口" class="headerlink" title="3 查询类接口"></a>3 查询类接口</h1><h2 id="3-1-排序"><a href="#3-1-排序" class="headerlink" title="3.1 排序"></a>3.1 排序</h2><p>排序使用 <code>sort</code> 和 <code>order</code></p>
-<p>例如 GET <code>/api/tasks?sort=created_at&amp;order=descend</code> 表示以创建时间降序查询数据</p>
-<p><strong>注意：</strong>其中 <code>order</code> 为 <code>descend</code> 时表示降序，为 <code>ascend</code> 时表示升序</p>
-<h2 id="3-2-分页"><a href="#3-2-分页" class="headerlink" title="3.2 分页"></a>3.2 分页</h2><p>分页使用 <code>page</code> 和 <code>per_page</code></p>
-<p>例如 GET <code>/api/tasks?page=1&amp;per_page=10</code> 表示每页 10 条查询第一页数据</p>
-<p><strong>注意：</strong>其中 <code>page</code> 从 1 开始，而不是 0，如果没有传递 <code>per_page</code> 和 <code>page</code> 参数表示不分页获取所有数据</p>
-<h2 id="3-3-组合查询"><a href="#3-3-组合查询" class="headerlink" title="3.3 组合查询"></a>3.3 组合查询</h2><h3 id="3-3-1-普通筛选"><a href="#3-3-1-普通筛选" class="headerlink" title="3.3.1 普通筛选"></a>3.3.1 普通筛选</h3><p>使用键值对</p>
-<p>例如 GET <code>/api/tasks?creator=ming</code> 表示查询所有 ming 用户创建的任务</p>
-<h3 id="3-3-2-多列模糊查询"><a href="#3-3-2-多列模糊查询" class="headerlink" title="3.3.2 多列模糊查询"></a>3.3.2 多列模糊查询</h3><p>多列模糊查询使用 <code>keyword</code> 关键词</p>
-<p>例如 GET <code>/api/tasks?keyword=ming</code> 表示查询任意列包含 ming 关键词的任务</p>
-<h3 id="3-3-3-枚举筛选"><a href="#3-3-3-枚举筛选" class="headerlink" title="3.3.3 枚举筛选"></a>3.3.3 枚举筛选</h3><p>枚举筛选使用数组合并拼接</p>
-<p>例如 GET <code>/api/tasks?status=pending,complete</code> 表示查询状态为阻塞和完成的任务</p>
-<h3 id="3-3-4-区间查询"><a href="#3-3-4-区间查询" class="headerlink" title="3.3.4 区间查询"></a>3.3.4 区间查询</h3><p>区间使用 <code>xxx_lt</code> 和 <code>xxx_gt</code> 关键词</p>
-<table>
-<thead>
-<tr>
-<th>缩写</th>
-<th>英文</th>
-<th>中文</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>gt</td>
-<td>greater than</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>gte</td>
-<td>greater than or equal</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>lt</td>
-<td>less than</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>lte</td>
-<td>less than or equal</td>
-<td>小于等于</td>
-</tr>
-</tbody></table>
-<p>例如 GET <code>/api/tasks?weight_gt=10&amp;weight_lt=20</code> 表示查询权重在 10 和 20 之间的任务</p>
-<p>例如 GET <code>/api/tasks?weight_gt=10</code> 表示查询权重大于 10 的任务</p>
-<h2 id="3-4-尽可能返回所有关联数据展开详情，便于客户端显示"><a href="#3-4-尽可能返回所有关联数据展开详情，便于客户端显示" class="headerlink" title="3.4 尽可能返回所有关联数据展开详情，便于客户端显示"></a>3.4 尽可能返回所有关联数据展开详情，便于客户端显示</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">    <span class="attr">roles</span>: [&#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 2&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">3</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 3&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-5-可枚举字段使用有语义英文而非无语义数字"><a href="#3-5-可枚举字段使用有语义英文而非无语义数字" class="headerlink" title="3.5 可枚举字段使用有语义英文而非无语义数字"></a>3.5 可枚举字段使用有语义英文而非无语义数字</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">status</span>: <span class="string">&#x27;pending&#x27;</span>  <span class="comment">// &#x27;pending&#x27; | &#x27;complete&#x27; | &#x27;error&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">status</span>: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-6-合理自然嵌套结构而不是平铺"><a href="#3-6-合理自然嵌套结构而不是平铺" class="headerlink" title="3.6 合理自然嵌套结构而不是平铺"></a>3.6 合理自然嵌套结构而不是平铺</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">creator</span>: &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">username</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">creator_id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">creator_name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="4-文件类接口"><a href="#4-文件类接口" class="headerlink" title="4 文件类接口"></a>4 文件类接口</h1><h2 id="4-1-统一提供单文件上传接口（-api-files），支持上传所有类型文件"><a href="#4-1-统一提供单文件上传接口（-api-files），支持上传所有类型文件" class="headerlink" title="4.1 统一提供单文件上传接口（/api/files），支持上传所有类型文件"></a>4.1 统一提供单文件上传接口（<code>/api/files</code>），支持上传所有类型文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 请求，注意这里是 FormData</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">file</span>: <span class="title class_">File</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;上传成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-2-统一提供多文件上传接口（-api-multiple-files），支持上传所有类型文件"><a href="#4-2-统一提供多文件上传接口（-api-multiple-files），支持上传所有类型文件" class="headerlink" title="4.2 统一提供多文件上传接口（/api/multiple-files），支持上传所有类型文件"></a>4.2 统一提供多文件上传接口（<code>/api/multiple-files</code>），支持上传所有类型文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 请求，注意这里是 FormData</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">files</span>: [<span class="title class_">File</span>, <span class="title class_">File</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;上传成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: [&#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同1.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c88&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c88.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同2.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-3-文件路径至少补全至根路径"><a href="#4-3-文件路径至少补全至根路径" class="headerlink" title="4.3 文件路径至少补全至根路径"></a>4.3 文件路径至少补全至根路径</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;/files/bb313c99.png&#x27;</span>,</span><br><span class="line">    <span class="comment">// 或</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;https://cdn.xxx.com/files/bb313c99.png&#x27;</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;bb313c99.png&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-4-对于使用到文件的接口使用文件-id-或地址而非-FormData"><a href="#4-4-对于使用到文件的接口使用文件-id-或地址而非-FormData" class="headerlink" title="4.4 对于使用到文件的接口使用文件 id 或地址而非 FormData"></a>4.4 对于使用到文件的接口使用文件 id 或地址而非 FormData</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;新任务 1&#x27;</span>,</span><br><span class="line">  <span class="attr">file_id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">  <span class="comment">// 或</span></span><br><span class="line">  <span class="attr">file_url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;新任务 1&#x27;</span>,</span><br><span class="line">  <span class="attr">file</span>: <span class="title class_">File</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意：先由 POST <code>api/files</code> 上传完文件拿到文件 id 或地址后再执行后续操作</p>
-<h1 id="5-敏感类接口"><a href="#5-敏感类接口" class="headerlink" title="5 敏感类接口"></a>5 敏感类接口</h1><h2 id="5-1-涉及到用户隐私的应对相关字段做加密处理"><a href="#5-1-涉及到用户隐私的应对相关字段做加密处理" class="headerlink" title="5.1 涉及到用户隐私的应对相关字段做加密处理"></a>5.1 涉及到用户隐私的应对相关字段做加密处理</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">id_number</span>: <span class="string">&#x27;U2FsdGVkX1+1fW7OpO/tlPXe4IGA/bXExlhKwIR/spk=&#x27;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;U2FsdGVkX1/AnXKSBDbztNBfp4czlZxQ++3jRtNZhY0=&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">id_number</span>: <span class="string">&#x27;310000199511159999&#x27;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;ming@xxx.com&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意：本规范不约定使用何种加密算法，请视实际场景选择</p>
-<h1 id="6-图表类接口"><a href="#6-图表类接口" class="headerlink" title="6 图表类接口"></a>6 图表类接口</h1><h2 id="6-1-曲线图、柱状图"><a href="#6-1-曲线图、柱状图" class="headerlink" title="6.1 曲线图、柱状图"></a>6.1 曲线图、柱状图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">x_axis</span>: [<span class="string">&#x27;2022.04.20&#x27;</span>,<span class="string">&#x27;2022.04.21&#x27;</span>, <span class="string">&#x27;2022.04.22&#x27;</span>]</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上海用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">5000</span>,<span class="number">4000</span>,<span class="number">3000</span>],</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;成都用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">3000</span>,<span class="number">4000</span>,<span class="number">5000</span>],  <span class="comment">// 注意，没有数据时候也要使用 0 填充，和 x_axis 一一对应</span></span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-2-饼图"><a href="#6-2-饼图" class="headerlink" title="6.2 饼图"></a>6.2 饼图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">1890</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;下线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">2000</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1637,6 +1419,12 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>20240921002</title>
+    <url>/nagging/20240921002.html</url>
+    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Git的操作</title>
     <url>/repost/git-tutorial/operations.html</url>
     <content><![CDATA[<h1 id="Git的操作"><a href="#Git的操作" class="headerlink" title="Git的操作"></a>Git的操作</h1><h2 id="新建代码库"><a href="#新建代码库" class="headerlink" title="新建代码库"></a>新建代码库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个项目和它的整个代码历史</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
@@ -1683,6 +1471,218 @@ end
 
 <p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>转载</title>
+    <url>/repost/default/index.html</url>
+    <content><![CDATA[<ul>
+<li><a href="./%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html">前后端接口规范 - RESTful 版</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>前后端接口规范 - RESTful 版</title>
+    <url>/repost/default/%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html</url>
+    <content><![CDATA[<div class="note info no-icon"><p><strong>转载于：</strong> <a href="https://github.com/olivewind/restful-api-specification">restful-api-specification</a></p>
+</div>
+
+<p>本规范的三个目标：<strong>简洁</strong>、<strong>统一</strong>、<strong>开放</strong>。</p>
+<p>关于如何设计良好风格的 RESTful API，Github 有一份<a href="https://docs.github.com/en/rest/reference/actions">满分答案</a>，熟读三遍，其义自现。本规范将在其基础之上使用尽可能简单的表述方式从以下几个常见部分作出详细约定：</p>
+<ul>
+<li><a href="#1-%E5%9F%BA%E7%A1%80%E7%BA%A6%E5%AE%9A">基础约定</a></li>
+<li><a href="#2-%E5%88%9B%E5%BB%BA%E7%B1%BB%E6%8E%A5%E5%8F%A3">创建类接口</a></li>
+<li><a href="#3-%E6%9F%A5%E8%AF%A2%E7%B1%BB%E6%8E%A5%E5%8F%A3">查询类接口</a></li>
+<li><a href="#4-%E6%96%87%E4%BB%B6%E7%B1%BB%E6%8E%A5%E5%8F%A3">文件类接口</a></li>
+<li><a href="#5-%E6%95%8F%E6%84%9F%E7%B1%BB%E6%8E%A5%E5%8F%A3">敏感类接口</a></li>
+<li><a href="#6-%E5%9B%BE%E8%A1%A8%E7%B1%BB%E6%8E%A5%E5%8F%A3">图表类接口</a></li>
+</ul>
+<blockquote>
+<p>注意本规范是笔者在所在公司内部制定的规范整理而来的接口规范模板，仅供你在制定规范时候参考，在落地时应根据团队实际情况作出调整，欢迎对本规范进行补充</p>
+</blockquote>
+<h1 id="1-基础约定"><a href="#1-基础约定" class="headerlink" title="1 基础约定"></a>1 基础约定</h1><h2 id="1-1-接口路径以-api-或-version-api-开头"><a href="#1-1-接口路径以-api-或-version-api-开头" class="headerlink" title="1.1 接口路径以 /api 或 /[version]/api 开头"></a>1.1 接口路径以 <code>/api</code> 或 <code>/[version]/api</code> 开头</h2><p>正确：<code>/api/task</code> 或 <code>/v2/api/tasks</code></p>
+<p>错误：<code>/biz/tasks</code> 或 <code>/biz/api/tasks</code></p>
+<p>注意：一个产品无论后端有多少个服务组成也应该只有一个 API 入口</p>
+<h2 id="1-2-接口路径以-api-aa-bb-cc-dd-方式命名"><a href="#1-2-接口路径以-api-aa-bb-cc-dd-方式命名" class="headerlink" title="1.2 接口路径以 api/aa-bb/cc-dd 方式命名"></a>1.2 接口路径以 <code>api/aa-bb/cc-dd</code> 方式命名</h2><p>正确：<code>/api/task-groups</code></p>
+<p>错误：<code>/api/taskGroups</code></p>
+<h2 id="1-3-接口路径使用资源名词而非动词，动作应由-HTTP-Method-体现，资源组可以进行逻辑嵌套"><a href="#1-3-接口路径使用资源名词而非动词，动作应由-HTTP-Method-体现，资源组可以进行逻辑嵌套" class="headerlink" title="1.3 接口路径使用资源名词而非动词，动作应由 HTTP Method 体现，资源组可以进行逻辑嵌套"></a>1.3 接口路径使用资源名词而非动词，动作应由 HTTP Method 体现，资源组可以进行逻辑嵌套</h2><p>正确：POST <code>/api/tasks</code> 或 <code>/api/task-groups/1/tasks</code> 表示在 id 为 1 的任务组下创建任务</p>
+<p>错误：POST <code>/api/create-task</code></p>
+<h2 id="1-4-接口路径中的资源使用复数而非单数"><a href="#1-4-接口路径中的资源使用复数而非单数" class="headerlink" title="1.4 接口路径中的资源使用复数而非单数"></a>1.4 接口路径中的资源使用复数而非单数</h2><p>正确：<code>/api/tasks</code></p>
+<p>错误：<code>/api/task</code></p>
+<h2 id="1-5-接口设计面向开放接口，而非单纯前端业务"><a href="#1-5-接口设计面向开放接口，而非单纯前端业务" class="headerlink" title="1.5 接口设计面向开放接口，而非单纯前端业务"></a>1.5 接口设计面向开放接口，而非单纯前端业务</h2><p>要求我们在给接口路径命名时要面向通用业务而非单纯前端业务，以获取筛选表单中的任务字段下拉选项为例</p>
+<p>正确：<code>/api/tasks</code></p>
+<p>错误：<code>/api/task-select-options</code></p>
+<p>虽然这个接口暂时只用在表单的下拉选择中，但是需要考虑的是在未来可能会被用在任意场景，因此应以更通用方式提供接口交由客户端自由组合</p>
+<h2 id="1-6-规范使用-HTTP-方法"><a href="#1-6-规范使用-HTTP-方法" class="headerlink" title="1.6 规范使用 HTTP 方法"></a>1.6 规范使用 HTTP 方法</h2><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>场景</th>
+<th>例如</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GET</td>
+<td>获取数据</td>
+<td>获取单个：GET <code>/api/tasks/1</code>、获取列表：GET <code>/api/tasks</code></td>
+</tr>
+<tr>
+<td>POST</td>
+<td>创建数据</td>
+<td>创建单个：POST <code>/api/tasks</code></td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>差量修改数据</td>
+<td>修改单个：PATCH <code>/api/tasks/1</code></td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>全量修改数据</td>
+<td>修改单个：PUT <code>/api/tasks/1</code></td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>删除数据</td>
+<td>删除单个：DELETE <code>/api/tasks/1</code></td>
+</tr>
+</tbody></table>
+<p>其它更多请求方法请查阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods">MDN Web Docs</a></p>
+<h2 id="1-7-规范使用-HTTP-状态码"><a href="#1-7-规范使用-HTTP-状态码" class="headerlink" title="1.7 规范使用 HTTP 状态码"></a>1.7 规范使用 HTTP 状态码</h2><table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>200</td>
+<td>创建成功，通常用在同步操作时</td>
+</tr>
+<tr>
+<td>202</td>
+<td>创建成功，通常用在异步操作时，表示请求已接受，但是还没有处理完成</td>
+</tr>
+<tr>
+<td>400</td>
+<td>参数错误，通常用在表单参数错误</td>
+</tr>
+<tr>
+<td>401</td>
+<td>授权错误，通常用在 Token 缺失或失效，注意 401 会触发前端跳转到登录页</td>
+</tr>
+<tr>
+<td>403</td>
+<td>操作被拒绝，通常发生在权限不足时，注意此时务必带上详细错误信息</td>
+</tr>
+<tr>
+<td>404</td>
+<td>没有找到对象，通常发生在使用错误的 id 查询详情</td>
+</tr>
+<tr>
+<td>500</td>
+<td>服务器错误</td>
+</tr>
+</tbody></table>
+<p>其它更多响应状态码请查阅 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">MDN Web Docs</a></p>
+<h2 id="1-8-基础外层数据结构"><a href="#1-8-基础外层数据结构" class="headerlink" title="1.8 基础外层数据结构"></a>1.8 基础外层数据结构</h2><ul>
+<li><p>不分页数据</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分页数据</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">items</span>: [&#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;任务 2&#x27;</span></span><br><span class="line">    &#125;],</span><br><span class="line">    <span class="attr">total</span>: <span class="number">2</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>注意：其中 <code>code</code> 表示业务编码，<code>status</code> 表示 HTTP 响应状态码，如此设计的原因是部分场景下前后端之间存在不可控的网关或代理（比如某些网关有一些流量控制策略会导致直接返回 403 响应状态码，此时客户端无法分辨 403 是网关的还是业务方），类似这类情况下为了能够让客户端正确分辨业务方的真实处理结果则需要在响应体加上 <code>status</code>，而 <code>code</code> 表示的业务编码是为了帮助工程师更容易定位问题，它并不是必须的，这取决你们团队风格。</p>
+<blockquote>
+<p>尽管在响应体中体现了响应状态码，但这并不代表所有 HTTP 就可以全部返回 200 了，无论如何请在条件允许范围内尽可能使用标准的 HTTP 响应状态码</p>
+</blockquote>
+<h2 id="1-9-请求和响应字段采用-aa-bb-cc-方式命名"><a href="#1-9-请求和响应字段采用-aa-bb-cc-方式命名" class="headerlink" title="1.9 请求和响应字段采用 aa_bb_cc 方式命名"></a>1.9 请求和响应字段采用 <code>aa_bb_cc</code> 方式命名</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">role_ids</span>: [<span class="number">11</span>,<span class="number">12</span>,<span class="number">35</span>],</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">roleIds</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>],</span><br><span class="line">  <span class="title class_">RoleIds</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>],</span><br><span class="line">  <span class="attr">ROLE_IDS</span>: [<span class="number">11</span>, <span class="number">12</span>, <span class="number">35</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-10-时间字段以-ISO-8601-格式返回-：YYYY-MM-DDTHH-MM-SSZ"><a href="#1-10-时间字段以-ISO-8601-格式返回-：YYYY-MM-DDTHH-MM-SSZ" class="headerlink" title="1.10 时间字段以 ISO 8601 格式返回 ：YYYY-MM-DDTHH:MM:SSZ"></a>1.10 时间字段以 ISO 8601 格式返回 ：<code>YYYY-MM-DDTHH:MM:SSZ</code></h2><h2 id="1-11-常见业务字段约定"><a href="#1-11-常见业务字段约定" class="headerlink" title="1.11 常见业务字段约定"></a>1.11 常见业务字段约定</h2><p>名称：name</p>
+<p>状态：status</p>
+<p>创建时间：created_at</p>
+<p>更新时间：updated_at</p>
+<h2 id="1-12-空数组使用-，而不是-null"><a href="#1-12-空数组使用-，而不是-null" class="headerlink" title="1.12 空数组使用 []，而不是 null"></a>1.12 空数组使用 []，而不是 null</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">role_ids</span>: [],</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">role_ids</span>: <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-13-前后端传输过程以标准-JSON-格式，避免反复正反序列化"><a href="#1-13-前后端传输过程以标准-JSON-格式，避免反复正反序列化" class="headerlink" title="1.13 前后端传输过程以标准 JSON 格式，避免反复正反序列化"></a>1.13 前后端传输过程以标准 JSON 格式，避免反复正反序列化</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">roles</span>: [&#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;角色 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;角色 2&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">roles</span>: <span class="string">&#x27;[&#123;&quot;id&quot;:1,&quot;name&quot;:&quot;角色 1&quot;&#125;,&#123;&quot;id&quot;:2,&quot;name&quot;:&quot;角色 2&quot;&#125;]&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-创建类接口"><a href="#2-创建类接口" class="headerlink" title="2 创建类接口"></a>2 创建类接口</h1><h2 id="2-1-创建完成后直接返回-id"><a href="#2-1-创建完成后直接返回-id" class="headerlink" title="2.1 创建完成后直接返回 id"></a>2.1 创建完成后直接返回 id</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;创建成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">     <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-2-关联关系只以-id-为标识，其它字段不应依赖客户端"><a href="#2-2-关联关系只以-id-为标识，其它字段不应依赖客户端" class="headerlink" title="2.2 关联关系只以 id 为标识，其它字段不应依赖客户端"></a>2.2 关联关系只以 id 为标识，其它字段不应依赖客户端</h2><p>以创建用户为例：POST <code>/api/users</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;xxxx&#x27;</span>,</span><br><span class="line">  <span class="attr">role_ids</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;xxxx&#x27;</span>,</span><br><span class="line">  <span class="attr">role_ids</span>: [&#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色1&#x27;</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色2&#x27;</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;角色3&#x27;</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-参数错误以数组形式返回，并附带用户友好的提示"><a href="#2-3-参数错误以数组形式返回，并附带用户友好的提示" class="headerlink" title="2.3 参数错误以数组形式返回，并附带用户友好的提示"></a>2.3 参数错误以数组形式返回，并附带用户友好的提示</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">40000</span></span><br><span class="line">  <span class="attr">status</span>: <span class="number">400</span>;</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;参数错误&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">errors</span>: [&#123;</span><br><span class="line">       <span class="attr">field</span>: <span class="string">&#x27;name&#x27;</span>,</span><br><span class="line">       <span class="attr">message</span>: <span class="string">&#x27;缺失&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-删除接口应酌情提供批量删除"><a href="#2-4-删除接口应酌情提供批量删除" class="headerlink" title="2.4 删除接口应酌情提供批量删除"></a>2.4 删除接口应酌情提供批量删除</h2><p>例如 DELETE <code>/api/tasks/1</code> 表示删除 id 为 1 的任务</p>
+<p>例如 DELETE <code>/api/tasks?ids=1,2,3</code> 表示批量删除 id 为 1 或 2 或 3 的任务</p>
+<p>注意：如果列表数据量较大或容易沉淀无用数据的应提供批量删除功能，比如任务、文件、日志等</p>
+<h1 id="3-查询类接口"><a href="#3-查询类接口" class="headerlink" title="3 查询类接口"></a>3 查询类接口</h1><h2 id="3-1-排序"><a href="#3-1-排序" class="headerlink" title="3.1 排序"></a>3.1 排序</h2><p>排序使用 <code>sort</code> 和 <code>order</code></p>
+<p>例如 GET <code>/api/tasks?sort=created_at&amp;order=descend</code> 表示以创建时间降序查询数据</p>
+<p><strong>注意：</strong>其中 <code>order</code> 为 <code>descend</code> 时表示降序，为 <code>ascend</code> 时表示升序</p>
+<h2 id="3-2-分页"><a href="#3-2-分页" class="headerlink" title="3.2 分页"></a>3.2 分页</h2><p>分页使用 <code>page</code> 和 <code>per_page</code></p>
+<p>例如 GET <code>/api/tasks?page=1&amp;per_page=10</code> 表示每页 10 条查询第一页数据</p>
+<p><strong>注意：</strong>其中 <code>page</code> 从 1 开始，而不是 0，如果没有传递 <code>per_page</code> 和 <code>page</code> 参数表示不分页获取所有数据</p>
+<h2 id="3-3-组合查询"><a href="#3-3-组合查询" class="headerlink" title="3.3 组合查询"></a>3.3 组合查询</h2><h3 id="3-3-1-普通筛选"><a href="#3-3-1-普通筛选" class="headerlink" title="3.3.1 普通筛选"></a>3.3.1 普通筛选</h3><p>使用键值对</p>
+<p>例如 GET <code>/api/tasks?creator=ming</code> 表示查询所有 ming 用户创建的任务</p>
+<h3 id="3-3-2-多列模糊查询"><a href="#3-3-2-多列模糊查询" class="headerlink" title="3.3.2 多列模糊查询"></a>3.3.2 多列模糊查询</h3><p>多列模糊查询使用 <code>keyword</code> 关键词</p>
+<p>例如 GET <code>/api/tasks?keyword=ming</code> 表示查询任意列包含 ming 关键词的任务</p>
+<h3 id="3-3-3-枚举筛选"><a href="#3-3-3-枚举筛选" class="headerlink" title="3.3.3 枚举筛选"></a>3.3.3 枚举筛选</h3><p>枚举筛选使用数组合并拼接</p>
+<p>例如 GET <code>/api/tasks?status=pending,complete</code> 表示查询状态为阻塞和完成的任务</p>
+<h3 id="3-3-4-区间查询"><a href="#3-3-4-区间查询" class="headerlink" title="3.3.4 区间查询"></a>3.3.4 区间查询</h3><p>区间使用 <code>xxx_lt</code> 和 <code>xxx_gt</code> 关键词</p>
+<table>
+<thead>
+<tr>
+<th>缩写</th>
+<th>英文</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gt</td>
+<td>greater than</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>gte</td>
+<td>greater than or equal</td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td>lt</td>
+<td>less than</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>lte</td>
+<td>less than or equal</td>
+<td>小于等于</td>
+</tr>
+</tbody></table>
+<p>例如 GET <code>/api/tasks?weight_gt=10&amp;weight_lt=20</code> 表示查询权重在 10 和 20 之间的任务</p>
+<p>例如 GET <code>/api/tasks?weight_gt=10</code> 表示查询权重大于 10 的任务</p>
+<h2 id="3-4-尽可能返回所有关联数据展开详情，便于客户端显示"><a href="#3-4-尽可能返回所有关联数据展开详情，便于客户端显示" class="headerlink" title="3.4 尽可能返回所有关联数据展开详情，便于客户端显示"></a>3.4 尽可能返回所有关联数据展开详情，便于客户端显示</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">username</span>: <span class="string">&#x27;ming&#x27;</span></span><br><span class="line">    <span class="attr">roles</span>: [&#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 1&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">2</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 2&#x27;</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">       <span class="attr">id</span>: <span class="number">3</span>,</span><br><span class="line">       <span class="attr">name</span>: <span class="string">&#x27;角色 3&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-5-可枚举字段使用有语义英文而非无语义数字"><a href="#3-5-可枚举字段使用有语义英文而非无语义数字" class="headerlink" title="3.5 可枚举字段使用有语义英文而非无语义数字"></a>3.5 可枚举字段使用有语义英文而非无语义数字</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">status</span>: <span class="string">&#x27;pending&#x27;</span>  <span class="comment">// &#x27;pending&#x27; | &#x27;complete&#x27; | &#x27;error&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">status</span>: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-6-合理自然嵌套结构而不是平铺"><a href="#3-6-合理自然嵌套结构而不是平铺" class="headerlink" title="3.6 合理自然嵌套结构而不是平铺"></a>3.6 合理自然嵌套结构而不是平铺</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">creator</span>: &#123;</span><br><span class="line">      <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">      <span class="attr">username</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;任务 1&#x27;</span></span><br><span class="line">    <span class="attr">creator_id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">creator_name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-文件类接口"><a href="#4-文件类接口" class="headerlink" title="4 文件类接口"></a>4 文件类接口</h1><h2 id="4-1-统一提供单文件上传接口（-api-files），支持上传所有类型文件"><a href="#4-1-统一提供单文件上传接口（-api-files），支持上传所有类型文件" class="headerlink" title="4.1 统一提供单文件上传接口（/api/files），支持上传所有类型文件"></a>4.1 统一提供单文件上传接口（<code>/api/files</code>），支持上传所有类型文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 请求，注意这里是 FormData</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">file</span>: <span class="title class_">File</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;上传成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-2-统一提供多文件上传接口（-api-multiple-files），支持上传所有类型文件"><a href="#4-2-统一提供多文件上传接口（-api-multiple-files），支持上传所有类型文件" class="headerlink" title="4.2 统一提供多文件上传接口（/api/multiple-files），支持上传所有类型文件"></a>4.2 统一提供多文件上传接口（<code>/api/multiple-files</code>），支持上传所有类型文件</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 请求，注意这里是 FormData</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">files</span>: [<span class="title class_">File</span>, <span class="title class_">File</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;上传成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: [&#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同1.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;, &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="string">&#x27;bb313c88&#x27;</span>,</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/files/bb313c88.pdf&#x27;</span></span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;合同2.pdf&#x27;</span> <span class="comment">// 原文件的名称</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-3-文件路径至少补全至根路径"><a href="#4-3-文件路径至少补全至根路径" class="headerlink" title="4.3 文件路径至少补全至根路径"></a>4.3 文件路径至少补全至根路径</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;/files/bb313c99.png&#x27;</span>,</span><br><span class="line">    <span class="comment">// 或</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;https://cdn.xxx.com/files/bb313c99.png&#x27;</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">id</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">    <span class="attr">avatar</span>: <span class="string">&#x27;bb313c99.png&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-4-对于使用到文件的接口使用文件-id-或地址而非-FormData"><a href="#4-4-对于使用到文件的接口使用文件-id-或地址而非-FormData" class="headerlink" title="4.4 对于使用到文件的接口使用文件 id 或地址而非 FormData"></a>4.4 对于使用到文件的接口使用文件 id 或地址而非 FormData</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;新任务 1&#x27;</span>,</span><br><span class="line">  <span class="attr">file_id</span>: <span class="string">&#x27;bb313c99&#x27;</span>,</span><br><span class="line">  <span class="comment">// 或</span></span><br><span class="line">  <span class="attr">file_url</span>: <span class="string">&#x27;/files/bb313c99.pdf&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;新任务 1&#x27;</span>,</span><br><span class="line">  <span class="attr">file</span>: <span class="title class_">File</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：先由 POST <code>api/files</code> 上传完文件拿到文件 id 或地址后再执行后续操作</p>
+<h1 id="5-敏感类接口"><a href="#5-敏感类接口" class="headerlink" title="5 敏感类接口"></a>5 敏感类接口</h1><h2 id="5-1-涉及到用户隐私的应对相关字段做加密处理"><a href="#5-1-涉及到用户隐私的应对相关字段做加密处理" class="headerlink" title="5.1 涉及到用户隐私的应对相关字段做加密处理"></a>5.1 涉及到用户隐私的应对相关字段做加密处理</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 正确</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">id_number</span>: <span class="string">&#x27;U2FsdGVkX1+1fW7OpO/tlPXe4IGA/bXExlhKwIR/spk=&#x27;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;U2FsdGVkX1/AnXKSBDbztNBfp4czlZxQ++3jRtNZhY0=&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 错误</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">id_number</span>: <span class="string">&#x27;310000199511159999&#x27;</span>,</span><br><span class="line">  <span class="attr">password</span>: <span class="string">&#x27;ming@xxx.com&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：本规范不约定使用何种加密算法，请视实际场景选择</p>
+<h1 id="6-图表类接口"><a href="#6-图表类接口" class="headerlink" title="6 图表类接口"></a>6 图表类接口</h1><h2 id="6-1-曲线图、柱状图"><a href="#6-1-曲线图、柱状图" class="headerlink" title="6.1 曲线图、柱状图"></a>6.1 曲线图、柱状图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">x_axis</span>: [<span class="string">&#x27;2022.04.20&#x27;</span>,<span class="string">&#x27;2022.04.21&#x27;</span>, <span class="string">&#x27;2022.04.22&#x27;</span>]</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上海用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">5000</span>,<span class="number">4000</span>,<span class="number">3000</span>],</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;成都用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">3000</span>,<span class="number">4000</span>,<span class="number">5000</span>],  <span class="comment">// 注意，没有数据时候也要使用 0 填充，和 x_axis 一一对应</span></span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-2-饼图"><a href="#6-2-饼图" class="headerlink" title="6.2 饼图"></a>6.2 饼图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">1890</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;下线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">2000</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1757,6 +1757,39 @@ end
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
 
 <p><code>p</code>参数表示以易于阅读的格式显示。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git checkout</title>
+    <url>/repost/git-tutorial/commands/git-checkout.html</url>
+    <content><![CDATA[<p><code>git checkout</code>命令有多种用途。</p>
+<p>（1）用来切换分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示回到先前所在的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout develop</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示切换到<code>develop</code>分支。</p>
+<p>（2）切换到指定快照（commit）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（3）将工作区指定的文件恢复到上次提交的状态。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上面命令将指定文件从暂存区复制到工作区，同时丢弃工作区对该文件的修改。所以，使用的时候必须小心，它会丢失对当前文件的修改，回到上一次保存到暂存区的状态。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout HEAD~ -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>它还可以从其他分支或提交恢复指定文件，上例是<code>HEAD~</code>，这会同时改变暂存区和工作区。</p>
+<p><code>-p</code>参数表示进入交互模式，手动选择恢复哪些文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -p</span><br></pre></td></tr></table></figure>
+
+<p>（4）切换到某个tag</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/1.1.4</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ git checkout 1.1.4</span><br></pre></td></tr></table></figure>
+
+<p>上面第二种用法的前提是，本地不能有叫做1.1.4的分支。</p>
+<p>（5）生成新的分支。</p>
+<p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1846,36 +1879,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git checkout</title>
-    <url>/repost/git-tutorial/commands/git-checkout.html</url>
-    <content><![CDATA[<p><code>git checkout</code>命令有多种用途。</p>
-<p>（1）用来切换分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout</span><br></pre></td></tr></table></figure>
-
-<p>上面命令表示回到先前所在的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout develop</span><br></pre></td></tr></table></figure>
-
-<p>上面命令表示切换到<code>develop</code>分支。</p>
-<p>（2）切换到指定快照（commit）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
-
-<p>（3）将工作区指定的文件恢复到上次提交的状态。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>上面命令将指定文件从暂存区复制到工作区，同时丢弃工作区对该文件的修改。所以，使用的时候必须小心，它会丢失对当前文件的修改，回到上一次保存到暂存区的状态。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout HEAD~ -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>它还可以从其他分支或提交恢复指定文件，上例是<code>HEAD~</code>，这会同时改变暂存区和工作区。</p>
-<p><code>-p</code>参数表示进入交互模式，手动选择恢复哪些文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -p</span><br></pre></td></tr></table></figure>
-
-<p>（4）切换到某个tag</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/1.1.4</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ git checkout 1.1.4</span><br></pre></td></tr></table></figure>
-
-<p>上面第二种用法的前提是，本地不能有叫做1.1.4的分支。</p>
-<p>（5）生成新的分支。</p>
-<p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
+    <title>git commit-tree</title>
+    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
+    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1924,6 +1931,19 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git hash-object</title>
+    <url>/repost/git-tutorial/commands/git-hash-object.html</url>
+    <content><![CDATA[<p><code>git hash-object</code>命令计算一个文件的git对象ID，即SHA1的哈希值。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span> | git hash-object --stdin</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hola&quot;</span> | git hash-object -w --stdin</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>参数</p>
+<ul>
+<li>w 将对象写入对象数据库</li>
+<li>stdin 表示从标准输入读取，而不是从本地文件读取。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>git init</title>
     <url>/repost/git-tutorial/commands/git-init.html</url>
     <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
@@ -1931,17 +1951,21 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git commit-tree</title>
-    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
-    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>git ls-files</title>
     <url>/repost/git-tutorial/commands/git-ls-files.html</url>
     <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出没有被.gitignore忽视的文件</span></span><br><span class="line">$ git ls-files --other --ignored --exclude-standard</span><br></pre></td></tr></table></figure>
 
+]]></content>
+  </entry>
+  <entry>
+    <title>git merge</title>
+    <url>/repost/git-tutorial/commands/git-merge.html</url>
+    <content><![CDATA[<p>将当前分支合并到指定分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git merge develop</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>将当前分支与develop分支合并，产生的新的commit对象有两个父节点。</p>
+<p>如果“指定分支”本身是当前分支的一个直接子节点，则会产生fast-forward合并，即合并不会产生新的节点，只是让当前分支指向“指定分支”的最新commit。</p>
+<p>Git合并所采用的方法是Three-way merge，及合并的时候除了要合併的兩個檔案，還加上它们共同的父节点。这样可以大大減少人為處理 conflict 的情況。如果采用two-way merge，則只用兩個檔案進行合併（svn默认就是这种合并方法。）</p>
 ]]></content>
   </entry>
   <entry>
@@ -1989,54 +2013,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git reset</title>
-    <url>/repost/git-tutorial/commands/git-reset.html</url>
-    <content><![CDATA[<p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将当期分支的指针倒退三个 commit，</span></span><br><span class="line"><span class="comment"># 并且会改变暂存区</span></span><br><span class="line">$ git reset HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，不改变暂存区</span></span><br><span class="line">$ git reset --soft HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，改变工作区</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br></pre></td></tr></table></figure>
-
-<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 撤销上一次向暂存区添加的所有文件</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># 无任何效果</span></span><br><span class="line">$ git reset --soft</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同时撤销暂存区和工作区的修改，</span></span><br><span class="line"><span class="comment"># 回复到上一次提交的状态</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销上一次向暂存区添加的某个指定文件，</span></span><br><span class="line"><span class="comment"># 不影响工作区中的该文件</span></span><br><span class="line">$ git reset -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
-<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
-<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
-<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
-<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Undo add</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，不重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 回到 HEAD 之前的那个 commit</span></span><br><span class="line">$ git reset --soft HEAD^</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span></span><br><span class="line">$ git reset -- frotz.c</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>git hash-object</title>
-    <url>/repost/git-tutorial/commands/git-hash-object.html</url>
-    <content><![CDATA[<p><code>git hash-object</code>命令计算一个文件的git对象ID，即SHA1的哈希值。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span> | git hash-object --stdin</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hola&quot;</span> | git hash-object -w --stdin</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>参数</p>
-<ul>
-<li>w 将对象写入对象数据库</li>
-<li>stdin 表示从标准输入读取，而不是从本地文件读取。</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>git restore</title>
-    <url>/repost/git-tutorial/commands/git-restore.html</url>
-    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
-
-<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git revert</title>
-    <url>/repost/git-tutorial/commands/git-revert.html</url>
-    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>git log</title>
     <url>/repost/git-tutorial/commands/git-log.html</url>
     <content><![CDATA[<p><code>git log</code>命令按照提交时间从最晚到最早的顺序，列出所有 commit。</p>
@@ -2066,11 +2042,31 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git rm</title>
-    <url>/repost/git-tutorial/commands/git-rm.html</url>
-    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
-<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
+    <title>git reset</title>
+    <url>/repost/git-tutorial/commands/git-reset.html</url>
+    <content><![CDATA[<p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将当期分支的指针倒退三个 commit，</span></span><br><span class="line"><span class="comment"># 并且会改变暂存区</span></span><br><span class="line">$ git reset HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，不改变暂存区</span></span><br><span class="line">$ git reset --soft HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，改变工作区</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br></pre></td></tr></table></figure>
+
+<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 撤销上一次向暂存区添加的所有文件</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># 无任何效果</span></span><br><span class="line">$ git reset --soft</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同时撤销暂存区和工作区的修改，</span></span><br><span class="line"><span class="comment"># 回复到上一次提交的状态</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销上一次向暂存区添加的某个指定文件，</span></span><br><span class="line"><span class="comment"># 不影响工作区中的该文件</span></span><br><span class="line">$ git reset -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
+<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
+<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
+<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
+<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Undo add</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，不重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 回到 HEAD 之前的那个 commit</span></span><br><span class="line">$ git reset --soft HEAD^</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span></span><br><span class="line">$ git reset -- frotz.c</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>git restore</title>
+    <url>/repost/git-tutorial/commands/git-restore.html</url>
+    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
+
+<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2081,14 +2077,18 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git merge</title>
-    <url>/repost/git-tutorial/commands/git-merge.html</url>
-    <content><![CDATA[<p>将当前分支合并到指定分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git merge develop</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>将当前分支与develop分支合并，产生的新的commit对象有两个父节点。</p>
-<p>如果“指定分支”本身是当前分支的一个直接子节点，则会产生fast-forward合并，即合并不会产生新的节点，只是让当前分支指向“指定分支”的最新commit。</p>
-<p>Git合并所采用的方法是Three-way merge，及合并的时候除了要合併的兩個檔案，還加上它们共同的父节点。这样可以大大減少人為處理 conflict 的情況。如果采用two-way merge，則只用兩個檔案進行合併（svn默认就是这种合并方法。）</p>
+    <title>git revert</title>
+    <url>/repost/git-tutorial/commands/git-revert.html</url>
+    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rm</title>
+    <url>/repost/git-tutorial/commands/git-rm.html</url>
+    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
+<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2131,6 +2131,22 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git switch</title>
+    <url>/repost/git-tutorial/commands/git-switch.html</url>
+    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
+
+<p>上面命令切换到 develop 分支。</p>
+<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
+
+<p>上面命令切换到指定提交。</p>
+<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>git tag</title>
     <url>/repost/git-tutorial/commands/git-tag.html</url>
     <content><![CDATA[<p><code>git tag</code>命令用于为 commit 打标签。Tag 分两种：普通tag和注解tag。只有annotated tag 才會產生 object。</p>
@@ -2155,22 +2171,6 @@ end
     <url>/repost/git-tutorial/commands/git-update-ref.html</url>
     <content><![CDATA[<p><code>git update-ref</code>命令用于更新一个指针文件中的Git对象ID。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-ref refs/heads/master 107aff</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>git switch</title>
-    <url>/repost/git-tutorial/commands/git-switch.html</url>
-    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
-
-<p>上面命令切换到 develop 分支。</p>
-<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
-
-<p>上面命令切换到指定提交。</p>
-<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
 
 ]]></content>
   </entry>
