@@ -1,119 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客搭建1-安装</title>
-    <url>/2021/2021070801/</url>
-    <content><![CDATA[<p>大学的时候用的是博客园，毕业后打算自己搭一个，选择Hexo+NexT</p>
-<span id="more"></span>
-
-
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
-<li>下载安装<a href="https://nodejs.org/en/">NodeJs</a></li>
-<li>在要存储位置打开cmd</li>
-<li>命令行输入<code>npm install -g hexo-cli</code> 安装hexo脚手架</li>
-<li>命令行输入 <code>hexo init &lt;blog-name&gt;</code> 初始化站点，博客名称必填<img src="/2021/2021070801/Snipaste_2021-07-07_23-02-09.jpg" class=""></li>
-<li>命令行输入 <code>cd &lt;blog-name&gt;</code> 进入博客文件夹</li>
-<li>命令行输入 <code>hexo server</code> 本地打开博客网站，浏览器打开<code>http://localhost:4000</code>，缩写为<code>hexo s</code><img src="/2021/2021070801/Snipaste_2021-07-07_23-12-29.jpg" class="">
-<img src="/2021/2021070801/Snipaste_2021-07-07_23-14-36.jpg" class=""></li>
-</ul>
-<h1 id="Github托管部署"><a href="#Github托管部署" class="headerlink" title="Github托管部署"></a>Github托管部署</h1><ul>
-<li>命令行输入 <code>npm install hexo-deployer-git</code> 安装git部署工具</li>
-<li>打开<a href="https://github.com/">github</a>，新建仓库，注意仓库名称要以<code>.github.io</code>结尾<img src="/2021/2021070801/Snipaste_2021-07-07_23-35-48.jpg" class=""></li>
-<li>在<em>github</em> 个人设置中生成<em>token</em><img src="/2021/2021070801/Snipaste_2021-07-07_23-55-53.jpg" class="">
-<img src="/2021/2021070801/Snipaste_2021-07-07_23-56-57.jpg" class=""></li>
-<li>打开<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<em>deploy</em><img src="/2021/2021070801/Snipaste_2021-07-08_00-04-07.jpg" class=""></li>
-<li>命令行输入 <code>hexo deploy</code> 部署到github仓库，缩写为<code>hexo d</code></li>
-<li>浏览器打开博客网址，例如：<a href="https://koalamini.github.io/">https://koalamini.github.io/</a></li>
-</ul>
-<h1 id="多设备写博客"><a href="#多设备写博客" class="headerlink" title="多设备写博客"></a>多设备写博客</h1><ul>
-<li>在<a href="https://gitee.com/">Gitee</a>或者<a href="https://github.com/">Github</a>新建<strong>私有仓库</strong></li>
-<li>使用Git工具同步，这样就可以多端同步写博客了</li>
-</ul>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://hexo.io/zh-cn/index.html">Hexo官方</a></li>
-<li><a href="http://theme-next.iissnan.com/">NexT中文网</a></li>
-<li><a href="https://github.com/next-theme/hexo-theme-next">GitHub - next-theme</a></li>
-<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">Z小旋. Hexo-Next 主题博客个性化配置超详细，超全面(两万字). CSDN博客</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>2024-09-16：删除Coding的部署方式，删除配置模板，删除next配置部分</p>
-</li>
-<li><p>2021-07-08：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建2-站点配置</title>
-    <url>/2021/2021072001/</url>
-    <content><![CDATA[<p>搜索相关的功能配置</p>
-<span id="more"></span>
-
-<h1 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h1><ul>
-<li>命令行输入<code>npm install hexo-generator-searchdb</code>，安装<strong>搜索</strong>工具</li>
-<li>在<strong>站点配置文档</strong> <em>_config.yml</em>，新增内容<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></li>
-<li>在<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>local_search</em>，将子属性<em>enable</em>的值改为<code>true</code><img src="/2021/2021072001/image-20210711173129363.png" class="" title="image-20210711173129363"></li>
-</ul>
-<h1 id="网站地图"><a href="#网站地图" class="headerlink" title="网站地图"></a>网站地图</h1><p>网站地图是方便搜索引擎爬虫了解网站结构，提高网站曝光度。</p>
-<ul>
-<li><p>在<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<code>url</code>，后面的值设置为你的网站url，例如<code>https://koalamini.github.io</code></p>
-</li>
-<li><p>命令行输入 <code>npm install hexo-generator-sitemap</code> 安装网站地图生成插件</p>
-</li>
-<li><p>打开<a href="https://ziyuan.baidu.com/">百度搜索资源平台</a>，【菜单栏】→【用户中心】→【站点管理】→【添加站点】</p>
-<img src="/2021/2021072001/Snipaste_2021-07-08_01-12-00.jpg" class=""></li>
-<li><p>打开<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>index_with_subtitle</em>，将后面的值改为<code>true</code></p>
-</li>
-<li><p>打开<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>baidu</em></p>
-<img src="/2021/2021072001/Snipaste_2021-07-08_01-15-50.jpg" class="">
-</li>
-<li><p>返回百度站点验证网页，点击【完成验证】</p>
-<img src="/2021/2021072001/Snipaste_2021-07-08_01-41-44.jpg" class="">
-</li>
-<li><p>网站地图提交收录</p>
-<img src="/2021/2021072001/Snipaste_2021-07-11_13-53-33.jpg" class="">
-</li>
-<li><p>API提交收录</p>
-<img src="/2021/2021072001/Snipaste_2021-07-11_14-39-58.jpg" class="">
-<img src="/2021/2021072001/Snipaste_2021-07-11_14-42-27.jpg" class="" title="Snipaste_2021-07-11_14-42-27"></li>
-</ul>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>2024-09-16：内容改为搜索功能相关的内容，非搜索功能的清理出去</p>
-</li>
-<li><p>2021-07-20：初稿</p>
-</li>
-</ul>
-<hr>
-<p><strong>浏览进度</strong></p>
-<ul>
-<li>在<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<code>scrollpercent</code>，值改为<code>true</code>，效果为：<img src="/2021/2021072001/image-20210711171652479.png" class="" title="image-20210711171652479"></li>
-</ul>
-<p><strong>置顶文章</strong></p>
-<ul>
-<li>命令行输入 <code>npm uninstall hexo-generator-index</code> 卸载默认插件</li>
-<li>命令行输入 <code>npm install hexo-generator-index-pin-top</code> 安装新插件</li>
-<li>修改模板，修改<code>scaffolds\post.md</code>，在文章<strong>元信息</strong>区（Front-matter）添加<code>top: false</code>，撰写文章时改为<code>true</code>即可</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vuex上手</title>
     <url>/2021/2021121501/</url>
     <content><![CDATA[<p>了解vuex的特性，写了个demo，<a href="/demo/vuex%E4%B8%8A%E6%89%8B.html">本文示例</a></p>
@@ -170,6 +57,69 @@
       <tags>
         <tag>前端</tag>
         <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git概念</title>
+    <url>/2021/2021122701/</url>
+    <content><![CDATA[<p>git重要的术语概念</p>
+<span id="more"></span>
+
+<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
+<li><code>remote</code> 远程仓</li>
+<li><code>repository</code> 本地仓</li>
+<li><code>stash</code> 贮藏区</li>
+<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
+<li><code>workspace</code> 工作区</li>
+<li><code>branch</code> 分支</li>
+<li><code>tag</code> 标签</li>
+</ul>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
+<code class="mermaid">
+
+sequenceDiagram
+participant 工作区 workspace
+participant 暂存区 stage
+participant 贮藏区 stash
+participant 本地仓 repository
+participant 远程仓 remote
+
+par 创建仓库
+  note over 本地仓 repository: git init
+  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
+  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
+and 提交修改
+  工作区 workspace -&gt;&gt; 暂存区 stage: git add
+  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
+  本地仓 repository -&gt;&gt; 远程仓 remote: git push
+and 拉取更新
+  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
+  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
+  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
+and 撤销修改
+  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
+  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
+  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
+  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
+end
+</code>
+</pre>
+
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241021：时序图增加英文</p>
+</li>
+<li><p>20211227：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -248,158 +198,60 @@
       </tags>
   </entry>
   <entry>
-    <title>博客搭建4-插入本地图片</title>
-    <url>/2024/2024030301/</url>
-    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
+    <title>考拉周刊第3期</title>
+    <url>/2024/2024031201/</url>
+    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
 <span id="more"></span>
 
-<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
-<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
-
-<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
-<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
-<img src="/2024/2024030301/image-20240303115738031.png" class="" title="image-20240303115738031">
-
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
-<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
-<li>用typora编写博客，并粘贴图片</li>
-<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
-<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
-<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
-<li>打开 <code>http://&lt;子域名&gt;.github.io</code>检查图片是否正常显示</li>
-</ul>
-<hr>
-<p><strong>参考资料</strong></p>
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
+<p><code>需求文档</code></p>
+<p>对比了飞书、语雀、云效的PRD模板：</p>
 <ul>
-<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
-<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
+<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
+<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
+<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
 </ul>
-<p><strong>更新日志</strong></p>
+<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
+<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
+<p><code>需求分析</code></p>
+<p>博主讨论了需求边界，他分为3种：</p>
 <ul>
-<li>2024-03-03： 新建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建3-安装Next主题</title>
-    <url>/2022/2022041001/</url>
-    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
-<span id="more"></span>
-
-<blockquote>
-<p>适用于hexo 5.0以上版本</p>
-</blockquote>
-<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
-<p><strong>git方式</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
-<h1 id="站点配置-Hexo配置"><a href="#站点配置-Hexo配置" class="headerlink" title="站点配置(Hexo配置)"></a>站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="主题配置（Next主题配置）"><a href="#主题配置（Next主题配置）" class="headerlink" title="主题配置（Next主题配置）"></a>主题配置（Next主题配置）</h1><blockquote>
-<p>站点根目录下的<code>_config.next.yml</code>文件</p>
-</blockquote>
-<h2 id="3-1-配置分类和标签页面"><a href="#3-1-配置分类和标签页面" class="headerlink" title="3.1 配置分类和标签页面"></a>3.1 配置分类和标签页面</h2><p>命令行输入 <code>hexo n page 标签</code> 新建tags页面，会在<code>source</code>文件夹下生成<code>tags</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>tags</code>文件夹下生成<em>index.md</em>文件</p>
-<p>打开<code>tags\index.md</code>，添加<code>type: tags</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-07-08 08:27:38</span><br><span class="line"><span class="section">type: tags</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<p>命令行输入 <code>hexo n page 分类</code> 新建categores页面，会在<code>source</code>文件夹下生成<code>categories</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>categories</code>文件夹下生成<em>index.md</em>文件</p>
-<p>打开<code>tags\index.md</code>，添加<code>type: categories</code></p>
-<h2 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a>导航栏配置</h2><img src="/2022/2022041001/Snipaste_2021-07-08_00-59-30.jpg" class="">
-
-<h1 id="测试浏览"><a href="#测试浏览" class="headerlink" title="测试浏览"></a>测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
-<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20240916：增加分类和标签页面的配置说明，</li>
-<li>20240303：精简主题安装的操作，推荐使用git方式安装</li>
-<li>20220410：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git概念</title>
-    <url>/2021/2021122701/</url>
-    <content><![CDATA[<p>git重要的术语概念</p>
-<span id="more"></span>
-
-<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><ul>
-<li><code>remote</code> 远程仓</li>
-<li><code>repository</code> 本地仓</li>
-<li><code>stash</code> 贮藏区</li>
-<li><code>index/stage/cache</code> 索引区&#x2F;暂存区&#x2F;缓存区</li>
-<li><code>workspace</code> 工作区</li>
-<li><code>branch</code> 分支</li>
-<li><code>tag</code> 标签</li>
-</ul>
-<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
-<code class="mermaid">
-
-sequenceDiagram
-participant 工作区 workspace
-participant 暂存区 stage
-participant 贮藏区 stash
-participant 本地仓 repository
-participant 远程仓 remote
-
-par 创建仓库
-  note over 本地仓 repository: git init
-  远程仓 remote -&gt;&gt; 本地仓 repository: git clone
-  本地仓 repository -&gt;&gt; 工作区 workspace: git switch
-and 提交修改
-  工作区 workspace -&gt;&gt; 暂存区 stage: git add
-  暂存区 stage -&gt;&gt; 本地仓 repository: git commit
-  本地仓 repository -&gt;&gt; 远程仓 remote: git push
-and 拉取更新
-  远程仓 remote -&gt;&gt; 本地仓 repository: git fetch
-  本地仓 repository -&gt;&gt; 工作区 workspace: git merge&#x2F;rebase
-  远程仓 remote -&gt;&gt; 工作区 workspace: git pull
-and 撤销修改
-  暂存区 stage -&gt;&gt; 工作区 workspace: git restore&#x2F;reset
-  暂存区 stage -&gt;&gt; 贮藏区 stash: git stash
-  本地仓 repository -&gt;&gt; 暂存区 stage: git reset&#x2F;revert
-  本地仓 repository -&gt;&gt; 本地仓 repository: git rebase
-end
-</code>
-</pre>
-
-
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>20241021：时序图增加英文</p>
+<li><p>开放型： 需求无从下手</p>
 </li>
-<li><p>20211227：初稿</p>
+<li><p>封闭型： 需求不得不做，老板说</p>
+</li>
+<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
 </li>
 </ul>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
+<p><code>职业发展</code> <code>产品职业观</code></p>
+<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
+<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
+<p><code>职业发展</code></p>
+<p>短期价值： 领导的信任、表扬、提成加薪</p>
+<p>长期价值： 经验积累和综合素质提升</p>
+<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
+<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
+<td>人人都是产品经理</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240312：初稿</li>
+</ul>
 ]]></content>
       <categories>
-        <category>程序猿</category>
+        <category>考拉周刊</category>
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
   </entry>
   <entry>
     <title>Mac上homebrew安装与卸载</title>
@@ -468,8 +320,529 @@ end
       </tags>
   </entry>
   <entry>
+    <title>frp内网穿透</title>
+    <url>/2024/2024072701/</url>
+    <content><![CDATA[<p>之前<code>ddns-go + ipv6</code>方案失效了，买了台阿里云服务器做内网穿透，上个周末折腾了1天没成功，昨晚+今天上午搞成功了，😆开心～</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前提条件：一台有公网IP的服务器</p>
+<p>输入<code>uname -u</code>查询当前系统架构，然后到<a href="https://github.com/fatedier/frp/releases">frp</a>下载对应的安装包</p>
+<table>
+<thead>
+<tr>
+<th>操作系统</th>
+<th>系统架构</th>
+<th>安装包类型</th>
+<th>分工</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>苹果芯片Mac</td>
+<td>arm64</td>
+<td>arm64</td>
+<td>frpc（客户端：要穿透的内网机器）</td>
+</tr>
+<tr>
+<td>Alibaba Cloud Linux3</td>
+<td>x86_64</td>
+<td>amd64</td>
+<td>frps（服务端）</td>
+</tr>
+</tbody></table>
+<p>安装包清单如下：</p>
+<ul>
+<li>frps</li>
+<li>frps.toml</li>
+<li>frpc</li>
+<li>frpc.toml</li>
+<li>LICENSE</li>
+</ul>
+<p><code>.toml</code>是配置文件</p>
+<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h2><p>完整的frps配置可以参考<a href="https://github.com/fatedier/frp/blob/dev/conf/frps_full_example.toml">官方</a></p>
+<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># frps.toml</span></span><br><span class="line"><span class="attr">bindPort</span> = <span class="number">7000</span>  <span class="comment"># 客户端连接的端口</span></span><br><span class="line"><span class="attr">log.to</span> = <span class="string">&quot;/var/log/frps.log&quot;</span>  <span class="comment"># 日志路径</span></span><br></pre></td></tr></table></figure>
+
+<p>使用<code>sftp</code>工具，将<code>frps</code>文件上传到<code>usr/local/bin</code>目录下，将<code>frps.toml</code>文件上传到<code>/opt</code>目录下</p>
+<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p>完整的frpc配置可以参考<a href="https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml">官方</a></p>
+<p>我Mac上使用homebrew包管理工具<code>brew install frpc</code>安装frpc，安装路径是<code>/opt/homebrew/Cellar</code></p>
+<p>homebrew安装的frpc.toml路径在<code>/opt/homebrew/etc/frp</code></p>
+<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># frpc.toml</span></span><br><span class="line"><span class="attr">serverAddr</span> = <span class="string">&quot;47.255.255.198&quot;</span>  <span class="comment"># 阿里云服务器IP</span></span><br><span class="line"><span class="attr">serverPort</span> = <span class="number">7000</span>  <span class="comment"># 服务端连接的端口</span></span><br><span class="line"></span><br><span class="line"><span class="section">[[proxies]]</span></span><br><span class="line"><span class="attr">name</span> = <span class="string">&quot;aimee&quot;</span>  <span class="comment"># 代理名称</span></span><br><span class="line"><span class="attr">type</span> = <span class="string">&quot;tcp&quot;</span>  <span class="comment"># 转发类型</span></span><br><span class="line"><span class="attr">localIP</span> = <span class="string">&quot;127.0.0.1&quot;</span>  <span class="comment"># 本地ip</span></span><br><span class="line"><span class="attr">localPort</span> = <span class="number">5001</span>  <span class="comment"># 本地端口</span></span><br><span class="line"><span class="attr">remotePort</span> = <span class="number">5000</span>  <span class="comment"># 远程端口</span></span><br></pre></td></tr></table></figure>
+
+<p>需要到阿里云ECS服务器上的安全组开通<code>7000</code>和<code>5000</code>端口</p>
+<h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><h2 id="服务端-1"><a href="#服务端-1" class="headerlink" title="服务端"></a>服务端</h2><h3 id="单次手动启动"><a href="#单次手动启动" class="headerlink" title="单次手动启动"></a>单次手动启动</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">usr/local/bin/frps -c /opt/frps.toml</span><br></pre></td></tr></table></figure>
+
+<h3 id="服务启动项"><a href="#服务启动项" class="headerlink" title="服务启动项"></a>服务启动项</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano /etc/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
+
+<p><code>nano</code> 是Linux上轻量级文本编辑器，输入命令后，会进入编辑状态，粘贴以下内容，然后按 <code>Ctrl + X</code> 退出，按 <code>Y</code> 确认保存，按 <code>Enter</code> 保存文件</p>
+<p>如果提示<code>-bash: nano: command not found</code>则用<code>yum install nano</code>安装下</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=FRP Server</span><br><span class="line"><span class="attr">After</span>=network.target</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">ExecStart</span>=/usr/local/bin/frps -c /opt/frps.toml</span><br><span class="line"><span class="attr">Restart</span>=always</span><br><span class="line"><span class="attr">User</span>=root</span><br><span class="line"><span class="attr">Group</span>=root</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 重新加载systemd配置</span></span><br><span class="line">systemctl daemon-reload</span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">systemctl start frps</span><br><span class="line"><span class="comment"># 开机自启动</span></span><br><span class="line">systemctl <span class="built_in">enable</span> frps</span><br><span class="line"><span class="comment"># 检查是否成功</span></span><br><span class="line">systemctl status frps</span><br></pre></td></tr></table></figure>
+
+<h2 id="客户端-1"><a href="#客户端-1" class="headerlink" title="客户端"></a>客户端</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动</span></span><br><span class="line">brew services start frpc</span><br><span class="line"><span class="comment"># 检查是否成功</span></span><br><span class="line">brew services</span><br></pre></td></tr></table></figure>
+
+<p>日志路径会存储在<code>/opt/homebrew/var/log</code>路径下</p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>在浏览器中输入<code>http://121.255.255.198:5000</code>访问内网的web服务</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li>http转发要求<code>customDomains</code>必填，没有域名怎么办？ <a href="https://github.com/fatedier/frp/issues/168">答案</a></li>
+<li>怎么穿透多个http端口？ <a href="https://github.com/fatedier/frp/issues/3929">答案</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20240727：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>部署运维</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>远程仓库和远程分支更名</title>
+    <url>/2024/2024102002/</url>
+    <content><![CDATA[<p>远程仓库和远程分支更名，本地git操作记录</p>
+<span id="more"></span>
+
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将远程仓库名称从<code>ombretor</code>更改为<code>aimee</code>，将远程分支从<code>main</code>改为<code>master</code></p>
+<img src="/2024/2024102002/image-20241020192613150.png" class="" title="image-20241020192613150">
+
+<h1 id="本地git操作"><a href="#本地git操作" class="headerlink" title="本地git操作"></a>本地git操作</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看所有远程仓库（详细模式）</span><br><span class="line">git remote --verbose</span><br><span class="line"># 更新远程仓库url</span><br><span class="line">git remote set-url origin https://gitee.com/koalamini/aimee.git</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"># 修改远程仓库名称,origin改为gitee</span><br><span class="line">git remote rename origin gitee</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"></span><br><span class="line"># 本地仓库，将main更名为master</span><br><span class="line">git branch  #检查当前分支名称</span><br><span class="line">git branch --move master</span><br><span class="line"># 推送到远程仓库(远程仓库新建master分支)</span><br><span class="line">git push gitee master</span><br><span class="line"># 远程仓库将master设为默认分支</span><br><span class="line">git push set-head gitee master</span><br><span class="line"># 设置跟踪关系</span><br><span class="line">git remote -u gitee master</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20241020：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows平台的包管理器</title>
+    <url>/2024/2024091901/</url>
+    <content><![CDATA[<p>Mac上用Homebrew包管理器，很爽很快捷，Windows上也想用，找了下，微软自带的winget和开源的scoop可以搭配使用</p>
+<span id="more"></span>
+
+<h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><p>用Powershell输入<code>iwr -useb get.scoop.sh | iew</code>安装scoop</p>
+<ul>
+<li><p><code>iwr</code>是<code>Invoke-WebRequest</code>的缩写，从web获取内容，类似于<code>curl</code>和<code>wget</code></p>
+</li>
+<li><p><code>iwr -useb get.scoop.sh</code> 会从 <code>get.scoop.sh</code> 下载 Scoop 的安装脚本</p>
+</li>
+<li><p>下载的内容通过管道操作符 <code>|</code> 传递给 <code>iex</code>， <code>iex</code>是<code>Invoke-Expression</code>的缩写</p>
+</li>
+<li><p><code>iex</code> 会执行下载的脚本，从而完成 Scoop 的安装</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装scoop</span></span><br><span class="line">iwr -useb get.scoop.sh | iex</span><br><span class="line"><span class="comment"># 查询scoop版本</span></span><br><span class="line">scoop --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 搜索</span></span><br><span class="line">scoop search nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line">scoop install &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 卸载</span></span><br><span class="line">scoop uninstall &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 更新</span></span><br><span class="line">scoop update &lt;软件包名称&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/2024091901/PixPin_2024-09-19_23-14-38.png" class="">
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询已安装的软件</span></span><br><span class="line">winget list</span><br><span class="line"><span class="comment"># 搜索软件</span></span><br><span class="line">winget search &lt;name&gt;</span><br><span class="line"><span class="comment"># 查询某软件包信息</span></span><br><span class="line">winget show &lt;软件包名称&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装软件</span></span><br><span class="line">winget install &lt;name&gt;</span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">winget uninstall &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级某个软件</span></span><br><span class="line">winget upgrade &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级所有软件</span></span><br><span class="line">winget upgrade --all</span><br></pre></td></tr></table></figure>
+
+<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><img src="/2024/2024091901/PixPin_2024-09-19_23-11-47.png" class="">
+
+<p>powershell默认不允许执行脚本，输入下面命令开通权限</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/2024091901/PixPin_2024-09-19_23-12-41.png" class="">
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20240921：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node包管理器</title>
+    <url>/2024/2024092001/</url>
+    <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
+<span id="more"></span>
+
+<p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
+<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>node版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
+
+<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+
+<h1 id="ncu"><a href="#ncu" class="headerlink" title="ncu"></a>ncu</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
+
+<h1 id="npm-check"><a href="#npm-check" class="headerlink" title="npm-check"></a>npm-check</h1><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
+</li>
+<li><p>20240920：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>开发环境配置</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git概念</title>
+    <url>/2021/git%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<p>git重要的术语概念</p>
+<span id="more"></span>
+
+<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><img src="/2021/git%E6%A6%82%E5%BF%B5/bg2015120901.png" class="" title="bg2015120901">
+
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>remote</td>
+<td>远程仓库</td>
+</tr>
+<tr>
+<td>repository</td>
+<td>本地仓库</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>分支</td>
+</tr>
+<tr>
+<td>index&#x2F;stage&#x2F;cache</td>
+<td>索引区&#x2F;暂存区&#x2F;缓存区</td>
+</tr>
+<tr>
+<td>workspace</td>
+<td>工作区</td>
+</tr>
+<tr>
+<td>stash</td>
+<td>贮藏区</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签</td>
+</tr>
+</tbody></table>
+<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
+<code class="mermaid">
+sequenceDiagram
+participant workspace
+participant stage
+participant stash
+participant repository
+participant remote
+
+par 创建仓库
+  note over repository: git init
+  remote -&gt;&gt; repository: git clone
+  repository -&gt;&gt;  workspace: git switch
+and 提交修改
+   workspace -&gt;&gt; stage: git add
+  stage -&gt;&gt; repository: git commit
+  repository -&gt;&gt; remote: git push
+and 拉取更新
+  remote -&gt;&gt; repository: git fetch
+  repository -&gt;&gt;  workspace: git merge&#x2F;rebase
+  remote -&gt;&gt;  workspace: git pull
+and 撤销修改
+  stage -&gt;&gt;  workspace: git restore&#x2F;reset
+  stage -&gt;&gt; stash: git stash
+  repository -&gt;&gt; stage: git reset&#x2F;revert
+  repository -&gt;&gt; repository: git rebase
+end
+</code>
+</pre>
+
+
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">常用 Git 命令清单 | 阮一峰网络日志</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241217：增加阮一峰那经典的流程图，优化展现形式</p>
+</li>
+<li><p>20241021：时序图增加英文</p>
+</li>
+<li><p>20211227：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建1-安装</title>
+    <url>/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/</url>
+    <content><![CDATA[<p>大学的时候用的是博客园，毕业后打算自己搭一个，选择Hexo+NexT</p>
+<span id="more"></span>
+
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
+<li>下载安装<a href="https://nodejs.org/en/">NodeJs</a></li>
+<li>在要存储位置打开cmd</li>
+<li>命令行输入<code>npm install -g hexo-cli</code> 安装hexo脚手架</li>
+<li>命令行输入 <code>hexo init &lt;blog-name&gt;</code> 初始化站点，博客名称必填<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-02-09.jpg" class=""></li>
+<li>命令行输入 <code>cd &lt;blog-name&gt;</code> 进入博客文件夹</li>
+<li>命令行输入 <code>hexo server</code> 本地打开博客网站，浏览器打开<code>http://localhost:4000</code>，缩写为<code>hexo s</code><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-12-29.jpg" class="">
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-14-36.jpg" class=""></li>
+</ul>
+<h1 id="Github托管部署"><a href="#Github托管部署" class="headerlink" title="Github托管部署"></a>Github托管部署</h1><ul>
+<li>命令行输入 <code>npm install hexo-deployer-git</code> 安装git部署工具</li>
+<li>打开<a href="https://github.com/">github</a>，新建仓库，注意仓库名称要以<code>.github.io</code>结尾<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-35-48.jpg" class=""></li>
+<li>在<em>github</em> 个人设置中生成<em>token</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-55-53.jpg" class="">
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-56-57.jpg" class=""></li>
+<li>打开<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<em>deploy</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-08_00-04-07.jpg" class=""></li>
+<li>命令行输入 <code>hexo deploy</code> 部署到github仓库，缩写为<code>hexo d</code></li>
+<li>浏览器打开博客网址，例如：<a href="https://koalamini.github.io/">https://koalamini.github.io/</a></li>
+</ul>
+<h1 id="多设备写博客"><a href="#多设备写博客" class="headerlink" title="多设备写博客"></a>多设备写博客</h1><ul>
+<li>在<a href="https://gitee.com/">Gitee</a>或者<a href="https://github.com/">Github</a>新建<strong>私有仓库</strong></li>
+<li>使用Git工具同步，这样就可以多端同步写博客了</li>
+</ul>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://hexo.io/zh-cn/index.html">Hexo官方</a></li>
+<li><a href="http://theme-next.iissnan.com/">NexT中文网</a></li>
+<li><a href="https://github.com/next-theme/hexo-theme-next">GitHub - next-theme</a></li>
+<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">Z小旋. Hexo-Next 主题博客个性化配置超详细，超全面(两万字). CSDN博客</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>2024-09-16：删除Coding的部署方式，删除配置模板，删除next配置部分</p>
+</li>
+<li><p>2021-07-08：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>偏离分支的处理</title>
+    <url>/2024/%E5%81%8F%E7%A6%BB%E5%88%86%E6%94%AF%E7%9A%84%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<p>偏离分支处理需要变基rebase</p>
+<span id="more"></span>
+
+<h1 id="偏离分支的产生原因"><a href="#偏离分支的产生原因" class="headerlink" title="偏离分支的产生原因"></a>偏离分支的产生原因</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7  origin/master</span><br><span class="line">           \</span><br><span class="line">            4 -- 5  master</span><br></pre></td></tr></table></figure>
+
+<p>这种情况下会出现<code>致命错误：需要指定如何调和偏离的分支</code>提示，如下图所示：</p>
+
+
+<h1 id="偏离分支的处理"><a href="#偏离分支的处理" class="headerlink" title="偏离分支的处理"></a>偏离分支的处理</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase &amp;&amp; git push</span><br></pre></td></tr></table></figure>
+
+<p>执行完<code>git pull --rebase</code>后本地<code>master</code>分支提交记录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7 -- 4&#x27; -- 5&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>删除 4 和 5 commit，创建 4’ 和 5’ commit，拼接到 7 后面</p>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241217：用分支树形式表达背景，更加清晰</p>
+</li>
+<li><p>20241020：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建3-安装Next主题</title>
+    <url>/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/</url>
+    <content><![CDATA[<p>很喜欢简洁朴素干净的next主题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>适用于hexo 5.0以上版本</p>
+</blockquote>
+<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用git方式</p>
+<p><strong>git方式</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
+<h1 id="站点配置-Hexo配置"><a href="#站点配置-Hexo配置" class="headerlink" title="站点配置(Hexo配置)"></a>站点配置(Hexo配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="主题配置（Next主题配置）"><a href="#主题配置（Next主题配置）" class="headerlink" title="主题配置（Next主题配置）"></a>主题配置（Next主题配置）</h1><blockquote>
+<p>站点根目录下的<code>_config.next.yml</code>文件</p>
+</blockquote>
+<h2 id="3-1-配置分类和标签页面"><a href="#3-1-配置分类和标签页面" class="headerlink" title="3.1 配置分类和标签页面"></a>3.1 配置分类和标签页面</h2><p>命令行输入 <code>hexo n page 标签</code> 新建tags页面，会在<code>source</code>文件夹下生成<code>tags</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>tags</code>文件夹下生成<em>index.md</em>文件</p>
+<p>打开<code>tags\index.md</code>，添加<code>type: tags</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-07-08 08:27:38</span><br><span class="line"><span class="section">type: tags</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>命令行输入 <code>hexo n page 分类</code> 新建categores页面，会在<code>source</code>文件夹下生成<code>categories</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>categories</code>文件夹下生成<em>index.md</em>文件</p>
+<p>打开<code>tags\index.md</code>，添加<code>type: categories</code></p>
+<h2 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a>导航栏配置</h2><img src="/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/Snipaste_2021-07-08_00-59-30.jpg" class="">
+
+<h1 id="测试浏览"><a href="#测试浏览" class="headerlink" title="测试浏览"></a>测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20240916：增加分类和标签页面的配置说明，</li>
+<li>20240303：精简主题安装的操作，推荐使用git方式安装</li>
+<li>20220410：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建2-站点配置</title>
+    <url>/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/</url>
+    <content><![CDATA[<p>搜索相关的功能配置</p>
+<span id="more"></span>
+
+<h1 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h1><ul>
+<li>命令行输入<code>npm install hexo-generator-searchdb</code>，安装<strong>搜索</strong>工具</li>
+<li>在<strong>站点配置文档</strong> <em>_config.yml</em>，新增内容<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure></li>
+<li>在<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>local_search</em>，将子属性<em>enable</em>的值改为<code>true</code><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/image-20210711173129363.png" class="" title="image-20210711173129363"></li>
+</ul>
+<h1 id="网站地图"><a href="#网站地图" class="headerlink" title="网站地图"></a>网站地图</h1><p>网站地图是方便搜索引擎爬虫了解网站结构，提高网站曝光度。</p>
+<ul>
+<li><p>在<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<code>url</code>，后面的值设置为你的网站url，例如<code>https://koalamini.github.io</code></p>
+</li>
+<li><p>命令行输入 <code>npm install hexo-generator-sitemap</code> 安装网站地图生成插件</p>
+</li>
+<li><p>打开<a href="https://ziyuan.baidu.com/">百度搜索资源平台</a>，【菜单栏】→【用户中心】→【站点管理】→【添加站点】</p>
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-08_01-12-00.jpg" class=""></li>
+<li><p>打开<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>index_with_subtitle</em>，将后面的值改为<code>true</code></p>
+</li>
+<li><p>打开<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<em>baidu</em></p>
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-08_01-15-50.jpg" class="">
+</li>
+<li><p>返回百度站点验证网页，点击【完成验证】</p>
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-08_01-41-44.jpg" class="">
+</li>
+<li><p>网站地图提交收录</p>
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-11_13-53-33.jpg" class="">
+</li>
+<li><p>API提交收录</p>
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-11_14-39-58.jpg" class="">
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/Snipaste_2021-07-11_14-42-27.jpg" class="" title="Snipaste_2021-07-11_14-42-27"></li>
+</ul>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>2024-09-16：内容改为搜索功能相关的内容，非搜索功能的清理出去</p>
+</li>
+<li><p>2021-07-20：初稿</p>
+</li>
+</ul>
+<hr>
+<p><strong>浏览进度</strong></p>
+<ul>
+<li>在<strong>主题配置文档</strong> <em>_config.yml</em>，搜索<code>scrollpercent</code>，值改为<code>true</code>，效果为：<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2/image-20210711171652479.png" class="" title="image-20210711171652479"></li>
+</ul>
+<p><strong>置顶文章</strong></p>
+<ul>
+<li>命令行输入 <code>npm uninstall hexo-generator-index</code> 卸载默认插件</li>
+<li>命令行输入 <code>npm install hexo-generator-index-pin-top</code> 安装新插件</li>
+<li>修改模板，修改<code>scaffolds\post.md</code>，在文章<strong>元信息</strong>区（Front-matter）添加<code>top: false</code>，撰写文章时改为<code>true</code>即可</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建4-插入本地图片</title>
+    <url>/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA4/</url>
+    <content><![CDATA[<p>hexo本地图片的<a href="https://hexo.io/zh-cn/docs/asset-folders">解决方案</a>不够优雅，选用<code>hexo-image-link</code>插件，终于可以用 typora 优雅写博客了</p>
+<span id="more"></span>
+
+<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p><code>npm install hero-image-link</code>安装插件，发现最新的版本是<code>0.0.6</code></p>
+<h2 id="打开hexo配置"><a href="#打开hexo配置" class="headerlink" title="打开hexo配置"></a>打开hexo配置</h2><p>在博客根路径下找到<code>_config.yml</code>文件，找到<code>Writing</code>板块，将<code>post_asset_folder</code>配置改为<code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing (编辑)</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>这个配置打开后，使用<code>hexo new &lt;博客名称&gt;</code>时会自动创建同名的文件夹，用来存放图片</p>
+<h2 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h2><p>打开 typora 设置，配置成如图所示</p>
+<img src="/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA4/image-20240303115738031.png" class="" title="image-20240303115738031">
+
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><ul>
+<li>用<code>hexo n &lt;博客名称&gt;</code>创建新博客，这个命令它会套用<code>博客站点根目录/scaffolds/post.md</code>模板，并且生成同名的文件夹</li>
+<li>用typora编写博客，并粘贴图片</li>
+<li>用<code>hexo server</code>或者<code>hexo s</code>预览文章，检查图片是否正常显示</li>
+<li>用<code>hexo generate</code>或者<code>hexo g</code>生成静态网页</li>
+<li>用<code>hexo deploy</code>或者<code>hexo d</code>部署到 github 或者 gitee 博客站点托管网站</li>
+<li>打开 <code>http://&lt;子域名&gt;.github.io</code>检查图片是否正常显示</li>
+</ul>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></li>
+<li><a href="http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/">http://edulinks.cn/2020/03/14/20200314-write-hexo-with-typora/</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-03-03： 新建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建5-功能清单</title>
-    <url>/2024/2024042702/</url>
+    <url>/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5/</url>
     <content><![CDATA[<p>基本上全是参考官方博客的，有一些提供了最佳实践记录</p>
 <span id="more"></span>
 
@@ -504,7 +877,7 @@ end
 <tbody><tr>
 <td>本地相对路径图片</td>
 <td><a href="https://github.com/cocowool/hexo-image-link">hexo-image-link</a></td>
-<td><a href="/2024/2024030301/" title="博客搭建4-插入本地图片">博客搭建4-插入本地图片</a></td>
+<td><a href="/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA4/" title="博客搭建4-插入本地图片">博客搭建4-插入本地图片</a></td>
 </tr>
 <tr>
 <td>图片点击预览放大</td>
@@ -617,12 +990,12 @@ end
   </entry>
   <entry>
     <title>博客搭建6-自定义域名</title>
-    <url>/2024/2024042703/</url>
+    <url>/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA6/</url>
     <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
 <span id="more"></span>
 
 <h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><p>添加<code>CNAME</code>解析，主机名填<code>blog</code></p>
-<img src="/2024/2024042703/image-20240427135756010.png" class="" title="image-20240427135756010">
+<img src="/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA6/image-20240427135756010.png" class="" title="image-20240427135756010">
 
 <h1 id="博客配置"><a href="#博客配置" class="headerlink" title="博客配置"></a>博客配置</h1><p>在<code>/source</code>路径下添加<code>CNAME</code>文件，注意<u>没有文件拓展名</u>，然后在里面添加<code>blog.koalamini.world</code></p>
 <p>最后，<code>hexo g</code>后部署到github</p>
@@ -638,379 +1011,6 @@ end
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考拉周刊第3期</title>
-    <url>/2024/2024031201/</url>
-    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
-<p><code>需求文档</code></p>
-<p>对比了飞书、语雀、云效的PRD模板：</p>
-<ul>
-<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
-<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
-<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
-</ul>
-<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
-<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
-<p><code>需求分析</code></p>
-<p>博主讨论了需求边界，他分为3种：</p>
-<ul>
-<li><p>开放型： 需求无从下手</p>
-</li>
-<li><p>封闭型： 需求不得不做，老板说</p>
-</li>
-<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
-</li>
-</ul>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
-<p><code>职业发展</code> <code>产品职业观</code></p>
-<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
-<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
-<p><code>职业发展</code></p>
-<p>短期价值： 领导的信任、表扬、提成加薪</p>
-<p>长期价值： 经验积累和综合素质提升</p>
-<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
-<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
-<thead>
-<tr>
-<th>昵称</th>
-<th>平台</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
-<td>人人都是产品经理</td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240312：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>frp内网穿透</title>
-    <url>/2024/2024072701/</url>
-    <content><![CDATA[<p>之前<code>ddns-go + ipv6</code>方案失效了，买了台阿里云服务器做内网穿透，上个周末折腾了1天没成功，昨晚+今天上午搞成功了，😆开心～</p>
-<span id="more"></span>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前提条件：一台有公网IP的服务器</p>
-<p>输入<code>uname -u</code>查询当前系统架构，然后到<a href="https://github.com/fatedier/frp/releases">frp</a>下载对应的安装包</p>
-<table>
-<thead>
-<tr>
-<th>操作系统</th>
-<th>系统架构</th>
-<th>安装包类型</th>
-<th>分工</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>苹果芯片Mac</td>
-<td>arm64</td>
-<td>arm64</td>
-<td>frpc（客户端：要穿透的内网机器）</td>
-</tr>
-<tr>
-<td>Alibaba Cloud Linux3</td>
-<td>x86_64</td>
-<td>amd64</td>
-<td>frps（服务端）</td>
-</tr>
-</tbody></table>
-<p>安装包清单如下：</p>
-<ul>
-<li>frps</li>
-<li>frps.toml</li>
-<li>frpc</li>
-<li>frpc.toml</li>
-<li>LICENSE</li>
-</ul>
-<p><code>.toml</code>是配置文件</p>
-<h1 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h1><h2 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h2><p>完整的frps配置可以参考<a href="https://github.com/fatedier/frp/blob/dev/conf/frps_full_example.toml">官方</a></p>
-<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># frps.toml</span></span><br><span class="line"><span class="attr">bindPort</span> = <span class="number">7000</span>  <span class="comment"># 客户端连接的端口</span></span><br><span class="line"><span class="attr">log.to</span> = <span class="string">&quot;/var/log/frps.log&quot;</span>  <span class="comment"># 日志路径</span></span><br></pre></td></tr></table></figure>
-
-<p>使用<code>sftp</code>工具，将<code>frps</code>文件上传到<code>usr/local/bin</code>目录下，将<code>frps.toml</code>文件上传到<code>/opt</code>目录下</p>
-<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p>完整的frpc配置可以参考<a href="https://github.com/fatedier/frp/blob/dev/conf/frpc_full_example.toml">官方</a></p>
-<p>我Mac上使用homebrew包管理工具<code>brew install frpc</code>安装frpc，安装路径是<code>/opt/homebrew/Cellar</code></p>
-<p>homebrew安装的frpc.toml路径在<code>/opt/homebrew/etc/frp</code></p>
-<figure class="highlight toml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># frpc.toml</span></span><br><span class="line"><span class="attr">serverAddr</span> = <span class="string">&quot;47.255.255.198&quot;</span>  <span class="comment"># 阿里云服务器IP</span></span><br><span class="line"><span class="attr">serverPort</span> = <span class="number">7000</span>  <span class="comment"># 服务端连接的端口</span></span><br><span class="line"></span><br><span class="line"><span class="section">[[proxies]]</span></span><br><span class="line"><span class="attr">name</span> = <span class="string">&quot;aimee&quot;</span>  <span class="comment"># 代理名称</span></span><br><span class="line"><span class="attr">type</span> = <span class="string">&quot;tcp&quot;</span>  <span class="comment"># 转发类型</span></span><br><span class="line"><span class="attr">localIP</span> = <span class="string">&quot;127.0.0.1&quot;</span>  <span class="comment"># 本地ip</span></span><br><span class="line"><span class="attr">localPort</span> = <span class="number">5001</span>  <span class="comment"># 本地端口</span></span><br><span class="line"><span class="attr">remotePort</span> = <span class="number">5000</span>  <span class="comment"># 远程端口</span></span><br></pre></td></tr></table></figure>
-
-<p>需要到阿里云ECS服务器上的安全组开通<code>7000</code>和<code>5000</code>端口</p>
-<h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><h2 id="服务端-1"><a href="#服务端-1" class="headerlink" title="服务端"></a>服务端</h2><h3 id="单次手动启动"><a href="#单次手动启动" class="headerlink" title="单次手动启动"></a>单次手动启动</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">usr/local/bin/frps -c /opt/frps.toml</span><br></pre></td></tr></table></figure>
-
-<h3 id="服务启动项"><a href="#服务启动项" class="headerlink" title="服务启动项"></a>服务启动项</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano /etc/systemd/system/frps.service</span><br></pre></td></tr></table></figure>
-
-<p><code>nano</code> 是Linux上轻量级文本编辑器，输入命令后，会进入编辑状态，粘贴以下内容，然后按 <code>Ctrl + X</code> 退出，按 <code>Y</code> 确认保存，按 <code>Enter</code> 保存文件</p>
-<p>如果提示<code>-bash: nano: command not found</code>则用<code>yum install nano</code>安装下</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Unit]</span></span><br><span class="line"><span class="attr">Description</span>=FRP Server</span><br><span class="line"><span class="attr">After</span>=network.target</span><br><span class="line"></span><br><span class="line"><span class="section">[Service]</span></span><br><span class="line"><span class="attr">ExecStart</span>=/usr/local/bin/frps -c /opt/frps.toml</span><br><span class="line"><span class="attr">Restart</span>=always</span><br><span class="line"><span class="attr">User</span>=root</span><br><span class="line"><span class="attr">Group</span>=root</span><br><span class="line"></span><br><span class="line"><span class="section">[Install]</span></span><br><span class="line"><span class="attr">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 重新加载systemd配置</span></span><br><span class="line">systemctl daemon-reload</span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">systemctl start frps</span><br><span class="line"><span class="comment"># 开机自启动</span></span><br><span class="line">systemctl <span class="built_in">enable</span> frps</span><br><span class="line"><span class="comment"># 检查是否成功</span></span><br><span class="line">systemctl status frps</span><br></pre></td></tr></table></figure>
-
-<h2 id="客户端-1"><a href="#客户端-1" class="headerlink" title="客户端"></a>客户端</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动</span></span><br><span class="line">brew services start frpc</span><br><span class="line"><span class="comment"># 检查是否成功</span></span><br><span class="line">brew services</span><br></pre></td></tr></table></figure>
-
-<p>日志路径会存储在<code>/opt/homebrew/var/log</code>路径下</p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>在浏览器中输入<code>http://121.255.255.198:5000</code>访问内网的web服务</p>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li>http转发要求<code>customDomains</code>必填，没有域名怎么办？ <a href="https://github.com/fatedier/frp/issues/168">答案</a></li>
-<li>怎么穿透多个http端口？ <a href="https://github.com/fatedier/frp/issues/3929">答案</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20240727：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>网络</tag>
-        <tag>部署运维</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows平台的包管理器</title>
-    <url>/2024/2024091901/</url>
-    <content><![CDATA[<p>Mac上用Homebrew包管理器，很爽很快捷，Windows上也想用，找了下，微软自带的winget和开源的scoop可以搭配使用</p>
-<span id="more"></span>
-
-<h1 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h1><p>用Powershell输入<code>iwr -useb get.scoop.sh | iew</code>安装scoop</p>
-<ul>
-<li><p><code>iwr</code>是<code>Invoke-WebRequest</code>的缩写，从web获取内容，类似于<code>curl</code>和<code>wget</code></p>
-</li>
-<li><p><code>iwr -useb get.scoop.sh</code> 会从 <code>get.scoop.sh</code> 下载 Scoop 的安装脚本</p>
-</li>
-<li><p>下载的内容通过管道操作符 <code>|</code> 传递给 <code>iex</code>， <code>iex</code>是<code>Invoke-Expression</code>的缩写</p>
-</li>
-<li><p><code>iex</code> 会执行下载的脚本，从而完成 Scoop 的安装</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装scoop</span></span><br><span class="line">iwr -useb get.scoop.sh | iex</span><br><span class="line"><span class="comment"># 查询scoop版本</span></span><br><span class="line">scoop --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 搜索</span></span><br><span class="line">scoop search nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line">scoop install &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 卸载</span></span><br><span class="line">scoop uninstall &lt;软件包名称&gt;</span><br><span class="line"><span class="comment"># 更新</span></span><br><span class="line">scoop update &lt;软件包名称&gt;</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024091901/PixPin_2024-09-19_23-14-38.png" class="">
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询已安装的软件</span></span><br><span class="line">winget list</span><br><span class="line"><span class="comment"># 搜索软件</span></span><br><span class="line">winget search &lt;name&gt;</span><br><span class="line"><span class="comment"># 查询某软件包信息</span></span><br><span class="line">winget show &lt;软件包名称&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装软件</span></span><br><span class="line">winget install &lt;name&gt;</span><br><span class="line"><span class="comment"># 卸载软件</span></span><br><span class="line">winget uninstall &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级某个软件</span></span><br><span class="line">winget upgrade &lt;name&gt;</span><br><span class="line"><span class="comment"># 升级所有软件</span></span><br><span class="line">winget upgrade --all</span><br></pre></td></tr></table></figure>
-
-<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><img src="/2024/2024091901/PixPin_2024-09-19_23-11-47.png" class="">
-
-<p>powershell默认不允许执行脚本，输入下面命令开通权限</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024091901/PixPin_2024-09-19_23-12-41.png" class="">
-
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20240921：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>开发环境配置</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node包管理器</title>
-    <url>/2024/2024092001/</url>
-    <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
-<span id="more"></span>
-
-<p><code>npm</code>是<code>node package manager</code>的缩写，node.js的包管理器</p>
-<h1 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h1><p>node版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
-
-<h1 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager </span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<h1 id="ncu"><a href="#ncu" class="headerlink" title="ncu"></a>ncu</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
-
-<h1 id="npm-check"><a href="#npm-check" class="headerlink" title="npm-check"></a>npm-check</h1><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
-</li>
-<li><p>20240920：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>开发环境配置</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>远程仓库和远程分支更名</title>
-    <url>/2024/2024102002/</url>
-    <content><![CDATA[<p>远程仓库和远程分支更名，本地git操作记录</p>
-<span id="more"></span>
-
-<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将远程仓库名称从<code>ombretor</code>更改为<code>aimee</code>，将远程分支从<code>main</code>改为<code>master</code></p>
-<img src="/2024/2024102002/image-20241020192613150.png" class="" title="image-20241020192613150">
-
-<h1 id="本地git操作"><a href="#本地git操作" class="headerlink" title="本地git操作"></a>本地git操作</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看所有远程仓库（详细模式）</span><br><span class="line">git remote --verbose</span><br><span class="line"># 更新远程仓库url</span><br><span class="line">git remote set-url origin https://gitee.com/koalamini/aimee.git</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"># 修改远程仓库名称,origin改为gitee</span><br><span class="line">git remote rename origin gitee</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"></span><br><span class="line"># 本地仓库，将main更名为master</span><br><span class="line">git branch  #检查当前分支名称</span><br><span class="line">git branch --move master</span><br><span class="line"># 推送到远程仓库(远程仓库新建master分支)</span><br><span class="line">git push gitee master</span><br><span class="line"># 远程仓库将master设为默认分支</span><br><span class="line">git push set-head gitee master</span><br><span class="line"># 设置跟踪关系</span><br><span class="line">git remote -u gitee master</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20241020：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git概念</title>
-    <url>/2021/git%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p>git重要的术语概念</p>
-<span id="more"></span>
-
-<h1 id="术语概念"><a href="#术语概念" class="headerlink" title="术语概念"></a>术语概念</h1><img src="/2021/git%E6%A6%82%E5%BF%B5/bg2015120901.png" class="" title="bg2015120901">
-
-<table>
-<thead>
-<tr>
-<th>英文</th>
-<th>中文</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>remote</td>
-<td>远程仓库</td>
-</tr>
-<tr>
-<td>repository</td>
-<td>本地仓库</td>
-</tr>
-<tr>
-<td>branch</td>
-<td>分支</td>
-</tr>
-<tr>
-<td>index&#x2F;stage&#x2F;cache</td>
-<td>索引区&#x2F;暂存区&#x2F;缓存区</td>
-</tr>
-<tr>
-<td>workspace</td>
-<td>工作区</td>
-</tr>
-<tr>
-<td>stash</td>
-<td>贮藏区</td>
-</tr>
-<tr>
-<td>tag</td>
-<td>标签</td>
-</tr>
-</tbody></table>
-<h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><pre>
-<code class="mermaid">
-sequenceDiagram
-participant workspace
-participant stage
-participant stash
-participant repository
-participant remote
-
-par 创建仓库
-  note over repository: git init
-  remote -&gt;&gt; repository: git clone
-  repository -&gt;&gt;  workspace: git switch
-and 提交修改
-   workspace -&gt;&gt; stage: git add
-  stage -&gt;&gt; repository: git commit
-  repository -&gt;&gt; remote: git push
-and 拉取更新
-  remote -&gt;&gt; repository: git fetch
-  repository -&gt;&gt;  workspace: git merge&#x2F;rebase
-  remote -&gt;&gt;  workspace: git pull
-and 撤销修改
-  stage -&gt;&gt;  workspace: git restore&#x2F;reset
-  stage -&gt;&gt; stash: git stash
-  repository -&gt;&gt; stage: git reset&#x2F;revert
-  repository -&gt;&gt; repository: git rebase
-end
-</code>
-</pre>
-
-
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">常用 Git 命令清单 | 阮一峰网络日志</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>20241217：增加阮一峰那经典的流程图，优化展现形式</p>
-</li>
-<li><p>20241021：时序图增加英文</p>
-</li>
-<li><p>20211227：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>偏离分支的处理</title>
-    <url>/2024/%E5%81%8F%E7%A6%BB%E5%88%86%E6%94%AF%E7%9A%84%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<p>偏离分支处理需要变基rebase</p>
-<span id="more"></span>
-
-<h1 id="偏离分支的产生原因"><a href="#偏离分支的产生原因" class="headerlink" title="偏离分支的产生原因"></a>偏离分支的产生原因</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7  origin/master</span><br><span class="line">           \</span><br><span class="line">            4 -- 5  master</span><br></pre></td></tr></table></figure>
-
-<p>这种情况下会出现<code>致命错误：需要指定如何调和偏离的分支</code>提示，如下图所示：</p>
-
-
-<h1 id="偏离分支的处理"><a href="#偏离分支的处理" class="headerlink" title="偏离分支的处理"></a>偏离分支的处理</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase &amp;&amp; git push</span><br></pre></td></tr></table></figure>
-
-<p>执行完<code>git pull --rebase</code>后本地<code>master</code>分支提交记录如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7 -- 4&#x27; -- 5&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>删除 4 和 5 commit，创建 4’ 和 5’ commit，拼接到 7 后面</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>20241217：用分支树形式表达背景，更加清晰</p>
-</li>
-<li><p>20241020：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -1091,9 +1091,27 @@ end
       </tags>
   </entry>
   <entry>
+    <title>关于这里</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
+<p>大学期间是在博客园写博客的，毕业后决定自己搭一个，选了Hexo+Next，转产品后停了一段时间，后来重新回到这里。</p>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240921： <mark class="label primary">v1.5.1</mark>，新增 hexo-hide-posts 插件，把写给朋友的信件隐藏起来；显示ICP备案号</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>那些记忆</title>
+    <url>/huifang/index.html</url>
+    <content><![CDATA[<p><a href="./happy2024.html">2024年生日快乐</a></p>
+<!-- flag of hidden posts -->]]></content>
   </entry>
   <entry>
     <title>2024年生日快乐</title>
@@ -1112,32 +1130,15 @@ end
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>那些记忆</title>
-    <url>/huifang/index.html</url>
-    <content><![CDATA[<p><a href="./happy2024.html">2024年生日快乐</a></p>
-<!-- flag of hidden posts -->]]></content>
-  </entry>
-  <entry>
-    <title>关于这里</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
-<p>大学期间是在博客园写博客的，毕业后决定自己搭一个，选了Hexo+Next，转产品后停了一段时间，后来重新回到这里。</p>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240921： <mark class="label primary">v1.5.1</mark>，新增 hexo-hide-posts 插件，把写给朋友的信件隐藏起来；显示ICP备案号</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>20240921001</title>
     <url>/nagging/20240921001.html</url>
     <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>20240921002</title>
+    <url>/nagging/20240921002.html</url>
+    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1149,6 +1150,11 @@ end
   <entry>
     <title>碎碎念</title>
     <url>/nagging/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -1298,35 +1304,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>分支</title>
-    <url>/repost/git-tutorial/branch.html</url>
-    <content><![CDATA[<p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
-<p><code>git branch</code>命令可以列出本地的所有分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-
-<p>创建一个名为<code>MyBranch</code>的新分支，但是依然停留在当前分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>在远程主机<code>origin</code>上创建一个<code>MyBranch</code>的分支，并与本地的同名分支建立追踪关系。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push -u origin MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>将当前分支改名为<code>MyBranch</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -m MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>删除<code>MyBranch</code>分支，前提是该分支没有未合并的变动。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -d MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>强制删除<code>MyBranch</code>分支，不管有没有未合并变化。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -D MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>切换到<code>MyBranch</code>分支，当前的工作区会变为<code>MyBranch</code>分支的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>Git教程</title>
     <url>/repost/git-tutorial/index.html</url>
     <content><![CDATA[<div class="note info no-icon"><p><strong>转载于：</strong> <a href="https://github.com/wangdoc/git-tutorial">git-tutorial | WangDoc&#x2F;阮一峰</a></p>
@@ -1395,36 +1372,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>内部实现</title>
-    <url>/repost/git-tutorial/internal.html</url>
-    <content><![CDATA[<h1 id="内部实现"><a href="#内部实现" class="headerlink" title="内部实现"></a>内部实现</h1><h2 id="git-目录"><a href="#git-目录" class="headerlink" title=".git 目录"></a>.git 目录</h2><p>版本管理的所有信息，保存在项目的<code>.git</code>目录之中。如果没有这个目录，Git 就会认为这个仓库没有建立版本管理，必须进行初始化。<code>git init</code>命令的主要作用，就是建立<code>.git</code>目录。</p>
-<p><code>.git/config</code>文件保存仓库的设置。</p>
-<p><code>.git/HEAD</code>文件保存当前工作分支的引用。</p>
-<p><code>.git/hooks</code>目录保存各种事件挂钩的脚本。</p>
-<p><code>.git/objects</code>目录保存文件的内容，格式是二进制<code>blob</code>。</p>
-<h2 id="哈希签名"><a href="#哈希签名" class="headerlink" title="哈希签名"></a>哈希签名</h2><p>每次提交的时候，每个文件、每个树节点（目录）和提交本身，都会生成一个40个字符长的 SHA-1 哈希。</p>
-<p>哈希作为文件名，文件本身保留在<code>.git/objects</code>目录之中。</p>
-<h2 id="git-add-命令"><a href="#git-add-命令" class="headerlink" title="git add 命令"></a>git add 命令</h2><p><code>git add</code>会将变动的文件写入<code>.git/objects</code>目录。它内部调用的是<code>git hash-object</code>命令,该命令会计算 SHA-1 哈希，并将 blob 文件放入<code>.git/objects</code>目录。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git hash-object -w myfile.txt</span><br></pre></td></tr></table></figure>
-
-<p><code>git cat-file</code>命令可以查看 blob 格式对应的原始文件内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p e69de29bb2d1d6434b8b29ae775ad8c2e48c5391</span><br></pre></td></tr></table></figure>
-
-<h2 id="git-commit-命令"><a href="#git-commit-命令" class="headerlink" title="git commit 命令"></a>git commit 命令</h2><p><code>git commit</code>命令用于有变动的、并已提交到<code>.git/objects</code>的文件写入历史。</p>
-<p><code>git write-tree</code>为当前仓库创建树节点。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
-
-<p><code>git commit-tree</code>命令将指定的树节点写入历史。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span>“first commit”| git commit-tree \ 6e9432aeedbad83fbffb7f8aae4a5d1ab50b7fdf</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>20240921002</title>
-    <url>/nagging/20240921002.html</url>
-    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Git的操作</title>
     <url>/repost/git-tutorial/operations.html</url>
     <content><![CDATA[<h1 id="Git的操作"><a href="#Git的操作" class="headerlink" title="Git的操作"></a>Git的操作</h1><h2 id="新建代码库"><a href="#新建代码库" class="headerlink" title="新建代码库"></a>新建代码库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个项目和它的整个代码历史</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
@@ -1460,17 +1407,32 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/repost/git-tutorial/tag.html</url>
-    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
+    <title>分支</title>
+    <url>/repost/git-tutorial/branch.html</url>
+    <content><![CDATA[<p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
+<p><code>git branch</code>命令可以列出本地的所有分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
 
-<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
-<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
+<p>创建一个名为<code>MyBranch</code>的新分支，但是依然停留在当前分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch MyBranch</span><br></pre></td></tr></table></figure>
 
-<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
+<p>在远程主机<code>origin</code>上创建一个<code>MyBranch</code>的分支，并与本地的同名分支建立追踪关系。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push -u origin MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>将当前分支改名为<code>MyBranch</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -m MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>删除<code>MyBranch</code>分支，前提是该分支没有未合并的变动。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -d MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>强制删除<code>MyBranch</code>分支，不管有没有未合并变化。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -D MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>切换到<code>MyBranch</code>分支，当前的工作区会变为<code>MyBranch</code>分支的内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1686,33 +1648,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git add</title>
-    <url>/repost/git-tutorial/commands/git-add.html</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>git add</code>命令用于将变化的文件，从工作区提交到暂存区。它的作用就是告诉 Git，下一次哪些变化需要保存到仓库区。用户可以使用<code>git status</code>命令查看目前的暂存区放置了哪些文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件放入暂存区</span></span><br><span class="line">$ git add &lt;file&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录下所有变化的文件，放入暂存区</span></span><br><span class="line">$ git add &lt;directory&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有变化的文件，放入暂存区</span></span><br><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
-
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p><code>-u</code>参数表示只添加暂存区已有的文件（包括删除操作），但不添加新增的文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -u</span><br></pre></td></tr></table></figure>
-
-<p><code>-A</code>或者<code>--all</code>参数表示追踪所有操作，包括新增、修改和删除。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -A</span><br></pre></td></tr></table></figure>
-
-<p>Git 2.0 版开始，<code>-A</code>参数成为默认，即<code>git add .</code>等同于<code>git add -A</code>。</p>
-<p><code>-f</code>参数表示强制添加某个文件，不管<code>.gitignore</code>是否包含了这个文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -f &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
-
-<p><code>-p</code>参数表示进入交互模式，指定哪些修改需要添加到暂存区。即使是同一个文件，也可以只提交部分变动。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -p</span><br></pre></td></tr></table></figure>
-
-<p>注意，Git 2.0 版以前，<code>git add</code>默认不追踪删除操作。即在工作区删除一个文件后，<code>git add</code>命令不会将这个变化提交到暂存区，导致这个文件继续存在于历史中。Git 2.0 改变了这个行为。</p>
-<h2 id="实现细节"><a href="#实现细节" class="headerlink" title="实现细节"></a>实现细节</h2><p>通过<code>git add</code>这个命令，工作区里面那些新建或修改过的文件，会加入<code>.git/objects/</code>目录，文件名是文件内容的 SHA1 哈希值。<code>git add</code>命令同时还将这些文件的文件名和对应的哈希值，写入<code>.git/index</code>文件，每一行对应一个文件。</p>
-<p>下面是<code>.git/index</code>文件的内容。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b</span><br></pre></td></tr></table></figure>
-
-<p>上面代码表示，<code>data/letter.txt</code>文件的哈希值是<code>5e40c087...</code>。可以根据这个哈希值到<code>.git/objects/</code>目录下找到添加后的文件。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>git branch</title>
     <url>/repost/git-tutorial/commands/git-branch.html</url>
     <content><![CDATA[<p><code>git branch</code>是分支操作命令。</p>
@@ -1751,12 +1686,86 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>标签</title>
+    <url>/repost/git-tutorial/tag.html</url>
+    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
+
+<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
+<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
+
+<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>内部实现</title>
+    <url>/repost/git-tutorial/internal.html</url>
+    <content><![CDATA[<h1 id="内部实现"><a href="#内部实现" class="headerlink" title="内部实现"></a>内部实现</h1><h2 id="git-目录"><a href="#git-目录" class="headerlink" title=".git 目录"></a>.git 目录</h2><p>版本管理的所有信息，保存在项目的<code>.git</code>目录之中。如果没有这个目录，Git 就会认为这个仓库没有建立版本管理，必须进行初始化。<code>git init</code>命令的主要作用，就是建立<code>.git</code>目录。</p>
+<p><code>.git/config</code>文件保存仓库的设置。</p>
+<p><code>.git/HEAD</code>文件保存当前工作分支的引用。</p>
+<p><code>.git/hooks</code>目录保存各种事件挂钩的脚本。</p>
+<p><code>.git/objects</code>目录保存文件的内容，格式是二进制<code>blob</code>。</p>
+<h2 id="哈希签名"><a href="#哈希签名" class="headerlink" title="哈希签名"></a>哈希签名</h2><p>每次提交的时候，每个文件、每个树节点（目录）和提交本身，都会生成一个40个字符长的 SHA-1 哈希。</p>
+<p>哈希作为文件名，文件本身保留在<code>.git/objects</code>目录之中。</p>
+<h2 id="git-add-命令"><a href="#git-add-命令" class="headerlink" title="git add 命令"></a>git add 命令</h2><p><code>git add</code>会将变动的文件写入<code>.git/objects</code>目录。它内部调用的是<code>git hash-object</code>命令,该命令会计算 SHA-1 哈希，并将 blob 文件放入<code>.git/objects</code>目录。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git hash-object -w myfile.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>git cat-file</code>命令可以查看 blob 格式对应的原始文件内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p e69de29bb2d1d6434b8b29ae775ad8c2e48c5391</span><br></pre></td></tr></table></figure>
+
+<h2 id="git-commit-命令"><a href="#git-commit-命令" class="headerlink" title="git commit 命令"></a>git commit 命令</h2><p><code>git commit</code>命令用于有变动的、并已提交到<code>.git/objects</code>的文件写入历史。</p>
+<p><code>git write-tree</code>为当前仓库创建树节点。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
+
+<p><code>git commit-tree</code>命令将指定的树节点写入历史。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span>“first commit”| git commit-tree \ 6e9432aeedbad83fbffb7f8aae4a5d1ab50b7fdf</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git add</title>
+    <url>/repost/git-tutorial/commands/git-add.html</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>git add</code>命令用于将变化的文件，从工作区提交到暂存区。它的作用就是告诉 Git，下一次哪些变化需要保存到仓库区。用户可以使用<code>git status</code>命令查看目前的暂存区放置了哪些文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将指定文件放入暂存区</span></span><br><span class="line">$ git add &lt;file&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将指定目录下所有变化的文件，放入暂存区</span></span><br><span class="line">$ git add &lt;directory&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将当前目录下所有变化的文件，放入暂存区</span></span><br><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p><code>-u</code>参数表示只添加暂存区已有的文件（包括删除操作），但不添加新增的文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -u</span><br></pre></td></tr></table></figure>
+
+<p><code>-A</code>或者<code>--all</code>参数表示追踪所有操作，包括新增、修改和删除。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -A</span><br></pre></td></tr></table></figure>
+
+<p>Git 2.0 版开始，<code>-A</code>参数成为默认，即<code>git add .</code>等同于<code>git add -A</code>。</p>
+<p><code>-f</code>参数表示强制添加某个文件，不管<code>.gitignore</code>是否包含了这个文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -f &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>-p</code>参数表示进入交互模式，指定哪些修改需要添加到暂存区。即使是同一个文件，也可以只提交部分变动。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git add -p</span><br></pre></td></tr></table></figure>
+
+<p>注意，Git 2.0 版以前，<code>git add</code>默认不追踪删除操作。即在工作区删除一个文件后，<code>git add</code>命令不会将这个变化提交到暂存区，导致这个文件继续存在于历史中。Git 2.0 改变了这个行为。</p>
+<h2 id="实现细节"><a href="#实现细节" class="headerlink" title="实现细节"></a>实现细节</h2><p>通过<code>git add</code>这个命令，工作区里面那些新建或修改过的文件，会加入<code>.git/objects/</code>目录，文件名是文件内容的 SHA1 哈希值。<code>git add</code>命令同时还将这些文件的文件名和对应的哈希值，写入<code>.git/index</code>文件，每一行对应一个文件。</p>
+<p>下面是<code>.git/index</code>文件的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b</span><br></pre></td></tr></table></figure>
+
+<p>上面代码表示，<code>data/letter.txt</code>文件的哈希值是<code>5e40c087...</code>。可以根据这个哈希值到<code>.git/objects/</code>目录下找到添加后的文件。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>git cat-file</title>
     <url>/repost/git-tutorial/commands/git-cat-file.html</url>
     <content><![CDATA[<p><code>git cat-file</code>命令显示一个Git对象文件的内容。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
 
 <p><code>p</code>参数表示以易于阅读的格式显示。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git clone</title>
+    <url>/repost/git-tutorial/commands/git-clone.html</url>
+    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1790,6 +1799,47 @@ end
 <p>（5）生成新的分支。</p>
 <p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git commit-tree</title>
+    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
+    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git commit</title>
+    <url>/repost/git-tutorial/commands/git-commit.html</url>
+    <content><![CDATA[<p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
+<p><code>-m</code>参数用于指定 commit 信息，是必需的。如果省略<code>-m</code>参数，<code>git commit</code>会自动打开文本编辑器，要求输入。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>git commit</code>命令可以跳过暂存区，直接将文件从工作区提交到仓库区。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit &lt;filename&gt;  -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面命令会将工作区中指定文件的变化，先添加到暂存区，然后再将暂存区提交到仓库区。</p>
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="a"><a href="#a" class="headerlink" title="-a"></a>-a</h3><p><code>-a</code>参数用于先将所有工作区的变动文件，提交到暂存区，再运行<code>git commit</code>。用了<code>-a</code>参数，就不用执行<code>git add .</code>命令了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -am <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定提交说明，运行下面的命令会直接打开默认的文本编辑器，让用户撰写提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
+
+<h3 id="–allow-empty"><a href="#–allow-empty" class="headerlink" title="–allow-empty"></a>–allow-empty</h3><p><code>--allow-empty</code>参数用于没有提交信息的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --allow-empty</span><br></pre></td></tr></table></figure>
+
+<h3 id="–amend"><a href="#–amend" class="headerlink" title="–amend"></a>–amend</h3><p><code>--amend</code>参数用于撤销上一次 commit，然后生成一个新的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --amend - m <span class="string">&quot;new commit message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="–fixup"><a href="#–fixup" class="headerlink" title="–fixup"></a>–fixup</h3><p><code>--fixup</code>参数的含义是，当前添加的 commit 是以前某一个 commit 的修正。以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --fixup &lt;commit&gt;</span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，提交说明将自动生成，即在目标 commit 的提交说明的最前面，添加“fixup! ”这个词。</p>
+<h3 id="m"><a href="#m" class="headerlink" title="-m"></a>-m</h3><p><code>-m</code>参数用于添加提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="–squash"><a href="#–squash" class="headerlink" title="–squash"></a>–squash</h3><p><code>--squash</code>参数的作用与<code>--fixup</code>类似，表示当前添加的 commit 应该与以前某一个 commit 合并成一个，以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --squash &lt;commit&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1870,67 +1920,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git clone</title>
-    <url>/repost/git-tutorial/commands/git-clone.html</url>
-    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
-
-<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git commit-tree</title>
-    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
-    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git commit</title>
-    <url>/repost/git-tutorial/commands/git-commit.html</url>
-    <content><![CDATA[<p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
-<p><code>-m</code>参数用于指定 commit 信息，是必需的。如果省略<code>-m</code>参数，<code>git commit</code>会自动打开文本编辑器，要求输入。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>git commit</code>命令可以跳过暂存区，直接将文件从工作区提交到仓库区。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit &lt;filename&gt;  -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面命令会将工作区中指定文件的变化，先添加到暂存区，然后再将暂存区提交到仓库区。</p>
-<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="a"><a href="#a" class="headerlink" title="-a"></a>-a</h3><p><code>-a</code>参数用于先将所有工作区的变动文件，提交到暂存区，再运行<code>git commit</code>。用了<code>-a</code>参数，就不用执行<code>git add .</code>命令了。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -am <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有指定提交说明，运行下面的命令会直接打开默认的文本编辑器，让用户撰写提交说明。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
-
-<h3 id="–allow-empty"><a href="#–allow-empty" class="headerlink" title="–allow-empty"></a>–allow-empty</h3><p><code>--allow-empty</code>参数用于没有提交信息的 commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --allow-empty</span><br></pre></td></tr></table></figure>
-
-<h3 id="–amend"><a href="#–amend" class="headerlink" title="–amend"></a>–amend</h3><p><code>--amend</code>参数用于撤销上一次 commit，然后生成一个新的 commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --amend - m <span class="string">&quot;new commit message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="–fixup"><a href="#–fixup" class="headerlink" title="–fixup"></a>–fixup</h3><p><code>--fixup</code>参数的含义是，当前添加的 commit 是以前某一个 commit 的修正。以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --fixup &lt;commit&gt;</span><br></pre></td></tr></table></figure>
-
-<p>执行上面的命令，提交说明将自动生成，即在目标 commit 的提交说明的最前面，添加“fixup! ”这个词。</p>
-<h3 id="m"><a href="#m" class="headerlink" title="-m"></a>-m</h3><p><code>-m</code>参数用于添加提交说明。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="–squash"><a href="#–squash" class="headerlink" title="–squash"></a>–squash</h3><p><code>--squash</code>参数的作用与<code>--fixup</code>类似，表示当前添加的 commit 应该与以前某一个 commit 合并成一个，以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --squash &lt;commit&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git diff</title>
-    <url>/repost/git-tutorial/commands/git-diff.html</url>
-    <content><![CDATA[<p><code>git diff</code>命令用于查看文件之间的差异。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看工作区与暂存区的差异</span></span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看某个文件的工作区与暂存区的差异</span></span><br><span class="line">$ git diff file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与当前 commit 的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看两个commit的差异</span></span><br><span class="line">$ git diff &lt;commitBefore&gt; &lt;commitAfter&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与仓库区的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与上一次commit之间的差异</span></span><br><span class="line"><span class="comment"># 即如果执行 git commit -a，将提交的文件</span></span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与某个 commit 的差异</span></span><br><span class="line">$ git diff &lt;commit&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示两次提交之间的差异</span></span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与当前分支上一次提交的差异，但是局限于test文件</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支上一次提交与上上一次提交之间的差异</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成patch</span></span><br><span class="line">$ git format-patch master --stdout &gt; mypatch.patch</span><br></pre></td></tr></table></figure>
-
-<p>比较两个分支</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看topic分支与master分支最新提交之间的差异</span></span><br><span class="line">$ git diff topic master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 与上一条命令相同</span></span><br><span class="line">$ git diff topic..master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看自从topic分支建立以后，master分支发生的变化</span></span><br><span class="line">$ git diff topic...master</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
     <title>git hash-object</title>
     <url>/repost/git-tutorial/commands/git-hash-object.html</url>
     <content><![CDATA[<p><code>git hash-object</code>命令计算一个文件的git对象ID，即SHA1的哈希值。</p>
@@ -1941,13 +1930,6 @@ end
 <li>w 将对象写入对象数据库</li>
 <li>stdin 表示从标准输入读取，而不是从本地文件读取。</li>
 </ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>git init</title>
-    <url>/repost/git-tutorial/commands/git-init.html</url>
-    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
-<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1966,6 +1948,53 @@ end
 <p>将当前分支与develop分支合并，产生的新的commit对象有两个父节点。</p>
 <p>如果“指定分支”本身是当前分支的一个直接子节点，则会产生fast-forward合并，即合并不会产生新的节点，只是让当前分支指向“指定分支”的最新commit。</p>
 <p>Git合并所采用的方法是Three-way merge，及合并的时候除了要合併的兩個檔案，還加上它们共同的父节点。这样可以大大減少人為處理 conflict 的情況。如果采用two-way merge，則只用兩個檔案進行合併（svn默认就是这种合并方法。）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git init</title>
+    <url>/repost/git-tutorial/commands/git-init.html</url>
+    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
+<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git diff</title>
+    <url>/repost/git-tutorial/commands/git-diff.html</url>
+    <content><![CDATA[<p><code>git diff</code>命令用于查看文件之间的差异。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看工作区与暂存区的差异</span></span><br><span class="line">$ git diff</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看某个文件的工作区与暂存区的差异</span></span><br><span class="line">$ git diff file.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与当前 commit 的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看两个commit的差异</span></span><br><span class="line">$ git diff &lt;commitBefore&gt; &lt;commitAfter&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看暂存区与仓库区的差异</span></span><br><span class="line">$ git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与上一次commit之间的差异</span></span><br><span class="line"><span class="comment"># 即如果执行 git commit -a，将提交的文件</span></span><br><span class="line">$ git diff HEAD</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与某个 commit 的差异</span></span><br><span class="line">$ git diff &lt;commit&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示两次提交之间的差异</span></span><br><span class="line">$ git diff [first-branch]...[second-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看工作区与当前分支上一次提交的差异，但是局限于test文件</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前分支上一次提交与上上一次提交之间的差异</span></span><br><span class="line">$ git diff HEAD -- ./test</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成patch</span></span><br><span class="line">$ git format-patch master --stdout &gt; mypatch.patch</span><br></pre></td></tr></table></figure>
+
+<p>比较两个分支</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看topic分支与master分支最新提交之间的差异</span></span><br><span class="line">$ git diff topic master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 与上一条命令相同</span></span><br><span class="line">$ git diff topic..master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看自从topic分支建立以后，master分支发生的变化</span></span><br><span class="line">$ git diff topic...master</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>git log</title>
+    <url>/repost/git-tutorial/commands/git-log.html</url>
+    <content><![CDATA[<p><code>git log</code>命令按照提交时间从最晚到最早的顺序，列出所有 commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出当前分支的版本历史</span></span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出某个文件的版本历史，包括文件改名</span></span><br><span class="line">$ git <span class="built_in">log</span> --follow [file]</span><br></pre></td></tr></table></figure>
+
+<p>查看远程分支的变动情况。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> remote/branch</span><br></pre></td></tr></table></figure>
+
+<p>查找log，即搜索commit信息。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --author=Andy</span><br><span class="line">$ git <span class="built_in">log</span> -i --grep=<span class="string">&quot;Something in the message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，<code>-i</code>参数表示搜索时忽略大小写。</p>
+<p>查看某个范围内的commit</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> origin/master..new</span><br><span class="line"><span class="comment"># [old]..[new] - everything you haven&#x27;t pushed yet</span></span><br></pre></td></tr></table></figure>
+
+<p>美化输出。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">log</span> --graph --decorate --pretty=oneline --abbrev-commit</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>–graph commit之间将展示连线</li>
+<li>–decorate 显示commit里面的分支</li>
+<li>–pretty&#x3D;oneline 只显示commit信息的标题</li>
+<li>–abbrev-commit 只显示commit SHA1的前7位</li>
+</ul>
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="–oneline"><a href="#–oneline" class="headerlink" title="–oneline"></a>–oneline</h3><p><code>git log</code>默认输出每个 commit 的详细信息，为了节省空间，<code>--oneline</code>参数让输出时，每个 commit 只占用一行。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --oneline --decorate</span><br><span class="line">ccc3333 (HEAD, my-feature-branch) A third commit</span><br><span class="line">bbb2222 A second commit</span><br><span class="line">aaa1111 A first commit</span><br><span class="line">9999999 (master) Old stuff on master</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2013,32 +2042,19 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git log</title>
-    <url>/repost/git-tutorial/commands/git-log.html</url>
-    <content><![CDATA[<p><code>git log</code>命令按照提交时间从最晚到最早的顺序，列出所有 commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出当前分支的版本历史</span></span><br><span class="line">$ git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出某个文件的版本历史，包括文件改名</span></span><br><span class="line">$ git <span class="built_in">log</span> --follow [file]</span><br></pre></td></tr></table></figure>
+    <title>git restore</title>
+    <url>/repost/git-tutorial/commands/git-restore.html</url>
+    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
 
-<p>查看远程分支的变动情况。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> remote/branch</span><br></pre></td></tr></table></figure>
-
-<p>查找log，即搜索commit信息。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --author=Andy</span><br><span class="line">$ git <span class="built_in">log</span> -i --grep=<span class="string">&quot;Something in the message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面代码中，<code>-i</code>参数表示搜索时忽略大小写。</p>
-<p>查看某个范围内的commit</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> origin/master..new</span><br><span class="line"><span class="comment"># [old]..[new] - everything you haven&#x27;t pushed yet</span></span><br></pre></td></tr></table></figure>
-
-<p>美化输出。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">log</span> --graph --decorate --pretty=oneline --abbrev-commit</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>–graph commit之间将展示连线</li>
-<li>–decorate 显示commit里面的分支</li>
-<li>–pretty&#x3D;oneline 只显示commit信息的标题</li>
-<li>–abbrev-commit 只显示commit SHA1的前7位</li>
-</ul>
-<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="–oneline"><a href="#–oneline" class="headerlink" title="–oneline"></a>–oneline</h3><p><code>git log</code>默认输出每个 commit 的详细信息，为了节省空间，<code>--oneline</code>参数让输出时，每个 commit 只占用一行。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --oneline --decorate</span><br><span class="line">ccc3333 (HEAD, my-feature-branch) A third commit</span><br><span class="line">bbb2222 A second commit</span><br><span class="line">aaa1111 A first commit</span><br><span class="line">9999999 (master) Old stuff on master</span><br></pre></td></tr></table></figure>
+<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rev-parse</title>
+    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
+    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2061,22 +2077,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git restore</title>
-    <url>/repost/git-tutorial/commands/git-restore.html</url>
-    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
-
-<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git rev-parse</title>
-    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
-    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>git revert</title>
     <url>/repost/git-tutorial/commands/git-revert.html</url>
     <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
@@ -2092,10 +2092,19 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git show</title>
-    <url>/repost/git-tutorial/commands/git-show.html</url>
-    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
+    <title>git switch</title>
+    <url>/repost/git-tutorial/commands/git-switch.html</url>
+    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
+
+<p>上面命令切换到 develop 分支。</p>
+<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
+
+<p>上面命令切换到指定提交。</p>
+<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
+
 ]]></content>
   </entry>
   <entry>
@@ -2131,19 +2140,12 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git switch</title>
-    <url>/repost/git-tutorial/commands/git-switch.html</url>
-    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
+    <title>git update-index</title>
+    <url>/repost/git-tutorial/commands/git-update-index.html</url>
+    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
 
-<p>上面命令切换到 develop 分支。</p>
-<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
-
-<p>上面命令切换到指定提交。</p>
-<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
-
+<p>直接将缓存信息插入缓存文件。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2158,12 +2160,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git update-index</title>
-    <url>/repost/git-tutorial/commands/git-update-index.html</url>
-    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
-
-<p>直接将缓存信息插入缓存文件。</p>
+    <title>git show</title>
+    <url>/repost/git-tutorial/commands/git-show.html</url>
+    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
