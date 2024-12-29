@@ -201,139 +201,6 @@
       </tags>
   </entry>
   <entry>
-    <title>考拉周刊第2期</title>
-    <url>/2024/2024030901/</url>
-    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
-<td>#数据分析</td>
-</tr>
-</tbody></table>
-<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
-<table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
-<td>#竞品分析</td>
-</tr>
-</tbody></table>
-<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
-<td>#沟通协作</td>
-</tr>
-</tbody></table>
-<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
-<td>#陌生人社交</td>
-</tr>
-<tr>
-<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
-<td>#人力资源</td>
-</tr>
-</tbody></table>
-<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
-<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
-<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-03-09： 创建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-      <tags>
-        <tag>观察记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考拉周刊第3期</title>
-    <url>/2024/2024031201/</url>
-    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
-<p><code>需求文档</code></p>
-<p>对比了飞书、语雀、云效的PRD模板：</p>
-<ul>
-<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
-<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
-<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
-</ul>
-<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
-<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
-<p><code>需求分析</code></p>
-<p>博主讨论了需求边界，他分为3种：</p>
-<ul>
-<li><p>开放型： 需求无从下手</p>
-</li>
-<li><p>封闭型： 需求不得不做，老板说</p>
-</li>
-<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
-</li>
-</ul>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
-<p><code>职业发展</code> <code>产品职业观</code></p>
-<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
-<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
-<p><code>职业发展</code></p>
-<p>短期价值： 领导的信任、表扬、提成加薪</p>
-<p>长期价值： 经验积累和综合素质提升</p>
-<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
-<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
-<thead>
-<tr>
-<th>昵称</th>
-<th>平台</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
-<td>人人都是产品经理</td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240312：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-  </entry>
-  <entry>
     <title>frp内网穿透</title>
     <url>/2024/2024072701/</url>
     <content><![CDATA[<p>之前<code>ddns-go + ipv6</code>方案失效了，买了台阿里云服务器做内网穿透，上个周末折腾了1天没成功，昨晚+今天上午搞成功了，😆开心～</p>
@@ -416,6 +283,62 @@
       </tags>
   </entry>
   <entry>
+    <title>考拉周刊第3期</title>
+    <url>/2024/2024031201/</url>
+    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
+<p><code>需求文档</code></p>
+<p>对比了飞书、语雀、云效的PRD模板：</p>
+<ul>
+<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
+<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
+<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
+</ul>
+<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
+<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
+<p><code>需求分析</code></p>
+<p>博主讨论了需求边界，他分为3种：</p>
+<ul>
+<li><p>开放型： 需求无从下手</p>
+</li>
+<li><p>封闭型： 需求不得不做，老板说</p>
+</li>
+<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
+</li>
+</ul>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
+<p><code>职业发展</code> <code>产品职业观</code></p>
+<p>作者认为初中级产品经理要经历5个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
+<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
+<p><code>职业发展</code></p>
+<p>短期价值： 领导的信任、表扬、提成加薪</p>
+<p>长期价值： 经验积累和综合素质提升</p>
+<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
+<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
+<td>人人都是产品经理</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240312：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+  </entry>
+  <entry>
     <title>windows平台的包管理器</title>
     <url>/2024/2024091901/</url>
     <content><![CDATA[<p>Mac上用Homebrew包管理器，很爽很快捷，Windows上也想用，找了下，微软自带的winget和开源的scoop可以搭配使用</p>
@@ -460,6 +383,72 @@
       </tags>
   </entry>
   <entry>
+    <title>远程仓库和远程分支更名</title>
+    <url>/2024/2024102002/</url>
+    <content><![CDATA[<p>远程仓库和远程分支更名，本地git操作记录</p>
+<span id="more"></span>
+
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将远程仓库名称从<code>ombretor</code>更改为<code>aimee</code>，将远程分支从<code>main</code>改为<code>master</code></p>
+<img src="/2024/2024102002/image-20241020192613150.png" class="" title="image-20241020192613150">
+
+<h1 id="本地git操作"><a href="#本地git操作" class="headerlink" title="本地git操作"></a>本地git操作</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看所有远程仓库（详细模式）</span><br><span class="line">git remote --verbose</span><br><span class="line"># 更新远程仓库url</span><br><span class="line">git remote set-url origin https://gitee.com/koalamini/aimee.git</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"># 修改远程仓库名称,origin改为gitee</span><br><span class="line">git remote rename origin gitee</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"></span><br><span class="line"># 本地仓库，将main更名为master</span><br><span class="line">git branch  #检查当前分支名称</span><br><span class="line">git branch --move master</span><br><span class="line"># 推送到远程仓库(远程仓库新建master分支)</span><br><span class="line">git push gitee master</span><br><span class="line"># 远程仓库将master设为默认分支</span><br><span class="line">git push set-head gitee master</span><br><span class="line"># 设置跟踪关系</span><br><span class="line">git remote -u gitee master</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20241020：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git分支命令</title>
+    <url>/2024/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>git分支常用命令清单，包括<code>git branch</code> <code>git switch</code> <code>git merge</code></p>
+<span id="more"></span>
+
+<h2 id="1-git-branch"><a href="#1-git-branch" class="headerlink" title="1 git-branch"></a>1 git-branch</h2><h3 id="1-1-查询"><a href="#1-1-查询" class="headerlink" title="1.1 查询"></a>1.1 查询</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出本地仓库分支</span></span><br><span class="line">git branch</span><br><span class="line">git branch -l</span><br><span class="line">git branch --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出远程仓库分支</span></span><br><span class="line">git branch -r</span><br><span class="line">git branch --remotes</span><br><span class="line">git branch -lr</span><br><span class="line">git branch --list --remotes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有分支</span></span><br><span class="line">git branch -a</span><br><span class="line">git branch --all</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询上游分支（远程分支），verbose是“详细的“意思</span></span><br><span class="line">git branch -vv</span><br><span class="line">git branch --verbose --verbose</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-创建与删除"><a href="#1-2-创建与删除" class="headerlink" title="1.2 创建与删除"></a>1.2 创建与删除</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新分支</span></span><br><span class="line">git branch &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支并追踪远程分支（上游分支）</span></span><br><span class="line">git branch --track &lt;new-local-branch&gt; &lt;remote-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -d &lt;branch&gt;</span><br><span class="line">git branch --delete &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制删除分支</span></span><br><span class="line">git branch -D &lt;branch&gt;</span><br><span class="line">git branch --delete --force &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支追踪</span></span><br><span class="line">git branch -dr &lt;remote/branch&gt;</span><br><span class="line">git branch --delete --remote &lt;remote/branch&gt;</span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push -d &lt;remote&gt; &lt;branch&gt;</span><br><span class="line">git push --delete &lt;remote&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-移动（重命名）与复制"><a href="#1-3-移动（重命名）与复制" class="headerlink" title="1.3 移动（重命名）与复制"></a>1.3 移动（重命名）与复制</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 移动（重命名）当前分支</span></span><br><span class="line">git branch -m [current-branch] &lt;new-branch&gt;</span><br><span class="line">git branch --move [current-branch] &lt;newbranch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动（重命名）指定分支</span></span><br><span class="line">git branch -m &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line">git branch --move &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制当前分支</span></span><br><span class="line">git branch -c &lt;new-branch&gt; [current-branch]</span><br><span class="line">git branch --copy &lt;new-branch&gt; [current-branch]</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-4-其他"><a href="#1-4-其他" class="headerlink" title="1.4 其他"></a>1.4 其他</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 当前分支追踪远程分支（上游分支）</span></span><br><span class="line">git branch -u &lt;remote-branch&gt;</span><br><span class="line">git branch --set-upstream-to=&lt;remote-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-git-switch"><a href="#2-git-switch" class="headerlink" title="2 git-switch"></a>2 git-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到分支</span></span><br><span class="line">git switch &lt;target-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新分支（会创建新分支）</span></span><br><span class="line">git switch -c &lt;new-branch&gt;</span><br><span class="line">git switch --create &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新孤立分支（没有父提交，空分支）</span></span><br><span class="line">git switch --orphan &lt;new-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-git-merge"><a href="#3-git-merge" class="headerlink" title="3 git-merge"></a>3 git-merge</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">git merge &lt;target-branch&gt;</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><p><a href="https://git-scm.com/docs/git-branch/zh_HANS-CN">git-branch | git官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-switch/zh_HANS-CN">git-switch | git官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-merge/zh_HANS-CN">git-merge | git官网</a></p>
+</li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241229：初稿</p>
+</li>
+<li><p>20241217：创建</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
     <title>node包管理器</title>
     <url>/2024/2024092001/</url>
     <content><![CDATA[<p>npm的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
@@ -497,80 +486,27 @@
       </tags>
   </entry>
   <entry>
-    <title>远程仓库和远程分支更名</title>
-    <url>/2024/2024102002/</url>
-    <content><![CDATA[<p>远程仓库和远程分支更名，本地git操作记录</p>
+    <title>Git分支实践</title>
+    <url>/2024/git%E5%88%86%E6%94%AF%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>包括追踪远程分支、重命名远程分支、处理偏离分支</p>
 <span id="more"></span>
 
-<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将远程仓库名称从<code>ombretor</code>更改为<code>aimee</code>，将远程分支从<code>main</code>改为<code>master</code></p>
-<img src="/2024/2024102002/image-20241020192613150.png" class="" title="image-20241020192613150">
+<h2 id="1-追踪远程分支"><a href="#1-追踪远程分支" class="headerlink" title="1 追踪远程分支"></a>1 追踪远程分支</h2><h3 id="1-1-使用场景"><a href="#1-1-使用场景" class="headerlink" title="1.1 使用场景"></a>1.1 使用场景</h3><p>远程分支树如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 --3 -- 7 -- 8  master</span><br><span class="line">          \</span><br><span class="line">           4 -- 5 -- 6  feat</span><br></pre></td></tr></table></figure>
 
-<h1 id="本地git操作"><a href="#本地git操作" class="headerlink" title="本地git操作"></a>本地git操作</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 查看所有远程仓库（详细模式）</span><br><span class="line">git remote --verbose</span><br><span class="line"># 更新远程仓库url</span><br><span class="line">git remote set-url origin https://gitee.com/koalamini/aimee.git</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"># 修改远程仓库名称,origin改为gitee</span><br><span class="line">git remote rename origin gitee</span><br><span class="line">git remote --verbose  # 检查是否更新成功</span><br><span class="line"></span><br><span class="line"># 本地仓库，将main更名为master</span><br><span class="line">git branch  #检查当前分支名称</span><br><span class="line">git branch --move master</span><br><span class="line"># 推送到远程仓库(远程仓库新建master分支)</span><br><span class="line">git push gitee master</span><br><span class="line"># 远程仓库将master设为默认分支</span><br><span class="line">git push set-head gitee master</span><br><span class="line"># 设置跟踪关系</span><br><span class="line">git remote -u gitee master</span><br></pre></td></tr></table></figure>
+<p>本地分支树如下（没有feat分支）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 --3 -- 7 -- 8 -- 9 -- 10 master</span><br></pre></td></tr></table></figure>
 
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20241020：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git分支常用命令</title>
-    <url>/2024/git%E5%88%86%E6%94%AF/</url>
-    <content><![CDATA[<p>git分支常用命令</p>
-<span id="more"></span>
+<h3 id="1-2-处理流程"><a href="#1-2-处理流程" class="headerlink" title="1.2 处理流程"></a>1.2 处理流程</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建feat本地分支，并追踪远程分支</span></span><br><span class="line">git branch --track feat origin/feat</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查是否追踪成功</span></span><br><span class="line">git branch -vv</span><br></pre></td></tr></table></figure>
 
-<h2 id="1-git-branch"><a href="#1-git-branch" class="headerlink" title="1 git-branch"></a>1 git-branch</h2><h3 id="1-1-查询"><a href="#1-1-查询" class="headerlink" title="1.1 查询"></a>1.1 查询</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出本地仓库分支</span></span><br><span class="line">git branch</span><br><span class="line">git branch -l</span><br><span class="line">git branch --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出远程仓库分支</span></span><br><span class="line">git branch -r</span><br><span class="line">git branch --remotes</span><br><span class="line">git branch -lr</span><br><span class="line">git branch --list --remotes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有分支</span></span><br><span class="line">git branch -a</span><br><span class="line">git branch --all</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询上游分支（远程分支），verbose是“详细的“意思</span></span><br><span class="line">git branch -vv</span><br><span class="line">git branch --verbose --verbose</span><br></pre></td></tr></table></figure>
+<h2 id="2-重命名远程分支"><a href="#2-重命名远程分支" class="headerlink" title="2 重命名远程分支"></a>2 重命名远程分支</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. 删除远程分支</span></span><br><span class="line">git push origin --delete &lt;old-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 重命名本地分支</span></span><br><span class="line">git branch -m &lt;old-branch&gt; &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 推送重命名后的本地分支</span></span><br><span class="line">git push origin &lt;new-branch&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="1-2-创建与删除"><a href="#1-2-创建与删除" class="headerlink" title="1.2 创建与删除"></a>1.2 创建与删除</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新分支</span></span><br><span class="line">git branch &lt;newbranch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支并追踪远程分支（上游分支）</span></span><br><span class="line">git branch --track &lt;new-local-branch&gt; &lt;remote-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -d &lt;branch&gt;</span><br><span class="line">git branch --delete &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制删除分支</span></span><br><span class="line">git branch -D &lt;branch&gt;</span><br><span class="line">git branch --delete --force &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git branch -dr &lt;remote/branch&gt;</span><br><span class="line">git branch --delete --remote &lt;remote/branch&gt;</span><br><span class="line">git push -d &lt;remote&gt; &lt;branch&gt;</span><br><span class="line">git push --delete &lt;remote&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-移动（重命名）与复制"><a href="#1-3-移动（重命名）与复制" class="headerlink" title="1.3 移动（重命名）与复制"></a>1.3 移动（重命名）与复制</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 移动（重命名）当前分支</span></span><br><span class="line">git branch -m [current-branch] &lt;new-branch&gt;</span><br><span class="line">git branch --move [current-branch] &lt;newbranch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动（重命名）指定分支</span></span><br><span class="line">git branch -m &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line">git branch --move &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制当前分支</span></span><br><span class="line">git branch -c &lt;new-branch&gt; [current-branch]</span><br><span class="line">git branch --copy &lt;new-branch&gt; [current-branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-其他"><a href="#1-4-其他" class="headerlink" title="1.4 其他"></a>1.4 其他</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 当前分支追踪远程分支（上游分支）</span></span><br><span class="line">git branch -u &lt;remote-branch&gt;</span><br><span class="line">git branch --set-upstream-to=&lt;remote-branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-git-switch"><a href="#2-git-switch" class="headerlink" title="2 git-switch"></a>2 git-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到分支</span></span><br><span class="line">git switch &lt;target-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新分支（会创建新分支）</span></span><br><span class="line">git switch -c &lt;new-branch&gt;</span><br><span class="line">git switch --create &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新孤立分支（没有父提交，空分支）</span></span><br><span class="line">git switch --orphan &lt;new-branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-git-merge"><a href="#3-git-merge" class="headerlink" title="3 git-merge"></a>3 git-merge</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">git merge &lt;target-branch&gt;</span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><p><a href="https://git-scm.com/docs/git-branch/zh_HANS-CN">git-branch | git官网</a></p>
-</li>
-<li><p><a href="https://git-scm.com/docs/git-switch/zh_HANS-CN">git-switch | git官网</a></p>
-</li>
-<li><p><a href="https://git-scm.com/docs/git-merge/zh_HANS-CN">git-merge | git官网</a></p>
-</li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20241217：创建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>git</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>偏离分支的处理</title>
-    <url>/2024/%E5%81%8F%E7%A6%BB%E5%88%86%E6%94%AF%E7%9A%84%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<p>偏离分支处理需要变基rebase</p>
-<span id="more"></span>
-
-<h1 id="偏离分支的产生原因"><a href="#偏离分支的产生原因" class="headerlink" title="偏离分支的产生原因"></a>偏离分支的产生原因</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7  origin/master</span><br><span class="line">           \</span><br><span class="line">            4 -- 5  master</span><br></pre></td></tr></table></figure>
+<h2 id="3-处理偏离分支"><a href="#3-处理偏离分支" class="headerlink" title="3 处理偏离分支"></a>3 处理偏离分支</h2><h3 id="3-1-使用场景"><a href="#3-1-使用场景" class="headerlink" title="3.1 使用场景"></a>3.1 使用场景</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7  origin/master</span><br><span class="line">           \</span><br><span class="line">            4 -- 5  master</span><br></pre></td></tr></table></figure>
 
 <p>这种情况下会出现<code>致命错误：需要指定如何调和偏离的分支</code>提示，如下图所示：</p>
+<img src="/2024/git%E5%88%86%E6%94%AF%E5%AE%9E%E8%B7%B5/image-20241020181440543.png" class="" title="image-20241020181440543">
 
-
-<h1 id="偏离分支的处理"><a href="#偏离分支的处理" class="headerlink" title="偏离分支的处理"></a>偏离分支的处理</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase &amp;&amp; git push</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-如何处理"><a href="#3-2-如何处理" class="headerlink" title="3.2 如何处理"></a>3.2 如何处理</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull --rebase &amp;&amp; git push</span><br></pre></td></tr></table></figure>
 
 <p>执行完<code>git pull --rebase</code>后本地<code>master</code>分支提交记录如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 -- 2 -- 3 -- 6 -- 7 -- 4&#x27; -- 5&#x27;</span><br></pre></td></tr></table></figure>
@@ -579,70 +515,16 @@
 <hr>
 <p><strong>更新日志</strong></p>
 <ul>
-<li><p>20241217：用分支树形式表达背景，更加清晰</p>
+<li><p>20241229：初稿</p>
 </li>
-<li><p>20241020：初稿</p>
+<li><p>20241218：创建</p>
 </li>
 </ul>
 ]]></content>
       <categories>
         <category>程序猿</category>
+        <category>git</category>
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建1-安装</title>
-    <url>/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/</url>
-    <content><![CDATA[<p>大学的时候用的是博客园，毕业后打算自己搭一个，选择Hexo+NexT</p>
-<span id="more"></span>
-
-
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
-<li>下载安装<a href="https://nodejs.org/en/">NodeJs</a></li>
-<li>在要存储位置打开cmd</li>
-<li>命令行输入<code>npm install -g hexo-cli</code> 安装hexo脚手架</li>
-<li>命令行输入 <code>hexo init &lt;blog-name&gt;</code> 初始化站点，博客名称必填<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-02-09.jpg" class=""></li>
-<li>命令行输入 <code>cd &lt;blog-name&gt;</code> 进入博客文件夹</li>
-<li>命令行输入 <code>hexo server</code> 本地打开博客网站，浏览器打开<code>http://localhost:4000</code>，缩写为<code>hexo s</code><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-12-29.jpg" class="">
-<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-14-36.jpg" class=""></li>
-</ul>
-<h1 id="Github托管部署"><a href="#Github托管部署" class="headerlink" title="Github托管部署"></a>Github托管部署</h1><ul>
-<li>命令行输入 <code>npm install hexo-deployer-git</code> 安装git部署工具</li>
-<li>打开<a href="https://github.com/">github</a>，新建仓库，注意仓库名称要以<code>.github.io</code>结尾<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-35-48.jpg" class=""></li>
-<li>在<em>github</em> 个人设置中生成<em>token</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-55-53.jpg" class="">
-<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-56-57.jpg" class=""></li>
-<li>打开<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<em>deploy</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-08_00-04-07.jpg" class=""></li>
-<li>命令行输入 <code>hexo deploy</code> 部署到github仓库，缩写为<code>hexo d</code></li>
-<li>浏览器打开博客网址，例如：<a href="https://koalamini.github.io/">https://koalamini.github.io/</a></li>
-</ul>
-<h1 id="多设备写博客"><a href="#多设备写博客" class="headerlink" title="多设备写博客"></a>多设备写博客</h1><ul>
-<li>在<a href="https://gitee.com/">Gitee</a>或者<a href="https://github.com/">Github</a>新建<strong>私有仓库</strong></li>
-<li>使用Git工具同步，这样就可以多端同步写博客了</li>
-</ul>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://hexo.io/zh-cn/index.html">Hexo官方</a></li>
-<li><a href="http://theme-next.iissnan.com/">NexT中文网</a></li>
-<li><a href="https://github.com/next-theme/hexo-theme-next">GitHub - next-theme</a></li>
-<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">Z小旋. Hexo-Next 主题博客个性化配置超详细，超全面(两万字). CSDN博客</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>2024-09-16：删除Coding的部署方式，删除配置模板，删除next配置部分</p>
-</li>
-<li><p>2021-07-08：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>git概念</title>
@@ -739,6 +621,58 @@ end
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建1-安装</title>
+    <url>/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/</url>
+    <content><![CDATA[<p>大学的时候用的是博客园，毕业后打算自己搭一个，选择Hexo+NexT</p>
+<span id="more"></span>
+
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
+<li>下载安装<a href="https://nodejs.org/en/">NodeJs</a></li>
+<li>在要存储位置打开cmd</li>
+<li>命令行输入<code>npm install -g hexo-cli</code> 安装hexo脚手架</li>
+<li>命令行输入 <code>hexo init &lt;blog-name&gt;</code> 初始化站点，博客名称必填<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-02-09.jpg" class=""></li>
+<li>命令行输入 <code>cd &lt;blog-name&gt;</code> 进入博客文件夹</li>
+<li>命令行输入 <code>hexo server</code> 本地打开博客网站，浏览器打开<code>http://localhost:4000</code>，缩写为<code>hexo s</code><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-12-29.jpg" class="">
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-14-36.jpg" class=""></li>
+</ul>
+<h1 id="Github托管部署"><a href="#Github托管部署" class="headerlink" title="Github托管部署"></a>Github托管部署</h1><ul>
+<li>命令行输入 <code>npm install hexo-deployer-git</code> 安装git部署工具</li>
+<li>打开<a href="https://github.com/">github</a>，新建仓库，注意仓库名称要以<code>.github.io</code>结尾<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-35-48.jpg" class=""></li>
+<li>在<em>github</em> 个人设置中生成<em>token</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-55-53.jpg" class="">
+<img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-07_23-56-57.jpg" class=""></li>
+<li>打开<strong>站点配置文档</strong> <em>_config.yml</em>，搜索<em>deploy</em><img src="/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/Snipaste_2021-07-08_00-04-07.jpg" class=""></li>
+<li>命令行输入 <code>hexo deploy</code> 部署到github仓库，缩写为<code>hexo d</code></li>
+<li>浏览器打开博客网址，例如：<a href="https://koalamini.github.io/">https://koalamini.github.io/</a></li>
+</ul>
+<h1 id="多设备写博客"><a href="#多设备写博客" class="headerlink" title="多设备写博客"></a>多设备写博客</h1><ul>
+<li>在<a href="https://gitee.com/">Gitee</a>或者<a href="https://github.com/">Github</a>新建<strong>私有仓库</strong></li>
+<li>使用Git工具同步，这样就可以多端同步写博客了</li>
+</ul>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://hexo.io/zh-cn/index.html">Hexo官方</a></li>
+<li><a href="http://theme-next.iissnan.com/">NexT中文网</a></li>
+<li><a href="https://github.com/next-theme/hexo-theme-next">GitHub - next-theme</a></li>
+<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">Z小旋. Hexo-Next 主题博客个性化配置超详细，超全面(两万字). CSDN博客</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>2024-09-16：删除Coding的部署方式，删除配置模板，删除next配置部分</p>
+</li>
+<li><p>2021-07-08：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1067,6 +1001,83 @@ end
       </tags>
   </entry>
   <entry>
+    <title>考拉周刊第2期</title>
+    <url>/2024/2024030901/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第1篇介绍了Dateme.doc文档约会的新约会形式，第2篇介绍了Boss通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交App面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-03-09： 创建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+      <tags>
+        <tag>观察记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于这里</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
@@ -1101,6 +1112,30 @@ end
 <!-- flag of hidden posts -->]]></content>
   </entry>
   <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>转载</title>
+    <url>/repost/index.html</url>
+    <content><![CDATA[<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/logo-next.svg"></object>
+<p>转载</p><p>转载列表</p>
+<a href="./default/index.html"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/logo-wangdoc.png"></object>
+<p>Git教程</p><p>转载于阮一峰WangDoc的git-tutuorial</p>
+<a href="./git-tutorial/index.html"></a>
+</div></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>20240921001</title>
     <url>/nagging/20240921001.html</url>
     <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
@@ -1125,33 +1160,141 @@ end
   </entry>
   <entry>
     <title>转载</title>
-    <url>/repost/index.html</url>
-    <content><![CDATA[<div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/logo-next.svg"></object>
-<p>转载</p><p>转载列表</p>
-<a href="./default/index.html"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/logo-wangdoc.png"></object>
-<p>Git教程</p><p>转载于阮一峰WangDoc的git-tutuorial</p>
-<a href="./git-tutorial/index.html"></a>
-</div></div>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>转载</title>
     <url>/repost/default/index.html</url>
     <content><![CDATA[<ul>
 <li><a href="./%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html">前后端接口规范 - RESTful 版</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Git简介</title>
+    <url>/repost/git-tutorial/basic.html</url>
+    <content><![CDATA[<p>Git是一种源码管理系统（source code management，缩写为SCM）。它对当前文件提供版本管理功能，核心思想是对当前文件建立一个对象数据库（object database），将历史版本信息存放在这个数据库中。</p>
+<h1 id="1-Git操作流程"><a href="#1-Git操作流程" class="headerlink" title="1. Git操作流程"></a>1. Git操作流程</h1><ul>
+<li>安装Git</li>
+<li>提交用户名和电子邮件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;Some One&quot;</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;someone@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>git init：新建一个Git库</li>
+<li>git status：查看目前状态</li>
+<li>git add &lt;文件名&gt;：添加文件从工作区到暂存区</li>
+<li>git commit -m “提示信息”：从暂存区提交到代码仓库</li>
+<li>git log：查看提交commit的信息</li>
+<li>git remote add origin <a href="https://github.com/try-git/try_git.git">https://github.com/try-git/try_git.git</a> : 添加远程指针</li>
+<li>git push -u origin master：将本地的master分支推送到远程origin主机，-u参数表示记住对应关系，下次可以直接git push推送。</li>
+<li>git pull origin master：将远程主机origin的代码取回本地，与本地的master分支合并</li>
+<li>git diff HEAD：查看与上一次commit的区别</li>
+</ol>
+<h2 id="1-1-发布一个版本"><a href="#1-1-发布一个版本" class="headerlink" title="1.1 发布一个版本"></a>1.1 发布一个版本</h2><p>为当前分支打上版本号。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git tag -a [VERSION] -m &quot;released [VERSION]&quot;</span><br><span class="line">$ git push origin [VERSION]</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-Git对象"><a href="#2-Git对象" class="headerlink" title="2. Git对象"></a>2. Git对象</h1><p>对象数据库包含四类对象。</p>
+<ul>
+<li>Blob：包含二进制数据，它们是文件内容。只要文件内容改变，就会在对象数据库中生成一个blob对象。注意，blob对象只保存文件内容，不含文件名和文件存储位置等信息。如果文件名改变，或者文件储存位置改变，不会生成新的blob对象。</li>
+<li>Tree：blob对象的集合，以及它们的文件名和权限。一个tree对象描述一个时点上的一个目录。</li>
+<li>Commit：描述一个时点上的项目状态，包含一条log信息，一个tree对象和指向父节点（parent commits）的指针。第一个commit对象没有父节点。<ul>
+<li>记录 root tree SHA1</li>
+<li>记录 parent commit SHA1</li>
+<li>记录作者、时间和 commit message 资讯</li>
+</ul>
+</li>
+<li>tag</li>
+</ul>
+<p>对象数据库依赖SHA哈希函数。当一个对象加入数据库，它会被SHA函数处理，得到的结果就是该对象在数据库中的名字（前两个字节被当作目录名，用来提高效率）。</p>
+<p>Git命令基本上是图数据库操作命令，用来删除&#x2F;操作节点、移动指针等等。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git init</span><br><span class="line">$ <span class="built_in">echo</span> hello &gt; hello.txt</span><br><span class="line">$ git add .</span><br><span class="line">$ tree .git</span><br><span class="line"><span class="comment"># 存在 .git/objects/ce/013625030ba8dba906f756967f9e9ca394464a</span></span><br><span class="line"><span class="comment"># 这是 hello 内容的 SHA1</span></span><br><span class="line">$ <span class="built_in">printf</span> <span class="string">&quot;blob 6\x00hello\n&quot;</span> | shasum</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span> | git hash-object --stdin</span><br><span class="line">$ git cat-file -p ce0136</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>上面代码有几点需要注意。</p>
+<ul>
+<li><code>git add</code>命令就会生成二进制对象。</li>
+<li>shasum命令返回字符串的SHA哈希函数结果。</li>
+<li><code>git hash-object</code>命令计算一个文件的Git对象ID，stdin参数表示从标准输入读取，而不是从本地文件读取。</li>
+<li><code>git cat-file</code>命令显示Git对象文件的内容和大小信息，p参数表示以易于阅读的格式显示。</li>
+</ul>
+<p>树对象保存当前目录的快照。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">040000 tree 0eed1217a2947f4930583229987d90fe5e8e0b74 data</span><br><span class="line">100664 blob 5e40c0877058c504203932e5136051cf3cd3519b letter.txt</span><br><span class="line">100664 blob 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 number.txt</span><br></pre></td></tr></table></figure>
+
+<p>commit（快照）对象也保存在<code>.git/objects</code>目录。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tree ffe298c3ce8bb07326f888907996eaa48d266db4</span><br><span class="line">author Mary Rose Cook &lt;mary@maryrosecook.com&gt; 1424798436 -0500</span><br><span class="line">committer Mary Rose Cook &lt;mary@maryrosecook.com&gt; 1424798436 -0500</span><br><span class="line"></span><br><span class="line">a1</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-1-配置"><a href="#2-1-配置" class="headerlink" title="2.1 配置"></a>2.1 配置</h2><p>指定全局的.gitignore文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global core.excludesfile=/Users/flores/.gitignore</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-目录结构"><a href="#3-目录结构" class="headerlink" title="3. 目录结构"></a>3. 目录结构</h1><ul>
+<li>.git&#x2F;refs&#x2F;heads：保存各个分支的指针</li>
+<li>.git&#x2F;HEAD 文件，保存HEAD指针</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ref: refs/heads/master</span><br></pre></td></tr></table></figure>
+
+<p>上面代码说明HEAD指向<code>.git/refs/heads/master</code>文件，该文件是一个Hash值。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a87cc0f39d12e51be8d68eab5cef1d31e8807a1c</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>.git&#x2F;refs&#x2F;tags：保存tag指针</li>
+</ul>
+<h2 id="3-1-缓冲区域（index）"><a href="#3-1-缓冲区域（index）" class="headerlink" title="3.1 缓冲区域（index）"></a>3.1 缓冲区域（index）</h2><p>Index区域（.git&#x2F;index）是一个二进制文件，用来保存当前目录在某个时点的状态。</p>
+<p><code>git init</code>命令用来创建index区域，以及对象数据库（.dircache&#x2F;objects）。</p>
+<p>100644 为文件模式,表示这是一个普通文件；100755 表示可执行文件,120000 表示 symbolic link。</p>
+<p><code>.git/index</code>文件，保存暂存区的文件名和对应的Hash值，每行对应一个文件。下面是一个例子。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b</span><br><span class="line">data/number.txt 274c0052dd5408f8ae2bc8440029ff67d79bc5c3</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-Git-commit的全过程"><a href="#4-Git-commit的全过程" class="headerlink" title="4. Git commit的全过程"></a>4. Git commit的全过程</h1><ol>
+<li>用内容产生 blob object</li>
+<li>写入 file mode, blob SHA1, file name 到 staging area</li>
+<li>根据 staging area 产生 Tree object</li>
+<li>用 root tree SHA1 和 parent commit SHA1 产生<br>commit object</li>
+<li>用 commit SHA1 更新 master 参考</li>
+</ol>
+<p>如何不用 <code>git add</code> 和 <code>git commit</code>指令完成 commit 动作?</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># git add的部分</span></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hola&quot;</span> | git hash-object -w --stdin</span><br><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># git commit的部分</span></span><br><span class="line"></span><br><span class="line">$ git write-tree</span><br><span class="line">$ git commit-tree 27b9d5 -m <span class="string">&quot;Second commit&quot;</span> -p 30b060</span><br><span class="line">$ git update-ref refs/heads/master 97b806c9e5561a08e0df1f1a60857baad3a1f02e</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="5-父节点"><a href="#5-父节点" class="headerlink" title="5. 父节点"></a>5. 父节点</h1><p>合并产生的新节点，会有两个父节点。第一个是当前所在分支的父节点，第二个合并进来的那个分支的父节点。</p>
+<h1 id="6-Tag对象"><a href="#6-Tag对象" class="headerlink" title="6. Tag对象"></a>6. Tag对象</h1><p>Tag 分两种:annotated tag 才会产生 object。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git tag -a release</span><br><span class="line">$ git rev-parse release</span><br><span class="line">$ git cat-file -p 2450f3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>tag对象的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">object 309be0</span><br><span class="line">type commit</span><br><span class="line">tag release</span><br><span class="line">tagger ihower 1375383070 +0800</span><br><span class="line">Release!</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="7-Reference（指针）"><a href="#7-Reference（指针）" class="headerlink" title="7. Reference（指针）"></a>7. Reference（指针）</h1><p>所谓指针（reference），只是一个链接，用来指向其他物体，方便引用。Git有三种指针，但是所有指针归根结底都是指向某个commit。</p>
+<ul>
+<li>Tag指针：指向某个commit，或者指向某个tag对象。保存位置在.git&#x2F;refs&#x2F;tags&#x2F;目录，文件名为tag名，内容为某个commit或ref object的SHA1哈希。</li>
+<li>Branch指针：指向某个commit。每次该分支有新的commit，指针就会变动。</li>
+<li>HEAD指针：指向目前所在的Branch，用来区分目前在哪个分支。比如，内容为ref: refs&#x2F;heads&#x2F;<br>master。</li>
+</ul>
+<h1 id="8-团队开发模式"><a href="#8-团队开发模式" class="headerlink" title="8. 团队开发模式"></a>8. 团队开发模式</h1><p>集中式工作流程：团队内部私有项目，大家都有权限 Push 到共用的 Repository</p>
+<p>管理员工作流程：适合一般 Open Source 项目,只有少部分人有权限可以 Push到 Repository,其他开发者用用 request pull 请求合并。例如 GitHub 提供的 Fork 和 Pull Request 功能。</p>
+<h1 id="9-分支管理策略"><a href="#9-分支管理策略" class="headerlink" title="9. 分支管理策略"></a>9. 分支管理策略</h1><h2 id="9-1-GitHub-Flow"><a href="#9-1-GitHub-Flow" class="headerlink" title="9.1 GitHub Flow"></a>9.1 GitHub Flow</h2><ul>
+<li>master 是 stable&#x2F;production 可部署的版本</li>
+<li>任何开发从 master branch 分支出 feature branch</li>
+<li>送 pull request 开始进行讨论、code review和测试</li>
+<li>最后合并回 master 代表可以部署了</li>
+</ul>
+<p>pros and cons</p>
+<ul>
+<li>简单、清楚、容易了解</li>
+<li>搭配 GitHub 的 Pull Request 界面</li>
+<li>没有 release branch,东西一进 master 就上 production</li>
+</ul>
+<h2 id="9-2-Ruby-on-Rails"><a href="#9-2-Ruby-on-Rails" class="headerlink" title="9.2 Ruby on Rails"></a>9.2 Ruby on Rails</h2><ul>
+<li>master 是开发版本</li>
+<li>feature branches 审核完后,合并进 master</li>
+<li>maintenance branches,用 cherry-pick 做 backporting</li>
+<li>基本上就是 GitHub Flow 加上 maintenance branches 维护旧版的设计</li>
+<li>版本号(Tag)打在 master 上,通过 preview 和 beta 的版本号提前释出</li>
+</ul>
+<h2 id="9-3-CMake"><a href="#9-3-CMake" class="headerlink" title="9.3 CMake"></a>9.3 CMake</h2><ul>
+<li>master 预备释出的版本,feature branches 从这里分支出去</li>
+<li>feature branch 完成后,合并进 next</li>
+<li>next 整合版本,完成的 feature branch 先合并到</li>
+</ul>
+<h1 id="10-Git远程操作"><a href="#10-Git远程操作" class="headerlink" title="10. Git远程操作"></a>10. Git远程操作</h1><p>Git的repo一般是用来指本地库，远程库（remote）主要用来存档、合作、分享和触发持续集成。 </p>
+<hr>
+<p><strong>参考链接</strong></p>
+<ul>
+<li>corbet, <a href="https://lwn.net/Articles/131657/">The guts of git</a>: 最早的一篇介绍Git的文章，可以了解Git的总体设计思路</li>
+<li>张文钿, <a href="http://ihower.tw/blog/archives/7938">git从微观到宏观</a></li>
 </ul>
 ]]></content>
   </entry>
@@ -1360,138 +1503,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>Git简介</title>
-    <url>/repost/git-tutorial/basic.html</url>
-    <content><![CDATA[<p>Git是一种源码管理系统（source code management，缩写为SCM）。它对当前文件提供版本管理功能，核心思想是对当前文件建立一个对象数据库（object database），将历史版本信息存放在这个数据库中。</p>
-<h1 id="1-Git操作流程"><a href="#1-Git操作流程" class="headerlink" title="1. Git操作流程"></a>1. Git操作流程</h1><ul>
-<li>安装Git</li>
-<li>提交用户名和电子邮件</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;Some One&quot;</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;someone@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>git init：新建一个Git库</li>
-<li>git status：查看目前状态</li>
-<li>git add &lt;文件名&gt;：添加文件从工作区到暂存区</li>
-<li>git commit -m “提示信息”：从暂存区提交到代码仓库</li>
-<li>git log：查看提交commit的信息</li>
-<li>git remote add origin <a href="https://github.com/try-git/try_git.git">https://github.com/try-git/try_git.git</a> : 添加远程指针</li>
-<li>git push -u origin master：将本地的master分支推送到远程origin主机，-u参数表示记住对应关系，下次可以直接git push推送。</li>
-<li>git pull origin master：将远程主机origin的代码取回本地，与本地的master分支合并</li>
-<li>git diff HEAD：查看与上一次commit的区别</li>
-</ol>
-<h2 id="1-1-发布一个版本"><a href="#1-1-发布一个版本" class="headerlink" title="1.1 发布一个版本"></a>1.1 发布一个版本</h2><p>为当前分支打上版本号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git tag -a [VERSION] -m &quot;released [VERSION]&quot;</span><br><span class="line">$ git push origin [VERSION]</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-Git对象"><a href="#2-Git对象" class="headerlink" title="2. Git对象"></a>2. Git对象</h1><p>对象数据库包含四类对象。</p>
-<ul>
-<li>Blob：包含二进制数据，它们是文件内容。只要文件内容改变，就会在对象数据库中生成一个blob对象。注意，blob对象只保存文件内容，不含文件名和文件存储位置等信息。如果文件名改变，或者文件储存位置改变，不会生成新的blob对象。</li>
-<li>Tree：blob对象的集合，以及它们的文件名和权限。一个tree对象描述一个时点上的一个目录。</li>
-<li>Commit：描述一个时点上的项目状态，包含一条log信息，一个tree对象和指向父节点（parent commits）的指针。第一个commit对象没有父节点。<ul>
-<li>记录 root tree SHA1</li>
-<li>记录 parent commit SHA1</li>
-<li>记录作者、时间和 commit message 资讯</li>
-</ul>
-</li>
-<li>tag</li>
-</ul>
-<p>对象数据库依赖SHA哈希函数。当一个对象加入数据库，它会被SHA函数处理，得到的结果就是该对象在数据库中的名字（前两个字节被当作目录名，用来提高效率）。</p>
-<p>Git命令基本上是图数据库操作命令，用来删除&#x2F;操作节点、移动指针等等。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git init</span><br><span class="line">$ <span class="built_in">echo</span> hello &gt; hello.txt</span><br><span class="line">$ git add .</span><br><span class="line">$ tree .git</span><br><span class="line"><span class="comment"># 存在 .git/objects/ce/013625030ba8dba906f756967f9e9ca394464a</span></span><br><span class="line"><span class="comment"># 这是 hello 内容的 SHA1</span></span><br><span class="line">$ <span class="built_in">printf</span> <span class="string">&quot;blob 6\x00hello\n&quot;</span> | shasum</span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span> | git hash-object --stdin</span><br><span class="line">$ git cat-file -p ce0136</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>上面代码有几点需要注意。</p>
-<ul>
-<li><code>git add</code>命令就会生成二进制对象。</li>
-<li>shasum命令返回字符串的SHA哈希函数结果。</li>
-<li><code>git hash-object</code>命令计算一个文件的Git对象ID，stdin参数表示从标准输入读取，而不是从本地文件读取。</li>
-<li><code>git cat-file</code>命令显示Git对象文件的内容和大小信息，p参数表示以易于阅读的格式显示。</li>
-</ul>
-<p>树对象保存当前目录的快照。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">040000 tree 0eed1217a2947f4930583229987d90fe5e8e0b74 data</span><br><span class="line">100664 blob 5e40c0877058c504203932e5136051cf3cd3519b letter.txt</span><br><span class="line">100664 blob 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 number.txt</span><br></pre></td></tr></table></figure>
-
-<p>commit（快照）对象也保存在<code>.git/objects</code>目录。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tree ffe298c3ce8bb07326f888907996eaa48d266db4</span><br><span class="line">author Mary Rose Cook &lt;mary@maryrosecook.com&gt; 1424798436 -0500</span><br><span class="line">committer Mary Rose Cook &lt;mary@maryrosecook.com&gt; 1424798436 -0500</span><br><span class="line"></span><br><span class="line">a1</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-1-配置"><a href="#2-1-配置" class="headerlink" title="2.1 配置"></a>2.1 配置</h2><p>指定全局的.gitignore文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global core.excludesfile=/Users/flores/.gitignore</span><br></pre></td></tr></table></figure>
-
-<h1 id="3-目录结构"><a href="#3-目录结构" class="headerlink" title="3. 目录结构"></a>3. 目录结构</h1><ul>
-<li>.git&#x2F;refs&#x2F;heads：保存各个分支的指针</li>
-<li>.git&#x2F;HEAD 文件，保存HEAD指针</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ref: refs/heads/master</span><br></pre></td></tr></table></figure>
-
-<p>上面代码说明HEAD指向<code>.git/refs/heads/master</code>文件，该文件是一个Hash值。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a87cc0f39d12e51be8d68eab5cef1d31e8807a1c</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>.git&#x2F;refs&#x2F;tags：保存tag指针</li>
-</ul>
-<h2 id="3-1-缓冲区域（index）"><a href="#3-1-缓冲区域（index）" class="headerlink" title="3.1 缓冲区域（index）"></a>3.1 缓冲区域（index）</h2><p>Index区域（.git&#x2F;index）是一个二进制文件，用来保存当前目录在某个时点的状态。</p>
-<p><code>git init</code>命令用来创建index区域，以及对象数据库（.dircache&#x2F;objects）。</p>
-<p>100644 为文件模式,表示这是一个普通文件；100755 表示可执行文件,120000 表示 symbolic link。</p>
-<p><code>.git/index</code>文件，保存暂存区的文件名和对应的Hash值，每行对应一个文件。下面是一个例子。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">data/letter.txt 5e40c0877058c504203932e5136051cf3cd3519b</span><br><span class="line">data/number.txt 274c0052dd5408f8ae2bc8440029ff67d79bc5c3</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-Git-commit的全过程"><a href="#4-Git-commit的全过程" class="headerlink" title="4. Git commit的全过程"></a>4. Git commit的全过程</h1><ol>
-<li>用内容产生 blob object</li>
-<li>写入 file mode, blob SHA1, file name 到 staging area</li>
-<li>根据 staging area 产生 Tree object</li>
-<li>用 root tree SHA1 和 parent commit SHA1 产生<br>commit object</li>
-<li>用 commit SHA1 更新 master 参考</li>
-</ol>
-<p>如何不用 <code>git add</code> 和 <code>git commit</code>指令完成 commit 动作?</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># git add的部分</span></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&quot;hola&quot;</span> | git hash-object -w --stdin</span><br><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># git commit的部分</span></span><br><span class="line"></span><br><span class="line">$ git write-tree</span><br><span class="line">$ git commit-tree 27b9d5 -m <span class="string">&quot;Second commit&quot;</span> -p 30b060</span><br><span class="line">$ git update-ref refs/heads/master 97b806c9e5561a08e0df1f1a60857baad3a1f02e</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="5-父节点"><a href="#5-父节点" class="headerlink" title="5. 父节点"></a>5. 父节点</h1><p>合并产生的新节点，会有两个父节点。第一个是当前所在分支的父节点，第二个合并进来的那个分支的父节点。</p>
-<h1 id="6-Tag对象"><a href="#6-Tag对象" class="headerlink" title="6. Tag对象"></a>6. Tag对象</h1><p>Tag 分两种:annotated tag 才会产生 object。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">$ git tag -a release</span><br><span class="line">$ git rev-parse release</span><br><span class="line">$ git cat-file -p 2450f3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>tag对象的内容。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">object 309be0</span><br><span class="line">type commit</span><br><span class="line">tag release</span><br><span class="line">tagger ihower 1375383070 +0800</span><br><span class="line">Release!</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="7-Reference（指针）"><a href="#7-Reference（指针）" class="headerlink" title="7. Reference（指针）"></a>7. Reference（指针）</h1><p>所谓指针（reference），只是一个链接，用来指向其他物体，方便引用。Git有三种指针，但是所有指针归根结底都是指向某个commit。</p>
-<ul>
-<li>Tag指针：指向某个commit，或者指向某个tag对象。保存位置在.git&#x2F;refs&#x2F;tags&#x2F;目录，文件名为tag名，内容为某个commit或ref object的SHA1哈希。</li>
-<li>Branch指针：指向某个commit。每次该分支有新的commit，指针就会变动。</li>
-<li>HEAD指针：指向目前所在的Branch，用来区分目前在哪个分支。比如，内容为ref: refs&#x2F;heads&#x2F;<br>master。</li>
-</ul>
-<h1 id="8-团队开发模式"><a href="#8-团队开发模式" class="headerlink" title="8. 团队开发模式"></a>8. 团队开发模式</h1><p>集中式工作流程：团队内部私有项目，大家都有权限 Push 到共用的 Repository</p>
-<p>管理员工作流程：适合一般 Open Source 项目,只有少部分人有权限可以 Push到 Repository,其他开发者用用 request pull 请求合并。例如 GitHub 提供的 Fork 和 Pull Request 功能。</p>
-<h1 id="9-分支管理策略"><a href="#9-分支管理策略" class="headerlink" title="9. 分支管理策略"></a>9. 分支管理策略</h1><h2 id="9-1-GitHub-Flow"><a href="#9-1-GitHub-Flow" class="headerlink" title="9.1 GitHub Flow"></a>9.1 GitHub Flow</h2><ul>
-<li>master 是 stable&#x2F;production 可部署的版本</li>
-<li>任何开发从 master branch 分支出 feature branch</li>
-<li>送 pull request 开始进行讨论、code review和测试</li>
-<li>最后合并回 master 代表可以部署了</li>
-</ul>
-<p>pros and cons</p>
-<ul>
-<li>简单、清楚、容易了解</li>
-<li>搭配 GitHub 的 Pull Request 界面</li>
-<li>没有 release branch,东西一进 master 就上 production</li>
-</ul>
-<h2 id="9-2-Ruby-on-Rails"><a href="#9-2-Ruby-on-Rails" class="headerlink" title="9.2 Ruby on Rails"></a>9.2 Ruby on Rails</h2><ul>
-<li>master 是开发版本</li>
-<li>feature branches 审核完后,合并进 master</li>
-<li>maintenance branches,用 cherry-pick 做 backporting</li>
-<li>基本上就是 GitHub Flow 加上 maintenance branches 维护旧版的设计</li>
-<li>版本号(Tag)打在 master 上,通过 preview 和 beta 的版本号提前释出</li>
-</ul>
-<h2 id="9-3-CMake"><a href="#9-3-CMake" class="headerlink" title="9.3 CMake"></a>9.3 CMake</h2><ul>
-<li>master 预备释出的版本,feature branches 从这里分支出去</li>
-<li>feature branch 完成后,合并进 next</li>
-<li>next 整合版本,完成的 feature branch 先合并到</li>
-</ul>
-<h1 id="10-Git远程操作"><a href="#10-Git远程操作" class="headerlink" title="10. Git远程操作"></a>10. Git远程操作</h1><p>Git的repo一般是用来指本地库，远程库（remote）主要用来存档、合作、分享和触发持续集成。 </p>
-<hr>
-<p><strong>参考链接</strong></p>
-<ul>
-<li>corbet, <a href="https://lwn.net/Articles/131657/">The guts of git</a>: 最早的一篇介绍Git的文章，可以了解Git的总体设计思路</li>
-<li>张文钿, <a href="http://ihower.tw/blog/archives/7938">git从微观到宏观</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>分支</title>
     <url>/repost/git-tutorial/branch.html</url>
     <content><![CDATA[<p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
@@ -1518,6 +1529,30 @@ end
 
 <p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>内部实现</title>
+    <url>/repost/git-tutorial/internal.html</url>
+    <content><![CDATA[<h1 id="内部实现"><a href="#内部实现" class="headerlink" title="内部实现"></a>内部实现</h1><h2 id="git-目录"><a href="#git-目录" class="headerlink" title=".git 目录"></a>.git 目录</h2><p>版本管理的所有信息，保存在项目的<code>.git</code>目录之中。如果没有这个目录，Git 就会认为这个仓库没有建立版本管理，必须进行初始化。<code>git init</code>命令的主要作用，就是建立<code>.git</code>目录。</p>
+<p><code>.git/config</code>文件保存仓库的设置。</p>
+<p><code>.git/HEAD</code>文件保存当前工作分支的引用。</p>
+<p><code>.git/hooks</code>目录保存各种事件挂钩的脚本。</p>
+<p><code>.git/objects</code>目录保存文件的内容，格式是二进制<code>blob</code>。</p>
+<h2 id="哈希签名"><a href="#哈希签名" class="headerlink" title="哈希签名"></a>哈希签名</h2><p>每次提交的时候，每个文件、每个树节点（目录）和提交本身，都会生成一个40个字符长的 SHA-1 哈希。</p>
+<p>哈希作为文件名，文件本身保留在<code>.git/objects</code>目录之中。</p>
+<h2 id="git-add-命令"><a href="#git-add-命令" class="headerlink" title="git add 命令"></a>git add 命令</h2><p><code>git add</code>会将变动的文件写入<code>.git/objects</code>目录。它内部调用的是<code>git hash-object</code>命令,该命令会计算 SHA-1 哈希，并将 blob 文件放入<code>.git/objects</code>目录。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git hash-object -w myfile.txt</span><br></pre></td></tr></table></figure>
+
+<p><code>git cat-file</code>命令可以查看 blob 格式对应的原始文件内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p e69de29bb2d1d6434b8b29ae775ad8c2e48c5391</span><br></pre></td></tr></table></figure>
+
+<h2 id="git-commit-命令"><a href="#git-commit-命令" class="headerlink" title="git commit 命令"></a>git commit 命令</h2><p><code>git commit</code>命令用于有变动的、并已提交到<code>.git/objects</code>的文件写入历史。</p>
+<p><code>git write-tree</code>为当前仓库创建树节点。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
+
+<p><code>git commit-tree</code>命令将指定的树节点写入历史。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span>“first commit”| git commit-tree \ 6e9432aeedbad83fbffb7f8aae4a5d1ab50b7fdf</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1589,52 +1624,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>内部实现</title>
-    <url>/repost/git-tutorial/internal.html</url>
-    <content><![CDATA[<h1 id="内部实现"><a href="#内部实现" class="headerlink" title="内部实现"></a>内部实现</h1><h2 id="git-目录"><a href="#git-目录" class="headerlink" title=".git 目录"></a>.git 目录</h2><p>版本管理的所有信息，保存在项目的<code>.git</code>目录之中。如果没有这个目录，Git 就会认为这个仓库没有建立版本管理，必须进行初始化。<code>git init</code>命令的主要作用，就是建立<code>.git</code>目录。</p>
-<p><code>.git/config</code>文件保存仓库的设置。</p>
-<p><code>.git/HEAD</code>文件保存当前工作分支的引用。</p>
-<p><code>.git/hooks</code>目录保存各种事件挂钩的脚本。</p>
-<p><code>.git/objects</code>目录保存文件的内容，格式是二进制<code>blob</code>。</p>
-<h2 id="哈希签名"><a href="#哈希签名" class="headerlink" title="哈希签名"></a>哈希签名</h2><p>每次提交的时候，每个文件、每个树节点（目录）和提交本身，都会生成一个40个字符长的 SHA-1 哈希。</p>
-<p>哈希作为文件名，文件本身保留在<code>.git/objects</code>目录之中。</p>
-<h2 id="git-add-命令"><a href="#git-add-命令" class="headerlink" title="git add 命令"></a>git add 命令</h2><p><code>git add</code>会将变动的文件写入<code>.git/objects</code>目录。它内部调用的是<code>git hash-object</code>命令,该命令会计算 SHA-1 哈希，并将 blob 文件放入<code>.git/objects</code>目录。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git hash-object -w myfile.txt</span><br></pre></td></tr></table></figure>
-
-<p><code>git cat-file</code>命令可以查看 blob 格式对应的原始文件内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p e69de29bb2d1d6434b8b29ae775ad8c2e48c5391</span><br></pre></td></tr></table></figure>
-
-<h2 id="git-commit-命令"><a href="#git-commit-命令" class="headerlink" title="git commit 命令"></a>git commit 命令</h2><p><code>git commit</code>命令用于有变动的、并已提交到<code>.git/objects</code>的文件写入历史。</p>
-<p><code>git write-tree</code>为当前仓库创建树节点。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
-
-<p><code>git commit-tree</code>命令将指定的树节点写入历史。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span>“first commit”| git commit-tree \ 6e9432aeedbad83fbffb7f8aae4a5d1ab50b7fdf</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>参考链接</title>
-    <url>/repost/git-tutorial/reference.html</url>
-    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
-<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/repost/git-tutorial/tag.html</url>
-    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
-
-<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
-<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
-
-<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>Git的操作</title>
     <url>/repost/git-tutorial/operations.html</url>
     <content><![CDATA[<h1 id="Git的操作"><a href="#Git的操作" class="headerlink" title="Git的操作"></a>Git的操作</h1><h2 id="新建代码库"><a href="#新建代码库" class="headerlink" title="新建代码库"></a>新建代码库</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line">$ git init [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个项目和它的整个代码历史</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
@@ -1659,6 +1648,28 @@ end
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成一个可供发布的压缩包</span></span><br><span class="line"><span class="comment"># git archive</span></span><br></pre></td></tr></table></figure>
 
 <p>（完）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>参考链接</title>
+    <url>/repost/git-tutorial/reference.html</url>
+    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/repost/git-tutorial/tag.html</url>
+    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
+
+<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
+<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
+
+<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1727,15 +1738,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git cat-file</title>
-    <url>/repost/git-tutorial/commands/git-cat-file.html</url>
-    <content><![CDATA[<p><code>git cat-file</code>命令显示一个Git对象文件的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
-
-<p><code>p</code>参数表示以易于阅读的格式显示。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>git checkout</title>
     <url>/repost/git-tutorial/commands/git-checkout.html</url>
     <content><![CDATA[<p><code>git checkout</code>命令有多种用途。</p>
@@ -1766,6 +1768,15 @@ end
 <p>（5）生成新的分支。</p>
 <p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git clone</title>
+    <url>/repost/git-tutorial/commands/git-clone.html</url>
+    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1846,12 +1857,12 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git clone</title>
-    <url>/repost/git-tutorial/commands/git-clone.html</url>
-    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
+    <title>git cat-file</title>
+    <url>/repost/git-tutorial/commands/git-cat-file.html</url>
+    <content><![CDATA[<p><code>git cat-file</code>命令显示一个Git对象文件的内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
 
-<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
+<p><code>p</code>参数表示以易于阅读的格式显示。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1920,6 +1931,20 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git init</title>
+    <url>/repost/git-tutorial/commands/git-init.html</url>
+    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
+<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git ls-files</title>
+    <url>/repost/git-tutorial/commands/git-ls-files.html</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出没有被.gitignore忽视的文件</span></span><br><span class="line">$ git ls-files --other --ignored --exclude-standard</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>git merge</title>
     <url>/repost/git-tutorial/commands/git-merge.html</url>
     <content><![CDATA[<p>将当前分支合并到指定分支。</p>
@@ -1928,6 +1953,72 @@ end
 <p>将当前分支与develop分支合并，产生的新的commit对象有两个父节点。</p>
 <p>如果“指定分支”本身是当前分支的一个直接子节点，则会产生fast-forward合并，即合并不会产生新的节点，只是让当前分支指向“指定分支”的最新commit。</p>
 <p>Git合并所采用的方法是Three-way merge，及合并的时候除了要合併的兩個檔案，還加上它们共同的父节点。这样可以大大減少人為處理 conflict 的情況。如果采用two-way merge，則只用兩個檔案進行合併（svn默认就是这种合并方法。）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git pull</title>
+    <url>/repost/git-tutorial/commands/git-pull.html</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
+
+<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rebase</title>
+    <url>/repost/git-tutorial/commands/git-rebase.html</url>
+    <content><![CDATA[<p>git rebase 将当前分支移植到指定分支或指定commit之上。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i &lt;commit&gt;</span><br></pre></td></tr></table></figure>
+
+<p>互动的rebase。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i master~3</span><br></pre></td></tr></table></figure>
+
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="–autosquash"><a href="#–autosquash" class="headerlink" title="–autosquash"></a>–autosquash</h3><p><code>--autosquash</code>参数用于互动模式，必须与<code>-i</code>参数配合使用。它会使得以前通过<code>git commit --fixup</code>和<code>git commit --squash</code>提交的 commit，按照指定的顺序排列（实质是选择提交说明以以<code>fixup!</code>或<code>squash!</code>开头的 commit），即<code>--fixup</code>的 commit 直接排在它所对应的 commit 的后面。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase --interactive --autosquash &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="–continue"><a href="#–continue" class="headerlink" title="–continue"></a>–continue</h3><p><code>--continue</code>参数用于解决冲突以后，继续执行 rebase。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="i，–interactive"><a href="#i，–interactive" class="headerlink" title="-i，–interactive"></a>-i，–interactive</h3><p><code>-i</code>参数会打开互动模式，让用户选择定制<code>rebase</code>的行为。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i develop</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a href="https://robots.thoughtbot.com/autosquashing-git-commits">Auto-squashing Git Commits</a>, by George Brocklehurst</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>git restore</title>
+    <url>/repost/git-tutorial/commands/git-restore.html</url>
+    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
+
+<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git reset</title>
+    <url>/repost/git-tutorial/commands/git-reset.html</url>
+    <content><![CDATA[<p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将当期分支的指针倒退三个 commit，</span></span><br><span class="line"><span class="comment"># 并且会改变暂存区</span></span><br><span class="line">$ git reset HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，不改变暂存区</span></span><br><span class="line">$ git reset --soft HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，改变工作区</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br></pre></td></tr></table></figure>
+
+<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 撤销上一次向暂存区添加的所有文件</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># 无任何效果</span></span><br><span class="line">$ git reset --soft</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同时撤销暂存区和工作区的修改，</span></span><br><span class="line"><span class="comment"># 回复到上一次提交的状态</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销上一次向暂存区添加的某个指定文件，</span></span><br><span class="line"><span class="comment"># 不影响工作区中的该文件</span></span><br><span class="line">$ git reset -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
+<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
+<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
+<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
+<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Undo add</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，不重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 回到 HEAD 之前的那个 commit</span></span><br><span class="line">$ git reset --soft HEAD^</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span></span><br><span class="line">$ git reset -- frotz.c</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>git rev-parse</title>
+    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
+    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1960,83 +2051,30 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git init</title>
-    <url>/repost/git-tutorial/commands/git-init.html</url>
-    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
-<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git pull</title>
-    <url>/repost/git-tutorial/commands/git-pull.html</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
+    <title>git remote</title>
+    <url>/repost/git-tutorial/commands/git-remote.html</url>
+    <content><![CDATA[<p>为远程仓库添加别名。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add john git@github.com:johnsomeone/someproject.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有的远程主机</span></span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出某个主机的详细信息</span></span><br><span class="line">$ git remote show name</span><br></pre></td></tr></table></figure>
 
-<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git restore</title>
-    <url>/repost/git-tutorial/commands/git-restore.html</url>
-    <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
+<p><code>git remote</code>命令的实质是在<code>.git/config</code>文件添加下面的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git remote add bravo ../bravo</span><br></pre></td></tr></table></figure>
 
-<p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git rebase</title>
-    <url>/repost/git-tutorial/commands/git-rebase.html</url>
-    <content><![CDATA[<p>git rebase 将当前分支移植到指定分支或指定commit之上。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i &lt;commit&gt;</span><br></pre></td></tr></table></figure>
-
-<p>互动的rebase。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i master~3</span><br></pre></td></tr></table></figure>
-
-<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="–autosquash"><a href="#–autosquash" class="headerlink" title="–autosquash"></a>–autosquash</h3><p><code>--autosquash</code>参数用于互动模式，必须与<code>-i</code>参数配合使用。它会使得以前通过<code>git commit --fixup</code>和<code>git commit --squash</code>提交的 commit，按照指定的顺序排列（实质是选择提交说明以以<code>fixup!</code>或<code>squash!</code>开头的 commit），即<code>--fixup</code>的 commit 直接排在它所对应的 commit 的后面。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase --interactive --autosquash &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="–continue"><a href="#–continue" class="headerlink" title="–continue"></a>–continue</h3><p><code>--continue</code>参数用于解决冲突以后，继续执行 rebase。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="i，–interactive"><a href="#i，–interactive" class="headerlink" title="-i，–interactive"></a>-i，–interactive</h3><p><code>-i</code>参数会打开互动模式，让用户选择定制<code>rebase</code>的行为。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i develop</span><br></pre></td></tr></table></figure>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
-<li><a href="https://robots.thoughtbot.com/autosquashing-git-commits">Auto-squashing Git Commits</a>, by George Brocklehurst</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>git ls-files</title>
-    <url>/repost/git-tutorial/commands/git-ls-files.html</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出没有被.gitignore忽视的文件</span></span><br><span class="line">$ git ls-files --other --ignored --exclude-standard</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[remote &quot;bravo&quot;]</span><br><span class="line">    url = ../bravo/</span><br></pre></td></tr></table></figure>
 
 ]]></content>
   </entry>
   <entry>
-    <title>git rev-parse</title>
-    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
-    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
+    <title>git revert</title>
+    <url>/repost/git-tutorial/commands/git-revert.html</url>
+    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
-    <title>git reset</title>
-    <url>/repost/git-tutorial/commands/git-reset.html</url>
-    <content><![CDATA[<p><code>git reset</code>命令用于将当前分支指向另一个位置。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将当期分支的指针倒退三个 commit，</span></span><br><span class="line"><span class="comment"># 并且会改变暂存区</span></span><br><span class="line">$ git reset HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，不改变暂存区</span></span><br><span class="line">$ git reset --soft HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 倒退指针的同时，改变工作区</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br></pre></td></tr></table></figure>
-
-<p>如果不指定回滚的位置，那么等同于撤销修改。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 撤销上一次向暂存区添加的所有文件</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># 无任何效果</span></span><br><span class="line">$ git reset --soft</span><br><span class="line"></span><br><span class="line"><span class="comment"># 同时撤销暂存区和工作区的修改，</span></span><br><span class="line"><span class="comment"># 回复到上一次提交的状态</span></span><br><span class="line">$ git reset --hard</span><br><span class="line"></span><br><span class="line"><span class="comment"># 撤销上一次向暂存区添加的某个指定文件，</span></span><br><span class="line"><span class="comment"># 不影响工作区中的该文件</span></span><br><span class="line">$ git reset -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul>
-<li>soft: 不改变工作区和缓存区，只移动 HEAD 到指定 commit。</li>
-<li>mixed: 只改变缓存区，不改变工作区。这是默认参数，通常用于撤销<code>git add</code>。</li>
-<li>hard：改变工作区和暂存区到指定 commit。该参数等同于重置，可能会引起数据损失。<code>git reset --hard</code>等同于<code>git reset --hard HEAD</code>。</li>
-<li><code>-p</code>表示键入交互模式，指定暂存区的哪些部分需要撤销。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Undo add</span></span><br><span class="line">$ git reset</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，不重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 回到 HEAD 之前的那个 commit</span></span><br><span class="line">$ git reset --soft HEAD^</span><br><span class="line"></span><br><span class="line"><span class="comment"># Undo a commit，重置工作区和缓存区</span></span><br><span class="line"><span class="comment"># 连续撤销三个 commit：HEAD, HEAD^, and HEAD~2</span></span><br><span class="line">$ git reset --hard HEAD~3</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从暂存区移除指定文件，但不改变工作区中的该文件</span></span><br><span class="line">$ git reset -- frotz.c</span><br></pre></td></tr></table></figure>
-
+    <title>git show</title>
+    <url>/repost/git-tutorial/commands/git-show.html</url>
+    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2072,30 +2110,18 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git show</title>
-    <url>/repost/git-tutorial/commands/git-show.html</url>
-    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git rm</title>
-    <url>/repost/git-tutorial/commands/git-rm.html</url>
-    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
-<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git remote</title>
-    <url>/repost/git-tutorial/commands/git-remote.html</url>
-    <content><![CDATA[<p>为远程仓库添加别名。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add john git@github.com:johnsomeone/someproject.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示所有的远程主机</span></span><br><span class="line">$ git remote -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出某个主机的详细信息</span></span><br><span class="line">$ git remote show name</span><br></pre></td></tr></table></figure>
+    <title>git switch</title>
+    <url>/repost/git-tutorial/commands/git-switch.html</url>
+    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
 
-<p><code>git remote</code>命令的实质是在<code>.git/config</code>文件添加下面的内容。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git remote add bravo ../bravo</span><br></pre></td></tr></table></figure>
+<p>上面命令切换到 develop 分支。</p>
+<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[remote &quot;bravo&quot;]</span><br><span class="line">    url = ../bravo/</span><br></pre></td></tr></table></figure>
+<p>上面命令切换到指定提交。</p>
+<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
 
 ]]></content>
   </entry>
@@ -2111,10 +2137,12 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git revert</title>
-    <url>/repost/git-tutorial/commands/git-revert.html</url>
-    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
+    <title>git update-index</title>
+    <url>/repost/git-tutorial/commands/git-update-index.html</url>
+    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
+
+<p>直接将缓存信息插入缓存文件。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2126,15 +2154,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git update-index</title>
-    <url>/repost/git-tutorial/commands/git-update-index.html</url>
-    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
-
-<p>直接将缓存信息插入缓存文件。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>git write-tree</title>
     <url>/repost/git-tutorial/commands/git-write-tree.html</url>
     <content><![CDATA[<p><code>git write-tree</code>命令用于根据当前缓存区域，生成一个树对象。</p>
@@ -2142,19 +2161,11 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git switch</title>
-    <url>/repost/git-tutorial/commands/git-switch.html</url>
-    <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch develop</span><br></pre></td></tr></table></figure>
-
-<p>上面命令切换到 develop 分支。</p>
-<p>如果要切换到分离状态的（detached）的提交，需要使用<code>-d</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -d f8c540805b7e16753c65619ca3d7514178353f39</span><br></pre></td></tr></table></figure>
-
-<p>上面命令切换到指定提交。</p>
-<p><code>-c</code>参数（create）用于生成一个新的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git switch -c new_branch</span><br></pre></td></tr></table></figure>
-
+    <title>git rm</title>
+    <url>/repost/git-tutorial/commands/git-rm.html</url>
+    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
+<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
