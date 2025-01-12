@@ -24,28 +24,23 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。 git branch命令可以列出本地的所有分支。 $ git branch  创建一个名为MyBranch的新分支，但是依然停留在当前分支。 $ git branch MyBranch  在远程主机origin上创建一个MyBranch的分支，并与本地的同名分支建立追踪关系。 $ git push -">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分支">
-<meta property="og:url" content="https://blog.koalamini.world/repost/git-tutorial/branch.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="贝可考拉珍宝居">
+<meta property="og:url" content="https://blog.koalamini.world/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/index.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
-<meta property="og:description" content="分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。 git branch命令可以列出本地的所有分支。 $ git branch  创建一个名为MyBranch的新分支，但是依然停留在当前分支。 $ git branch MyBranch  在远程主机origin上创建一个MyBranch的分支，并与本地的同名分支建立追踪关系。 $ git push -">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-16T02:24:48.000Z">
-<meta property="article:modified_time" content="2024-12-17T13:18:44.425Z">
 <meta property="article:author" content="贝可考拉">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.koalamini.world/repost/git-tutorial/branch">
+<link rel="canonical" href="https://blog.koalamini.world/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://blog.koalamini.world/repost/git-tutorial/branch.html","path":"repost/git-tutorial/branch.html","title":"分支"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/开发环境/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分支 | 贝可考拉珍宝居
-</title>
+<title>分类: 开发环境 | 贝可考拉珍宝居</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJBHS6YC3C"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-JJBHS6YC3C","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -195,70 +190,50 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner category posts-collapse">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">分支
-</h1>
-
-<div class="post-meta-container">
-  <ul class="breadcrumb">
-            <li><a href="/repost/">转载</a></li>
-            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
-            <li>BRANCH</li>
-  </ul>
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
-<p><code>git branch</code>命令可以列出本地的所有分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-
-<p>创建一个名为<code>MyBranch</code>的新分支，但是依然停留在当前分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>在远程主机<code>origin</code>上创建一个<code>MyBranch</code>的分支，并与本地的同名分支建立追踪关系。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push -u origin MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>将当前分支改名为<code>MyBranch</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -m MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>删除<code>MyBranch</code>分支，前提是该分支没有未合并的变动。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -d MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>强制删除<code>MyBranch</code>分支，不管有没有未合并变化。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -D MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>切换到<code>MyBranch</code>分支，当前的工作区会变为<code>MyBranch</code>分支的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
-
+  
+  
+  
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h1 class="collection-header">开发环境
+          <small>分类</small>
+        </h1>
       </div>
+
       
-      
-      
+    <div class="collection-year">
+      <span class="collection-header">2025</span>
     </div>
-  <ul class="breadcrumb">
-            <li><a href="/repost/">转载</a></li>
-            <li><a href="/repost/git-tutorial/">GIT-TUTORIAL</a></li>
-            <li>BRANCH</li>
-  </ul>
 
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2025-01-11T20:38:01+08:00"
+              content="2025-01-11">
+          01-11
+        </time>
+      </div>
 
+      <div class="post-title">
+          <a class="post-title-link" href="/2025/conda%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" itemprop="url">
+            <span itemprop="name">conda安装与使用</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
 
 </div>
   </main>
@@ -346,7 +321,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
       el: '#valine-comments',
-      path: "/repost/git-tutorial/branch.html",
+      path: "/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/",
       serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
     }));
   }, window.Valine);
