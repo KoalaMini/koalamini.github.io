@@ -24,23 +24,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.koalamini.world","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="贝可考拉珍宝居">
-<meta property="og:url" content="https://blog.koalamini.world/tags/git/index.html">
+    <meta name="description" content="使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pip配置国内镜像源">
+<meta property="og:url" content="https://blog.koalamini.world/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/index.html">
 <meta property="og:site_name" content="贝可考拉珍宝居">
+<meta property="og:description" content="使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-02-06T13:29:38.000Z">
+<meta property="article:modified_time" content="2025-02-06T13:41:55.186Z">
 <meta property="article:author" content="贝可考拉">
+<meta property="article:tag" content="包管理器">
+<meta property="article:tag" content="pip">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.koalamini.world/tags/git/">
+<link rel="canonical" href="https://blog.koalamini.world/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/git/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.koalamini.world/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/","path":"2025/pip配置国内镜像源/","title":"pip配置国内镜像源"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: git | 贝可考拉珍宝居</title>
+<title>pip配置国内镜像源 | 贝可考拉珍宝居</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJBHS6YC3C"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-JJBHS6YC3C","only_pageview":false,"measure_protocol_api_secret":null}</script>
@@ -163,18 +170,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -190,74 +197,125 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">git
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.koalamini.world/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="贝可考拉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="贝可考拉珍宝居">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="pip配置国内镜像源 | 贝可考拉珍宝居">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          pip配置国内镜像源
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
+
+      <time title="创建时间：2025-02-06 21:29:38 / 修改时间：21:41:55" itemprop="dateCreated datePublished" datetime="2025-02-06T21:29:38+08:00">2025-02-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%8C%BF/" itemprop="url" rel="index"><span itemprop="name">程序猿</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%8C%BF/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" itemprop="url" rel="index"><span itemprop="name">环境配置</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/" class="post-meta-item leancloud_visitors" data-flag-title="pip配置国内镜像源" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了</p>
+<span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置清华大学pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置阿里云pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br><span class="line"><span class="comment"># 取消配置</span></span><br><span class="line">pip config <span class="built_in">unset</span> global.index-url</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20250206：初稿</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2024-10-20T19:10:58+08:00"
-              content="2024-10-20">
-          10-20
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/2024102002/" itemprop="url">
-            <span itemprop="name">远程仓库和远程分支更名</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" rel="tag"># 包管理器</a>
+              <a href="/tags/pip/" rel="tag"># pip</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/conda%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" rel="prev" title="conda安装与使用">
+                  <i class="fa fa-angle-left"></i> conda安装与使用
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-12-27T10:09:55+08:00"
-              content="2021-12-27">
-          12-27
-        </time>
-      </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/git%E6%A6%82%E5%BF%B5/" itemprop="url">
-            <span itemprop="name">git概念</span>
-          </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-    </div>
-  </div>
-  
-  
-  
 
+
+    <div class="comments" id="valine-comments"></div>
 </div>
   </main>
 
@@ -344,7 +402,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"Ibic1c619Z0aUleIqabbWVtW-gzGzoHsz","appKey":"VU4WIFvKoQZLk5objkwB0O3N","serverURLs":"https://ibic1c61.lc-cn-n1-shared.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[]}, {
       el: '#valine-comments',
-      path: "/tags/git/",
+      path: "/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/",
       serverURLs: "https://ibic1c61.lc-cn-n1-shared.com"
     }));
   }, window.Valine);
