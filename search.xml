@@ -134,62 +134,6 @@
       </tags>
   </entry>
   <entry>
-    <title>考拉周刊第3期</title>
-    <url>/2024/2024031201/</url>
-    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
-<p><code>需求文档</code></p>
-<p>对比了飞书、语雀、云效的 PRD 模板：</p>
-<ul>
-<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
-<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
-<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
-</ul>
-<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
-<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
-<p><code>需求分析</code></p>
-<p>博主讨论了需求边界，他分为 3 种：</p>
-<ul>
-<li><p>开放型： 需求无从下手</p>
-</li>
-<li><p>封闭型： 需求不得不做，老板说</p>
-</li>
-<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
-</li>
-</ul>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
-<p><code>职业发展</code> <code>产品职业观</code></p>
-<p>作者认为初中级产品经理要经历 5 个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
-<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
-<p><code>职业发展</code></p>
-<p>短期价值： 领导的信任、表扬、提成加薪</p>
-<p>长期价值： 经验积累和综合素质提升</p>
-<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
-<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
-<thead>
-<tr>
-<th>昵称</th>
-<th>平台</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
-<td>人人都是产品经理</td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240312：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Mac上homebrew安装与卸载</title>
     <url>/2024/2024030302/</url>
     <content><![CDATA[<p>用清华镜像安装与卸载 homebrew</p>
@@ -254,6 +198,139 @@
         <tag>Mac环境</tag>
         <tag>包管理器</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>考拉周刊第2期</title>
+    <url>/2024/2024030901/</url>
+    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
+<td>#数据分析</td>
+</tr>
+</tbody></table>
+<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
+<table>
+<thead>
+<tr>
+<th><strong>链接</strong></th>
+<th><strong>标签</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
+<td>#竞品分析</td>
+</tr>
+</tbody></table>
+<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
+<td>#沟通协作</td>
+</tr>
+</tbody></table>
+<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
+<thead>
+<tr>
+<th>链接</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
+<td>#陌生人社交</td>
+</tr>
+<tr>
+<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
+<td>#人力资源</td>
+</tr>
+</tbody></table>
+<p>第 1 篇介绍了 Dateme.doc 文档约会的新约会形式，第 2 篇介绍了 Boss 通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
+<p>传统陌生人社交 App 面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
+<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>2024-03-09： 创建</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
+      <tags>
+        <tag>观察记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考拉周刊第3期</title>
+    <url>/2024/2024031201/</url>
+    <content><![CDATA[<p>现在这个时代，情绪价值越来越重要，也说明社会经济在发展</p>
+<span id="more"></span>
+
+<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><p><a href="https://www.woshipm.com/share/6007279.html">https://www.woshipm.com/share/6007279.html</a></p>
+<p><code>需求文档</code></p>
+<p>对比了飞书、语雀、云效的 PRD 模板：</p>
+<ul>
+<li>飞书：版本信息、变更日志、文档说明（名词解释）、需求背景（产品&#x2F;数据现状、用户调研、竞品分析）、需求范围、功能详细说明（产品流程图、交互原型图、功能说明）、非功能需求、埋点、项目规划、附录。</li>
+<li>语雀：变更记录、背景介绍（业务背景、业务场景）、产品概述（产品定位、服务对象、产品逻辑、信息架构、角色术语）、需求说明（需求列表、需求明细、非功能需求）、人员&amp;排期。</li>
+<li>云效：基本信息（项目成员）、需求背景、产品目标、衡量指标、产品需求、功能及界面设计、问题、暂不支持、附录。</li>
+</ul>
+<p>个人比较赞同飞书的，再加上云效的“暂不支持”就挺好</p>
+<p><a href="https://www.bilibili.com/video/BV13a411k7fE">https://www.bilibili.com/video/BV13a411k7fE</a></p>
+<p><code>需求分析</code></p>
+<p>博主讨论了需求边界，他分为 3 种：</p>
+<ul>
+<li><p>开放型： 需求无从下手</p>
+</li>
+<li><p>封闭型： 需求不得不做，老板说</p>
+</li>
+<li><p>常规型： 需求毫无新意，抄竞品就完了</p>
+</li>
+</ul>
+<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><p><a href="https://www.woshipm.com/share/6005189.html">https://www.woshipm.com/share/6005189.html</a></p>
+<p><code>职业发展</code> <code>产品职业观</code></p>
+<p>作者认为初中级产品经理要经历 5 个阶段：实现业务需求、挖掘产品需求、规划产品路径、架构产品模型、推进产品决策。高级产品经理：行业研究、市场洞察、商业模式、战略目标。</p>
+<p><a href="https://www.woshipm.com/share/6005260.html">https://www.woshipm.com/share/6005260.html</a></p>
+<p><code>职业发展</code></p>
+<p>短期价值： 领导的信任、表扬、提成加薪</p>
+<p>长期价值： 经验积累和综合素质提升</p>
+<p>情绪价值： 获得成就感和外界的正向反馈，心情愉悦</p>
+<h1 id="新关注-订阅"><a href="#新关注-订阅" class="headerlink" title="新关注&#x2F;订阅"></a>新关注&#x2F;订阅</h1><table>
+<thead>
+<tr>
+<th>昵称</th>
+<th>平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://www.woshipm.com/u/1290247">诺儿笔记本</a></td>
+<td>人人都是产品经理</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240312：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>考拉周刊</category>
+      </categories>
   </entry>
   <entry>
     <title>frp内网穿透</title>
@@ -382,45 +459,6 @@
       </tags>
   </entry>
   <entry>
-    <title>node包管理器</title>
-    <url>/2024/2024092001/</url>
-    <content><![CDATA[<p>npm 的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
-<span id="more"></span>
-
-<p><code>npm</code>是<code>node package manager</code>的缩写，node.js 的包管理器</p>
-<h2 id="1-nvm"><a href="#1-nvm" class="headerlink" title="1 nvm"></a>1 nvm</h2><p>node 版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
-<p><strong>安装</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
-
-<h2 id="2-nrm"><a href="#2-nrm" class="headerlink" title="2 nrm"></a>2 nrm</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager</span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-ncu"><a href="#3-ncu" class="headerlink" title="3 ncu"></a>3 ncu</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-npm-check"><a href="#4-npm-check" class="headerlink" title="4 npm-check"></a>4 npm-check</h2><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
-</li>
-<li><p>20240920：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>环境配置</category>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>包管理器</tag>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>远程仓库和远程分支更名</title>
     <url>/2024/2024102002/</url>
     <content><![CDATA[<p>远程仓库和远程分支更名，本地 git 操作记录</p>
@@ -441,83 +479,6 @@
         <category>程序猿</category>
         <category>git</category>
       </categories>
-  </entry>
-  <entry>
-    <title>考拉周刊第2期</title>
-    <url>/2024/2024030901/</url>
-    <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
-<span id="more"></span>
-
-<h1 id="产品汪"><a href="#产品汪" class="headerlink" title="产品汪"></a>产品汪</h1><table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.bilibili.com/video/BV1WS421P71V">https://www.bilibili.com/video/BV1WS421P71V</a></td>
-<td>#数据分析</td>
-</tr>
-</tbody></table>
-<p>数据分析是一种思维方式，包括三个方面：业务分析、数据治理、数据挖掘。博主必看四张表：财务收支表、销售订单表、市场渠道表、用户流程表。</p>
-<table>
-<thead>
-<tr>
-<th><strong>链接</strong></th>
-<th><strong>标签</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/operate/6006208.html">https://www.woshipm.com/operate/6006208.html</a></td>
-<td>#竞品分析</td>
-</tr>
-</tbody></table>
-<p>作者对抖音和小红书做了对比分析，维度：用户构成、平台调性、内容形式、点赞收藏比、长尾价值、营销策略。</p>
-<h1 id="职场"><a href="#职场" class="headerlink" title="职场"></a>职场</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/share/6004797.html">https://www.woshipm.com/share/6004797.html</a></td>
-<td>#沟通协作</td>
-</tr>
-</tbody></table>
-<p>团队知识库是用来沟通达成共识的，同时方便工作交接的，还有就是培养新人的。<u>知识库创建不难，难得是大家都去维护。</u></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><table>
-<thead>
-<tr>
-<th>链接</th>
-<th>标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://www.woshipm.com/it/6004603.html">https://www.woshipm.com/it/6004603.html</a></td>
-<td>#陌生人社交</td>
-</tr>
-<tr>
-<td><a href="https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124">https://o4zve8g6m2.feishu.cn/minutes/obcnya58ra71ejd6xsxan124</a></td>
-<td>#人力资源</td>
-</tr>
-</tbody></table>
-<p>第 1 篇介绍了 Dateme.doc 文档约会的新约会形式，第 2 篇介绍了 Boss 通过写高质量文章吸引人才的新招聘形式，两者有异曲同工之妙。</p>
-<p>传统陌生人社交 App 面向下沉市场年轻人，文档约会面向高知识年轻人。</p>
-<p>传统招聘形式只能招到普通员工，文档招聘可以招到人才。</p>
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>2024-03-09： 创建</li>
-</ul>
-]]></content>
-      <categories>
-        <category>考拉周刊</category>
-      </categories>
-      <tags>
-        <tag>观察记录</tag>
-      </tags>
   </entry>
   <entry>
     <title>conda安装与使用</title>
@@ -556,6 +517,47 @@
       <categories>
         <category>程序猿</category>
         <category>环境配置</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Git分支命令</title>
+    <url>/2024/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>git 分支常用命令清单，包括<code>git branch</code> <code>git switch</code> <code>git merge</code></p>
+<span id="more"></span>
+
+<h2 id="1-git-branch"><a href="#1-git-branch" class="headerlink" title="1 git-branch"></a>1 git-branch</h2><h3 id="1-1-查询"><a href="#1-1-查询" class="headerlink" title="1.1 查询"></a>1.1 查询</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出本地仓库分支</span></span><br><span class="line">git branch</span><br><span class="line">git branch -l</span><br><span class="line">git branch --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出远程仓库分支</span></span><br><span class="line">git branch -r</span><br><span class="line">git branch --remotes</span><br><span class="line">git branch -lr</span><br><span class="line">git branch --list --remotes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有分支</span></span><br><span class="line">git branch -a</span><br><span class="line">git branch --all</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询上游分支（远程分支），verbose是“详细的“意思</span></span><br><span class="line">git branch -vv</span><br><span class="line">git branch --verbose --verbose</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-创建与删除"><a href="#1-2-创建与删除" class="headerlink" title="1.2 创建与删除"></a>1.2 创建与删除</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新分支</span></span><br><span class="line">git branch &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支并追踪远程分支（上游分支）</span></span><br><span class="line">git branch --track &lt;new-local-branch&gt; &lt;remote-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -d &lt;branch&gt;</span><br><span class="line">git branch --delete &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制删除分支</span></span><br><span class="line">git branch -D &lt;branch&gt;</span><br><span class="line">git branch --delete --force &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支追踪</span></span><br><span class="line">git branch -dr &lt;remote/branch&gt;</span><br><span class="line">git branch --delete --remote &lt;remote/branch&gt;</span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push -d &lt;remote&gt; &lt;branch&gt;</span><br><span class="line">git push --delete &lt;remote&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-移动（重命名）与复制"><a href="#1-3-移动（重命名）与复制" class="headerlink" title="1.3 移动（重命名）与复制"></a>1.3 移动（重命名）与复制</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 移动（重命名）当前分支</span></span><br><span class="line">git branch -m [current-branch] &lt;new-branch&gt;</span><br><span class="line">git branch --move [current-branch] &lt;newbranch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动（重命名）指定分支</span></span><br><span class="line">git branch -m &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line">git branch --move &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制当前分支</span></span><br><span class="line">git branch -c &lt;new-branch&gt; [current-branch]</span><br><span class="line">git branch --copy &lt;new-branch&gt; [current-branch]</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-4-其他"><a href="#1-4-其他" class="headerlink" title="1.4 其他"></a>1.4 其他</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 当前分支追踪远程分支（上游分支）</span></span><br><span class="line">git branch -u &lt;remote-branch&gt;</span><br><span class="line">git branch --set-upstream-to=&lt;remote-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-git-switch"><a href="#2-git-switch" class="headerlink" title="2 git-switch"></a>2 git-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到分支</span></span><br><span class="line">git switch &lt;target-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新分支（会创建新分支）</span></span><br><span class="line">git switch -c &lt;new-branch&gt;</span><br><span class="line">git switch --create &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新孤立分支（没有父提交，空分支）</span></span><br><span class="line">git switch --orphan &lt;new-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-git-merge"><a href="#3-git-merge" class="headerlink" title="3 git-merge"></a>3 git-merge</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">git merge &lt;target-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><p><a href="https://git-scm.com/docs/git-branch/zh_HANS-CN">git-branch | git 官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-switch/zh_HANS-CN">git-switch | git 官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-merge/zh_HANS-CN">git-merge | git 官网</a></p>
+</li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20241229：初稿</p>
+</li>
+<li><p>20241217：创建</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>git</category>
       </categories>
   </entry>
   <entry>
@@ -598,6 +600,82 @@
         <category>程序猿</category>
         <category>git</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Git仓库命令</title>
+    <url>/2024/git%E4%BB%93%E5%BA%93%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>git 仓库常用命令清单，包括<code>git init</code> <code>git clone</code> <code>git log</code></p>
+<span id="more"></span>
+
+<h2 id="1-git-init"><a href="#1-git-init" class="headerlink" title="1 git-init"></a>1 git-init</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建git仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>它会在当前目录下生成一个<code>.git</code>隐藏目录，表示本地仓库创建成功</p>
+<h2 id="2-git-clone"><a href="#2-git-clone" class="headerlink" title="2 git-clone"></a>2 git-clone</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从远程仓库克隆所有分支</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;remote-url&gt; [local-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从远程仓库克隆单分支</span></span><br><span class="line">git <span class="built_in">clone</span> -b &lt;remote-branch&gt; --single-branch &lt;remote-url&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-git-log"><a href="#3-git-log" class="headerlink" title="3 git-log"></a>3 git-log</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以单行格式，查看仓库提交历史</span></span><br><span class="line">git <span class="built_in">log</span> --oneline</span><br></pre></td></tr></table></figure>
+
+
+
+
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><p><a href="https://git-scm.com/docs/git-init/zh_HANS-CN">git-init | git官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-clone/zh_HANS-CN">git-clone | git官网</a></p>
+</li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20250315：初稿</p>
+</li>
+<li><p>20241218：创建</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>node包管理器</title>
+    <url>/2024/2024092001/</url>
+    <content><![CDATA[<p>npm 的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
+<span id="more"></span>
+
+<p><code>npm</code>是<code>node package manager</code>的缩写，node.js 的包管理器</p>
+<h2 id="1-nvm"><a href="#1-nvm" class="headerlink" title="1 nvm"></a>1 nvm</h2><p>node 版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
+<p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
+
+<h2 id="2-nrm"><a href="#2-nrm" class="headerlink" title="2 nrm"></a>2 nrm</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager</span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-ncu"><a href="#3-ncu" class="headerlink" title="3 ncu"></a>3 ncu</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-npm-check"><a href="#4-npm-check" class="headerlink" title="4 npm-check"></a>4 npm-check</h2><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
+</li>
+<li><p>20240920：初稿</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>前端</category>
+        <category>环境配置</category>
+      </categories>
+      <tags>
+        <tag>包管理器</tag>
+        <tag>node</tag>
+      </tags>
   </entry>
   <entry>
     <title>git概念</title>
@@ -694,28 +772,28 @@ end
       </categories>
   </entry>
   <entry>
-    <title>pip配置国内镜像源</title>
-    <url>/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</url>
-    <content><![CDATA[<p>使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了</p>
+    <title>Git配置</title>
+    <url>/2024/git%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>git 配置 <code>git config</code> 命令，<code>.gitignore</code> 配置文件语法</p>
 <span id="more"></span>
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置清华大学pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置阿里云pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br><span class="line"><span class="comment"># 取消配置</span></span><br><span class="line">pip config <span class="built_in">unset</span> global.index-url</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h1 id="1-git-config"><a href="#1-git-config" class="headerlink" title="1 git config"></a>1 git config</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置用户名和邮箱</span></span><br><span class="line">git config --global user.name <span class="string">&quot;koalamini&quot;</span></span><br><span class="line">git config --global user.email koalamini@qq.com</span><br><span class="line"><span class="comment"># 取消转义，解决中文乱码问题</span></span><br><span class="line">git config --global core.quotepath <span class="literal">false</span></span><br><span class="line"><span class="comment"># 将VS Code设为默认编辑器</span></span><br><span class="line">git config --global core.editor <span class="string">&quot;code --wait&quot;</span></span><br><span class="line"><span class="comment"># 创建别名缩写</span></span><br><span class="line">git config --global alias.st status</span><br></pre></td></tr></table></figure>
+
+<img src="/2024/git%E9%85%8D%E7%BD%AE/PixPin_2024-10-23_19-45-05.png" class="" title="中文乱码问题">
+
+<h1 id="2-gitignore配置文件"><a href="#2-gitignore配置文件" class="headerlink" title="2 .gitignore配置文件"></a>2 .gitignore配置文件</h1><p>将需要忽略不跟踪的文件夹和文件配置进去</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 忽略.docx</span></span><br><span class="line">*.docx</span><br><span class="line"><span class="comment"># 忽略mydata路径下的所有文件和文件夹</span></span><br><span class="line">mydata/**</span><br></pre></td></tr></table></figure>
 <hr>
-<p><strong>更新日志</strong></p>
 <ul>
-<li>20250206：初稿</li>
+<li>20250315：初稿</li>
+<li>20241218：创建</li>
 </ul>
 ]]></content>
       <categories>
         <category>程序猿</category>
-        <category>环境配置</category>
+        <category>git</category>
       </categories>
-      <tags>
-        <tag>包管理器</tag>
-        <tag>pip</tag>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title>博客搭建1-安装</title>
@@ -763,47 +841,6 @@ end
 ]]></content>
       <categories>
         <category>博客</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Git分支命令</title>
-    <url>/2024/git%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>git 分支常用命令清单，包括<code>git branch</code> <code>git switch</code> <code>git merge</code></p>
-<span id="more"></span>
-
-<h2 id="1-git-branch"><a href="#1-git-branch" class="headerlink" title="1 git-branch"></a>1 git-branch</h2><h3 id="1-1-查询"><a href="#1-1-查询" class="headerlink" title="1.1 查询"></a>1.1 查询</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出本地仓库分支</span></span><br><span class="line">git branch</span><br><span class="line">git branch -l</span><br><span class="line">git branch --list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出远程仓库分支</span></span><br><span class="line">git branch -r</span><br><span class="line">git branch --remotes</span><br><span class="line">git branch -lr</span><br><span class="line">git branch --list --remotes</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有分支</span></span><br><span class="line">git branch -a</span><br><span class="line">git branch --all</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询上游分支（远程分支），verbose是“详细的“意思</span></span><br><span class="line">git branch -vv</span><br><span class="line">git branch --verbose --verbose</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-创建与删除"><a href="#1-2-创建与删除" class="headerlink" title="1.2 创建与删除"></a>1.2 创建与删除</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建新分支</span></span><br><span class="line">git branch &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支并追踪远程分支（上游分支）</span></span><br><span class="line">git branch --track &lt;new-local-branch&gt; &lt;remote-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">git branch -d &lt;branch&gt;</span><br><span class="line">git branch --delete &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制删除分支</span></span><br><span class="line">git branch -D &lt;branch&gt;</span><br><span class="line">git branch --delete --force &lt;branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支追踪</span></span><br><span class="line">git branch -dr &lt;remote/branch&gt;</span><br><span class="line">git branch --delete --remote &lt;remote/branch&gt;</span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push -d &lt;remote&gt; &lt;branch&gt;</span><br><span class="line">git push --delete &lt;remote&gt; &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-移动（重命名）与复制"><a href="#1-3-移动（重命名）与复制" class="headerlink" title="1.3 移动（重命名）与复制"></a>1.3 移动（重命名）与复制</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 移动（重命名）当前分支</span></span><br><span class="line">git branch -m [current-branch] &lt;new-branch&gt;</span><br><span class="line">git branch --move [current-branch] &lt;newbranch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动（重命名）指定分支</span></span><br><span class="line">git branch -m &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line">git branch --move &lt;target-branch&gt; &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制当前分支</span></span><br><span class="line">git branch -c &lt;new-branch&gt; [current-branch]</span><br><span class="line">git branch --copy &lt;new-branch&gt; [current-branch]</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-其他"><a href="#1-4-其他" class="headerlink" title="1.4 其他"></a>1.4 其他</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 当前分支追踪远程分支（上游分支）</span></span><br><span class="line">git branch -u &lt;remote-branch&gt;</span><br><span class="line">git branch --set-upstream-to=&lt;remote-branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-git-switch"><a href="#2-git-switch" class="headerlink" title="2 git-switch"></a>2 git-switch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到分支</span></span><br><span class="line">git switch &lt;target-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新分支（会创建新分支）</span></span><br><span class="line">git switch -c &lt;new-branch&gt;</span><br><span class="line">git switch --create &lt;new-branch&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换到新孤立分支（没有父提交，空分支）</span></span><br><span class="line">git switch --orphan &lt;new-branch&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-git-merge"><a href="#3-git-merge" class="headerlink" title="3 git-merge"></a>3 git-merge</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">git merge &lt;target-branch&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><p><a href="https://git-scm.com/docs/git-branch/zh_HANS-CN">git-branch | git 官网</a></p>
-</li>
-<li><p><a href="https://git-scm.com/docs/git-switch/zh_HANS-CN">git-switch | git 官网</a></p>
-</li>
-<li><p><a href="https://git-scm.com/docs/git-merge/zh_HANS-CN">git-merge | git 官网</a></p>
-</li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li><p>20241229：初稿</p>
-</li>
-<li><p>20241217：创建</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>git</category>
       </categories>
   </entry>
   <entry>
@@ -862,6 +899,76 @@ end
 <li>命令行输入 <code>npm uninstall hexo-generator-index</code> 卸载默认插件</li>
 <li>命令行输入 <code>npm install hexo-generator-index-pin-top</code> 安装新插件</li>
 <li>修改模板，修改<code>scaffolds\post.md</code>，在文章<strong>元信息</strong>区（Front-matter）添加<code>top: false</code>，撰写文章时改为<code>true</code>即可</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>pip配置国内镜像源</title>
+    <url>/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<p>使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了</p>
+<span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置清华大学pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置阿里云pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br><span class="line"><span class="comment"># 取消配置</span></span><br><span class="line">pip config <span class="built_in">unset</span> global.index-url</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20250206：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>环境配置</category>
+      </categories>
+      <tags>
+        <tag>包管理器</tag>
+        <tag>pip</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建3-安装Next主题</title>
+    <url>/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/</url>
+    <content><![CDATA[<p>很喜欢简洁朴素干净的 next 主题</p>
+<span id="more"></span>
+
+<blockquote>
+<p>适用于 hexo 5.0 以上版本</p>
+</blockquote>
+<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用 git 方式</p>
+<p><strong>git 方式</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
+<h1 id="站点配置-Hexo-配置"><a href="#站点配置-Hexo-配置" class="headerlink" title="站点配置(Hexo 配置)"></a>站点配置(Hexo 配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="主题配置（Next-主题配置）"><a href="#主题配置（Next-主题配置）" class="headerlink" title="主题配置（Next 主题配置）"></a>主题配置（Next 主题配置）</h1><blockquote>
+<p>站点根目录下的<code>_config.next.yml</code>文件</p>
+</blockquote>
+<h2 id="3-1-配置分类和标签页面"><a href="#3-1-配置分类和标签页面" class="headerlink" title="3.1 配置分类和标签页面"></a>3.1 配置分类和标签页面</h2><p>命令行输入 <code>hexo n page 标签</code> 新建 tags 页面，会在<code>source</code>文件夹下生成<code>tags</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>tags</code>文件夹下生成<em>index.md</em>文件</p>
+<p>打开<code>tags\index.md</code>，添加<code>type: tags</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-07-08 08:27:38</span><br><span class="line"><span class="section">type: tags</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<p>命令行输入 <code>hexo n page 分类</code> 新建 categores 页面，会在<code>source</code>文件夹下生成<code>categories</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>categories</code>文件夹下生成<em>index.md</em>文件</p>
+<p>打开<code>tags\index.md</code>，添加<code>type: categories</code></p>
+<h2 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a>导航栏配置</h2><img src="/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/Snipaste_2021-07-08_00-59-30.jpg" class="">
+
+<h1 id="测试浏览"><a href="#测试浏览" class="headerlink" title="测试浏览"></a>测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
+<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20240916：增加分类和标签页面的配置说明，</li>
+<li>20240303：精简主题安装的操作，推荐使用 git 方式安装</li>
+<li>20220410：初稿</li>
 </ul>
 ]]></content>
       <categories>
@@ -1050,52 +1157,6 @@ end
       </categories>
   </entry>
   <entry>
-    <title>博客搭建3-安装Next主题</title>
-    <url>/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/</url>
-    <content><![CDATA[<p>很喜欢简洁朴素干净的 next 主题</p>
-<span id="more"></span>
-
-<blockquote>
-<p>适用于 hexo 5.0 以上版本</p>
-</blockquote>
-<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>有三种方式安装：下载<a href="https://github.com/next-theme/hexo-theme-next">源码</a>、npm、git，推荐使用 git 方式</p>
-<p><strong>git 方式</strong></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">切换到博客站点根目录</span></span><br><span class="line">cd hexo-site</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装next主题到themes文件夹内，并更名为next</span></span><br><span class="line">git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>将<code>themes/next/_config.yml</code>文件拷贝到博客站点根目录下，更名为<code>_config.next.yml</code></p>
-<h1 id="站点配置-Hexo-配置"><a href="#站点配置-Hexo-配置" class="headerlink" title="站点配置(Hexo 配置)"></a>站点配置(Hexo 配置)</h1><p>打开站点的<code>_config.yml</code>，找到<code>Extensions</code>块，修改主题为<code>next</code></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions（拓展）</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="comment"># theme: landscape # 默认主题</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="主题配置（Next-主题配置）"><a href="#主题配置（Next-主题配置）" class="headerlink" title="主题配置（Next 主题配置）"></a>主题配置（Next 主题配置）</h1><blockquote>
-<p>站点根目录下的<code>_config.next.yml</code>文件</p>
-</blockquote>
-<h2 id="3-1-配置分类和标签页面"><a href="#3-1-配置分类和标签页面" class="headerlink" title="3.1 配置分类和标签页面"></a>3.1 配置分类和标签页面</h2><p>命令行输入 <code>hexo n page 标签</code> 新建 tags 页面，会在<code>source</code>文件夹下生成<code>tags</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>tags</code>文件夹下生成<em>index.md</em>文件</p>
-<p>打开<code>tags\index.md</code>，添加<code>type: tags</code></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2021-07-08 08:27:38</span><br><span class="line"><span class="section">type: tags</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<p>命令行输入 <code>hexo n page 分类</code> 新建 categores 页面，会在<code>source</code>文件夹下生成<code>categories</code>文件夹，会使用<code>scaffolds</code>文件夹下的<em>page</em>模板在<code>categories</code>文件夹下生成<em>index.md</em>文件</p>
-<p>打开<code>tags\index.md</code>，添加<code>type: categories</code></p>
-<h2 id="导航栏配置"><a href="#导航栏配置" class="headerlink" title="导航栏配置"></a>导航栏配置</h2><img src="/2022/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3/Snipaste_2021-07-08_00-59-30.jpg" class="">
-
-<h1 id="测试浏览"><a href="#测试浏览" class="headerlink" title="测试浏览"></a>测试浏览</h1><p>运行<code>hexo s</code>，浏览器<code>http://localhost:4000</code>查看是否生效</p>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN">https://github.com/next-theme/hexo-theme-next/tree/master/docs/zh-CN</a></li>
-<li><a href="https://theme-next.js.org/docs/getting-started/">https://theme-next.js.org/docs/getting-started/</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20240916：增加分类和标签页面的配置说明，</li>
-<li>20240303：精简主题安装的操作，推荐使用 git 方式安装</li>
-<li>20220410：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-  </entry>
-  <entry>
     <title>博客搭建6-自定义域名</title>
     <url>/2024/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA6/</url>
     <content><![CDATA[<p>使用<code>blog.koalamini.world</code>作为博客的域名</p>
@@ -1115,6 +1176,23 @@ end
       <categories>
         <category>博客</category>
       </categories>
+  </entry>
+  <entry>
+    <title>关于这里</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
+<p>大学期间是在博客园写博客的，毕业后决定自己搭一个，选了Hexo+Next，转产品后停了一段时间，后来重新回到这里。</p>
+<hr>
+<p><strong>更新记录</strong></p>
+<ul>
+<li>20240921： <mark class="label primary">v1.5.1</mark>，新增 hexo-hide-posts 插件，把写给朋友的信件隐藏起来；显示ICP备案号</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>2024年生日快乐</title>
@@ -1139,21 +1217,15 @@ end
 <!-- flag of hidden posts -->]]></content>
   </entry>
   <entry>
-    <title>关于这里</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
-<p>大学期间是在博客园写博客的，毕业后决定自己搭一个，选了Hexo+Next，转产品后停了一段时间，后来重新回到这里。</p>
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li>20240921： <mark class="label primary">v1.5.1</mark>，新增 hexo-hide-posts 插件，把写给朋友的信件隐藏起来；显示ICP备案号</li>
-</ul>
-]]></content>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>20240921001</title>
+    <url>/nagging/20240921001.html</url>
+    <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
+]]></content>
   </entry>
   <entry>
     <title>20240921002</title>
@@ -1162,9 +1234,9 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>20240921001</title>
-    <url>/nagging/20240921001.html</url>
-    <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
+    <title>20240922001</title>
+    <url>/nagging/20240922001.html</url>
+    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
   </entry>
   <entry>
@@ -1184,17 +1256,6 @@ end
 <p>Git教程</p><p>转载于阮一峰WangDoc的git-tutuorial</p>
 <a href="./git-tutorial/index.html"></a>
 </div></div>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>20240922001</title>
-    <url>/nagging/20240922001.html</url>
-    <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
   </entry>
   <entry>
@@ -1410,35 +1471,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>分支</title>
-    <url>/repost/git-tutorial/branch.html</url>
-    <content><![CDATA[<p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
-<p><code>git branch</code>命令可以列出本地的所有分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
-
-<p>创建一个名为<code>MyBranch</code>的新分支，但是依然停留在当前分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>在远程主机<code>origin</code>上创建一个<code>MyBranch</code>的分支，并与本地的同名分支建立追踪关系。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push -u origin MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>将当前分支改名为<code>MyBranch</code>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -m MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>删除<code>MyBranch</code>分支，前提是该分支没有未合并的变动。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -d MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>强制删除<code>MyBranch</code>分支，不管有没有未合并变化。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -D MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>切换到<code>MyBranch</code>分支，当前的工作区会变为<code>MyBranch</code>分支的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout MyBranch</span><br></pre></td></tr></table></figure>
-
-<p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>Git简介</title>
     <url>/repost/git-tutorial/basic.html</url>
     <content><![CDATA[<p>Git是一种源码管理系统（source code management，缩写为SCM）。它对当前文件提供版本管理功能，核心思想是对当前文件建立一个对象数据库（object database），将历史版本信息存放在这个数据库中。</p>
@@ -1571,6 +1603,35 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>分支</title>
+    <url>/repost/git-tutorial/branch.html</url>
+    <content><![CDATA[<p>分支是 Git 最重要的概念之一，也是最常用的操作之一。几乎所有 Git 操作流程都离不开分支。</p>
+<p><code>git branch</code>命令可以列出本地的所有分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+
+<p>创建一个名为<code>MyBranch</code>的新分支，但是依然停留在当前分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>在远程主机<code>origin</code>上创建一个<code>MyBranch</code>的分支，并与本地的同名分支建立追踪关系。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push -u origin MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>将当前分支改名为<code>MyBranch</code>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -m MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>删除<code>MyBranch</code>分支，前提是该分支没有未合并的变动。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -d MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>强制删除<code>MyBranch</code>分支，不管有没有未合并变化。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git branch -D MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>切换到<code>MyBranch</code>分支，当前的工作区会变为<code>MyBranch</code>分支的内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout MyBranch</span><br></pre></td></tr></table></figure>
+
+<p>基于<code>MyBranch</code>分支创建一个新的<code>NewBranch</code>分支，新的<code>NewBranch</code>分支将成为当前的工作区。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b NewBranch MyBranch</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>Git教程</title>
     <url>/repost/git-tutorial/index.html</url>
     <content><![CDATA[<div class="note info no-icon"><p><strong>转载于：</strong> <a href="https://github.com/wangdoc/git-tutorial">git-tutorial | WangDoc&#x2F;阮一峰</a></p>
@@ -1690,14 +1751,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>参考链接</title>
-    <url>/repost/git-tutorial/reference.html</url>
-    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
-<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>标签</title>
     <url>/repost/git-tutorial/tag.html</url>
     <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
@@ -1709,6 +1762,20 @@ end
 
 <p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>20250313001</title>
+    <url>/nagging/20250313001.html</url>
+    <content><![CDATA[<p>早上来的比较早，中午午休后还剩半小时时间，有点闲着不知道做什么好。时间比较碎，不太适合推事情进度，游戏、刷资讯、刷视频有时候又不想弄，还是比较喜欢刷自己以前写的东西，还有就是自己喜欢看的几个博客。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>参考链接</title>
+    <url>/repost/git-tutorial/reference.html</url>
+    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -1896,22 +1963,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git clone</title>
-    <url>/repost/git-tutorial/commands/git-clone.html</url>
-    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
-
-<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git commit-tree</title>
-    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
-    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>git commit</title>
     <url>/repost/git-tutorial/commands/git-commit.html</url>
     <content><![CDATA[<p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
@@ -1970,6 +2021,15 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git clone</title>
+    <url>/repost/git-tutorial/commands/git-clone.html</url>
+    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>git init</title>
     <url>/repost/git-tutorial/commands/git-init.html</url>
     <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
@@ -2024,11 +2084,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git pull</title>
-    <url>/repost/git-tutorial/commands/git-pull.html</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
-
-<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
+    <title>git commit-tree</title>
+    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
+    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2096,10 +2155,11 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git rev-parse</title>
-    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
-    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
+    <title>git pull</title>
+    <url>/repost/git-tutorial/commands/git-pull.html</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
+
+<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2110,18 +2170,17 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git rm</title>
-    <url>/repost/git-tutorial/commands/git-rm.html</url>
-    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
-<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>git show</title>
     <url>/repost/git-tutorial/commands/git-show.html</url>
     <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rev-parse</title>
+    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
+    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2181,6 +2240,14 @@ end
 <p>上面代码表示为当前commit打上一个带注解的标签，标签名为release。</p>
 <p>普通标签的写法。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git tag 1.0.0</span><br><span class="line">$ git push --tags</span><br><span class="line"></span><br><span class="line">$ git tag v0.0.1</span><br><span class="line">$ git push origin master --tags</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rm</title>
+    <url>/repost/git-tutorial/commands/git-rm.html</url>
+    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
+<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
