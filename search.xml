@@ -134,72 +134,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac上homebrew安装与卸载</title>
-    <url>/2024/2024030302/</url>
-    <content><![CDATA[<p>用清华镜像安装与卸载 homebrew</p>
-<span id="more"></span>
-
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
-<p><strong>环境说明</strong></p>
-<p>M1 芯片 MacOS14(Sonoma)</p>
-</blockquote>
-<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
-<h2 id="安装-Command-Line-Tools-CLT-for-Xcode"><a href="#安装-Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装 Command Line Tools (CLT) for Xcode"></a>安装 Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
-<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/2024030302/image-20240303154946828.png" class="" title="image-20240303154946828">
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
-
-<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/2024030302/image-20240303151617963.png" class="" title="image-20240303151617963">
-
-<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
-<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
-<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
-<img src="/2024/2024030302/image-20240303152405525.png" class="" title="image-20240303152405525">
-
-<img src="/2024/2024030302/image-20240303152457610.png" class="" title="image-20240303152457610">
-
-<p><strong>2 运行<code>install.sh</code>文件</strong></p>
-<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
-<img src="/2024/2024030302/image-20240303152615974.png" class="" title="image-20240303152615974">
-
-<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
-<img src="/2024/2024030302/image-20240303153341438.png" class="" title="image-20240303153341438">
-
-<img src="/2024/2024030302/image-20240303154630149.png" class="" title="image-20240303154630149">
-
-<blockquote>
-<p>下载会比较慢，请耐心等待</p>
-</blockquote>
-<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
-<img src="/2024/2024030302/image-20240303162408007.png" class="" title="image-20240303162408007">
-
-<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看 homebrew 安装在隐藏目录<code>/opt</code>里面（M 芯片才是这个路径）</p>
-<img src="/2024/2024030302/image-20240303162720071.png" class="" title="image-20240303162720071">
-
-<img src="/2024/2024030302/image-20240303162858321.png" class="" title="image-20240303162858321">
-
-<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
-<hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
-<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
-</ul>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>初稿：2024-03-03</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>环境配置</category>
-      </categories>
-      <tags>
-        <tag>Mac环境</tag>
-        <tag>包管理器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考拉周刊第2期</title>
     <url>/2024/2024030901/</url>
     <content><![CDATA[<p>文档约会与文档招聘可以找到高质量伴侣和合伙人</p>
@@ -481,43 +415,43 @@
       </categories>
   </entry>
   <entry>
-    <title>conda安装与使用</title>
-    <url>/2025/conda%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>本地部署阿里的 SenseVoice 时发现，依赖于 ffmpeg 这种非 python 包，pip 没办法直接管理，但我又不想系统层面全局装，这时候发现 conda 可以实现代码项目层级的依赖包隔离。</p>
+    <title>node包管理器</title>
+    <url>/2024/2024092001/</url>
+    <content><![CDATA[<p>npm 的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
 <span id="more"></span>
 
-<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h2><h3 id="1-1-Mac-上安装"><a href="#1-1-Mac-上安装" class="headerlink" title="1.1 Mac 上安装"></a>1.1 Mac 上安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用homebrew安装</span></span><br><span class="line">brew install miniconda</span><br><span class="line"><span class="comment"># 检查是否安装成功</span></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
+<p><code>npm</code>是<code>node package manager</code>的缩写，node.js 的包管理器</p>
+<h2 id="1-nvm"><a href="#1-nvm" class="headerlink" title="1 nvm"></a>1 nvm</h2><p>node 版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
+<p><strong>安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
 
-<h3 id="Windows-上安装"><a href="#Windows-上安装" class="headerlink" title="Windows 上安装"></a>Windows 上安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1 用winget安装</span></span><br><span class="line">winget install miniconda3</span><br><span class="line"><span class="comment"># 2 添加到环境变量，使得windows终端可识别conda命令</span></span><br><span class="line"><span class="comment"># 3 检查是否安装成功</span></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
+<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
 
-<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2 使用"></a>2 使用</h2><h3 id="2-1-创建-conda-环境"><a href="#2-1-创建-conda-环境" class="headerlink" title="2.1 创建 conda 环境"></a>2.1 创建 conda 环境</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用配置文件创建conda环境</span></span><br><span class="line">conda <span class="built_in">env</span> create -f environment.yml</span><br><span class="line"><span class="comment"># 激活conda环境</span></span><br><span class="line">conda activate ai-env</span><br></pre></td></tr></table></figure>
+<h2 id="2-nrm"><a href="#2-nrm" class="headerlink" title="2 nrm"></a>2 nrm</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager</span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 
-<p>阿里 SenseVoice 和 CosyVoice 的依赖环境配置如下</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">ai-env</span></span><br><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">conda-forge</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">defaults</span></span><br><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">python=3.12</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">ffmpeg</span> <span class="comment"># 音频转码</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">pip</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">pip:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">flask</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">gunicorn</span> <span class="comment"># web容器</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">python-magic</span> <span class="comment"># 多媒体格式</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">pydub</span> <span class="comment"># 音频处理</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">modelscope</span> <span class="comment"># 魔搭社区-阿里</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">funasr</span> <span class="comment"># 语音识别-阿里</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">torch</span> <span class="comment"># Pytorch深度学习核心库</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">torchaudio</span> <span class="comment"># Pytorch框架音频处理</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-ncu"><a href="#3-ncu" class="headerlink" title="3 ncu"></a>3 ncu</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
 
-<p>其中的<code>channels</code>可以换成国内的 conda 镜像源：中科大、清华、阿里云</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-新增-python-包"><a href="#2-2-新增-python-包" class="headerlink" title="2.2 新增 python 包"></a>2.2 新增 python 包</h3><p>在 conda 环境激活状态下，使用 pip 安装 python 依赖包，可以配置国内镜像源：中科大、清华、阿里云</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br></pre></td></tr></table></figure>
-
-<p>出现一下结果说明配置成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">global.index-url=<span class="string">&#x27;https://pypi.mirrors.ustc.edu.cn/simple&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-npm-check"><a href="#4-npm-check" class="headerlink" title="4 npm-check"></a>4 npm-check</h2><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p><strong>更新日志</strong></p>
+<p><strong>更新记录</strong></p>
 <ul>
-<li>20250111： 初稿</li>
+<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
+</li>
+<li><p>20240920：初稿</p>
+</li>
 </ul>
 ]]></content>
       <categories>
         <category>程序猿</category>
+        <category>前端</category>
         <category>环境配置</category>
       </categories>
+      <tags>
+        <tag>包管理器</tag>
+        <tag>node</tag>
+      </tags>
   </entry>
   <entry>
     <title>Git分支命令</title>
@@ -552,6 +486,109 @@
 <li><p>20241229：初稿</p>
 </li>
 <li><p>20241217：创建</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Mac上homebrew安装与卸载</title>
+    <url>/2024/2024030302/</url>
+    <content><![CDATA[<p>用清华镜像安装与卸载 homebrew</p>
+<span id="more"></span>
+
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><blockquote>
+<p><strong>环境说明</strong></p>
+<p>M1 芯片 MacOS14(Sonoma)</p>
+</blockquote>
+<p>因为国内环境的缘故，用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像站</a>安装 homebrew</p>
+<h2 id="安装-Command-Line-Tools-CLT-for-Xcode"><a href="#安装-Command-Line-Tools-CLT-for-Xcode" class="headerlink" title="安装 Command Line Tools (CLT) for Xcode"></a>安装 Command Line Tools (CLT) for Xcode</h2><p>输入<code>xcode-select --install</code></p>
+<h2 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h2><img src="/2024/2024030302/image-20240303154946828.png" class="" title="image-20240303154946828">
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export HOMEBREW_INSTALL_FROM_API=1</span><br><span class="line">export HOMEBREW_API_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api&quot;</span><br><span class="line">export HOMEBREW_BOTTLE_DOMAIN=&quot;https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&quot;</span><br><span class="line">export HOMEBREW_BREW_GIT_REMOTE=&quot;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="克隆安装"><a href="#克隆安装" class="headerlink" title="克隆安装"></a>克隆安装</h2><img src="/2024/2024030302/image-20240303151617963.png" class="" title="image-20240303151617963">
+
+<p>为了理解<code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install /bin/bash brew-install/install.sh</code>命令，这里拆解执行</p>
+<p><strong>1 克隆文件到<code>brew-install</code>文件夹内</strong></p>
+<p><code>git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install</code></p>
+<img src="/2024/2024030302/image-20240303152405525.png" class="" title="image-20240303152405525">
+
+<img src="/2024/2024030302/image-20240303152457610.png" class="" title="image-20240303152457610">
+
+<p><strong>2 运行<code>install.sh</code>文件</strong></p>
+<p>选中<code>brew-install</code>文件夹右键选择【新建位于文件夹位置的终端窗口】</p>
+<img src="/2024/2024030302/image-20240303152615974.png" class="" title="image-20240303152615974">
+
+<p>输入<code>./install.sh</code>运行<code>install.sh</code>脚本</p>
+<img src="/2024/2024030302/image-20240303153341438.png" class="" title="image-20240303153341438">
+
+<img src="/2024/2024030302/image-20240303154630149.png" class="" title="image-20240303154630149">
+
+<blockquote>
+<p>下载会比较慢，请耐心等待</p>
+</blockquote>
+<p>输入<code>brew --version</code>和<code>brew --help</code>，有结果表示安装成功</p>
+<img src="/2024/2024030302/image-20240303162408007.png" class="" title="image-20240303162408007">
+
+<p>打开访达，使用快捷键<code>Shift + Command + G</code>前往<code>/opt</code>可以查看 homebrew 安装在隐藏目录<code>/opt</code>里面（M 芯片才是这个路径）</p>
+<img src="/2024/2024030302/image-20240303162720071.png" class="" title="image-20240303162720071">
+
+<img src="/2024/2024030302/image-20240303162858321.png" class="" title="image-20240303162858321">
+
+<h1 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h1><p>用终端打开<code>user/koalamini</code>路径，输入<code>./uninstall.sh</code>卸载 homebrew</p>
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/">https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/</a></li>
+<li><a href="https://sspai.com/post/56009">https://sspai.com/post/56009</a></li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>初稿：2024-03-03</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>环境配置</category>
+      </categories>
+      <tags>
+        <tag>包管理器</tag>
+        <tag>Mac环境</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git仓库命令</title>
+    <url>/2024/git%E4%BB%93%E5%BA%93%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>git 仓库常用命令清单，包括<code>git init</code> <code>git clone</code> <code>git log</code></p>
+<span id="more"></span>
+
+<h2 id="1-git-init"><a href="#1-git-init" class="headerlink" title="1 git-init"></a>1 git-init</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建git仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>它会在当前目录下生成一个<code>.git</code>隐藏目录，表示本地仓库创建成功</p>
+<h2 id="2-git-clone"><a href="#2-git-clone" class="headerlink" title="2 git-clone"></a>2 git-clone</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从远程仓库克隆所有分支</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;remote-url&gt; [local-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从远程仓库克隆单分支</span></span><br><span class="line">git <span class="built_in">clone</span> -b &lt;remote-branch&gt; --single-branch &lt;remote-url&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-git-log"><a href="#3-git-log" class="headerlink" title="3 git-log"></a>3 git-log</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以单行格式，查看仓库提交历史</span></span><br><span class="line">git <span class="built_in">log</span> --oneline</span><br></pre></td></tr></table></figure>
+
+
+
+
+<hr>
+<p><strong>参考资料</strong></p>
+<ul>
+<li><p><a href="https://git-scm.com/docs/git-init/zh_HANS-CN">git-init | git官网</a></p>
+</li>
+<li><p><a href="https://git-scm.com/docs/git-clone/zh_HANS-CN">git-clone | git官网</a></p>
+</li>
+</ul>
+<p><strong>更新日志</strong></p>
+<ul>
+<li><p>20250315：初稿</p>
+</li>
+<li><p>20241218：创建</p>
 </li>
 </ul>
 ]]></content>
@@ -602,80 +639,43 @@
       </categories>
   </entry>
   <entry>
-    <title>Git仓库命令</title>
-    <url>/2024/git%E4%BB%93%E5%BA%93%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>git 仓库常用命令清单，包括<code>git init</code> <code>git clone</code> <code>git log</code></p>
+    <title>conda安装与使用</title>
+    <url>/2025/conda%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>本地部署阿里的 SenseVoice 时发现，依赖于 ffmpeg 这种非 python 包，pip 没办法直接管理，但我又不想系统层面全局装，这时候发现 conda 可以实现代码项目层级的依赖包隔离。</p>
 <span id="more"></span>
 
-<h2 id="1-git-init"><a href="#1-git-init" class="headerlink" title="1 git-init"></a>1 git-init</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建git仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h2><h3 id="1-1-Mac-上安装"><a href="#1-1-Mac-上安装" class="headerlink" title="1.1 Mac 上安装"></a>1.1 Mac 上安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用homebrew安装</span></span><br><span class="line">brew install miniconda</span><br><span class="line"><span class="comment"># 检查是否安装成功</span></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
 
-<p>它会在当前目录下生成一个<code>.git</code>隐藏目录，表示本地仓库创建成功</p>
-<h2 id="2-git-clone"><a href="#2-git-clone" class="headerlink" title="2 git-clone"></a>2 git-clone</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从远程仓库克隆所有分支</span></span><br><span class="line">git <span class="built_in">clone</span> &lt;remote-url&gt; [local-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从远程仓库克隆单分支</span></span><br><span class="line">git <span class="built_in">clone</span> -b &lt;remote-branch&gt; --single-branch &lt;remote-url&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Windows-上安装"><a href="#Windows-上安装" class="headerlink" title="Windows 上安装"></a>Windows 上安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1 用winget安装</span></span><br><span class="line">winget install miniconda3</span><br><span class="line"><span class="comment"># 2 添加到环境变量，使得windows终端可识别conda命令</span></span><br><span class="line"><span class="comment"># 3 检查是否安装成功</span></span><br><span class="line">conda --version</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-git-log"><a href="#3-git-log" class="headerlink" title="3 git-log"></a>3 git-log</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以单行格式，查看仓库提交历史</span></span><br><span class="line">git <span class="built_in">log</span> --oneline</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用"><a href="#2-使用" class="headerlink" title="2 使用"></a>2 使用</h2><h3 id="2-1-创建-conda-环境"><a href="#2-1-创建-conda-环境" class="headerlink" title="2.1 创建 conda 环境"></a>2.1 创建 conda 环境</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用配置文件创建conda环境</span></span><br><span class="line">conda <span class="built_in">env</span> create -f environment.yml</span><br><span class="line"><span class="comment"># 激活conda环境</span></span><br><span class="line">conda activate ai-env</span><br></pre></td></tr></table></figure>
 
+<p>阿里 SenseVoice 和 CosyVoice 的依赖环境配置如下</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">ai-env</span></span><br><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">conda-forge</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">defaults</span></span><br><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">python=3.12</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">ffmpeg</span> <span class="comment"># 音频转码</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">pip</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">pip:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">flask</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">gunicorn</span> <span class="comment"># web容器</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">python-magic</span> <span class="comment"># 多媒体格式</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">pydub</span> <span class="comment"># 音频处理</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">modelscope</span> <span class="comment"># 魔搭社区-阿里</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">funasr</span> <span class="comment"># 语音识别-阿里</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">torch</span> <span class="comment"># Pytorch深度学习核心库</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">torchaudio</span> <span class="comment"># Pytorch框架音频处理</span></span><br></pre></td></tr></table></figure>
 
+<p>其中的<code>channels</code>可以换成国内的 conda 镜像源：中科大、清华、阿里云</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
 
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/pkgs/main/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/pkgs/free/</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">https://mirrors.aliyun.com/anaconda/cloud/conda-forge/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-新增-python-包"><a href="#2-2-新增-python-包" class="headerlink" title="2.2 新增 python 包"></a>2.2 新增 python 包</h3><p>在 conda 环境激活状态下，使用 pip 安装 python 依赖包，可以配置国内镜像源：中科大、清华、阿里云</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br></pre></td></tr></table></figure>
+
+<p>出现一下结果说明配置成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">global.index-url=<span class="string">&#x27;https://pypi.mirrors.ustc.edu.cn/simple&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <hr>
-<p><strong>参考资料</strong></p>
-<ul>
-<li><p><a href="https://git-scm.com/docs/git-init/zh_HANS-CN">git-init | git官网</a></p>
-</li>
-<li><p><a href="https://git-scm.com/docs/git-clone/zh_HANS-CN">git-clone | git官网</a></p>
-</li>
-</ul>
 <p><strong>更新日志</strong></p>
 <ul>
-<li><p>20250315：初稿</p>
-</li>
-<li><p>20241218：创建</p>
-</li>
+<li>20250111： 初稿</li>
 </ul>
 ]]></content>
       <categories>
         <category>程序猿</category>
-        <category>git</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>node包管理器</title>
-    <url>/2024/2024092001/</url>
-    <content><![CDATA[<p>npm 的服务器外国外，网速太慢了，换到国内的源速度快一点</p>
-<span id="more"></span>
-
-<p><code>npm</code>是<code>node package manager</code>的缩写，node.js 的包管理器</p>
-<h2 id="1-nvm"><a href="#1-nvm" class="headerlink" title="1 nvm"></a>1 nvm</h2><p>node 版本管理器，<code>nvm</code>是<code>node version manager</code>的缩写</p>
-<p><strong>安装</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用scoop查询是否用nvm</span></span><br><span class="line">scoop search nvm</span><br><span class="line"><span class="comment"># 使用scoop安装（挂梯子）</span></span><br><span class="line">scoop install nvm</span><br></pre></td></tr></table></figure>
-
-<img src="/2024/2024092001/image-20240920135507406.png" class="" title="image-20240920135507406">
-
-<h2 id="2-nrm"><a href="#2-nrm" class="headerlink" title="2 nrm"></a>2 nrm</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 用淘宝镜像源全局安装 npm registry manager</span></span><br><span class="line">npm install nrm -g --registry=https://registry.npmmirror.com</span><br><span class="line"><span class="comment"># 查询有哪些npm源</span></span><br><span class="line">nrm <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 测试不同npm源的速度</span></span><br><span class="line">nrm <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 切换npm源</span></span><br><span class="line">nrm use taobao</span><br><span class="line"><span class="comment"># 查看npm源是否切换成功</span></span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-ncu"><a href="#3-ncu" class="headerlink" title="3 ncu"></a>3 ncu</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ncu</span></span><br><span class="line">npm install -g npm-check-updates</span><br><span class="line"><span class="comment"># 检查package.json依赖包的最新版本</span></span><br><span class="line">ncu</span><br><span class="line"><span class="comment"># 将package.json依赖包版本号更新到最新</span></span><br><span class="line">ncu -u</span><br><span class="line"><span class="comment"># 根据package.json安装最新的依赖包</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-npm-check"><a href="#4-npm-check" class="headerlink" title="4 npm-check"></a>4 npm-check</h2><p><code>npm-check</code> 可以帮助你检查项目中未使用的依赖、过时的依赖、以及可以更新的依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局安装</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="comment"># 检查依赖包</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="comment"># 全部更新</span></span><br><span class="line">npm-check -u</span><br><span class="line"><span class="comment"># 更新某一个</span></span><br><span class="line">npm-check -u &lt;package-name&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>更新记录</strong></p>
-<ul>
-<li><p>20240921：增加<code>ncu</code> <code>npm-check</code>的内容</p>
-</li>
-<li><p>20240920：初稿</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>前端</category>
         <category>环境配置</category>
       </categories>
-      <tags>
-        <tag>包管理器</tag>
-        <tag>node</tag>
-      </tags>
   </entry>
   <entry>
     <title>git概念</title>
@@ -796,6 +796,30 @@ end
       </categories>
   </entry>
   <entry>
+    <title>pip配置国内镜像源</title>
+    <url>/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<p>使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了</p>
+<span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置清华大学pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置阿里云pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br><span class="line"><span class="comment"># 取消配置</span></span><br><span class="line">pip config <span class="built_in">unset</span> global.index-url</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>更新日志</strong></p>
+<ul>
+<li>20250206：初稿</li>
+</ul>
+]]></content>
+      <categories>
+        <category>程序猿</category>
+        <category>环境配置</category>
+      </categories>
+      <tags>
+        <tag>包管理器</tag>
+        <tag>pip</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建1-安装</title>
     <url>/2021/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1/</url>
     <content><![CDATA[<p>大学的时候用的是博客园，毕业后打算自己搭一个，选择 Hexo+NexT</p>
@@ -904,30 +928,6 @@ end
       <categories>
         <category>博客</category>
       </categories>
-  </entry>
-  <entry>
-    <title>pip配置国内镜像源</title>
-    <url>/2025/pip%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90/</url>
-    <content><![CDATA[<p>使用国内的中科大、清华大学、阿里云的pip镜像源速度快太多了</p>
-<span id="more"></span>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置中科大pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.mirrors.ustc.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置清华大学pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"><span class="comment"># 配置阿里云pip镜像源</span></span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="comment"># 检查是否配置成功</span></span><br><span class="line">pip config list</span><br><span class="line"><span class="comment"># 取消配置</span></span><br><span class="line">pip config <span class="built_in">unset</span> global.index-url</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>更新日志</strong></p>
-<ul>
-<li>20250206：初稿</li>
-</ul>
-]]></content>
-      <categories>
-        <category>程序猿</category>
-        <category>环境配置</category>
-      </categories>
-      <tags>
-        <tag>包管理器</tag>
-        <tag>pip</tag>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title>博客搭建3-安装Next主题</title>
@@ -1178,6 +1178,56 @@ end
       </categories>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>那些记忆</title>
+    <url>/huifang/index.html</url>
+    <content><![CDATA[<p><a href="./happy2024.html">2024年生日快乐</a></p>
+<!-- flag of hidden posts -->]]></content>
+  </entry>
+  <entry>
+    <title>山山的收信箱</title>
+    <url>/cuishan/index.html</url>
+    <content><![CDATA[<p><a href="./happy2025.html">2024年生日快乐</a></p>
+<!-- flag of hidden posts -->]]></content>
+  </entry>
+  <entry>
+    <title>2025年生日快乐</title>
+    <url>/cuishan/happy2025.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c4196fb8c0d78dbf5f5d1a4186c2dc67e81eea85cd2f728c2afbbaf189c978e9">d7c16444b9cab1f20a63ca6bc4de76792712861d127b177f36e6b872757b15f084eeca95c7165457a8d40b0d149d24e37644f037639f892c3d6c6616be07b2797dc55b07a6585b9120f833e3efddd4be59588c0a3c5ee63c0ac0e10749c23f11c105a7a3f8eab6f37c7fe386c9a630565284df36feebcccf9e49c2c40765f5249f7f5c0b766d354b7fed71a45688296682dd46904fedd21d9d30d679cc6a00eafd33c53a82094de01b01ce85aa86cdf72c0340a2cc3e2859b50a65414aee83d94a953137d33c827167e379cec3c1a64e0ec0ccbc985525c7697a83105b7eb16ee32c709099d389b33b1db8d73c97382e1621e6f67c6a12db204773a90e899ca67a1de72b64c07de9a33cfbfc82891b51f714c1a3878b88d479a789e7309e9080f5dd92547d38115fc18da66f89b23efc8e38d35f8b09b7c32be59c5a53e6525e906b734901cb39bf0c0b052334fee1db77a3a87374c88281740e10d9b01ae77c10810137ef5b740983d4918a644f152dac5b33b95a4c3faedbd4a1c9ed96795816cd3c6d979d4fcd51e30bbf51b9c3d7a54660d78868d04ed03dd3e2d1180baf7ae2cfa509294e5d906b329ac0451fabd955cd744a6d24e7e66e9ced54d1db2fbcc8f89750e3b77ff3989fa2811fee1be1a41e0c5146f1f51619f20f7e519883061c9ab8321397c16a6cd8304bdb866a2343affd5e73ef36702dd8ba054fd18a3a8edc342c9c3cbc404a4719df4f216549d7574ac0733dfc0fbd27044886323c30d5a52f479426802be6d09b4cb7c25e8ede44bbcf4a81c49282831df1688f37ab1a051b77e4b1e9e08dafa9689bfd653205cc7a5e984eef0569d6104b69c82bd3f469a210dba6f250d75f8fc421974752e37ab1e8a3930eec8b06736b1a9372eaecc2895375ee7f705fbe0fc62a95b93ca5ed68d5e31f43a62eb92d00f6c65682be69e8b129401b59e80d3dec2ff55073018bd67e45c5bc555abf61ae571843d5990764b00c6ea9d0fc7998f644db5708f83fbd675b01eb97f1f211699289c670faa82d90602320a3a9ebe53214e8f23fd5e350e572ce2900bdbd6401e700a309e5ed0909bcd73e75edf57580a566d13121c698bd37729cf95f30b22629c9e9d5cf29865578775e1e8a1ea6f656c136ad644391056f07a956d0eed11a97b208ef52f4b14af2781ffd18b2feef67931e286d5d451d63caf2ce0428b78cd88c192bc0447110f514a5af22b21187b29cc9cd2400a2a7050296c260e281fb6b4042b71f4531d705bf86ead0312aaad5500e5495bb2278440080e2e4557eec1df5babca738a927cb6e062b55fb67a249c049656de57898bb029f233cd41ad249553eb7b79b9033fa5b6e7e3571d2c7c4bb56a9af95f7c84f91cf5909e66684d77fab2209da96d3e8bbdfa11f7a09aaeefd7bd9c82a93fa93509e81f991365b605b772b2de68eb00dd73496bd08eb389ecd379d00edb9eef469fa2642d7c876ef1433872f8de9fb2d8308ae414291dd3a9732fd4114a9388b5dcb73c87d75b3a3b790af3e4648d7146bc34089b3f891ff89940a743fba313935963b635180b2e253b38cc4c7725b72e81905658dbb31b6e3019892040de8723989a7c88ac50483eed34e4208eca448a115247d576c649eb9f3836fa0725dac3ce087732ae708e2aecfa8ebefa5e7548acfe1083825ea530e9e0c8a9b02b418bab25c00919f20eedc8204435112907b61ee87c875dbe98dc9dececc652400616d8d5d5abebc772c2f5b0e2204bb5fbd661ff20ef0cf9cbf31ebe754372f8d50b773e5d83e45f754dad988625437b200b054532669bfb12b50b08c97b71eb2e1bc61154289aef8e51f74acb5dbf2b597dc858bbc874f8b11b3783cc920d729ebb1ad99a76d3714ea37eaecc5a79ad3bbdc38b5ebe023b62795b0b1163df0806de8fd4be7b42f99503370044a3f16c31eeaa8da685ccbd7ac5ec74858f762faf92faba50db778f5d6a83dc1a476f934d738927d5242068b557336edf370fdca26985f6d4f9bbd0cce272cfdc6e3d08df215902b2840900ba4abe4e82764852242a5a8c5e0d333e23f00780d4d385d44e713eba3d46fcc212a6e704645f685401cbb053c0cb59e99817e27b2e3c218715c48baee95effe814a219fc4c7f2e4c2a66bb56f6a981d35d9f7eeb29dc81a5d8b3851ce3f71a2de9a82dcb880eadcab1c4393741d91a0fb71270a7c0adb38bec6eaec42060990688081a4a4414314e5c7ee55ecbb17b5b242ee467930c7bb59399d230bf10efa6faae6e8ad9dd54006139cf2ca315c4831fecba1564802fd64ffafb8cb4d317bb5003709215e5ebb10439de34a333ead42a01b735841d5c3e8f618a4c17b481edca65e030c8921612c56d0fbbd6be08cd4e6250d634d4a3c212b4f99a329f6296090a987c84926183953c76ea3bbcaa8a13b7f2e13de61975eb09cc36ae4670a16298ea49e388f2b5ee1b2c49493852cab75ae5fc50a8bb603282ecfb366d9c8fdc0f445856d17d9d7e17cde4527978b06a5eec8c7c17084fcc8a77e325000b727bfc1f0e3937810a3652cc46cb78cc04c0348b2764705923591b047c42067b49a9e4d691898c3f6442fecefb97b5de3901935bd1868ee6167146f361b4d7935e859b0a254b77c04c27481cf24bffa8b6c210a1a2dc612d9e96d338f50c8c00d46fdda808b9d71bff10c04f040533be7406f56b1a1b41390e790658994c79f19e59b582a4fa4a64d5ad23c9b7bf142def976b0f9c02ebf2c35f97f5f89d5ce8d0232ede9f2ee0cb3fca1794603527b76f220a4ee32c69d1c107ca171301a73ecbf373878bd1518b1ffb91878b0e5bc836c6a494175442f71dc361b0f01eb9f854f20156463782dff34f51c4305cba80dfbddb4b209c558409b4dc6e0d59ab99288ff3e188e12b9acbecb9dc4c3e67e0b67a02c962b1449cfb408bab08e19c19845b580f29ccbfd346ac1ba5acd2f6d19aa5a7a7f</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">你的名字</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
+    <title>20240921002</title>
+    <url>/nagging/20240921002.html</url>
+    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>20240921001</title>
+    <url>/nagging/20240921001.html</url>
+    <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>碎碎念</title>
+    <url>/nagging/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>关于这里</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>这里是我在数字世界的自留地，可以看作在互联网上的房子，我亲手建设它，像《雪崩》主角阿宏一样，我也会经常对它进行装修。</p>
@@ -1188,11 +1238,6 @@ end
 <li>20240921： <mark class="label primary">v1.5.1</mark>，新增 hexo-hide-posts 插件，把写给朋友的信件隐藏起来；显示ICP备案号</li>
 </ul>
 ]]></content>
-  </entry>
-  <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>2024年生日快乐</title>
@@ -1211,26 +1256,9 @@ end
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
   <entry>
-    <title>那些记忆</title>
-    <url>/huifang/index.html</url>
-    <content><![CDATA[<p><a href="./happy2024.html">2024年生日快乐</a></p>
-<!-- flag of hidden posts -->]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>20240921001</title>
-    <url>/nagging/20240921001.html</url>
-    <content><![CDATA[<p>哈哈哈，又多了个发疯的地方。昨晚加今天上午，终于给博客加上了碎碎念模块。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>20240921002</title>
-    <url>/nagging/20240921002.html</url>
-    <content><![CDATA[<p>最近在体验数据分析，谷歌分析最复杂，微软分析最好看，百度分析最实用。</p>
+    <title>20250313001</title>
+    <url>/nagging/20250313001.html</url>
+    <content><![CDATA[<p>早上来的比较早，中午午休后还剩半小时时间，有点闲着不知道做什么好。时间比较碎，不太适合推事情进度，游戏、刷资讯、刷视频有时候又不想弄，还是比较喜欢刷自己以前写的东西，还有就是自己喜欢看的几个博客。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1238,11 +1266,6 @@ end
     <url>/nagging/20240922001.html</url>
     <content><![CDATA[<p>哭😭，被产品运营各种指标搞得晕头转向</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>碎碎念</title>
-    <url>/nagging/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>转载</title>
@@ -1259,12 +1282,9 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>转载</title>
-    <url>/repost/default/index.html</url>
-    <content><![CDATA[<ul>
-<li><a href="./%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html">前后端接口规范 - RESTful 版</a></li>
-</ul>
-]]></content>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>前后端接口规范 - RESTful 版</title>
@@ -1468,6 +1488,14 @@ end
 <h1 id="6-图表类接口"><a href="#6-图表类接口" class="headerlink" title="6 图表类接口"></a>6 图表类接口</h1><h2 id="6-1-曲线图、柱状图"><a href="#6-1-曲线图、柱状图" class="headerlink" title="6.1 曲线图、柱状图"></a>6.1 曲线图、柱状图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">x_axis</span>: [<span class="string">&#x27;2022.04.20&#x27;</span>,<span class="string">&#x27;2022.04.21&#x27;</span>, <span class="string">&#x27;2022.04.22&#x27;</span>]</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上海用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">5000</span>,<span class="number">4000</span>,<span class="number">3000</span>],</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;成都用户&#x27;</span>，</span><br><span class="line">      data： [<span class="number">3000</span>,<span class="number">4000</span>,<span class="number">5000</span>],  <span class="comment">// 注意，没有数据时候也要使用 0 填充，和 x_axis 一一对应</span></span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="6-2-饼图"><a href="#6-2-饼图" class="headerlink" title="6.2 饼图"></a>6.2 饼图</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">code</span>: <span class="number">20000</span>,</span><br><span class="line">  <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">  <span class="attr">message</span>: <span class="string">&quot;请求成功&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">series</span>: [&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;上线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">1890</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span> <span class="comment">// 可选，如果加上的话会使用该色值</span></span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;下线用户&#x27;</span>,</span><br><span class="line">      <span class="attr">value</span>: <span class="number">2000</span>,</span><br><span class="line">      <span class="attr">color</span>: <span class="string">&#x27;#f5f5f5&#x27;</span></span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>转载</title>
+    <url>/repost/default/index.html</url>
+    <content><![CDATA[<ul>
+<li><a href="./%E5%89%8D%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-RESTful%E7%89%88.html">前后端接口规范 - RESTful 版</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
@@ -1751,34 +1779,6 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/repost/git-tutorial/tag.html</url>
-    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
-
-<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
-<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
-
-<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>20250313001</title>
-    <url>/nagging/20250313001.html</url>
-    <content><![CDATA[<p>早上来的比较早，中午午休后还剩半小时时间，有点闲着不知道做什么好。时间比较碎，不太适合推事情进度，游戏、刷资讯、刷视频有时候又不想弄，还是比较喜欢刷自己以前写的东西，还有就是自己喜欢看的几个博客。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>参考链接</title>
-    <url>/repost/git-tutorial/reference.html</url>
-    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
-<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>git add</title>
     <url>/repost/git-tutorial/commands/git-add.html</url>
     <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>git add</code>命令用于将变化的文件，从工作区提交到暂存区。它的作用就是告诉 Git，下一次哪些变化需要保存到仓库区。用户可以使用<code>git status</code>命令查看目前的暂存区放置了哪些文件。</p>
@@ -1844,45 +1844,25 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git cat-file</title>
-    <url>/repost/git-tutorial/commands/git-cat-file.html</url>
-    <content><![CDATA[<p><code>git cat-file</code>命令显示一个Git对象文件的内容。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
-
-<p><code>p</code>参数表示以易于阅读的格式显示。</p>
+    <title>参考链接</title>
+    <url>/repost/git-tutorial/reference.html</url>
+    <content><![CDATA[<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<li>Andy Jeffries, <a href="https://www.andyjeffries.co.uk/25-tips-for-intermediate-git-users/">25 Tips for Intermediate Git Users</a>i- Mark Lodato, <a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解 Git</a></li>
+</ul>
 ]]></content>
   </entry>
   <entry>
-    <title>git checkout</title>
-    <url>/repost/git-tutorial/commands/git-checkout.html</url>
-    <content><![CDATA[<p><code>git checkout</code>命令有多种用途。</p>
-<p>（1）用来切换分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout</span><br></pre></td></tr></table></figure>
+    <title>标签</title>
+    <url>/repost/git-tutorial/tag.html</url>
+    <content><![CDATA[<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>标签必须单独推送。也就是说，<code>git push</code>命令默认不会推送标签，必须使用<code>--tags</code>参数。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push &amp;&amp; git push --tags</span><br></pre></td></tr></table></figure>
 
-<p>上面命令表示回到先前所在的分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout develop</span><br></pre></td></tr></table></figure>
+<p>上面的命令先推送新的 commit，成功后再单独推送标签。</p>
+<p><code>--follow-tags</code>参数会使得 commit 以及与之相关的标签（注意，不是所有的标签）一起推送。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git push --follow-tags</span><br></pre></td></tr></table></figure>
 
-<p>上面命令表示切换到<code>develop</code>分支。</p>
-<p>（2）切换到指定快照（commit）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
-
-<p>（3）将工作区指定的文件恢复到上次提交的状态。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>上面命令将指定文件从暂存区复制到工作区，同时丢弃工作区对该文件的修改。所以，使用的时候必须小心，它会丢失对当前文件的修改，回到上一次保存到暂存区的状态。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout HEAD~ -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-
-<p>它还可以从其他分支或提交恢复指定文件，上例是<code>HEAD~</code>，这会同时改变暂存区和工作区。</p>
-<p><code>-p</code>参数表示进入交互模式，手动选择恢复哪些文件。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -p</span><br></pre></td></tr></table></figure>
-
-<p>（4）切换到某个tag</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/1.1.4</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ git checkout 1.1.4</span><br></pre></td></tr></table></figure>
-
-<p>上面第二种用法的前提是，本地不能有叫做1.1.4的分支。</p>
-<p>（5）生成新的分支。</p>
-<p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
+<p>Git 有一个对应于<code>--follow-tags</code>的配置项，默认是关闭的。如果将它打开，以后执行<code>git push</code>的时候，默认就会带上<code>--follow-tags</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global push.followTags true</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1963,37 +1943,21 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git commit</title>
-    <url>/repost/git-tutorial/commands/git-commit.html</url>
-    <content><![CDATA[<p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
-<p><code>-m</code>参数用于指定 commit 信息，是必需的。如果省略<code>-m</code>参数，<code>git commit</code>会自动打开文本编辑器，要求输入。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>git cat-file</title>
+    <url>/repost/git-tutorial/commands/git-cat-file.html</url>
+    <content><![CDATA[<p><code>git cat-file</code>命令显示一个Git对象文件的内容。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git cat-file -p aaa96</span><br></pre></td></tr></table></figure>
 
-<p><code>git commit</code>命令可以跳过暂存区，直接将文件从工作区提交到仓库区。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit &lt;filename&gt;  -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+<p><code>p</code>参数表示以易于阅读的格式显示。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git clone</title>
+    <url>/repost/git-tutorial/commands/git-clone.html</url>
+    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
 
-<p>上面命令会将工作区中指定文件的变化，先添加到暂存区，然后再将暂存区提交到仓库区。</p>
-<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="a"><a href="#a" class="headerlink" title="-a"></a>-a</h3><p><code>-a</code>参数用于先将所有工作区的变动文件，提交到暂存区，再运行<code>git commit</code>。用了<code>-a</code>参数，就不用执行<code>git add .</code>命令了。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -am <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有指定提交说明，运行下面的命令会直接打开默认的文本编辑器，让用户撰写提交说明。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
-
-<h3 id="–allow-empty"><a href="#–allow-empty" class="headerlink" title="–allow-empty"></a>–allow-empty</h3><p><code>--allow-empty</code>参数用于没有提交信息的 commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --allow-empty</span><br></pre></td></tr></table></figure>
-
-<h3 id="–amend"><a href="#–amend" class="headerlink" title="–amend"></a>–amend</h3><p><code>--amend</code>参数用于撤销上一次 commit，然后生成一个新的 commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --amend - m <span class="string">&quot;new commit message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="–fixup"><a href="#–fixup" class="headerlink" title="–fixup"></a>–fixup</h3><p><code>--fixup</code>参数的含义是，当前添加的 commit 是以前某一个 commit 的修正。以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --fixup &lt;commit&gt;</span><br></pre></td></tr></table></figure>
-
-<p>执行上面的命令，提交说明将自动生成，即在目标 commit 的提交说明的最前面，添加“fixup! ”这个词。</p>
-<h3 id="m"><a href="#m" class="headerlink" title="-m"></a>-m</h3><p><code>-m</code>参数用于添加提交说明。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="–squash"><a href="#–squash" class="headerlink" title="–squash"></a>–squash</h3><p><code>--squash</code>参数的作用与<code>--fixup</code>类似，表示当前添加的 commit 应该与以前某一个 commit 合并成一个，以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --squash &lt;commit&gt;</span><br></pre></td></tr></table></figure>
+<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2005,6 +1969,39 @@ end
 <p>比较两个分支</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看topic分支与master分支最新提交之间的差异</span></span><br><span class="line">$ git diff topic master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 与上一条命令相同</span></span><br><span class="line">$ git diff topic..master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看自从topic分支建立以后，master分支发生的变化</span></span><br><span class="line">$ git diff topic...master</span><br></pre></td></tr></table></figure>
 
+]]></content>
+  </entry>
+  <entry>
+    <title>git checkout</title>
+    <url>/repost/git-tutorial/commands/git-checkout.html</url>
+    <content><![CDATA[<p><code>git checkout</code>命令有多种用途。</p>
+<p>（1）用来切换分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示回到先前所在的分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout develop</span><br></pre></td></tr></table></figure>
+
+<p>上面命令表示切换到<code>develop</code>分支。</p>
+<p>（2）切换到指定快照（commit）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（3）将工作区指定的文件恢复到上次提交的状态。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上面命令将指定文件从暂存区复制到工作区，同时丢弃工作区对该文件的修改。所以，使用的时候必须小心，它会丢失对当前文件的修改，回到上一次保存到暂存区的状态。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout HEAD~ -- &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+
+<p>它还可以从其他分支或提交恢复指定文件，上例是<code>HEAD~</code>，这会同时改变暂存区和工作区。</p>
+<p><code>-p</code>参数表示进入交互模式，手动选择恢复哪些文件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -p</span><br></pre></td></tr></table></figure>
+
+<p>（4）切换到某个tag</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/1.1.4</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ git checkout 1.1.4</span><br></pre></td></tr></table></figure>
+
+<p>上面第二种用法的前提是，本地不能有叫做1.1.4的分支。</p>
+<p>（5）生成新的分支。</p>
+<p><code>-b</code>参数用于生成一个新的分支，并切换到该分支。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b new_branch</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2021,19 +2018,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git clone</title>
-    <url>/repost/git-tutorial/commands/git-clone.html</url>
-    <content><![CDATA[<p><code>git clone</code>命令用于克隆远程分支。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> alpha delta --bare</span><br></pre></td></tr></table></figure>
-
-<p>上面命令表示将alpha目录（必须是git代码仓库），克隆到delta目录。bare参数表示delta目录只有仓库区，没有工作区和暂存区，即delta目录中就是.git目录的内容。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git init</title>
-    <url>/repost/git-tutorial/commands/git-init.html</url>
-    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
-<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
+    <title>git commit-tree</title>
+    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
+    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2073,6 +2061,55 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git commit</title>
+    <url>/repost/git-tutorial/commands/git-commit.html</url>
+    <content><![CDATA[<p><code>git commit</code>命令用于将暂存区中的变化提交到仓库区。</p>
+<p><code>-m</code>参数用于指定 commit 信息，是必需的。如果省略<code>-m</code>参数，<code>git commit</code>会自动打开文本编辑器，要求输入。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>git commit</code>命令可以跳过暂存区，直接将文件从工作区提交到仓库区。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit &lt;filename&gt;  -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面命令会将工作区中指定文件的变化，先添加到暂存区，然后再将暂存区提交到仓库区。</p>
+<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><h3 id="a"><a href="#a" class="headerlink" title="-a"></a>-a</h3><p><code>-a</code>参数用于先将所有工作区的变动文件，提交到暂存区，再运行<code>git commit</code>。用了<code>-a</code>参数，就不用执行<code>git add .</code>命令了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -am <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定提交说明，运行下面的命令会直接打开默认的文本编辑器，让用户撰写提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
+
+<h3 id="–allow-empty"><a href="#–allow-empty" class="headerlink" title="–allow-empty"></a>–allow-empty</h3><p><code>--allow-empty</code>参数用于没有提交信息的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --allow-empty</span><br></pre></td></tr></table></figure>
+
+<h3 id="–amend"><a href="#–amend" class="headerlink" title="–amend"></a>–amend</h3><p><code>--amend</code>参数用于撤销上一次 commit，然后生成一个新的 commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --amend - m <span class="string">&quot;new commit message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="–fixup"><a href="#–fixup" class="headerlink" title="–fixup"></a>–fixup</h3><p><code>--fixup</code>参数的含义是，当前添加的 commit 是以前某一个 commit 的修正。以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --fixup &lt;commit&gt;</span><br></pre></td></tr></table></figure>
+
+<p>执行上面的命令，提交说明将自动生成，即在目标 commit 的提交说明的最前面，添加“fixup! ”这个词。</p>
+<h3 id="m"><a href="#m" class="headerlink" title="-m"></a>-m</h3><p><code>-m</code>参数用于添加提交说明。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="–squash"><a href="#–squash" class="headerlink" title="–squash"></a>–squash</h3><p><code>--squash</code>参数的作用与<code>--fixup</code>类似，表示当前添加的 commit 应该与以前某一个 commit 合并成一个，以后执行互动式的<code>git rebase</code>的时候，这两个 commit 将会合并成一个。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit --squash &lt;commit&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git init</title>
+    <url>/repost/git-tutorial/commands/git-init.html</url>
+    <content><![CDATA[<p><code>git init</code>命令将当前目录转为git仓库。</p>
+<p>它会在当前目录下生成一个.git子目录，在其中写入git的配置和项目的快照。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git pull</title>
+    <url>/repost/git-tutorial/commands/git-pull.html</url>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
+
+<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>git merge</title>
     <url>/repost/git-tutorial/commands/git-merge.html</url>
     <content><![CDATA[<p>将当前分支合并到指定分支。</p>
@@ -2081,13 +2118,6 @@ end
 <p>将当前分支与develop分支合并，产生的新的commit对象有两个父节点。</p>
 <p>如果“指定分支”本身是当前分支的一个直接子节点，则会产生fast-forward合并，即合并不会产生新的节点，只是让当前分支指向“指定分支”的最新commit。</p>
 <p>Git合并所采用的方法是Three-way merge，及合并的时候除了要合併的兩個檔案，還加上它们共同的父节点。这样可以大大減少人為處理 conflict 的情況。如果采用two-way merge，則只用兩個檔案進行合併（svn默认就是这种合并方法。）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git commit-tree</title>
-    <url>/repost/git-tutorial/commands/git-commit-tree.html</url>
-    <content><![CDATA[<p>根据一个树对象，生成新的commit对象。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git commit-tree 16e19f -m “First commit”</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2146,41 +2176,19 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git rev-parse</title>
+    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
+    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>git restore</title>
     <url>/repost/git-tutorial/commands/git-restore.html</url>
     <content><![CDATA[<p><code>git restore</code>是 Git 2.23 版本新增的命令，用于恢复文件，可以替代<code>git checkout</code>的部分功能。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git restore -- test.txt</span><br></pre></td></tr></table></figure>
 
 <p>上面命令将从暂存区恢复<code>test.txt</code>文件，该文件的本地修改将全部丢失。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git pull</title>
-    <url>/repost/git-tutorial/commands/git-pull.html</url>
-    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git pull . topic/branch</span><br></pre></td></tr></table></figure>
-
-<p>即使当前分支有没有 commit 的变动，也可以使用<code>git pull</code>从远程拉取分支。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>git revert</title>
-    <url>/repost/git-tutorial/commands/git-revert.html</url>
-    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git show</title>
-    <url>/repost/git-tutorial/commands/git-show.html</url>
-    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git rev-parse</title>
-    <url>/repost/git-tutorial/commands/git-rev-parse.html</url>
-    <content><![CDATA[<p>显示某个指示符的SHA1哈希值。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rev-parse HEAD</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2216,6 +2224,41 @@ end
 ]]></content>
   </entry>
   <entry>
+    <title>git revert</title>
+    <url>/repost/git-tutorial/commands/git-revert.html</url>
+    <content><![CDATA[<p><code>git revert</code>命令用于撤销commit。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git revert &lt;commitID&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git tag</title>
+    <url>/repost/git-tutorial/commands/git-tag.html</url>
+    <content><![CDATA[<p><code>git tag</code>命令用于为 commit 打标签。Tag 分两种：普通tag和注解tag。只有annotated tag 才會產生 object。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git tag tmp <span class="comment"># 生成.git/refs/tags/tmp</span></span><br><span class="line">$ git tag -a release</span><br><span class="line">$ git tag -a [VERSION] -m <span class="string">&quot;released [VERSION]&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码表示为当前commit打上一个带注解的标签，标签名为release。</p>
+<p>普通标签的写法。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git tag 1.0.0</span><br><span class="line">$ git push --tags</span><br><span class="line"></span><br><span class="line">$ git tag v0.0.1</span><br><span class="line">$ git push origin master --tags</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>git update-index</title>
+    <url>/repost/git-tutorial/commands/git-update-index.html</url>
+    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
+
+<p>直接将缓存信息插入缓存文件。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>git rm</title>
+    <url>/repost/git-tutorial/commands/git-rm.html</url>
+    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
+<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>git switch</title>
     <url>/repost/git-tutorial/commands/git-switch.html</url>
     <content><![CDATA[<p><code>git switch</code>是 Git 2.23 版本新增的命名，用来切换分支，跟<code>git checkout</code>的作用类似，但有更好的语义。</p>
@@ -2232,31 +2275,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git tag</title>
-    <url>/repost/git-tutorial/commands/git-tag.html</url>
-    <content><![CDATA[<p><code>git tag</code>命令用于为 commit 打标签。Tag 分两种：普通tag和注解tag。只有annotated tag 才會產生 object。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git tag tmp <span class="comment"># 生成.git/refs/tags/tmp</span></span><br><span class="line">$ git tag -a release</span><br><span class="line">$ git tag -a [VERSION] -m <span class="string">&quot;released [VERSION]&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面代码表示为当前commit打上一个带注解的标签，标签名为release。</p>
-<p>普通标签的写法。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git tag 1.0.0</span><br><span class="line">$ git push --tags</span><br><span class="line"></span><br><span class="line">$ git tag v0.0.1</span><br><span class="line">$ git push origin master --tags</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git rm</title>
-    <url>/repost/git-tutorial/commands/git-rm.html</url>
-    <content><![CDATA[<p><code>git rm</code>命令用于删除文件。</p>
-<p>解除追踪某个文件，即该文件已被<code>git add</code>添加，然后抵消这个操作。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached &lt;fileName&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
-    <title>git update-index</title>
-    <url>/repost/git-tutorial/commands/git-update-index.html</url>
-    <content><![CDATA[<p>将工作区的文件加入缓存区域。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git update-index --add --cacheinfo \</span><br><span class="line">100644 5c1b14949828006ed75a3e8858957f86a2f7e2eb hola.txt</span><br></pre></td></tr></table></figure>
-
-<p>直接将缓存信息插入缓存文件。</p>
+    <title>git write-tree</title>
+    <url>/repost/git-tutorial/commands/git-write-tree.html</url>
+    <content><![CDATA[<p><code>git write-tree</code>命令用于根据当前缓存区域，生成一个树对象。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -2268,10 +2290,10 @@ end
 ]]></content>
   </entry>
   <entry>
-    <title>git write-tree</title>
-    <url>/repost/git-tutorial/commands/git-write-tree.html</url>
-    <content><![CDATA[<p><code>git write-tree</code>命令用于根据当前缓存区域，生成一个树对象。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git write-tree</span><br></pre></td></tr></table></figure>
+    <title>git show</title>
+    <url>/repost/git-tutorial/commands/git-show.html</url>
+    <content><![CDATA[<p><code>git show</code>命令用于查看commit的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出某次提交的元数据和内容变化</span></span><br><span class="line">$ git show [commit]</span><br><span class="line"></span><br><span class="line">$ git show 12a86bc38 <span class="comment"># By revision</span></span><br><span class="line">$ git show v1.0.1 <span class="comment"># By tag</span></span><br><span class="line">$ git show feature132 <span class="comment"># By branch name</span></span><br><span class="line">$ git show 12a86bc38^ <span class="comment"># Parent of a commit</span></span><br><span class="line">$ git show 12a86bc38~2 <span class="comment"># Grandparent of a commit</span></span><br><span class="line">$ git show feature132@&#123;yesterday&#125; <span class="comment"># Time relative</span></span><br><span class="line">$ git show feature132@&#123;2.hours.ago&#125; <span class="comment"># Time relative</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
 </search>
